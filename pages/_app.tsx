@@ -1,5 +1,7 @@
 import type { AppProps } from 'next/app'
 import Head from "next/head"
+import { DefaultSeo } from "next-seo"
+import siteConfig from 'configs/site-config'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -16,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           />
         )}
       </Head>
+      <DefaultSeo {...siteConfig.seo} />
       <Component {...pageProps} />
     </>
   )

@@ -24,19 +24,23 @@ const Footer: FC = () => {
         <Link href='https://github.com/chr-ge' color='white' isExternal>
           <Icon
             as={FaGithub}
+            aria-label="Github"
             boxSize={10}
             bg='primary.500'
             borderRadius='full'
             padding='1'
+            _hover={{ transform: 'scale(1.05)'}}
           />
         </Link>
         <Link href='https://www.npmjs.com/~chr-ge' color='white' isExternal>
           <Icon
             as={FaNpm}
+            aria-label="npm"
             boxSize={10}
             bg='primary.500'
             borderRadius='full'
             padding='1'
+            _hover={{ transform: 'scale(1.05)'}}
           />
         </Link>
       </HStack>

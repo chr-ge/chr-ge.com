@@ -5,6 +5,8 @@ import { DefaultSeo } from 'next-seo'
 import { ChakraProvider } from '@chakra-ui/react'
 import siteConfig from 'configs/site-config'
 import theme from 'styles/theme'
+import "@fontsource/mulish/400.css"
+import "@fontsource/mulish/700.css"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

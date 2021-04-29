@@ -1,7 +1,10 @@
 import type { AppProps } from 'next/app'
-import Head from "next/head"
-import { DefaultSeo } from "next-seo"
+import Head from 'next/head'
+import { appWithTranslation } from 'next-i18next'
+import { DefaultSeo } from 'next-seo'
+import { ChakraProvider } from '@chakra-ui/react'
 import siteConfig from 'configs/site-config'
+import theme from 'styles/theme'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -19,9 +22,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         )}
       </Head>
       <DefaultSeo {...siteConfig.seo} />
-      <Component {...pageProps} />
+      <ChakraProvider resetCSS theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </>
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp)

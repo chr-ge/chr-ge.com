@@ -1,4 +1,5 @@
 import { FC, useRef } from 'react'
+import { useTranslation } from 'next-i18next'
 import {
   Box,
   Text,
@@ -15,6 +16,7 @@ import Menu from './Menu'
 const Header: FC = () => {
   const ref = useRef<HTMLButtonElement>(null)
   const { isOpen, onToggle } = useOutsideClick({ ref })
+  const { t } = useTranslation('common')
   const { colorMode, toggleColorMode } = useColorMode()
   const isDark = colorMode === 'dark'
 
@@ -25,11 +27,28 @@ const Header: FC = () => {
       borderRadius='lg'
       align='center'
       justify='space-between'
-      boxShadow="lg"
+      boxShadow='lg'
     >
-      <Text as='h4' fontWeight='bold' marginLeft='2' fontSize='lg'>
-        CHR-GE
-      </Text>
+      <Flex align='center' direction={['row', 'column', 'row']}>
+        <Text
+          as='h4'
+          fontWeight='bold'
+          marginLeft='2'
+          fontSize='lg'
+          whiteSpace='pre'
+        >
+          CHR-GE
+        </Text>
+        <Text
+          as='h4'
+          marginLeft='2'
+          fontSize='lg'
+          whiteSpace='pre'
+          display={['none', 'block']}
+        >
+          //  {t('developer')}
+        </Text>
+      </Flex>
       <Box>
         <IconButton
           icon={

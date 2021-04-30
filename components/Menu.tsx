@@ -17,10 +17,10 @@ const Menu: FC = () => {
         position='absolute'
         right={0}
         bottom={0}
-        margin='4'
+        margin='8'
         padding='4'
         bg='white'
-        boxShadow='lg'
+        boxShadow='xl'
         borderRadius='lg'
         columns={2}
         gap='2'

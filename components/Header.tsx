@@ -25,6 +25,7 @@ const Header: FC = () => {
       borderRadius='lg'
       align='center'
       justify='space-between'
+      boxShadow="lg"
     >
       <Text as='h4' fontWeight='bold' marginLeft='2' fontSize='lg'>
         CHR-GE

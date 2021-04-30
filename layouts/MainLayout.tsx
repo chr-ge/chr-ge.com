@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react'
-import { Box, Flex, useColorModeValue } from '@chakra-ui/react'
+import { Box, Container, Flex, useColorModeValue } from '@chakra-ui/react'
 import { Footer, Header } from 'components'
 
 interface MainLayoutProps {
@@ -15,8 +15,10 @@ const MainLayout: FC<MainLayoutProps> = ({ children }) => {
   return (
     <Flex as='main' minH='100vh' padding='4' direction='column'>
       <Box flex={1} bgGradient={gradient} borderRadius='lg' padding='4'>
-        <Header />
-        <Box marginY='2'>{children}</Box>
+        <Container maxW="container.lg">
+          <Header />
+          <Box marginY='2'>{children}</Box>
+        </Container>
       </Box>
       <Footer />
     </Flex>

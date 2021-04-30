@@ -2,10 +2,10 @@ import { FC, useRef } from 'react'
 import { useTranslation } from 'next-i18next'
 import {
   Box,
-  Text,
+  Flex,
   Icon,
   IconButton,
-  Flex,
+  Text,
   useColorMode,
 } from '@chakra-ui/react'
 import { VscColorMode } from 'react-icons/vsc'
@@ -17,6 +17,7 @@ const Header: FC = () => {
   const ref = useRef<HTMLButtonElement>(null)
   const { isOpen, onToggle } = useOutsideClick({ ref })
   const { t } = useTranslation('common')
+
   const { colorMode, toggleColorMode } = useColorMode()
   const isDark = colorMode === 'dark'
 
@@ -46,7 +47,7 @@ const Header: FC = () => {
           whiteSpace='pre'
           display={['none', 'block']}
         >
-          //  {t('developer')}
+          // {t('developer')}
         </Text>
       </Flex>
       <Box>

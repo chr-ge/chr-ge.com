@@ -16,7 +16,7 @@ const Footer: FC = () => {
       justify='space-between'
     >
       <Text color='gray.200' fontWeight='semibold'>
-        &copy; {new Date().getFullYear()} George Christeas.{' '}
+        {/* &copy; {new Date().getFullYear()} George Christeas.{' '} */}
         {t('proudly_made_in_mtl')}
         🍁
       </Text>

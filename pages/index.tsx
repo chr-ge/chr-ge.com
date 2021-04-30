@@ -1,5 +1,6 @@
-import { Box } from '@chakra-ui/layout'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { Box, Heading } from '@chakra-ui/layout'
+import MainLayout from 'layouts/MainLayout'
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
   props: {
@@ -8,5 +9,9 @@ export const getStaticProps = async ({ locale }: { locale: string }) => ({
 })
 
 export default function Home() {
-  return <Box></Box>
+  return (
+    <MainLayout>
+      <Heading>Hello and Welcome</Heading>
+    </MainLayout>
+  )
 }

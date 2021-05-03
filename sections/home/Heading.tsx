@@ -1,0 +1,50 @@
+import { useTranslation } from 'next-i18next'
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  useColorModeValue,
+} from '@chakra-ui/react'
+import { Header } from 'components'
+
+const HeadingSection = () => {
+  const { t } = useTranslation('common')
+  const gradient = useColorModeValue(
+    'linear(to-t, primary.500, secondary.500)',
+    'linear(to-t, #16222a, #3a6073)'
+  )
+
+  return (
+    <Box
+      height='calc(100vh - 2rem)'
+      bgGradient={gradient}
+      borderRadius='lg'
+      padding='4'
+      marginBottom='4'
+    >
+      <Container maxW='container.lg'>
+        <Header />
+        <Heading
+          as='h1'
+          width={['95%', '80%', '75%']}
+          fontSize={['4xl', '5xl', '6xl']}
+          fontWeight='bold'
+          marginTop='10'
+        >
+          {t('headline')}
+        </Heading>
+        <Button
+          aria-label={t('headline-button')}
+          marginTop='8'
+          type='button'
+          _hover={{ transform: 'scale(1.03) translateX(6px)' }}
+        >
+          {t('headline-button')}
+        </Button>
+      </Container>
+    </Box>
+  )
+}
+
+export default HeadingSection

@@ -19,6 +19,7 @@
     "@emotion/styled": "^11.3.0",
     "@fontsource/mulish": "^4.2.2",
     "framer-motion": "^4.1.11",
+    "keen-slider": "^5.4.0",
     "next": "10.2.0",
     "next-i18next": "^8.2.0",
     "next-seo": "^4.24.0",

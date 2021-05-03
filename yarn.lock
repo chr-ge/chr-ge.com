@@ -3007,6 +3007,11 @@ jsonparse@^1.2.0:
     array-includes "^3.1.2"
     object.assign "^4.1.2"
 
+keen-slider@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/keen-slider/-/keen-slider-5.4.0.tgz#e5a949e2bb237d7d6b068458dcda59ae9c415254"
+  integrity sha512-gN+lYpaj4vgJr0fIKtJVy/xG2CnjHiY4lixllp32x6LW8QlT1gD4qmzclFBwMn1/LPvnM2UhOFSgAOmBIhPtAQ==
+
 kind-of@^6.0.3:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"

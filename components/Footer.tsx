@@ -8,6 +8,7 @@ const Footer: FC = () => {
 
   return (
     <Flex
+      as="footer"
       bg='primary.700'
       padding='4'
       marginTop='4'

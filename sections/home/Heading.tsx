@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import {
+  chakra,
   Box,
   Button,
   Container,
@@ -30,9 +31,16 @@ const HeadingSection = () => {
           width={['95%', '80%', '75%']}
           fontSize={['4xl', '5xl', '6xl']}
           fontWeight='bold'
-          marginTop='10'
+          marginTop='36'
         >
-          {t('headline')}
+          {t('headline-1')}
+          <chakra.span cursor='url(/img/mouse_cursor.png), text'>
+            {t('mouse')}
+          </chakra.span>
+          {t('headline-2')}
+          <chakra.span cursor='url(/img/keyboard_cursor.png), text'>
+            {t('keyboard')}
+          </chakra.span>
         </Heading>
         <Button
           aria-label={t('headline-button')}

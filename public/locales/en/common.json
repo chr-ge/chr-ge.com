@@ -3,7 +3,10 @@
   "projects": "Projects",
   "contact": "Contact",
   "developer": "Full-Stack Web Developer",
-  "headline": "I build things with my mouse and keyboard.",
+  "headline-1": "I build things with my ",
+  "headline-2": " and ",
+  "mouse": "mouse ",
+  "keyboard": " keyboard.",
   "headline-button": "See what I've made",
   "my-projects": "My Projects",
   "proudly_made_in_mtl": "Proudly made in MTL."

@@ -33,9 +33,11 @@ const Projects = () => {
     >
       <Container maxW='container.xl'>
         <Heading
+          id='projects'
           fontSize='5xl'
           marginBottom='8'
           marginTop='4'
+          sx={{ scrollMarginTop: '3rem' }}
           paddingTop={['4', '0']}
           textAlign={['center', 'left']}
         >

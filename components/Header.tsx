@@ -14,8 +14,8 @@ import useOutsideClick from 'hooks/useClickOutside'
 import Menu from './Menu'
 
 const Header: FC = () => {
-  const ref = useRef<HTMLButtonElement>(null)
-  const { isOpen, onToggle } = useOutsideClick({ ref })
+  const ref = useRef<HTMLDivElement>(null)
+  const { isOpen, onClose, onToggle } = useOutsideClick({ ref })
   const { t } = useTranslation('common')
 
   const { colorMode, toggleColorMode } = useColorMode()
@@ -30,7 +30,7 @@ const Header: FC = () => {
       justify='space-between'
       boxShadow='lg'
     >
-      <Flex align='center' direction={['row', 'column', 'row']}>
+      <Flex align='start' direction={['row', 'column', 'row']}>
         <Text
           as='h4'
           fontWeight='bold'
@@ -65,7 +65,6 @@ const Header: FC = () => {
           variant='icon-button'
         />
         <IconButton
-          ref={ref}
           icon={<IoGrid />}
           aria-label='menu'
           onClick={onToggle}
@@ -73,7 +72,7 @@ const Header: FC = () => {
           variant='icon-button'
         />
       </Box>
-      {isOpen && <Menu />}
+      {isOpen && <Menu ref={ref} onClose={onClose} />}
     </Flex>
   )
 }

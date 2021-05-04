@@ -1,12 +1,29 @@
+import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import { Box, Container, Flex, Heading, useMediaQuery } from '@chakra-ui/react'
+import { Box, Container, Flex, Heading } from '@chakra-ui/react'
+import { useMediaQuery } from 'react-responsive'
 import Project from 'components/Project'
 import projects from 'data/projects'
 
 const Projects = () => {
   const { t } = useTranslation('common')
+  const heightRef = useRef<HTMLDivElement>(null)
+  const [h, setH] = useState(0)
 
-  const [isLargerThanMobile] = useMediaQuery('(min-width: 30em)')
+  const isLargerThanMobile = useMediaQuery({ query: '(min-width: 30em)' })
+
+  const scrollPosition = () => {
+    if (heightRef.current) {
+      const height =
+        window.pageYOffset - heightRef.current.getBoundingClientRect().top
+      setH(height / 2)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollPosition)
+    return () => window.removeEventListener('scroll', scrollPosition)
+  }, [])
 
   return (
     <Box
@@ -34,10 +51,19 @@ const Projects = () => {
               marginRight='4'
             >
               <Box bg='white' width='3' />
+              <Box bg='blue.600' width='1' marginLeft='-2' />
+              <Box
+                ref={heightRef}
+                bg='white'
+                width='1'
+                height={h}
+                pos='absolute'
+                marginLeft='1'
+              />
             </Box>
           )}
           <Box flex={1}>
-            {projects.map((project) => (
+            {projects.map((project, i) => (
               <Project key={project.id} {...project} />
             ))}
           </Box>

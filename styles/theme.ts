@@ -26,7 +26,7 @@ const theme = extendTheme({
     },
   },
   fonts: {
-    heading: 'Mulish, sans-serif',
+    heading: 'Gilroy, sans-serif',
     body: 'Mulish, sans-serif',
   },
   shadows: {

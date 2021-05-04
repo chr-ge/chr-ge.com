@@ -9,6 +9,7 @@ import {
   Link,
   IconButton,
   Tooltip,
+  useColorModeValue,
 } from '@chakra-ui/react'
 import { useKeenSlider } from 'keen-slider/react'
 import { InView } from 'react-intersection-observer'
@@ -35,6 +36,8 @@ const Project: FC<ProjectType> = ({
   })
 
   const isLargerThan48em = useMediaQuery({ query: '(min-width: 48em)' })
+
+  const cardBg = useColorModeValue('white', 'black')
 
   return (
     <InView threshold={0.25}>
@@ -70,7 +73,7 @@ const Project: FC<ProjectType> = ({
             )}
             <Flex
               direction='column'
-              bgColor='white'
+              bgColor={cardBg}
               padding='4'
               width={['100%', '100%', '80']}
             >

@@ -1,6 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import { Box, Container, Flex, Heading } from '@chakra-ui/react'
+import {
+  Box,
+  Container,
+  Flex,
+  Heading,
+  useColorModeValue,
+} from '@chakra-ui/react'
 import { useMediaQuery } from 'react-responsive'
 import Project from 'components/Project'
 import projects from 'data/projects'
@@ -27,7 +33,10 @@ const Projects = () => {
 
   return (
     <Box
-      bgGradient='linear(to-r, #e0eafc, #cfdef3)'
+      bgGradient={useColorModeValue(
+        'linear(to-r, #e0eafc, #cfdef3)',
+        'linear(to-r, #005c97, #363795)'
+      )}
       borderRadius='lg'
       padding={['0', '4']}
     >

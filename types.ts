@@ -24,6 +24,6 @@ export type ProjectType = {
   images: Image[]
   homepage?: string
   github?: string
-  technologies: Technology[]
+  technologies: TechnologyType[]
   tags: Tag[]
 }

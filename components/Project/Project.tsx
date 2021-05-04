@@ -95,6 +95,7 @@ const Project: FC<ProjectType> = ({
                       icon={<ImLink />}
                       colorScheme='teal'
                       isRound
+                      isExternal
                     />
                   </Tooltip>
                 )}
@@ -108,6 +109,7 @@ const Project: FC<ProjectType> = ({
                       colorScheme='teal'
                       marginLeft={homepage ? '2' : undefined}
                       isRound
+                      isExternal
                     />
                   </Tooltip>
                 )}

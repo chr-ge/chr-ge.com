@@ -5,6 +5,7 @@ import {
   Button,
   Container,
   Heading,
+  Link,
   useColorModeValue,
 } from '@chakra-ui/react'
 import { Header } from 'components'
@@ -43,10 +44,15 @@ const HeadingSection = () => {
           </chakra.span>
         </Heading>
         <Button
+          as={Link}
           aria-label={t('headline-button')}
+          href='#projects'
           marginTop='8'
           type='button'
-          _hover={{ transform: 'scale(1.03) translateX(6px)' }}
+          _hover={{
+            transform: 'scale(1.03) translateX(6px)',
+            textDecoration: 'none',
+          }}
         >
           {t('headline-button')}
         </Button>

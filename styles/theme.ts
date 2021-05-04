@@ -25,6 +25,13 @@ const theme = extendTheme({
       800: '#A77302',
     },
   },
+  styles: {
+    global: {
+      html: {
+        scrollBehavior: 'smooth',
+      },
+    },
+  },
   fonts: {
     heading: 'Gilroy, sans-serif',
     body: 'Mulish, sans-serif',

@@ -17,7 +17,7 @@ import { ImLink } from 'react-icons/im'
 import { FaCode } from 'react-icons/fa'
 import MotionBox from 'components/MotionBox'
 import Technology from './Technology'
-import { Project as ProjectType } from 'types'
+import type { ProjectType } from 'types'
 import 'keen-slider/keen-slider.min.css'
 
 const Project: FC<ProjectType> = ({
@@ -34,7 +34,7 @@ const Project: FC<ProjectType> = ({
     loop: true,
   })
 
-  const isLargerThanMobile = useMediaQuery({ query: '(min-width: 30em)' })
+  const isLargerThan48em = useMediaQuery({ query: '(min-width: 48em)' })
 
   return (
     <InView threshold={0.25}>
@@ -49,24 +49,30 @@ const Project: FC<ProjectType> = ({
           transition={{ duration: 0.25 }}
         >
           <Flex ref={inViewRef}>
-            <Box flex={1} marginRight='2'>
-              <Box ref={sliderRef} className='keen-slider'>
-                {images.map((image) => (
-                  <Box
-                    key={image.alt}
-                    className='keen-slider__slide'
-                    width='100%'
-                  >
-                    <Image src={image.src} alt={image.alt} draggable='false' />
-                  </Box>
-                ))}
+            {isLargerThan48em && (
+              <Box flex={1} marginRight='2'>
+                <Box ref={sliderRef} className='keen-slider'>
+                  {images.map((image) => (
+                    <Box
+                      key={image.alt}
+                      className='keen-slider__slide'
+                      width='100%'
+                    >
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        draggable='false'
+                      />
+                    </Box>
+                  ))}
+                </Box>
               </Box>
-            </Box>
+            )}
             <Flex
               direction='column'
               bgColor='white'
               padding='4'
-              width={['100%', '80']}
+              width={['100%', '100%', '80']}
             >
               <Heading>{title}</Heading>
               <Text marginTop='4'>{description}</Text>
@@ -114,7 +120,7 @@ const Project: FC<ProjectType> = ({
                   </Tooltip>
                 )}
               </Box>
-              {!isLargerThanMobile && (
+              {!isLargerThan48em && (
                 <Box ref={sliderRef} className='keen-slider' marginBottom='6'>
                   {images.map((image) => (
                     <Box

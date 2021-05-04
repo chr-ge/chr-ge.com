@@ -79,7 +79,7 @@ const Project: FC<ProjectType> = ({
             >
               <Heading>{title}</Heading>
               <Text marginTop='4'>{description}</Text>
-              <Flex marginTop='4'>
+              <Flex marginTop='6'>
                 {tags.map((tag) => (
                   <Badge
                     key={tag.label}
@@ -91,7 +91,7 @@ const Project: FC<ProjectType> = ({
                   </Badge>
                 ))}
               </Flex>
-              <Box marginTop='4' marginBottom='6'>
+              <Box marginTop='6' marginBottom='6'>
                 {homepage && (
                   <Tooltip
                     label='Visit Website'

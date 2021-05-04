@@ -21,7 +21,6 @@ const Footer: FC = () => {
       <Text color='gray.200' fontWeight='semibold'>
         &copy; {new Date().getFullYear()} George Christeas.{' '}
         {t('proudly_made_in_mtl')}
-        🍁
       </Text>
       <HStack spacing='3'>
         <Link href={siteConfig.github} color='white' isExternal>

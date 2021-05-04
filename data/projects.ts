@@ -10,9 +10,9 @@ import {
   SiStripe,
 } from 'react-icons/si'
 import { ChakraUI } from 'components/Icons'
-import type { Project } from 'types'
+import type { ProjectType } from 'types'
 
-const projects: Project[] = [
+const projects: ProjectType[] = [
   {
     id: '1',
     title: 'Hotel at Home',

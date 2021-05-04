@@ -6,7 +6,7 @@ type Image = {
   alt: string
 }
 
-export type Technology = {
+export type TechnologyType = {
   name: string
   icon: IconType | ((props: IconProps) => JSX.Element)
   color?: string
@@ -17,7 +17,7 @@ type Tag = {
   colorScheme: string
 }
 
-export type Project = {
+export type ProjectType = {
   id: string
   title: string
   description: string

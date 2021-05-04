@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { chakra, Center, Icon, Tooltip } from '@chakra-ui/react'
-import { Technology as TechnologyType } from 'types'
+import type { TechnologyType } from 'types'
 
 const Technology: FC<TechnologyType> = ({ name, icon, color }) => (
   <Center padding='1' boxSize='16' bg='gray.100'>

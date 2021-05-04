@@ -15,6 +15,9 @@ const siteConfig = {
       site_name: 'CHR-GE: Full-Stack Software Developer',
     },
   },
+  github: 'https://github.com/chr-ge',
+  npm: 'https://www.npmjs.com/~chr-ge',
+  email: 'mailto:george@chr-ge.com',
 }
 
 export default siteConfig

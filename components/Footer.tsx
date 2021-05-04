@@ -3,6 +3,7 @@ import { useTranslation } from 'next-i18next'
 import { Flex, Link, Icon, Text, HStack } from '@chakra-ui/react'
 import { FaNpm, FaGithub } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
+import siteConfig from 'configs/site-config'
 
 const Footer: FC = () => {
   const { t } = useTranslation('common')
@@ -23,7 +24,7 @@ const Footer: FC = () => {
         🍁
       </Text>
       <HStack spacing='3'>
-        <Link href='https://github.com/chr-ge' color='white' isExternal>
+        <Link href={siteConfig.github} color='white' isExternal>
           <Icon
             as={FaGithub}
             aria-label="Github"
@@ -34,7 +35,7 @@ const Footer: FC = () => {
             _hover={{ transform: 'scale(1.05)'}}
           />
         </Link>
-        <Link href='https://www.npmjs.com/~chr-ge' color='white' isExternal>
+        <Link href={siteConfig.npm} color='white' isExternal>
           <Icon
             as={FaNpm}
             aria-label="NPM"
@@ -45,7 +46,7 @@ const Footer: FC = () => {
             _hover={{ transform: 'scale(1.05)'}}
           />
         </Link>
-        <Link href='mailto:george@chr-ge.com' color='white'>
+        <Link href={siteConfig.email} color='white'>
           <Icon
             as={HiOutlineMail}
             aria-label="Email"

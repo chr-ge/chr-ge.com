@@ -14,8 +14,8 @@
     "url": "git+https://github.com/chr-ge/chr-ge.com.git"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.6.0",
-    "@emotion/react": "^11.1.5",
+    "@chakra-ui/react": "^1.6.1",
+    "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@fontsource/mulish": "^4.2.2",
     "framer-motion": "^4.1.11",
@@ -33,9 +33,9 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
-    "@types/node": "^15.0.1",
+    "@types/node": "^15.0.2",
     "@types/nodemailer": "^6.4.1",
-    "@types/react": "^17.0.4",
+    "@types/react": "^17.0.5",
     "@types/react-responsive": "^8.0.2",
     "eslint": "^7.25.0",
     "eslint-plugin-import": "^2.22.1",

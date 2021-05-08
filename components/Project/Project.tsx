@@ -16,6 +16,7 @@ import { InView } from 'react-intersection-observer'
 import { useMediaQuery } from 'react-responsive'
 import { ImLink } from 'react-icons/im'
 import { FaCode } from 'react-icons/fa'
+import useLanguage from 'hooks/useLanguage'
 import MotionBox from 'components/MotionBox'
 import Technology from './Technology'
 import type { ProjectType } from 'types'
@@ -23,13 +24,15 @@ import 'keen-slider/keen-slider.min.css'
 
 const Project: FC<ProjectType> = ({
   title,
-  description,
+  description_en,
+  description_fr,
   images,
   homepage,
   github,
   technologies,
   tags,
 }) => {
+  const { isEnglish } = useLanguage()
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
     initial: 0,
     loop: true,
@@ -78,7 +81,9 @@ const Project: FC<ProjectType> = ({
               width={['100%', '100%', '80']}
             >
               <Heading>{title}</Heading>
-              <Text marginTop='4'>{description}</Text>
+              <Text marginTop='4'>
+                {isEnglish ? description_en : description_fr}
+              </Text>
               <Flex marginTop='6'>
                 {tags.map((tag) => (
                   <Badge

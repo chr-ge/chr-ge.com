@@ -72,7 +72,7 @@ const Menu = forwardRef<HTMLDivElement, MenuProps>(({ onClose }, ref) => {
           </Button>
           <Button
             aria-label={t('contact')}
-            onClick={() => onClick('/')}
+            onClick={() => onClick('/#contact-me')}
             variant='menu'
             type='button'
           >

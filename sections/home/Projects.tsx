@@ -33,15 +33,18 @@ const Projects = () => {
 
   return (
     <Box
+      as='section'
       bgGradient={useColorModeValue(
         'linear(to-r, #e0eafc, #cfdef3)',
         'linear(to-r, #005c97, #363795)'
       )}
       borderRadius='lg'
+      marginBottom='4'
       padding={['0', '4']}
     >
       <Container maxW='container.xl'>
         <Heading
+          as='h2'
           id='projects'
           fontSize='5xl'
           marginBottom='8'
@@ -60,6 +63,7 @@ const Projects = () => {
               pos='relative'
               width='8'
               marginRight='4'
+              overflow='hidden'
             >
               <Box bg='white' width='3' />
               <Box bg='blue.600' width='1' marginLeft='-2' />

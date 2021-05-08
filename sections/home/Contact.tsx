@@ -40,7 +40,7 @@ const Contact = () => {
     e.preventDefault()
 
     setLoading(true)
-    await fetch('/api/contact', {
+    await fetch('https://formspree.io/f/xvodzjor', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

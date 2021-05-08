@@ -66,6 +66,7 @@ const Menu = forwardRef<HTMLDivElement, MenuProps>(({ onClose }, ref) => {
             onClick={() => onClick('/')}
             variant='menu'
             type='button'
+            isDisabled
           >
             <Icon as={CgWebsite} boxSize='6' mb='1' />
             Blog

@@ -1,8 +1,49 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import * as nodemailer from 'nodemailer'
+import { google } from 'googleapis'
 import { isEmail, emailText, emailTemplate } from 'utils/email'
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+const OAuth2 = google.auth.OAuth2
+
+const createTransporter = async () => {
+  const oauth2Client = new OAuth2(
+    process.env.GMAIL_CLIENT_ID,
+    process.env.GMAIL_CLIENT_SECRET,
+    process.env.GMAIL_REDIRECT_URL
+  )
+
+  oauth2Client.setCredentials({
+    refresh_token: process.env.REFRESH_TOKEN,
+  })
+
+  const accessToken: string = await new Promise((resolve, reject) => {
+    oauth2Client.getAccessToken((err, token) => {
+      if (err) {
+        reject('Failed to create access token.')
+      }
+      if (token) resolve(token)
+    })
+  })
+
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      type: 'OAuth2',
+      user: process.env.EMAIL_USER,
+      clientId: process.env.GMAIL_CLIENT_ID,
+      clientSecret: process.env.GMAIL_CLIENT_SECRET,
+      refreshToken: process.env.REFRESH_TOKEN,
+      accessToken,
+    },
+  })
+
+  return transporter
+}
+
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const { email, message } = req.body
   const userAgent = req.headers['user-agent'] ?? ''
 
@@ -12,16 +53,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       .json({ success: false, message: 'Malformed content' })
   }
 
-  const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-  })
-
   const mailData = {
     from: process.env.EMAIL_USER,
     to: process.env.EMAIL_TO,
@@ -30,7 +61,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     html: emailTemplate(email, message, userAgent),
   }
 
-  transporter.sendMail(mailData, (err, info) => {
+  const emailTransporter = await createTransporter()
+
+  emailTransporter.sendMail(mailData, (err, info) => {
     if (err) console.log(err)
     console.log(info)
   })

@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import nodemailer from 'nodemailer'
+import * as nodemailer from 'nodemailer'
 import { isEmail, emailText, emailTemplate } from 'utils/email'
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {

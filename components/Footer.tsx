@@ -45,7 +45,7 @@ const Footer: FC = () => {
             _hover={{ transform: 'scale(1.05)'}}
           />
         </Link>
-        <Link href={siteConfig.email} color='white'>
+        <Link href={siteConfig.email_link} color='white'>
           <Icon
             as={HiOutlineMail}
             aria-label="Email"

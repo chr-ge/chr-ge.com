@@ -16,7 +16,8 @@ const projects: ProjectType[] = [
   {
     id: '1',
     title: 'Hotel at Home',
-    description: 'Reserve a chalet in Quebec.',
+    description_en: 'Rent a cottage in Quebec.',
+    description_fr: 'Louez un chalet au Québec.',
     images: [
       { alt: 'Property Page', src: '/img/projects/halm-ipad.png' },
       { alt: 'Home Page', src: '/img/projects/halm-iphone.png' },
@@ -37,8 +38,10 @@ const projects: ProjectType[] = [
   {
     id: '2',
     title: 'Kalabam',
-    description:
+    description_en:
       'Create multiplayer quizzes for class activities or interactive presentations.',
+    description_fr:
+      'Créez des quiz multijoueurs pour les activités en classe ou des présentations interactives.',
     images: [
       { src: '/img/projects/kalabam-ipad.png', alt: 'Dashboard' },
       { src: '/img/projects/kalabam-iphone.png', alt: 'Home Page' },
@@ -49,17 +52,20 @@ const projects: ProjectType[] = [
       { name: 'React', icon: SiReact, color: '#61DAFB' },
       { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
       { name: 'ChakraUI', icon: ChakraUI, color: '#319795' },
-      // { name: 'Amazon Web Services', icon: SiAmazonaws, color: '#232F3E' },
     ],
     tags: [
       { label: 'full-stack', colorScheme: 'pink' },
       { label: 'websockets', colorScheme: 'green' },
+      { label: 'aws', colorScheme: 'orange' },
     ],
   },
   {
     id: '3',
     title: 'Why Pigeons',
-    description: 'Quick food delivery right to your door.',
+    description_en:
+      'Quick food delivery right to your door. User, restaurant, driver, and admin dashboards are fully functional.',
+    description_fr:
+      'Livraison rapide de plats directement à votre porte. Les tableaux de bord des utilisateurs, des restaurants, des chauffeurs et des administrateurs sont entièrement fonctionnels.',
     images: [{ src: '/img/projects/pigeons-ipad.png', alt: 'Restaurant Page' }],
     github: 'https://github.com/chr-ge/why-pigeons',
     technologies: [

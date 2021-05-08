@@ -23,6 +23,7 @@ const Header: FC = () => {
 
   return (
     <Flex
+      as="header"
       bg={isDark ? 'gray.800' : 'white'}
       padding='2'
       borderRadius='lg'

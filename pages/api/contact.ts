@@ -30,8 +30,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     html: emailTemplate(email, message, userAgent),
   }
 
-  transporter.sendMail(mailData, (err) => {
+  transporter.sendMail(mailData, (err, info) => {
     if (err) console.log(err)
+    console.log(info)
   })
 
   res.status(200).json({ success: true })

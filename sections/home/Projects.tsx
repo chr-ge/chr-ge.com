@@ -65,11 +65,11 @@ const Projects = () => {
               marginRight='4'
               overflow='hidden'
             >
-              <Box bg='white' width='3' />
-              <Box bg='blue.600' width='1' marginLeft='-2' />
+              <Box bg={useColorModeValue('white', 'black')} width='3' />
+              <Box bg={useColorModeValue('blue.600', 'blue.400')} width='1' marginLeft='-2' />
               <Box
                 ref={heightRef}
-                bg='white'
+                bg={useColorModeValue('white', 'black')}
                 width='1'
                 height={h}
                 pos='absolute'

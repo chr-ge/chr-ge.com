@@ -1,3 +1,20 @@
 {
-  "proudly_made_in_mtl": "Fièrement fabriqué à MTL."
+  "home": "Accueil",
+  "projects": "Projets",
+  "contact": "Contact",
+  "developer": "Développeur Web Full-Stack",
+  "headline-1": "Je construis des choses avec ma ",
+  "headline-2": " et ",
+  "mouse": "souris ",
+  "keyboard": " mon clavier.",
+  "headline-button": "Regarde ce que j'ai fait",
+  "my-projects": "Mes Projets",
+  "contact-me": "Contactez moi",
+  "email_placeholder": "le_rhum_est_meilleur_que_le_scotch@gmail.com",
+  "message_placeholder": "Travaillons ensemble.",
+  "message-sent": "Message envoyé.",
+  "message-text": "Je reviendrai à vous dès que possible.",
+  "send": "Envoyer",
+  "proudly_made_in_mtl": "Fièrement fabriqué à Montréal. 🍁",
+  "go-to-top": "Aller en haut "
 }

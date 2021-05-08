@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { appWithTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
 import { ChakraProvider } from '@chakra-ui/react'
+import Fonts from 'components/Fonts'
 import siteConfig from 'configs/site-config'
 import theme from 'styles/theme'
 import "@fontsource/mulish/400.css"
@@ -25,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <DefaultSeo {...siteConfig.seo} />
       <ChakraProvider resetCSS theme={theme}>
+        <Fonts />
         <Component {...pageProps} />
       </ChakraProvider>
     </>

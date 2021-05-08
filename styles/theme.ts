@@ -25,13 +25,21 @@ const theme = extendTheme({
       800: '#A77302',
     },
   },
+  styles: {
+    global: {
+      html: {
+        scrollBehavior: 'smooth',
+      },
+    },
+  },
   fonts: {
-    heading: 'Mulish, sans-serif',
+    heading: 'Gilroy, sans-serif',
     body: 'Mulish, sans-serif',
   },
   shadows: {
     secondary:
       '0 0 1px 2px rgba(253, 196, 73, .75), 0 1px 1px rgba(0, 0, 0, .15)',
+    gray: '0 0 1px 2px rgba(75, 85, 99, .75)',
   },
   components: {
     Button: {
@@ -42,6 +50,20 @@ const theme = extendTheme({
             boxShadow: 'secondary',
           },
         }),
+        menu: {
+          display: 'flex',
+          flexDirection: 'column',
+          bg: 'secondary.400',
+          color: 'secondary.800',
+          paddingY: '10',
+          boxShadow: 'md',
+          _hover: {
+            bg: 'secondary.300',
+          },
+          _focus: {
+            boxShadow: 'gray',
+          },
+        },
       },
     },
   },

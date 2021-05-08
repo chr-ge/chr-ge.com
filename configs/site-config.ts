@@ -1,8 +1,7 @@
 const siteConfig = {
   copyright: `© ${new Date().getFullYear()} George <chr-ge>`,
   seo: {
-    title: 'CHR-GE',
-    defaultTitle: 'CHR-GE // Full-Stack Software Developer',
+    title: 'Full-Stack Software Developer',
     titleTemplate: '%s // CHR-GE',
     description: 'Full-Stack Software Developer',
     siteUrl: 'https://chr-ge.com',
@@ -14,7 +13,12 @@ const siteConfig = {
       description: 'Full-Stack Software Developer',
       site_name: 'CHR-GE: Full-Stack Software Developer',
     },
+    languageAlternates: [{ hrefLang: 'fr', href: 'https://chr-ge.com/fr' }],
   },
+  email: 'george@chr-ge.com',
+  email_link: 'mailto:george@chr-ge.com',
+  github: 'https://github.com/chr-ge',
+  npm: 'https://www.npmjs.com/~chr-ge',
 }
 
 export default siteConfig

@@ -1,10 +1,11 @@
 import { FC, useRef } from 'react'
+import { useTranslation } from 'next-i18next'
 import {
   Box,
-  Text,
+  Flex,
   Icon,
   IconButton,
-  Flex,
+  Text,
   useColorMode,
 } from '@chakra-ui/react'
 import { VscColorMode } from 'react-icons/vsc'
@@ -13,22 +14,45 @@ import useOutsideClick from 'hooks/useClickOutside'
 import Menu from './Menu'
 
 const Header: FC = () => {
-  const ref = useRef<HTMLButtonElement>(null)
-  const { isOpen, onToggle } = useOutsideClick({ ref })
+  const ref = useRef<HTMLDivElement>(null)
+  const { isOpen, onClose, onToggle } = useOutsideClick({ ref })
+  const { t } = useTranslation('common')
+
   const { colorMode, toggleColorMode } = useColorMode()
   const isDark = colorMode === 'dark'
 
   return (
     <Flex
+      as='header'
+      id='top'
       bg={isDark ? 'gray.800' : 'white'}
       padding='2'
       borderRadius='lg'
       align='center'
       justify='space-between'
+      boxShadow='lg'
+      sx={{ scrollMarginTop: '2rem' }}
     >
-      <Text as='h4' fontWeight='bold' marginLeft='2' fontSize='lg'>
-        CHR-GE
-      </Text>
+      <Flex align='start' direction={['row', 'column', 'row']}>
+        <Text
+          as='h4'
+          fontWeight='bold'
+          marginLeft='2'
+          fontSize='lg'
+          whiteSpace='pre'
+        >
+          CHR-GE
+        </Text>
+        <Text
+          as='h4'
+          marginLeft='2'
+          fontSize='lg'
+          whiteSpace='pre'
+          display={['none', 'block']}
+        >
+          // {t('developer')}
+        </Text>
+      </Flex>
       <Box>
         <IconButton
           icon={
@@ -44,7 +68,6 @@ const Header: FC = () => {
           variant='icon-button'
         />
         <IconButton
-          ref={ref}
           icon={<IoGrid />}
           aria-label='menu'
           onClick={onToggle}
@@ -52,7 +75,7 @@ const Header: FC = () => {
           variant='icon-button'
         />
       </Box>
-      {isOpen && <Menu />}
+      {isOpen && <Menu ref={ref} onClose={onClose} />}
     </Flex>
   )
 }

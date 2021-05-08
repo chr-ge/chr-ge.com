@@ -38,7 +38,12 @@ const Footer: FC = () => {
         spacing='3'
         marginTop={['10', '0']}
       >
-        <Link href={siteConfig.github} color='white' isExternal>
+        <Link
+          href={siteConfig.github}
+          color='white'
+          _focus={{ boxShadow: 'secondary' }}
+          isExternal
+        >
           <Icon
             as={FaGithub}
             aria-label='Github'
@@ -49,7 +54,12 @@ const Footer: FC = () => {
             _hover={{ transform: 'scale(1.05)' }}
           />
         </Link>
-        <Link href={siteConfig.npm} color='white' isExternal>
+        <Link
+          href={siteConfig.npm}
+          color='white'
+          _focus={{ boxShadow: 'secondary' }}
+          isExternal
+        >
           <Icon
             as={FaNpm}
             aria-label='NPM'
@@ -60,7 +70,11 @@ const Footer: FC = () => {
             _hover={{ transform: 'scale(1.05)' }}
           />
         </Link>
-        <Link href={siteConfig.email_link} color='white'>
+        <Link
+          href={siteConfig.email_link}
+          _focus={{ boxShadow: 'secondary' }}
+          color='white'
+        >
           <Icon
             as={HiOutlineMail}
             aria-label='Email'
@@ -84,6 +98,7 @@ const Footer: FC = () => {
           color='white'
           title={isEnglish ? 'Français' : 'English'}
           _hover={{ textDecoration: 'none' }}
+          _focus={{ boxShadow: 'secondary' }}
         >
           <Center
             boxSize={10}
@@ -97,7 +112,12 @@ const Footer: FC = () => {
             </Text>
           </Center>
         </Link>
-        <Link href='/#top' title='Go to top' color='white'>
+        <Link
+          href='/#top'
+          title='Go to top'
+          color='white'
+          _focus={{ boxShadow: 'secondary' }}
+        >
           <Icon
             as={FaChevronUp}
             aria-label={t('go-to-top')}

@@ -62,7 +62,8 @@ const Contact = () => {
   return (
     <Flex as='section' direction={['column', 'column', 'row']}>
       <Flex
-        flexBasis='100%'
+        flex={1}
+        flexBasis={0}
         marginRight={['0', '0', '2']}
         align='center'
         justify='center'
@@ -73,7 +74,7 @@ const Contact = () => {
         )}
         minHeight='100%'
         borderRadius='lg'
-        padding='4'
+        paddingY='10'
       >
         <Heading
           as='h2'
@@ -84,15 +85,14 @@ const Contact = () => {
           )}
           bgClip='text'
           fontSize='5xl'
-          marginBottom='4'
         >
           Contact Me
         </Heading>
       </Flex>
       <Box
         as='form'
-        flexBasis='100%'
-        
+        flex={1}
+        flexBasis={0}
         bg={useColorModeValue('#acb6e5', '#363795')}
         marginLeft={['0', '0', '2']}
         marginTop={['4', '4', '0']}

@@ -23,13 +23,15 @@ const Header: FC = () => {
 
   return (
     <Flex
-      as="header"
+      as='header'
+      id='top'
       bg={isDark ? 'gray.800' : 'white'}
       padding='2'
       borderRadius='lg'
       align='center'
       justify='space-between'
       boxShadow='lg'
+      sx={{ scrollMarginTop: '2rem' }}
     >
       <Flex align='start' direction={['row', 'column', 'row']}>
         <Text

@@ -25,8 +25,8 @@ const Skills = () => {
           as='h2'
           id='projects'
           fontSize='5xl'
-          marginBottom='10'
-          marginTop='6'
+          marginBottom='12'
+          marginTop='8'
           color='primary.800'
           sx={{ scrollMarginTop: '3rem' }}
           paddingTop={['4', '0']}
@@ -34,7 +34,7 @@ const Skills = () => {
         >
           {t('whats-on-the-menu')}
         </Heading>
-        <SimpleGrid columns={[1, 2, 2, 3]} spacing={20} marginBottom='10'>
+        <SimpleGrid columns={[1, 2, 2, 3]} spacing={20} marginBottom='12'>
           {skills.map((skill, i) => (
             <Category key={skill.category} index={i + 1} {...skill} />
           ))}

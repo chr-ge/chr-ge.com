@@ -49,7 +49,7 @@ const Projects = () => {
           fontSize='5xl'
           marginBottom='12'
           marginTop='8'
-          sx={{ scrollMarginTop: '3rem' }}
+          sx={{ scrollMarginTop: '4rem' }}
           paddingTop={['4', '0']}
           textAlign={['center', 'left']}
         >

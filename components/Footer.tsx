@@ -51,7 +51,7 @@ const Footer: FC = () => {
             bg='primary.500'
             borderRadius='full'
             padding='1.5'
-            _hover={{ transform: 'scale(1.05)' }}
+            _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
           />
         </Link>
         <Link
@@ -67,7 +67,7 @@ const Footer: FC = () => {
             bg='primary.500'
             borderRadius='full'
             padding='1.5'
-            _hover={{ transform: 'scale(1.05)' }}
+            _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
           />
         </Link>
         <Link
@@ -82,7 +82,7 @@ const Footer: FC = () => {
             bg='primary.500'
             borderRadius='full'
             padding='1.5'
-            _hover={{ transform: 'scale(1.05)' }}
+            _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
           />
         </Link>
       </HStack>
@@ -105,7 +105,7 @@ const Footer: FC = () => {
             bg='primary.500'
             borderRadius='full'
             padding='1'
-            _hover={{ transform: 'scale(1.05)' }}
+            _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
           >
             <Text fontSize='xl' fontWeight='bold'>
               {isEnglish ? 'FR' : 'EN'}
@@ -125,7 +125,7 @@ const Footer: FC = () => {
             bg='primary.500'
             borderRadius='full'
             padding='1.5'
-            _hover={{ transform: 'scale(1.05)' }}
+            _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
           />
         </Link>
       </HStack>

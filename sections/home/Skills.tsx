@@ -35,8 +35,8 @@ const Skills = () => {
           {t('whats-on-the-menu')}
         </Heading>
         <SimpleGrid columns={[1, 2, 2, 3]} spacing={20} marginBottom='10'>
-          {skills.map((skill) => (
-            <Category key={skill.category} {...skill} />
+          {skills.map((skill, i) => (
+            <Category key={skill.category} index={i + 1} {...skill} />
           ))}
         </SimpleGrid>
       </Container>

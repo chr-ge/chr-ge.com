@@ -15,7 +15,7 @@ const Skills = () => {
   return (
     <Box
       as='section'
-      bg='gray.50'
+      bg={useColorModeValue('gray.50', 'black')}
       borderRadius='lg'
       marginBottom='4'
       padding={['0', '4']}

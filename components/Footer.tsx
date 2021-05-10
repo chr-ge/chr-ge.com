@@ -47,10 +47,10 @@ const Footer: FC = () => {
           <Icon
             as={FaGithub}
             aria-label='Github'
-            boxSize={10}
+            boxSize={12}
             bg='primary.500'
             borderRadius='full'
-            padding='1'
+            padding='1.5'
             _hover={{ transform: 'scale(1.05)' }}
           />
         </Link>
@@ -63,10 +63,10 @@ const Footer: FC = () => {
           <Icon
             as={FaNpm}
             aria-label='NPM'
-            boxSize={10}
+            boxSize={12}
             bg='primary.500'
             borderRadius='full'
-            padding='1'
+            padding='1.5'
             _hover={{ transform: 'scale(1.05)' }}
           />
         </Link>
@@ -78,10 +78,10 @@ const Footer: FC = () => {
           <Icon
             as={HiOutlineMail}
             aria-label='Email'
-            boxSize={10}
+            boxSize={12}
             bg='primary.500'
             borderRadius='full'
-            padding='1'
+            padding='1.5'
             _hover={{ transform: 'scale(1.05)' }}
           />
         </Link>

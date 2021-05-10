@@ -32,9 +32,9 @@ const Skills = () => {
           paddingTop={['4', '0']}
           textAlign={['center', 'left']}
         >
-          {t('whats-on-the-menu')}
+          {t('skills-heading')}
         </Heading>
-        <SimpleGrid columns={[1, 2, 2, 3]} spacing={20} marginBottom='12'>
+        <SimpleGrid columns={[1, 1, 2, 3]} spacing={20} marginBottom='12'>
           {skills.map((skill, i) => (
             <Category key={skill.category} index={i + 1} {...skill} />
           ))}

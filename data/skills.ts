@@ -17,7 +17,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from 'react-icons/si'
-import { Express, Javascript, Vercel } from 'components/Icons'
+import { DynamoDB, Express, Javascript, Vercel } from 'components/Icons'
 import type { SkillType } from 'types'
 import { IoLogoPwa } from 'react-icons/io5'
 
@@ -69,6 +69,7 @@ const skills: SkillType[] = [
     technologies: [
       { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
       { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
+      { name: 'Amazon DynamoDB', icon: DynamoDB, color: '#4053D6' },
     ],
   },
 ]

@@ -14,7 +14,7 @@ const Category: FC<CategoryProps> = ({ index, category, technologies }) => {
   const headingColor = useColorModeValue('gray.600', 'gray.400')
 
   return (
-    <InView threshold={0.25}>
+    <InView threshold={0.25} triggerOnce>
       {({ ref, inView }) => (
         <MotionBox
           borderColor={borderColor}

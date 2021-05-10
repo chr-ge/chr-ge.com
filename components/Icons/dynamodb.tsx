@@ -1,4 +1,4 @@
-mport { Icon, IconProps } from '@chakra-ui/react'
+import { Icon, IconProps } from '@chakra-ui/react'
 
 const DynamoDB = (props: IconProps): JSX.Element => (
   <Icon viewBox='0 0 24 24' {...props}>

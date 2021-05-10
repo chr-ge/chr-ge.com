@@ -11,7 +11,7 @@ interface CategoryProps extends SkillType {
 
 const Category: FC<CategoryProps> = ({ index, category, technologies }) => {
   const borderColor = useColorModeValue('gray.200', 'gray.600')
-  const headingColor = useColorModeValue('gray.700', 'gray.500')
+  const headingColor = useColorModeValue('gray.600', 'gray.400')
 
   return (
     <InView threshold={0.25}>
@@ -20,7 +20,7 @@ const Category: FC<CategoryProps> = ({ index, category, technologies }) => {
           borderColor={borderColor}
           borderWidth='thin'
           borderStyle='solid'
-          padding='4'
+          padding='6'
           _hover={{ boxShadow: 'inner' }}
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
@@ -29,7 +29,7 @@ const Category: FC<CategoryProps> = ({ index, category, technologies }) => {
           <Heading ref={ref} as='h4' color={headingColor}>
             {category}
           </Heading>
-          <SimpleGrid marginTop='6' columns={3} spacing={6} width='70%'>
+          <SimpleGrid marginTop='6' columns={3} spacing={5} width='72.5%'>
             {technologies.map((t) => (
               <Technology key={t.name} {...t} />
             ))}

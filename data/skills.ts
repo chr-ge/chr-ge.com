@@ -6,6 +6,7 @@ import {
   SiJava,
   SiLaravel,
   SiMongodb,
+  SiMysql,
   SiNetlify,
   SiNextDotJs,
   SiNodeDotJs,
@@ -70,6 +71,7 @@ const skills: SkillType[] = [
       { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
       { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
       { name: 'Amazon DynamoDB', icon: DynamoDB, color: '#4053D6' },
+      { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
     ],
   },
 ]

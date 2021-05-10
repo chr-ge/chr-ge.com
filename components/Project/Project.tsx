@@ -63,6 +63,7 @@ const Project: FC<ProjectType> = ({
                       key={image.alt}
                       className='keen-slider__slide'
                       width='100%'
+                      minWidth='100%'
                     >
                       <Image
                         src={image.src}
@@ -135,6 +136,7 @@ const Project: FC<ProjectType> = ({
                       key={image.alt}
                       className='keen-slider__slide'
                       width='100%'
+                      minW='100%'
                     >
                       <Image
                         src={image.src}

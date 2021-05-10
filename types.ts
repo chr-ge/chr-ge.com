@@ -28,3 +28,8 @@ export type ProjectType = {
   technologies: TechnologyType[]
   tags: Tag[]
 }
+
+export type SkillType = {
+  category: string
+  technologies: TechnologyType[]
+}

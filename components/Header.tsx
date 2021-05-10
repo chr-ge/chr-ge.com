@@ -31,6 +31,7 @@ const Header: FC = () => {
       align='center'
       justify='space-between'
       boxShadow='lg'
+      marginTop='6'
       sx={{ scrollMarginTop: '2rem' }}
     >
       <Flex align='start' direction={['row', 'column', 'row']}>

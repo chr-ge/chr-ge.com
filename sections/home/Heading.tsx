@@ -32,7 +32,7 @@ const HeadingSection = () => {
           width={['95%', '80%', '75%']}
           fontSize={['4xl', '5xl', '6xl']}
           fontWeight='bold'
-          marginTop='36'
+          marginTop='44'
         >
           {t('headline-1')}
           <chakra.span cursor='url(/img/mouse_cursor.png), text'>

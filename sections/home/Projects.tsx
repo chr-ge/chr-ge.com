@@ -47,8 +47,8 @@ const Projects = () => {
           as='h2'
           id='projects'
           fontSize='5xl'
-          marginBottom='10'
-          marginTop='6'
+          marginBottom='12'
+          marginTop='8'
           sx={{ scrollMarginTop: '3rem' }}
           paddingTop={['4', '0']}
           textAlign={['center', 'left']}

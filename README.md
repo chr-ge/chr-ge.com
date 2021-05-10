@@ -2,7 +2,7 @@
 
 [![Depfu](https://badges.depfu.com/badges/c72a89d7d61da748fcf12b74873a8678/overview.svg)](https://depfu.com/github/chr-ge/chr-ge.com?project_id=24690)
 
-> My portfolio website showcasing my projects and more!
+> My portfolio website showcasing my projects, skills and more!
 
 Running Locally:
 

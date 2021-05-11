@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import {
   Badge,
   Box,
@@ -10,6 +10,7 @@ import {
   IconButton,
   Tooltip,
   useColorModeValue,
+  Button,
 } from '@chakra-ui/react'
 import { useKeenSlider } from 'keen-slider/react'
 import { InView } from 'react-intersection-observer'
@@ -33,9 +34,13 @@ const Project: FC<ProjectType> = ({
   tags,
 }) => {
   const { isEnglish } = useLanguage()
-  const [sliderRef] = useKeenSlider<HTMLDivElement>({
+  const [currentSlide, setCurrentSlide] = useState(0)
+  const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
     initial: 0,
     loop: true,
+    slideChanged(s) {
+      setCurrentSlide(s.details().relativeSlide)
+    },
   })
 
   const isLargerThan48em = useMediaQuery({ query: '(min-width: 48em)' })
@@ -56,7 +61,7 @@ const Project: FC<ProjectType> = ({
         >
           <Flex ref={inViewRef}>
             {isLargerThan48em && (
-              <Box flex={1} marginRight='2'>
+              <Box flex={1} marginRight='2' pos='relative'>
                 <Box ref={sliderRef} className='keen-slider'>
                   {images.map((image) => (
                     <Box
@@ -73,6 +78,31 @@ const Project: FC<ProjectType> = ({
                     </Box>
                   ))}
                 </Box>
+                {slider && (
+                  <Flex
+                    pos='absolute'
+                    left={0}
+                    right={0}
+                    marginX='auto'
+                    bottom='-4'
+                    align='center'
+                    justify='center'
+                  >
+                    {[...Array(slider.details().size).keys()].map((i) => (
+                      <Box
+                        key={i}
+                        boxSize='3'
+                        borderRadius='full'
+                        aria-label='Change Image'
+                        title={`Image ${i + 1} of ${slider.details().size}`}
+                        bgColor={i === currentSlide ? 'purple.500' : 'gray.400'}
+                        onClick={() => slider.moveToSlideRelative(i)}
+                        role='button'
+                        marginRight='2'
+                      />
+                    ))}
+                  </Flex>
+                )}
               </Box>
             )}
             <Flex

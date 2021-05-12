@@ -94,7 +94,7 @@ const Footer: FC = () => {
         marginTop={['10', '0']}
       >
         <Link
-          href={isEnglish ? '/fr' : '/'}
+          href={isEnglish ? '/fr?ref=Footer' : '/'}
           color='white'
           title={isEnglish ? 'Français' : 'English'}
           _hover={{ textDecoration: 'none' }}

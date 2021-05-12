@@ -11,7 +11,7 @@ const Projects = dynamic(() => import('sections/home/Projects'), {
 
 const Home: NextPage = () => {
   useEffect(() => {
-    console.log(
+    console.info(
       `%c
      _____ _    _ _____         _____ ______ 
     / ____| |  | |  __ \\       / ____|  ____|
@@ -20,10 +20,10 @@ const Home: NextPage = () => {
    | |____| |  | | | \\ \\      | |__| | |____ 
     \\_____|_|  |_|_|  \\_\\      \\_____|______|
 
-    Checkout my portfolio's code on Github.
+    Check out my portfolio's code on Github:
     https://github.com/chr-ge/chr-ge.com
     `,
-      'color:yellow'
+      'color:yellow;font-weight:bold'
     )
   }, [])
 

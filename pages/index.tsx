@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import type { NextPage } from 'next'
 import dynamic from 'next/dynamic'
@@ -9,6 +10,23 @@ const Projects = dynamic(() => import('sections/home/Projects'), {
 })
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    console.log(
+      `%c
+     _____ _    _ _____         _____ ______ 
+    / ____| |  | |  __ \\       / ____|  ____|
+   | |    | |__| | |__) |_____| |  __| |__   
+   | |    |  __  |  _  /______| | |_ |  __|  
+   | |____| |  | | | \\ \\      | |__| | |____ 
+    \\_____|_|  |_|_|  \\_\\      \\_____|______|
+
+    Checkout my portfolio's code on Github.
+    https://github.com/chr-ge/chr-ge.com
+    `,
+      'color:yellow'
+    )
+  }, [])
+
   return (
     <MainLayout>
       <Heading />

@@ -33,6 +33,7 @@ const projects: ProjectType[] = [
     tags: [
       { label: 'front-end', colorScheme: 'blue' },
       { label: 'e-commerce', colorScheme: 'purple' },
+      { label: 'website', colorScheme: 'cyan' },
     ],
   },
   {
@@ -57,6 +58,7 @@ const projects: ProjectType[] = [
       { label: 'full-stack', colorScheme: 'pink' },
       { label: 'websockets', colorScheme: 'green' },
       { label: 'aws', colorScheme: 'orange' },
+      { label: 'website', colorScheme: 'cyan' },
     ],
   },
   {
@@ -77,6 +79,7 @@ const projects: ProjectType[] = [
     tags: [
       { label: 'full-stack', colorScheme: 'pink' },
       { label: 'e-commerce', colorScheme: 'purple' },
+      { label: 'website', colorScheme: 'cyan' },
     ],
   },
 ]

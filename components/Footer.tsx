@@ -1,6 +1,14 @@
 import { FC } from 'react'
 import { useTranslation } from 'next-i18next'
-import { Flex, Link, Icon, Text, HStack, Center } from '@chakra-ui/react'
+import {
+  Flex,
+  Link,
+  Icon,
+  Text,
+  HStack,
+  Center,
+  useColorModeValue,
+} from '@chakra-ui/react'
 import { FaNpm, FaGithub, FaChevronUp } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import useLanguage from 'hooks/useLanguage'
@@ -10,10 +18,13 @@ const Footer: FC = () => {
   const { t } = useTranslation('common')
   const { isEnglish } = useLanguage()
 
+  const iconBg = useColorModeValue('primary.500', 'primary.700')
+  const textColor = useColorModeValue('gray.50', 'gray.300')
+
   return (
     <Flex
       as='footer'
-      bg='primary.700'
+      bg={useColorModeValue('primary.700', 'primary.900')}
       padding='8'
       marginTop='4'
       borderRadius='lg'
@@ -24,7 +35,7 @@ const Footer: FC = () => {
       <Text
         flex={1}
         flexBasis={0}
-        color='gray.200'
+        color={textColor}
         fontWeight='semibold'
         align={['center', 'left']}
       >
@@ -40,7 +51,7 @@ const Footer: FC = () => {
       >
         <Link
           href={siteConfig.github}
-          color='white'
+          color={textColor}
           _focus={{ boxShadow: 'secondary' }}
           isExternal
         >
@@ -48,7 +59,7 @@ const Footer: FC = () => {
             as={FaGithub}
             aria-label='Github'
             boxSize={12}
-            bg='primary.500'
+            bg={iconBg}
             borderRadius='full'
             padding='1.5'
             _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
@@ -56,7 +67,7 @@ const Footer: FC = () => {
         </Link>
         <Link
           href={siteConfig.npm}
-          color='white'
+          color={textColor}
           _focus={{ boxShadow: 'secondary' }}
           isExternal
         >
@@ -64,7 +75,7 @@ const Footer: FC = () => {
             as={FaNpm}
             aria-label='NPM'
             boxSize={12}
-            bg='primary.500'
+            bg={iconBg}
             borderRadius='full'
             padding='1.5'
             _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
@@ -73,13 +84,13 @@ const Footer: FC = () => {
         <Link
           href={siteConfig.email_link}
           _focus={{ boxShadow: 'secondary' }}
-          color='white'
+          color={textColor}
         >
           <Icon
             as={HiOutlineMail}
             aria-label='Email'
             boxSize={12}
-            bg='primary.500'
+            bg={iconBg}
             borderRadius='full'
             padding='1.5'
             _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
@@ -94,15 +105,15 @@ const Footer: FC = () => {
         marginTop={['10', '0']}
       >
         <Link
-          href={isEnglish ? '/fr?ref=Footer' : '/'}
-          color='white'
+          href={isEnglish ? '/fr?ref=Footer' : '/?ref=Footer'}
+          color={textColor}
           title={isEnglish ? 'Français' : 'English'}
           _hover={{ textDecoration: 'none' }}
           _focus={{ boxShadow: 'secondary' }}
         >
           <Center
             boxSize={10}
-            bg='primary.500'
+            bg={iconBg}
             borderRadius='full'
             padding='1'
             _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
@@ -115,14 +126,14 @@ const Footer: FC = () => {
         <Link
           href='/#top'
           title='Go to top'
-          color='white'
+          color={textColor}
           _focus={{ boxShadow: 'secondary' }}
         >
           <Icon
             as={FaChevronUp}
             aria-label={t('go-to-top')}
             boxSize={10}
-            bg='primary.500'
+            bg={iconBg}
             borderRadius='full'
             padding='1.5'
             _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}

@@ -1,7 +1,14 @@
 import { forwardRef } from 'react'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
-import { Box, Button, Icon, Portal, SimpleGrid, useOutsideClick } from '@chakra-ui/react'
+import {
+  Box,
+  Button,
+  Icon,
+  Portal,
+  SimpleGrid,
+  useColorModeValue,
+} from '@chakra-ui/react'
 import { IoHome } from 'react-icons/io5'
 import { FaCode } from 'react-icons/fa'
 import { CgWebsite } from 'react-icons/cg'
@@ -37,7 +44,7 @@ const Menu = forwardRef<HTMLDivElement, MenuProps>(({ onClose }, ref) => {
           bottom={0}
           margin='8'
           padding='4'
-          bg='white'
+          bg={useColorModeValue('white', 'gray.800')}
           boxShadow='xl'
           borderRadius='lg'
           columns={2}

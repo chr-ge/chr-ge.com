@@ -8,6 +8,7 @@ import {
   Link,
   useColorModeValue,
 } from '@chakra-ui/react'
+import MotionBox from 'components/MotionBox'
 import { Header } from 'components'
 
 const HeadingSection = () => {
@@ -27,22 +28,28 @@ const HeadingSection = () => {
     >
       <Container maxW='container.lg'>
         <Header />
-        <Heading
-          as='h1'
-          width={['95%', '80%', '75%']}
-          fontSize={['4xl', '5xl', '6xl']}
-          fontWeight='bold'
-          marginTop='44'
+        <MotionBox
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.25 }}
         >
-          {t('headline-1')}
-          <chakra.span cursor='url(/img/mouse_cursor.png), text'>
-            {t('mouse')}
-          </chakra.span>
-          {t('headline-2')}
-          <chakra.span cursor='url(/img/keyboard_cursor.png), text'>
-            {t('keyboard')}
-          </chakra.span>
-        </Heading>
+          <Heading
+            as='h1'
+            width={['95%', '80%', '75%']}
+            fontSize={['4xl', '5xl', '6xl']}
+            fontWeight='bold'
+            marginTop='44'
+          >
+            {t('headline-1')}
+            <chakra.span cursor='url(/img/mouse_cursor.png), text'>
+              {t('mouse')}
+            </chakra.span>
+            {t('headline-2')}
+            <chakra.span cursor='url(/img/keyboard_cursor.png), text'>
+              {t('keyboard')}
+            </chakra.span>
+          </Heading>
+        </MotionBox>
         <Button
           as={Link}
           aria-label={t('headline-button')}

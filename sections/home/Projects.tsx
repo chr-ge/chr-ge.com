@@ -36,7 +36,7 @@ const Projects = () => {
       as='section'
       bgGradient={useColorModeValue(
         'linear(to-r, #e0eafc, #cfdef3)',
-        'linear(to-r, #005c97, #363795)'
+        'linear(to-r, teal.900, #363795)'
       )}
       borderRadius='lg'
       marginBottom='4'
@@ -49,6 +49,7 @@ const Projects = () => {
           fontSize='5xl'
           marginBottom='12'
           marginTop='8'
+          color={useColorModeValue('blue.900', 'blue.100')}
           sx={{ scrollMarginTop: '4rem' }}
           paddingTop={['4', '0']}
           textAlign={['center', 'left']}

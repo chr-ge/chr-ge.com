@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { useTranslation } from 'next-i18next'
 import { Heading, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 import { InView } from 'react-intersection-observer'
 import Technology from 'components/Project/Technology'
@@ -10,6 +11,7 @@ interface CategoryProps extends SkillType {
 }
 
 const Category: FC<CategoryProps> = ({ index, category, technologies }) => {
+  const { t } = useTranslation('common')
   const borderColor = useColorModeValue('gray.200', 'gray.600')
   const headingColor = useColorModeValue('gray.600', 'gray.400')
 
@@ -27,7 +29,7 @@ const Category: FC<CategoryProps> = ({ index, category, technologies }) => {
           transition={{ duration: 0.25, delay: index / 4 }}
         >
           <Heading ref={ref} as='h4' color={headingColor}>
-            {category}
+            {t(category)}
           </Heading>
           <SimpleGrid marginTop='6' columns={3} spacing={5} width='72.5%'>
             {technologies.map((t) => (

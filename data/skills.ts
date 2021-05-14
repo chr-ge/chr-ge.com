@@ -24,7 +24,7 @@ import { IoLogoPwa } from 'react-icons/io5'
 
 const skills: SkillType[] = [
   {
-    category: 'Languages',
+    category: 'languages',
     technologies: [
       { name: 'Javascript', icon: Javascript, color: '#F7DF1E' },
       { name: 'Typescript', icon: SiTypescript, color: '#3178C6' },
@@ -34,7 +34,7 @@ const skills: SkillType[] = [
     ],
   },
   {
-    category: 'Front-End',
+    category: 'front-end',
     technologies: [
       { name: 'React', icon: SiReact, color: '#61DAFB' },
       { name: 'React Native', icon: SiReact, color: 'gray.500' },
@@ -45,7 +45,7 @@ const skills: SkillType[] = [
     ],
   },
   {
-    category: 'Back-End',
+    category: 'back-end',
     technologies: [
       { name: 'Node.js', icon: SiNodeDotJs, color: '#339933' },
       { name: 'Next.js', icon: SiNextDotJs, color: '#000000' },
@@ -56,7 +56,7 @@ const skills: SkillType[] = [
     ],
   },
   {
-    category: 'Cloud',
+    category: 'cloud',
     technologies: [
       { name: 'Amazon Web Services', icon: SiAmazonaws, color: '#232F3E' },
       { name: 'Google Cloud Platform', icon: SiGooglecloud, color: '#4285F4' },
@@ -66,7 +66,7 @@ const skills: SkillType[] = [
     ],
   },
   {
-    category: 'Databases',
+    category: 'databases',
     technologies: [
       { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
       { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },

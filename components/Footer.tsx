@@ -16,7 +16,7 @@ import siteConfig from 'configs/site-config'
 
 const Footer: FC = () => {
   const { t } = useTranslation('common')
-  const { isEnglish } = useLanguage()
+  const { isEnglish, languageChange } = useLanguage()
 
   const iconBg = useColorModeValue('primary.500', 'primary.700')
   const textColor = useColorModeValue('gray.50', 'gray.300')
@@ -107,7 +107,7 @@ const Footer: FC = () => {
         <Link
           href={isEnglish ? '/fr?ref=Footer' : '/?ref=Footer'}
           color={textColor}
-          title={isEnglish ? 'Français' : 'English'}
+          title={languageChange}
           _hover={{ textDecoration: 'none' }}
           _focus={{ boxShadow: 'secondary' }}
         >

@@ -61,7 +61,7 @@ const Project: FC<ProjectType> = ({
         >
           <Flex ref={inViewRef}>
             {isLargerThan48em && (
-              <Box flex={1} marginRight='2' pos='relative'>
+              <Flex flex={1} marginRight='2' pos='relative' align='center'>
                 <Box ref={sliderRef} className='keen-slider'>
                   {images.map((image) => (
                     <Box
@@ -103,7 +103,7 @@ const Project: FC<ProjectType> = ({
                     ))}
                   </Flex>
                 )}
-              </Box>
+              </Flex>
             )}
             <Flex
               direction='column'

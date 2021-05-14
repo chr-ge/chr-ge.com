@@ -46,6 +46,10 @@ const theme = extendTheme({
       variants: {
         'icon-button': ({ colorMode }) => ({
           bg: colorMode === 'dark' ? 'gray.700' : 'gray.100',
+          _hover: {
+            bg: colorMode === 'dark' ? 'gray.600' : 'gray.200',
+            boxShadow: 'sm'
+          },
           _focus: {
             boxShadow: 'secondary',
           },

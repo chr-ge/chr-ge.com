@@ -1,7 +1,9 @@
 import { FC, useRef } from 'react'
+import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import {
   Box,
+  Button,
   Flex,
   Icon,
   IconButton,
@@ -11,12 +13,15 @@ import {
 import { VscColorMode } from 'react-icons/vsc'
 import { IoGrid } from 'react-icons/io5'
 import useOutsideClick from 'hooks/useClickOutside'
+import useLanguage from 'hooks/useLanguage'
 import Menu from './Menu'
 
 const Header: FC = () => {
+  const router = useRouter()
   const ref = useRef<HTMLDivElement>(null)
   const { isOpen, onClose, onToggle } = useOutsideClick({ ref })
   const { t } = useTranslation('common')
+  const { isEnglish, languageChange } = useLanguage()
 
   const { colorMode, toggleColorMode } = useColorMode()
   const isDark = colorMode === 'dark'
@@ -63,14 +68,29 @@ const Header: FC = () => {
               transition='transform 1.5s ease'
             />
           }
-          aria-label='toggle theme'
+          aria-label={`${isDark ? 'Light' : 'Dark'} Mode`}
+          title={`${isDark ? 'Light' : 'Dark'} Mode`}
           onClick={toggleColorMode}
-          title='toggle theme'
           variant='icon-button'
         />
+        <Button
+          padding='0'
+          aria-label={languageChange}
+          title={languageChange}
+          onClick={() =>
+            router.push('/?ref=Header', '/?ref=Header', {
+              locale: isEnglish ? 'fr' : 'en',
+            })
+          }
+          marginLeft='2'
+          variant='icon-button'
+        >
+          {isEnglish ? 'FR' : 'EN'}
+        </Button>
         <IconButton
           icon={<IoGrid />}
-          aria-label='menu'
+          aria-label='Menu'
+          title='Menu'
           onClick={onToggle}
           marginLeft='2'
           variant='icon-button'

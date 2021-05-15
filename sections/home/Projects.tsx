@@ -5,11 +5,14 @@ import {
   Container,
   Flex,
   Heading,
+  Link,
+  Text,
   useColorModeValue,
 } from '@chakra-ui/react'
 import { useMediaQuery } from 'react-responsive'
 import Project from 'components/Project'
 import projects from 'data/projects'
+import siteConfig from 'configs/site-config'
 
 const Projects = () => {
   const { t } = useTranslation('common')
@@ -67,7 +70,11 @@ const Projects = () => {
               overflow='hidden'
             >
               <Box bg={useColorModeValue('white', 'black')} width='3' />
-              <Box bg={useColorModeValue('blue.600', 'blue.400')} width='1' marginLeft='-2' />
+              <Box
+                bg={useColorModeValue('blue.600', 'blue.400')}
+                width='1'
+                marginLeft='-2'
+              />
               <Box
                 ref={heightRef}
                 bg={useColorModeValue('white', 'black')}
@@ -84,6 +91,22 @@ const Projects = () => {
             ))}
           </Box>
         </Flex>
+        <Box textAlign='center' marginY='6'>
+          <Box
+            bgColor={useColorModeValue('white', 'black')}
+            display='inline-block'
+            rounded='2xl'
+            shadow='xl'
+          >
+            <Text paddingY='4' paddingX='8' fontSize='lg'>
+              {t('more-projects')}
+              <Link color='blue.500' href={siteConfig.github} isExternal>
+                Github
+              </Link>
+              .
+            </Text>
+          </Box>
+        </Box>
       </Container>
     </Box>
   )

@@ -34,7 +34,7 @@ const Skills = () => {
         >
           {t('skills-heading')}
         </Heading>
-        <SimpleGrid columns={[1, 1, 2, 3]} spacing={20} marginBottom='12'>
+        <SimpleGrid columns={[1, 1, 2, 3]} spacing={20} paddingBottom='12'>
           {skills.map((skill, i) => (
             <Category key={skill.category} index={i + 1} {...skill} />
           ))}

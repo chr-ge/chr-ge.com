@@ -63,7 +63,7 @@ const Project: FC<ProjectType> = ({
         >
           <Flex ref={inViewRef}>
             {isLargerThan48em && (
-              <Flex flex={1} marginRight='2' pos='relative' align='center'>
+              <Box flex={1} marginRight='2' pos='relative' marginY='auto'>
                 <Box ref={sliderRef} className='keen-slider'>
                   {images.map((image) => (
                     <Box
@@ -94,7 +94,7 @@ const Project: FC<ProjectType> = ({
                       <Box
                         key={i}
                         boxSize='3'
-                        borderRadius='full'
+                        rounded='full'
                         aria-label='Change Image'
                         title={`Image ${i + 1} of ${slider.details().size}`}
                         bgColor={i === currentSlide ? 'purple.500' : 'gray.400'}
@@ -105,7 +105,7 @@ const Project: FC<ProjectType> = ({
                     ))}
                   </Flex>
                 )}
-              </Flex>
+              </Box>
             )}
             <Flex
               direction='column'
@@ -162,7 +162,7 @@ const Project: FC<ProjectType> = ({
                 )}
               </Box>
               {!isLargerThan48em && (
-                <Box ref={sliderRef} className='keen-slider' marginBottom='6'>
+                <Box ref={sliderRef} className='keen-slider' marginBottom='4'>
                   {images.map((image) => (
                     <Box
                       key={image.alt}
@@ -178,6 +178,28 @@ const Project: FC<ProjectType> = ({
                     </Box>
                   ))}
                 </Box>
+              )}
+              {!isLargerThan48em && slider && (
+                <Flex
+                  marginX='auto'
+                  align='center'
+                  justify='center'
+                  marginBottom='6'
+                >
+                  {[...Array(slider.details().size).keys()].map((i) => (
+                    <Box
+                      key={i}
+                      boxSize='3'
+                      borderRadius='full'
+                      aria-label='Change Image'
+                      title={`Image ${i + 1} of ${slider.details().size}`}
+                      bgColor={i === currentSlide ? 'purple.500' : 'gray.400'}
+                      onClick={() => slider.moveToSlideRelative(i)}
+                      role='button'
+                      marginRight='2'
+                    />
+                  ))}
+                </Flex>
               )}
               <Flex marginTop='auto' wrap='wrap' justify='space-between'>
                 {technologies.map((technology) => (

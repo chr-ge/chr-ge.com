@@ -91,7 +91,7 @@ const Projects = () => {
             ))}
           </Box>
         </Flex>
-        <Box textAlign='center' marginY='6'>
+        <Box textAlign='center' marginY='6' paddingBottom={['6', '0']}>
           <Box
             bgColor={useColorModeValue('white', 'black')}
             display='inline-block'

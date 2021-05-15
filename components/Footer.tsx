@@ -47,7 +47,7 @@ const Footer: FC = () => {
         flexBasis={0}
         justify='center'
         spacing='3'
-        marginTop={['10', '0']}
+        paddingTop={['10', '0']}
       >
         <Link
           href={siteConfig.github}
@@ -102,7 +102,7 @@ const Footer: FC = () => {
         flexBasis={0}
         spacing='3'
         justify='flex-end'
-        marginTop={['10', '0']}
+        paddingTop={['10', '0']}
       >
         <Link
           href={isEnglish ? '/fr?ref=Footer' : '/?ref=Footer'}

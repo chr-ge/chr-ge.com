@@ -6,8 +6,8 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Fonts from 'components/Fonts'
 import siteConfig from 'configs/site-config'
 import theme from 'styles/theme'
-import "@fontsource/mulish/400.css"
-import "@fontsource/mulish/700.css"
+// import "@fontsource/mulish/400.css"
+// import "@fontsource/mulish/700.css"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -23,6 +23,8 @@ function MyApp({ Component, pageProps }: AppProps) {
             src='https://plausible.io/js/plausible.js'
           />
         )}
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet" /> 
       </Head>
       <DefaultSeo {...siteConfig.seo} />
       <ChakraProvider resetCSS theme={theme}>

@@ -24,10 +24,11 @@ const Footer: FC = () => {
   return (
     <Flex
       as='footer'
-      bg={useColorModeValue('primary.700', 'primary.900')}
+      bgColor={useColorModeValue('primary.700', 'primary.900')}
       padding='8'
       marginTop='4'
       borderRadius='lg'
+      minH={['64', 'unset']}
       align='center'
       justify='space-between'
       direction={['column', 'row']}

@@ -1,4 +1,5 @@
 import { FC, useState } from 'react'
+import { useTranslation } from 'next-i18next'
 import {
   Badge,
   Box,
@@ -33,6 +34,7 @@ const Project: FC<ProjectType> = ({
   technologies,
   tags,
 }) => {
+  const { t } = useTranslation('common')
   const { isEnglish } = useLanguage()
   const [currentSlide, setCurrentSlide] = useState(0)
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
@@ -130,7 +132,7 @@ const Project: FC<ProjectType> = ({
               <Box marginTop='6' marginBottom='6'>
                 {homepage && (
                   <Tooltip
-                    label='Visit Website'
+                    label={t('view-website')}
                     placement={github ? 'left' : 'right'}
                   >
                     <IconButton
@@ -145,7 +147,7 @@ const Project: FC<ProjectType> = ({
                   </Tooltip>
                 )}
                 {github && (
-                  <Tooltip label='View Code Repository' placement='right'>
+                  <Tooltip label={t('view-code')} placement='right'>
                     <IconButton
                       as={Link}
                       href={github}

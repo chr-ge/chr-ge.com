@@ -133,7 +133,7 @@ const Project: FC<ProjectType> = ({
                 {homepage && (
                   <Tooltip
                     label={t('view-website')}
-                    placement={github ? 'left' : 'right'}
+                    placement={github ? 'bottom-start' : 'right'}
                   >
                     <IconButton
                       as={Link}

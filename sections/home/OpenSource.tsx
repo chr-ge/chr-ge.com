@@ -30,6 +30,7 @@ const OpenSource: FC = () => {
           fontSize={['4xl', '5xl']}
           marginBottom='12'
           marginTop='8'
+          color={useColorModeValue('gray.700', 'gray.300')}
           paddingTop={['4', '0']}
           textAlign='center'
         >

@@ -33,3 +33,25 @@ export type SkillType = {
   category: string
   technologies: TechnologyType[]
 }
+
+type RoleType = {
+  label_en: string,
+  label_fr: string,
+  color: string
+}
+
+type LanguageType = {
+  icon: IconType
+  color: string
+}
+
+export type ContributionType = {
+  user: string
+  repository: string
+  role: RoleType
+  github: string
+  description_en: string
+  description_fr?: string
+  topics: string[]
+  language: LanguageType
+}

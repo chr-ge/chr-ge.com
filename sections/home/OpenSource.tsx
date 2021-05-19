@@ -41,12 +41,8 @@ const OpenSource: FC = () => {
         <InView threshold={0.25}>
           {({ ref, inView }) => (
             <MotionBox
-              initial={{ opacity: 0, transform: 'translateY(-50px)' }}
-              animate={
-                inView
-                  ? { opacity: 1 }
-                  : { opacity: 0, transform: 'translateY(50px)' }
-              }
+              initial={{ opacity: 0 }}
+              animate={inView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.25 }}
             >
               <Stack

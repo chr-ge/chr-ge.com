@@ -7,8 +7,10 @@ import {
   Stack,
   useColorModeValue,
 } from '@chakra-ui/react'
+import { InView } from 'react-intersection-observer'
 import { Contribution } from 'components/Contribution'
 import contributions from 'data/contributions'
+import MotionBox from 'components/MotionBox'
 
 const OpenSource: FC = () => {
   const { t } = useTranslation('common')
@@ -36,17 +38,35 @@ const OpenSource: FC = () => {
         >
           {t('open-source')}
         </Heading>
-        <Stack
-          direction={['column', 'column', 'row']}
-          spacing={[12, 12, 20]}
-          paddingBottom='12'
-          align='center'
-          justify='center'
-        >
-          {contributions.map((contribution) => (
-            <Contribution key={contribution.repository} {...contribution} />
-          ))}
-        </Stack>
+        <InView threshold={0.25}>
+          {({ ref, inView }) => (
+            <MotionBox
+              initial={{ opacity: 0, transform: 'translateY(-50px)' }}
+              animate={
+                inView
+                  ? { opacity: 1 }
+                  : { opacity: 0, transform: 'translateY(50px)' }
+              }
+              transition={{ duration: 0.25 }}
+            >
+              <Stack
+                ref={ref}
+                direction={['column', 'column', 'row']}
+                spacing={[12, 12, 20]}
+                paddingBottom='12'
+                align='center'
+                justify='center'
+              >
+                {contributions.map((contribution) => (
+                  <Contribution
+                    key={contribution.repository}
+                    {...contribution}
+                  />
+                ))}
+              </Stack>
+            </MotionBox>
+          )}
+        </InView>
       </Container>
     </Box>
   )

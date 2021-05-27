@@ -33,7 +33,7 @@
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@types/node": "^15.6.1",
-    "@types/react": "^17.0.6",
+    "@types/react": "^17.0.8",
     "@types/react-responsive": "^8.0.2",
     "eslint": "^7.27.0",
     "eslint-plugin-import": "^2.23.3",

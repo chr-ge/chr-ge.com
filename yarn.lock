@@ -902,10 +902,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/mulish@^4.4.1":
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/@fontsource/mulish/-/mulish-4.4.1.tgz#cac49382cf0c28a555acdac912cbce86e08832b7"
-  integrity sha512-zofesJVA/uhqhFgbGeiN1WmzKBMj4KutvVedpjGkl4rpGClhLGp2Op3VTLmklkFtBm4bYuzAREoGavkBd+eJHg==
+"@fontsource/mulish@^4.4.2":
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/mulish/-/mulish-4.4.2.tgz#9ef7b07a46986a8e69c8e0d4a74883aaa1f884c0"
+  integrity sha512-dTPmTHexV1zKTR5516bg019XmdWbgjkxmNb0P32l5gUqhD0NW3MPaNHgpN8My21KdptAz1FSptWYR9UKE42J9A==
 
 "@hapi/accept@5.0.2":
   version "5.0.2"

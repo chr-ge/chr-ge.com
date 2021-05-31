@@ -17,7 +17,7 @@
     "@chakra-ui/react": "^1.6.3",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
-    "@fontsource/mulish": "^4.4.1",
+    "@fontsource/mulish": "^4.4.2",
     "framer-motion": "^4.1.17",
     "keen-slider": "^5.4.1",
     "next": "^10.2.3",

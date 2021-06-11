@@ -19,7 +19,7 @@
     "@emotion/styled": "^11.3.0",
     "@fontsource/mulish": "^4.4.5",
     "framer-motion": "^4.1.17",
-    "keen-slider": "^5.5.0",
+    "keen-slider": "^5.5.1",
     "next": "^10.2.3",
     "next-i18next": "^8.4.0",
     "next-seo": "^4.24.0",

@@ -21,7 +21,7 @@
     "framer-motion": "^4.1.17",
     "keen-slider": "^5.5.1",
     "next": "^10.2.3",
-    "next-i18next": "^8.4.0",
+    "next-i18next": "^8.5.0",
     "next-seo": "^4.24.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",

@@ -93,4 +93,6 @@ const Menu = forwardRef<HTMLDivElement, MenuProps>(({ onClose }, ref) => {
   )
 })
 
+Menu.displayName = 'Menu'
+
 export default Menu

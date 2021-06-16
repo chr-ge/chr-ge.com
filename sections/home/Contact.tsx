@@ -87,7 +87,7 @@ const Contact = () => {
           bgClip='text'
           fontSize='5xl'
         >
-          Contact Me
+          {t('contact-me')}
         </Heading>
       </Flex>
       <Box

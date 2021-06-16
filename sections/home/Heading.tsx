@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import { useTranslation } from 'next-i18next'
 import {
   chakra,
@@ -11,7 +12,7 @@ import {
 import MotionBox from 'components/MotionBox'
 import { Header } from 'components'
 
-const HeadingSection = () => {
+const HeadingSection: FC = () => {
   const { t } = useTranslation('common')
   const gradient = useColorModeValue(
     'linear(to-t, primary.500, secondary.500)',

@@ -1,3 +1,4 @@
+import { FC } from 'react'
 import { useTranslation } from 'next-i18next'
 import {
   Box,
@@ -9,7 +10,7 @@ import {
 import { Category } from 'components/Skills'
 import skills from 'data/skills'
 
-const Skills = () => {
+const Skills: FC = () => {
   const { t } = useTranslation('common')
 
   return (

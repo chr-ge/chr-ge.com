@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { FC, useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import {
   Box,
@@ -14,7 +14,7 @@ import Project from 'components/Project'
 import projects from 'data/projects'
 import siteConfig from 'configs/site-config'
 
-const Projects = () => {
+const Projects: FC = () => {
   const { t } = useTranslation('common')
   const heightRef = useRef<HTMLDivElement>(null)
   const [h, setH] = useState(0)
@@ -86,7 +86,7 @@ const Projects = () => {
             </Box>
           )}
           <Box flex={1}>
-            {projects.map((project, i) => (
+            {projects.map((project) => (
               <Project key={project.id} {...project} />
             ))}
           </Box>

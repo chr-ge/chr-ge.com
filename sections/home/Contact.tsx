@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, FormEvent } from 'react'
+import { useState, ChangeEvent, FormEvent, FC } from 'react'
 import { useTranslation } from 'react-i18next'
 import {
   Box,
@@ -25,7 +25,7 @@ type Message = {
   message: string
 }
 
-const Contact = () => {
+const Contact: FC = () => {
   const { t } = useTranslation('common')
   const [contact, setContact] = useState<Message>({ email: '', message: '' })
   const [loading, setLoading] = useState(false)

@@ -1,6 +1,7 @@
+import { FC } from 'react'
 import { Global } from '@emotion/react'
 
-const Fonts = () => (
+const Fonts: FC = () => (
   <Global
     styles={`
       @font-face {

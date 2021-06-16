@@ -11,7 +11,6 @@ import {
   IconButton,
   Tooltip,
   useColorModeValue,
-  Button,
 } from '@chakra-ui/react'
 import { useKeenSlider } from 'keen-slider/react'
 import { InView } from 'react-intersection-observer'

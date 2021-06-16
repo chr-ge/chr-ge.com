@@ -71,7 +71,10 @@ const projects: ProjectType[] = [
       'Livraison rapide de plats directement à votre porte. Les tableaux de bord des utilisateurs, des restaurants, des chauffeurs et des administrateurs sont entièrement fonctionnels.',
     images: [
       { src: '/img/projects/pigeons-ipad.png', alt: 'Restaurant Page' },
-      { src: '/img/projects/pigeons-ipad-2.png', alt: 'Restaurant Page - Modal' },
+      {
+        src: '/img/projects/pigeons-ipad-2.png',
+        alt: 'Restaurant Page - Modal',
+      },
     ],
     github: 'https://github.com/chr-ge/why-pigeons',
     technologies: [

@@ -44,7 +44,12 @@ const Contribution: FC<ContributionType> = ({
         <LinkOverlay href={github} fontSize={['xl', '2xl']} isExternal>
           {user}/<chakra.span fontWeight='bold'>{repository}</chakra.span>
         </LinkOverlay>
-        <Icon as={language.icon} display={['none', 'inline-block']} color={language.color} boxSize='6' />
+        <Icon
+          as={language.icon}
+          display={['none', 'inline-block']}
+          color={language.color}
+          boxSize='6'
+        />
       </Flex>
       <Badge colorScheme={role.color} marginBottom='4'>
         {isEnglish ? role.label_en : role.label_fr}

@@ -48,7 +48,7 @@ const theme = extendTheme({
           bg: colorMode === 'dark' ? 'gray.700' : 'gray.100',
           _hover: {
             bg: colorMode === 'dark' ? 'gray.600' : 'gray.200',
-            boxShadow: 'sm'
+            boxShadow: 'sm',
           },
           _focus: {
             boxShadow: 'secondary',

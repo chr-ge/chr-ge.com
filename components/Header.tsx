@@ -56,7 +56,7 @@ const Header: FC = () => {
           whiteSpace='pre'
           display={['none', 'block']}
         >
-          // {t('developer')}
+          {t('developer')}
         </Text>
       </Flex>
       <Box>

@@ -2,7 +2,7 @@
   "name": "chr-ge.com",
   "version": "0.1.0",
   "private": true,
-  "author": "chr-ge",
+  "author": "chr-ge <george@chr-ge.com> (https://chr-ge.com/)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

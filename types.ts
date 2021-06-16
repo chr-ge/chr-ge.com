@@ -35,8 +35,8 @@ export type SkillType = {
 }
 
 type RoleType = {
-  label_en: string,
-  label_fr: string,
+  label_en: string
+  label_fr: string
   color: string
 }
 

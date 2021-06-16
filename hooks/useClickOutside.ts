@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect, useRef, RefObject, useCallback } from 'react'
 import { getOwnerDocument } from '@chakra-ui/utils'
 

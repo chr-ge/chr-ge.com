@@ -17,6 +17,7 @@ import {
 } from '@chakra-ui/react'
 import { FaCheck } from 'react-icons/fa'
 import { ImCross } from 'react-icons/im'
+import { GrSend } from 'react-icons/gr'
 import { isEmail } from 'utils/email'
 
 type Message = {
@@ -155,6 +156,8 @@ const Contact = () => {
           />
           <Button
             marginTop='6'
+            aria-label={t('send')}
+            rightIcon={<GrSend />}
             isDisabled={!isEmail(contact.email) || !contact.message}
             isLoading={loading}
             type='submit'

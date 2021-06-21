@@ -45,6 +45,7 @@ const theme = extendTheme({
     Button: {
       variants: {
         'icon-button': ({ colorMode }) => ({
+          rounded: 'md',
           bg: colorMode === 'dark' ? 'gray.700' : 'gray.100',
           _hover: {
             bg: colorMode === 'dark' ? 'gray.600' : 'gray.200',

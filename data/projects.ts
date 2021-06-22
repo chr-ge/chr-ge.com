@@ -22,7 +22,7 @@ const projects: ProjectType[] = [
       { alt: 'Property Page', src: '/img/projects/halm-ipad.png' },
       { alt: 'Home Page', src: '/img/projects/halm-iphone.png' },
     ],
-    homepage: '',
+    homepage: 'https://app.hotelalamaison.ca',
     github: '',
     technologies: [
       { name: 'Next.js', icon: SiNextDotJs, color: '#000000' },

@@ -1103,10 +1103,10 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react-responsive@^8.0.2":
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/@types/react-responsive/-/react-responsive-8.0.2.tgz#959fdc32f72e38b807e32be617a74be2c315081b"
-  integrity sha512-DTvm3Hb77v0hme7L4GYzRjLQqlZP+zNImFBzdKbSH7CsQ5c7QebGnSQX2Xf3BaA0rm/TQE57eFMhMGLcMe/A9w==
+"@types/react-responsive@^8.0.3":
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/@types/react-responsive/-/react-responsive-8.0.3.tgz#7096b888a5963ab7755ec4e9e52b652e1cc3146b"
+  integrity sha512-K9VsY1tbwt/CNQ/00oGIXjnRwj+3WRB/nDN9Oglqn41sFgVH5A0WkERO7P2xGJJU3ylttiKnT3stZxIccGVBug==
   dependencies:
     "@types/react" "*"
 

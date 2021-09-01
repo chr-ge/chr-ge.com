@@ -22,7 +22,7 @@
     "@fontsource/mulish": "^4.5.1",
     "framer-motion": "^4.1.17",
     "keen-slider": "^5.5.1",
-    "next": "^11.1.0",
+    "next": "^11.1.2",
     "next-i18next": "^8.6.0",
     "next-seo": "^4.26.0",
     "react": "17.0.2",

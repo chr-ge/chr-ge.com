@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme, ThemeComponentProps, ChakraTheme } from '@chakra-ui/react'
 
 const theme = extendTheme({
   colors: {
@@ -44,7 +44,7 @@ const theme = extendTheme({
   components: {
     Button: {
       variants: {
-        'icon-button': ({ colorMode }) => ({
+        'icon-button': ({ colorMode }: ThemeComponentProps<ChakraTheme>) => ({
           rounded: 'md',
           bg: colorMode === 'dark' ? 'gray.700' : 'gray.100',
           _hover: {

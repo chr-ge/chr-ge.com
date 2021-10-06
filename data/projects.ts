@@ -1,5 +1,5 @@
 import {
-  SiNextDotJs,
+  SiNextdotjs,
   SiTypescript,
   SiGraphql,
   SiSass,
@@ -25,7 +25,7 @@ const projects: ProjectType[] = [
     homepage: '',
     github: '',
     technologies: [
-      { name: 'Next.js', icon: SiNextDotJs, color: '#000000' },
+      { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
       { name: 'Typescript', icon: SiTypescript, color: '#3178C6' },
       { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
       { name: 'SCSS', icon: SiSass, color: '#CC6699' },
@@ -50,7 +50,7 @@ const projects: ProjectType[] = [
     homepage: 'https://kalabam.com',
     github: 'https://github.com/chr-ge/kalabam',
     technologies: [
-      { name: 'Next.js', icon: SiNextDotJs, color: '#000000' },
+      { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
       { name: 'React', icon: SiReact, color: '#61DAFB' },
       { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
       { name: 'ChakraUI', icon: ChakraUI, color: '#319795' },

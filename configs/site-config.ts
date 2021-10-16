@@ -1,4 +1,6 @@
 const siteConfig = {
+  isProd: process.env.NODE_ENV === 'production',
+  cloudflareToken: process.env.NEXT_PUBLIC_CLOUDFLARE_TOKEN || '',
   copyright: `© ${new Date().getFullYear()} George <chr-ge>`,
   seo: {
     title: 'Full-Stack Software Developer',

@@ -1,4 +1,5 @@
 {
+  "silent": true,
   "cleanUrls": true,
   "headers": [
     {

@@ -10,6 +10,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { FaNpm, FaGithub, FaChevronUp } from 'react-icons/fa'
+import { AiFillLinkedin } from 'react-icons/ai'
 import { HiOutlineMail } from 'react-icons/hi'
 import useLanguage from 'hooks/useLanguage'
 import siteConfig from 'configs/site-config'
@@ -54,6 +55,7 @@ const Footer: FC = () => {
           href={siteConfig.github}
           color={textColor}
           _focus={{ boxShadow: 'secondary' }}
+          title='Github'
           isExternal
         >
           <Icon
@@ -70,6 +72,7 @@ const Footer: FC = () => {
           href={siteConfig.npm}
           color={textColor}
           _focus={{ boxShadow: 'secondary' }}
+          title='NPM'
           isExternal
         >
           <Icon
@@ -86,10 +89,28 @@ const Footer: FC = () => {
           href={siteConfig.email_link}
           _focus={{ boxShadow: 'secondary' }}
           color={textColor}
+          title='Email'
         >
           <Icon
             as={HiOutlineMail}
             aria-label='Email'
+            boxSize={12}
+            bg={iconBg}
+            borderRadius='full'
+            padding='1.5'
+            _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
+          />
+        </Link>
+        <Link
+          href={siteConfig.linkedin}
+          _focus={{ boxShadow: 'secondary' }}
+          color={textColor}
+          title='LinkedIn'
+          isExternal
+        >
+          <Icon
+            as={AiFillLinkedin}
+            aria-label='LinkedIn'
             boxSize={12}
             bg={iconBg}
             borderRadius='full'

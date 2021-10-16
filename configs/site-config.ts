@@ -53,6 +53,7 @@ const siteConfig = {
   email_link: 'mailto:george@chr-ge.com',
   github: 'https://github.com/chr-ge',
   npm: 'https://www.npmjs.com/~chr-ge',
+  linkedin: 'https://www.linkedin.com/in/chr-ge/',
 }
 
 export default siteConfig

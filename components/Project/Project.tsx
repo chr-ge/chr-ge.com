@@ -202,7 +202,11 @@ const Project: FC<ProjectType> = ({
               )}
               <Flex marginTop='auto' wrap='wrap' justify='space-between'>
                 {technologies.map((technology) => (
-                  <Technology key={technology.name} {...technology} />
+                  <Technology
+                    key={technology.name}
+                    placement='top'
+                    {...technology}
+                  />
                 ))}
               </Flex>
             </Flex>

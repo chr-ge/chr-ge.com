@@ -15,14 +15,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <meta charSet='utf-8' />
         <meta content='width=device-width, initial-scale=1' name='viewport' />
-        {process.env.NODE_ENV === 'production' && (
-          <script
-            async
-            defer
-            data-domain='chr-ge.com'
-            src='https://plausible.io/js/plausible.js'
-          />
-        )}
       </Head>
       <DefaultSeo {...siteConfig.seo} />
       <ChakraProvider resetCSS theme={theme}>

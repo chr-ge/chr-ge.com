@@ -1,5 +1,7 @@
 {
-  "silent": true,
+  "github": {
+    "silent": true
+  },
   "cleanUrls": true,
   "headers": [
     {

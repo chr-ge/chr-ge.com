@@ -13,6 +13,7 @@ import {
   SiPhp,
   SiPostgresql,
   SiReact,
+  SiRedis,
   SiRuby,
   SiSass,
   SiTailwindcss,
@@ -72,6 +73,7 @@ const skills: SkillType[] = [
       { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
       { name: 'Amazon DynamoDB', icon: DynamoDB, color: '#4053D6' },
       { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
+      { name: 'Redis', icon: SiRedis, color: '#DC382D' },
     ],
   },
 ]

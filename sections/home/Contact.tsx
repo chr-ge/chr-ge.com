@@ -1,5 +1,6 @@
 import { useState, ChangeEvent, FormEvent, FC } from 'react'
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'next-i18next'
+import splitbee from '@splitbee/web'
 import {
   Box,
   Button,
@@ -50,6 +51,8 @@ const Contact: FC = () => {
     })
     setLoading(false)
     setContact({ email: '', message: '' })
+
+    splitbee.user.set({ email: contact.email })
 
     toast({
       title: t('message-sent'),

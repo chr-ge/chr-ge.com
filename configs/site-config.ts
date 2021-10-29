@@ -1,4 +1,4 @@
-const siteConfig = {
+export const siteConfig: SiteConfig = {
   isProd: process.env.NODE_ENV === 'production',
   cloudflareToken: process.env.NEXT_PUBLIC_CLOUDFLARE_TOKEN || '',
   copyright: `© ${new Date().getFullYear()} George <chr-ge>`,
@@ -56,6 +56,12 @@ const siteConfig = {
   github: 'https://github.com/chr-ge',
   npm: 'https://www.npmjs.com/~chr-ge',
   linkedin: 'https://www.linkedin.com/in/chr-ge/',
+  splitbee: {
+    events: {
+      heroButton: 'Hero Button',
+      externalLink: 'External Link',
+    },
+  },
 }
 
-export default siteConfig
+type SiteConfig = Record<string, any>

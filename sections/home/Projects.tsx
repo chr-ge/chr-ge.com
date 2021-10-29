@@ -10,9 +10,9 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { useMediaQuery } from 'react-responsive'
+import { siteConfig } from 'configs/site-config'
 import Project from 'components/Project'
 import projects from 'data/projects'
-import siteConfig from 'configs/site-config'
 
 const Projects: FC = () => {
   const { t } = useTranslation('common')

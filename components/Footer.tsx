@@ -12,8 +12,8 @@ import {
 import { FaNpm, FaGithub, FaChevronUp } from 'react-icons/fa'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { HiOutlineMail } from 'react-icons/hi'
+import { siteConfig } from 'configs/site-config'
 import useLanguage from 'hooks/useLanguage'
-import siteConfig from 'configs/site-config'
 
 const Footer: FC = () => {
   const { t } = useTranslation('common')
@@ -56,6 +56,8 @@ const Footer: FC = () => {
           color={textColor}
           _focus={{ boxShadow: 'secondary' }}
           title='Github'
+          data-splitbee-event={siteConfig.splitbee.externalLink}
+          data-splitbee-event-type='Github'
           isExternal
         >
           <Icon
@@ -73,6 +75,8 @@ const Footer: FC = () => {
           color={textColor}
           _focus={{ boxShadow: 'secondary' }}
           title='NPM'
+          data-splitbee-event={siteConfig.splitbee.externalLink}
+          data-splitbee-event-type='NPM'
           isExternal
         >
           <Icon
@@ -106,6 +110,8 @@ const Footer: FC = () => {
           _focus={{ boxShadow: 'secondary' }}
           color={textColor}
           title='LinkedIn'
+          data-splitbee-event={siteConfig.splitbee.externalLink}
+          data-splitbee-event-type='LinkedIn'
           isExternal
         >
           <Icon

@@ -9,6 +9,7 @@ import {
   Link,
   useColorModeValue,
 } from '@chakra-ui/react'
+import { siteConfig } from 'configs/site-config'
 import MotionBox from 'components/MotionBox'
 import { Header } from 'components'
 
@@ -61,6 +62,7 @@ const HeadingSection: FC = () => {
             transform: 'scale(1.03) translateX(6px)',
             textDecoration: 'none',
           }}
+          data-splitbee-event={siteConfig.splitbee.heroButton}
         >
           {t('headline-button')}
         </Button>

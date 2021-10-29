@@ -4,12 +4,15 @@ import { appWithTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
 import { ChakraProvider } from '@chakra-ui/react'
 import Fonts from 'components/Fonts'
-import siteConfig from 'configs/site-config'
+import { useSplitbee } from 'hooks/useSplitbee'
+import { siteConfig } from 'configs/site-config'
 import theme from 'styles/theme'
 import '@fontsource/mulish/400.css'
 import '@fontsource/mulish/700.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
+  useSplitbee()
+
   return (
     <>
       <Head>

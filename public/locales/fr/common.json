@@ -2,7 +2,7 @@
   "home": "Accueil",
   "projects": "Projets",
   "contact": "Contact",
-  "developer": "Développeur Web Full-Stack",
+  "developer": "// Développeur Web Full-Stack",
   "headline-1": "Je construis des choses avec ma ",
   "headline-2": " et ",
   "mouse": "souris ",
@@ -25,6 +25,6 @@
   "message-sent": "Message envoyé.",
   "message-text": "Je reviendrai à vous dès que possible.",
   "send": "Envoyer",
-  "proudly_made_in_mtl": "Fièrement fabriqué à Montréal. 🍁",
+  "proudly_made_in_mtl": "Fabriqué à Montréal. 🍁",
   "go-to-top": "Aller en haut "
 }

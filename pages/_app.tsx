@@ -7,6 +7,7 @@ import Fonts from 'components/Fonts'
 import { useSplitbee } from 'hooks/useSplitbee'
 import { siteConfig } from 'configs/site-config'
 import theme from 'styles/theme'
+import 'keen-slider/keen-slider.min.css'
 import '@fontsource/mulish/400.css'
 import '@fontsource/mulish/700.css'
 

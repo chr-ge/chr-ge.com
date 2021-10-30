@@ -21,7 +21,6 @@ import useLanguage from 'hooks/useLanguage'
 import MotionBox from 'components/MotionBox'
 import Technology from './Technology'
 import type { ProjectType } from 'types'
-import 'keen-slider/keen-slider.min.css'
 
 const Project: FC<ProjectType> = ({
   title,

@@ -28,13 +28,13 @@ const Contribution: FC<ContributionType> = ({
   return (
     <LinkBox
       as='article'
+      className='keen-slider__slide'
       padding='4'
       borderColor={useColorModeValue('white', 'black')}
       bgColor={useColorModeValue('gray.50', 'gray.900')}
       borderStyle='solid'
       borderWidth='thin'
       rounded='lg'
-      width={['100%', '100%', '40%']}
       shadow='lg'
       borderBottomColor={language.color}
       borderBottomWidth='thick'

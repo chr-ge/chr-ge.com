@@ -40,6 +40,25 @@ const contributions: ContributionType[] = [
       color: '#F7DF1E',
     },
   },
+  {
+    user: 'chakra-ui',
+    repository: 'chakra-ui',
+    role: {
+      label_en: 'Contributor',
+      label_fr: 'Collaborateur',
+      color: 'orange',
+    },
+    github: 'https://github.com/chakra-ui/chakra-ui',
+    description_en:
+      'Simple, Modular & Accessible UI Components for your React Applications',
+    description_fr:
+      "Composants d'interface utilisateur simples, modulaires et accessibles pour vos applications React",
+    topics: ['react', 'react-components', 'accessible'],
+    language: {
+      icon: SiTypescript,
+      color: '#3178C6',
+    },
+  },
 ]
 
 export default contributions

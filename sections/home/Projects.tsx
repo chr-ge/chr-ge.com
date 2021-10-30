@@ -69,19 +69,16 @@ const Projects: FC = () => {
               marginRight='4'
               overflow='hidden'
             >
-              <Box bg={useColorModeValue('white', 'black')} width='3' />
-              <Box
-                bg={useColorModeValue('blue.600', 'blue.400')}
-                width='1'
-                marginLeft='-2'
-              />
               <Box
                 ref={heightRef}
                 bg={useColorModeValue('white', 'black')}
+                width='3'
+              />
+              <Box
+                pos='absolute'
+                bg={useColorModeValue('blue.600', 'blue.400')}
                 width='1'
                 height={h}
-                pos='absolute'
-                marginLeft='1'
               />
             </Box>
           )}

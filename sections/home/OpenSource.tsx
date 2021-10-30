@@ -3,17 +3,30 @@ import { useTranslation } from 'next-i18next'
 import {
   Box,
   Container,
+  Flex,
   Heading,
-  Stack,
   useColorModeValue,
 } from '@chakra-ui/react'
 import { InView } from 'react-intersection-observer'
+import { useKeenSlider } from 'keen-slider/react'
 import { Contribution } from 'components/Contribution'
 import contributions from 'data/contributions'
 import MotionBox from 'components/MotionBox'
 
 const OpenSource: FC = () => {
   const { t } = useTranslation('common')
+  const [sliderRef] = useKeenSlider<HTMLDivElement>({
+    slidesPerView: 1,
+    mode: 'snap',
+    spacing: 24,
+    dragSpeed: 0.5,
+    rubberband: false,
+    breakpoints: {
+      '(min-width: 48em)': {
+        slidesPerView: 2.5,
+      },
+    },
+  })
 
   return (
     <Box
@@ -45,21 +58,20 @@ const OpenSource: FC = () => {
               animate={inView ? { opacity: 1 } : { opacity: 0 }}
               transition={{ duration: 0.25 }}
             >
-              <Stack
-                ref={ref}
-                direction={['column', 'column', 'row']}
-                spacing={[12, 12, 20]}
-                paddingBottom='12'
-                align='center'
-                justify='center'
-              >
-                {contributions.map((contribution) => (
-                  <Contribution
-                    key={contribution.repository}
-                    {...contribution}
-                  />
-                ))}
-              </Stack>
+              <Box ref={ref}>
+                <Flex
+                  ref={sliderRef}
+                  className='keen-slider'
+                  paddingBottom='12'
+                >
+                  {contributions.map((contribution) => (
+                    <Contribution
+                      key={contribution.repository}
+                      {...contribution}
+                    />
+                  ))}
+                </Flex>
+              </Box>
             </MotionBox>
           )}
         </InView>

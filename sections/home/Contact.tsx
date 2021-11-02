@@ -103,7 +103,7 @@ const Contact: FC = () => {
         borderRadius='lg'
         onSubmit={handleSubmit}
       >
-        <Container marginY='24'>
+        <Container marginY='20'>
           <Text
             as='label'
             d='inline-block'
@@ -155,6 +155,7 @@ const Contact: FC = () => {
             background={useColorModeValue('gray.50', 'gray.700')}
             value={contact.message}
             onChange={handleOnChange}
+            minHeight='24'
             isRequired
           />
           <Button

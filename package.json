@@ -18,7 +18,7 @@
   "dependencies": {
     "@chakra-ui/react": "^1.7.1",
     "@emotion/react": "^11.6.0",
-    "@emotion/styled": "^11.3.0",
+    "@emotion/styled": "^11.6.0",
     "@fontsource/mulish": "^4.5.2",
     "@splitbee/web": "^0.3.0",
     "framer-motion": "^4.1.17",

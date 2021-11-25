@@ -47,7 +47,7 @@ const projects: ProjectType[] = [
       { src: '/img/projects/kalabam-ipad.png', alt: 'Dashboard' },
       { src: '/img/projects/kalabam-iphone.png', alt: 'Home Page' },
     ],
-    homepage: 'https://kalabam.com',
+    homepage: 'https://kalabam.com/?ref=chr-ge.com',
     github: 'https://github.com/chr-ge/kalabam',
     technologies: [
       { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },

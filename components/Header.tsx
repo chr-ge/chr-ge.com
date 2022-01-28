@@ -47,7 +47,7 @@ const Header: FC = () => {
           fontSize='lg'
           whiteSpace='pre'
         >
-          CHR-GE
+          George Christeas
         </Text>
         <Text
           as='h4'

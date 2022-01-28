@@ -19,7 +19,7 @@
     "@chakra-ui/react": "^1.8.1",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
-    "@fontsource/mulish": "^4.5.2",
+    "@fontsource/mulish": "^4.5.3",
     "@splitbee/web": "^0.3.0",
     "framer-motion": "^4.1.17",
     "keen-slider": "^5.5.1",

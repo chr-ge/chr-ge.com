@@ -928,10 +928,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/mulish@^4.5.2":
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/@fontsource/mulish/-/mulish-4.5.2.tgz#fc395d49b884f732a1b87414f6d1b44cd5688ebe"
-  integrity sha512-z27SnK1XJs3J85Jixha6QrAbj6Mlrw9oTNCrPdgB/hfUhQs+6Ohlj2keYPLq8COhHkz4y65UECgdH6KmjVBwuA==
+"@fontsource/mulish@^4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@fontsource/mulish/-/mulish-4.5.3.tgz#efc76cbae71104ba0a48aea136187fd8e145b87c"
+  integrity sha512-nntkBNbqN3iSS3JhzPAG5YPv9MCUoxezVBll6ITMQCkDDMg86eEZSp2JhZJY4eaIRNUYdBypPSmiUvTLP6M6gQ==
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"

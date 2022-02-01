@@ -4,22 +4,33 @@ export const siteConfig: SiteConfig = {
   copyright: `© ${new Date().getFullYear()} George Christeas`,
   seo: {
     title: 'Full-Stack Software Developer',
-    titleTemplate: '%s // CHR-GE',
-    description: 'George Christeas // Full-Stack Software Developer',
+    titleTemplate: '%s // chr-ge',
+    description:
+      'George Christeas // Full-Stack Software Developer. I build things with my mouse and keyboard.',
     siteUrl: 'https://chr-ge.com',
+    canonical: 'https://chr-ge.com',
     openGraph: {
       type: 'website',
       locale: 'en_US',
       url: 'https://chr-ge.com',
-      title: 'CHR-GE // Full-Stack Software Developer',
-      description: 'George Christeas // Full-Stack Software Developer',
+      title: 'George Christeas // Full-Stack Software Developer',
+      description: 'I build things with my mouse and keyboard.',
       site_name: 'CHR-GE // Full-Stack Software Developer',
+      images: [
+        {
+          url: 'https://chr-ge.com/img/banner.png',
+          width: 1200,
+          height: 630,
+          alt: 'chr-ge banner',
+        },
+      ],
     },
     twitter: {
       cardType: 'summary',
     },
     languageAlternates: [{ hrefLang: 'fr', href: 'https://chr-ge.com/fr' }],
     additionalMetaTags: [
+      { httpEquiv: 'x-ua-compatible', content: 'IE=edge; chrome=1' },
       { property: 'msapplication-TileColor', content: '#ffc40d' },
       { property: 'msapplication-config', content: '/icons/browserconfig.xml' },
       { property: 'theme-color', content: '#ffffff' },

@@ -1,7 +1,7 @@
 export const siteConfig: SiteConfig = {
   isProd: process.env.NODE_ENV === 'production',
   cloudflareToken: process.env.NEXT_PUBLIC_CLOUDFLARE_TOKEN || '',
-  copyright: `© ${new Date().getFullYear()} George <chr-ge>`,
+  copyright: `© ${new Date().getFullYear()} George Christeas`,
   seo: {
     title: 'Full-Stack Software Developer',
     titleTemplate: '%s // CHR-GE',

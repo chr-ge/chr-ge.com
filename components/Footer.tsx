@@ -41,8 +41,7 @@ const Footer: FC = () => {
         fontWeight='semibold'
         align={['center', 'left']}
       >
-        &copy; {new Date().getFullYear()} George Christeas.{' '}
-        {t('proudly_made_in_mtl')}
+        {siteConfig.copyright}. {t('proudly_made_in_mtl')}
       </Text>
       <HStack
         flex={1}

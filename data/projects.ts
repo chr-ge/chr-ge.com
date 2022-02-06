@@ -1,4 +1,5 @@
 import {
+  SiChakraui,
   SiNextdotjs,
   SiTypescript,
   SiGraphql,
@@ -9,7 +10,6 @@ import {
   SiPostgresql,
   SiStripe,
 } from 'react-icons/si'
-import { ChakraUI } from 'components/Icons'
 import type { ProjectType } from 'types'
 
 const projects: ProjectType[] = [
@@ -53,7 +53,7 @@ const projects: ProjectType[] = [
       { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
       { name: 'React', icon: SiReact, color: '#61DAFB' },
       { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-      { name: 'ChakraUI', icon: ChakraUI, color: '#319795' },
+      { name: 'ChakraUI', icon: SiChakraui, color: '#319795' },
     ],
     tags: [
       { label: 'full-stack', colorScheme: 'pink' },

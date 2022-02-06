@@ -1,5 +1,7 @@
 import {
   SiAmazonaws,
+  SiAmazondynamodb,
+  SiExpress,
   SiGooglecloud,
   SiGraphql,
   SiHeroku,
@@ -18,8 +20,9 @@ import {
   SiSass,
   SiTailwindcss,
   SiTypescript,
+  SiVercel,
 } from 'react-icons/si'
-import { DynamoDB, Express, Javascript, Vercel } from 'components/Icons'
+import { Javascript } from 'components/Icons'
 import type { SkillType } from 'types'
 import { IoLogoPwa } from 'react-icons/io5'
 
@@ -51,7 +54,7 @@ const skills: SkillType[] = [
       { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
       { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
       { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
-      { name: 'Express', icon: Express, color: '#000000' },
+      { name: 'Express', icon: SiExpress, color: '#000000' },
       { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
       { name: 'Ruby on Rails', icon: SiRuby, color: '#CC0000' },
     ],
@@ -61,7 +64,7 @@ const skills: SkillType[] = [
     technologies: [
       { name: 'Amazon Web Services', icon: SiAmazonaws, color: '#232F3E' },
       { name: 'Google Cloud Platform', icon: SiGooglecloud, color: '#4285F4' },
-      { name: 'Vercel', icon: Vercel, color: '#000000' },
+      { name: 'Vercel', icon: SiVercel, color: '#000000' },
       { name: 'Heroku', icon: SiHeroku, color: '#430098' },
       { name: 'Netlify', icon: SiNetlify, color: '#00C7B7' },
     ],
@@ -71,7 +74,7 @@ const skills: SkillType[] = [
     technologies: [
       { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
       { name: 'PostgreSQL', icon: SiPostgresql, color: '#336791' },
-      { name: 'Amazon DynamoDB', icon: DynamoDB, color: '#4053D6' },
+      { name: 'Amazon DynamoDB', icon: SiAmazondynamodb, color: '#4053D6' },
       { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
       { name: 'Redis', icon: SiRedis, color: '#DC382D' },
     ],

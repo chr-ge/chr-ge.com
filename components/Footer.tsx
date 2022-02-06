@@ -52,6 +52,7 @@ const Footer: FC = () => {
       >
         <Link
           href={siteConfig.github}
+          display='flex'
           color={textColor}
           _focus={{ boxShadow: 'secondary' }}
           title='Github'
@@ -71,6 +72,7 @@ const Footer: FC = () => {
         </Link>
         <Link
           href={siteConfig.npm}
+          display='flex'
           color={textColor}
           _focus={{ boxShadow: 'secondary' }}
           title='NPM'
@@ -90,6 +92,7 @@ const Footer: FC = () => {
         </Link>
         <Link
           href={siteConfig.email_link}
+          display='flex'
           _focus={{ boxShadow: 'secondary' }}
           color={textColor}
           title='Email'
@@ -106,6 +109,7 @@ const Footer: FC = () => {
         </Link>
         <Link
           href={siteConfig.linkedin}
+          display='flex'
           _focus={{ boxShadow: 'secondary' }}
           color={textColor}
           title='LinkedIn'
@@ -129,10 +133,12 @@ const Footer: FC = () => {
         flexBasis={0}
         spacing='3'
         justify='flex-end'
+        align='center'
         paddingTop={['10', '0']}
       >
         <Link
           href={isEnglish ? '/fr?ref=Footer' : '/?ref=Footer'}
+          display='flex'
           color={textColor}
           title={languageChange}
           _hover={{ textDecoration: 'none' }}
@@ -154,6 +160,7 @@ const Footer: FC = () => {
           href='/#top'
           title='Go to top'
           color={textColor}
+          display='flex'
           _focus={{ boxShadow: 'secondary' }}
         >
           <Icon

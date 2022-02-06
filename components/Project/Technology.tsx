@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import {
-  chakra,
   Center,
+  Flex,
   Icon,
   Tooltip,
   TooltipProps,
@@ -20,9 +20,9 @@ const Technology: FC<TechnologyProps> = ({ name, icon, color, placement }) => (
     bg={useColorModeValue('gray.100', 'gray.800')}
   >
     <Tooltip label={name} placement={placement}>
-      <chakra.span>
+      <Flex>
         <Icon as={icon} boxSize='8' aria-label={name} color={color} />
-      </chakra.span>
+      </Flex>
     </Tooltip>
   </Center>
 )

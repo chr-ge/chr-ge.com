@@ -3140,6 +3140,11 @@ next-i18next@^8.10.0:
     i18next-fs-backend "^1.0.7"
     react-i18next "^11.8.13"
 
+next-safe@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/next-safe/-/next-safe-3.2.1.tgz#76bb6deb2b11a39318e5b962a6da4e57584bf77f"
+  integrity sha512-2BBbnendVIlbUjrvV/N6cotuba71i2IIczo0dqmpZu9oSl2PlN6hYML22fidcqXZILwghyXULIy4lxyAgPz+Xg==
+
 next-seo@^4.29.0:
   version "4.29.0"
   resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.29.0.tgz#d281e95ba47914117cc99e9e468599f0547d9b9b"
@@ -3498,7 +3503,7 @@ react-clientside-effect@^1.2.5:
   dependencies:
     "@babel/runtime" "^7.12.13"
 
-react-dom@17.0.2:
+react-dom@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
   integrity sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
@@ -3585,7 +3590,7 @@ react-style-singleton@^2.1.0:
     invariant "^2.2.4"
     tslib "^1.0.0"
 
-react@17.0.2:
+react@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==

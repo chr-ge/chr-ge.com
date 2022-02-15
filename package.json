@@ -1,8 +1,9 @@
 {
   "name": "chr-ge.com",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "author": "chr-ge <george@chr-ge.com> (https://chr-ge.com/)",
+  "license" : "GPL-2.0-or-later",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -26,9 +27,10 @@
     "keen-slider": "^5.5.1",
     "next": "^12.0.10",
     "next-i18next": "^8.10.0",
+    "next-safe": "^3.2.1",
     "next-seo": "^4.29.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.33.0",
     "react-responsive": "^8.2.0"

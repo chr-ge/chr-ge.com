@@ -1,10 +1,36 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const nextSafe = require('next-safe')
 const { i18n } = require('./next-i18next.config')
 
+const isDev = process.env.NODE_ENV !== 'production'
+
 /**
- * @type {import('next/dist/next-server/server/config').NextConfig}
+ * @type {import('next').NextConfig}
  **/
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
+  headers: async () => [
+    {
+      source: '/:path*',
+      headers: [
+        {
+          key: 'X-DNS-Prefetch-Control',
+          value: 'on',
+        },
+        {
+          key: 'Strict-Transport-Security',
+          value: 'max-age=63072000; includeSubDomains; preload',
+        },
+        ...nextSafe({
+          isDev,
+          referrerPolicy: 'strict-origin-when-cross-origin',
+          contentSecurityPolicy: {
+            'default-src': ['self'],
+          },
+        }),
+      ],
+    },
+  ],
   rewrites: async () => [
     {
       source: '/bee.js',
@@ -17,5 +43,3 @@ const nextConfig = {
   ],
   i18n,
 }
-
-module.exports = nextConfig

@@ -25,9 +25,7 @@ module.exports = {
         ...nextSafe({
           isDev,
           referrerPolicy: 'strict-origin-when-cross-origin',
-          contentSecurityPolicy: {
-            'default-src': ['self'],
-          },
+          contentSecurityPolicy: false,
         }),
       ],
     },

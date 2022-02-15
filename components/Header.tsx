@@ -17,11 +17,11 @@ import useLanguage from 'hooks/useLanguage'
 import Menu from './Menu'
 
 const Header: FC = () => {
-  const router = useRouter()
+  const { t } = useTranslation('common')
+  const { asPath, pathname, push, query } = useRouter()
+  const { isEnglish, languageChange } = useLanguage()
   const ref = useRef<HTMLDivElement>(null)
   const { isOpen, onClose, onToggle } = useOutsideClick({ ref })
-  const { t } = useTranslation('common')
-  const { isEnglish, languageChange } = useLanguage()
 
   const { colorMode, toggleColorMode } = useColorMode()
   const isDark = colorMode === 'dark'
@@ -40,17 +40,10 @@ const Header: FC = () => {
       sx={{ scrollMarginTop: '2rem' }}
     >
       <Flex align='start' direction={['row', 'column', 'row']}>
-        <Text
-          as='h4'
-          fontWeight='bold'
-          marginLeft='2'
-          fontSize='lg'
-          whiteSpace='pre'
-        >
+        <Text fontWeight='bold' marginLeft='2' fontSize='lg' whiteSpace='pre'>
           George Christeas
         </Text>
         <Text
-          as='h4'
           marginLeft='2'
           fontSize='lg'
           whiteSpace='pre'
@@ -78,7 +71,7 @@ const Header: FC = () => {
           aria-label={languageChange}
           title={languageChange}
           onClick={() =>
-            router.push('/?ref=Header', '/?ref=Header', {
+            push({ pathname, query }, asPath, {
               locale: isEnglish ? 'fr' : 'en',
             })
           }

@@ -12,7 +12,7 @@ import 'keen-slider/keen-slider.min.css'
 import '@fontsource/mulish/400.css'
 import '@fontsource/mulish/700.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   useSplitbee()
 
   return (
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta content='width=device-width, initial-scale=1' name='viewport' />
       </Head>
       <DefaultSeo {...siteConfig.seo} />
-      <ChakraProvider resetCSS theme={theme}>
+      <ChakraProvider theme={theme}>
         <Fonts />
         <Component {...pageProps} />
       </ChakraProvider>

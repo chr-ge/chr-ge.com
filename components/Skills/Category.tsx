@@ -28,7 +28,7 @@ const Category: FC<CategoryProps> = ({ index, category, technologies }) => {
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.25, delay: index / 4 }}
         >
-          <Heading ref={ref} as='h4' color={headingColor}>
+          <Heading ref={ref} as='h3' color={headingColor}>
             {t(category)}
           </Heading>
           <SimpleGrid marginTop='6' columns={3} spacing={5} width='72.5%'>

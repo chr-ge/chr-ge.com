@@ -1,9 +1,9 @@
+import type { GetStaticProps, NextPage } from 'next'
 import { useEffect } from 'react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import type { NextPage } from 'next'
 import dynamic from 'next/dynamic'
 import MainLayout from 'layouts/MainLayout'
-import { Heading, Contact, Skills, OpenSource } from 'sections/home'
+import { Hero, Contact, Skills, OpenSource } from 'sections/home'
 
 const Projects = dynamic(() => import('sections/home/Projects'), {
   ssr: false,
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 
   return (
     <MainLayout>
-      <Heading />
+      <Hero />
       <Projects />
       <OpenSource />
       <Skills />
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
   )
 }
 
-export const getStaticProps = async ({ locale }: { locale: string }) => ({
+export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common'])),
   },

@@ -12,7 +12,7 @@ import { Contribution } from 'components/Contribution'
 import contributions from 'data/contributions'
 import MotionBox from 'components/MotionBox'
 
-const OpenSource: FC = () => {
+export const OpenSource: FC = () => {
   const { t } = useTranslation('common')
 
   return (
@@ -67,5 +67,3 @@ const OpenSource: FC = () => {
     </Box>
   )
 }
-
-export default OpenSource

@@ -13,7 +13,7 @@ import { siteConfig } from 'configs/site-config'
 import MotionBox from 'components/MotionBox'
 import { Header } from 'components'
 
-const HeadingSection: FC = () => {
+export const Hero: FC = () => {
   const { t } = useTranslation('common')
   const gradient = useColorModeValue(
     'linear(to-t, primary.500, secondary.500)',
@@ -70,5 +70,3 @@ const HeadingSection: FC = () => {
     </Box>
   )
 }
-
-export default HeadingSection

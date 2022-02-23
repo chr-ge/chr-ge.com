@@ -10,7 +10,7 @@ import {
 import { Category } from 'components/Skills'
 import skills from 'data/skills'
 
-const Skills: FC = () => {
+export const Skills: FC = () => {
   const { t } = useTranslation('common')
 
   return (
@@ -44,5 +44,3 @@ const Skills: FC = () => {
     </Box>
   )
 }
-
-export default Skills

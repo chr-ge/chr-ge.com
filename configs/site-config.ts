@@ -73,6 +73,7 @@ export const siteConfig: SiteConfig = {
       externalLink: 'External Link',
     },
   },
+  formspreeUrl: 'https://formspree.io/f/xvodzjor',
 }
 
 type SiteConfig = Record<string, any>

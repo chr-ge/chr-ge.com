@@ -20,13 +20,14 @@ import { FaCheck } from 'react-icons/fa'
 import { ImCross } from 'react-icons/im'
 import { GrSend } from 'react-icons/gr'
 import { isEmail } from 'utils/email'
+import { siteConfig } from 'configs/site-config'
 
 type Message = {
   email: string
   message: string
 }
 
-const Contact: FC = () => {
+export const Contact: FC = () => {
   const { t } = useTranslation('common')
   const [contact, setContact] = useState<Message>({ email: '', message: '' })
   const [loading, setLoading] = useState(false)
@@ -42,7 +43,7 @@ const Contact: FC = () => {
     e.preventDefault()
 
     setLoading(true)
-    await fetch('https://formspree.io/f/xvodzjor', {
+    await fetch(siteConfig.formspreeUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -95,13 +96,13 @@ const Contact: FC = () => {
       </Flex>
       <Box
         as='form'
+        onSubmit={handleSubmit}
         flex={1}
         flexBasis={0}
         bg={useColorModeValue('#acb6e5', '#363795')}
         marginLeft={['0', '0', '2']}
         marginTop={['4', '4', '0']}
         borderRadius='lg'
-        onSubmit={handleSubmit}
       >
         <Container marginY='20'>
           <Text
@@ -173,5 +174,3 @@ const Contact: FC = () => {
     </Flex>
   )
 }
-
-export default Contact

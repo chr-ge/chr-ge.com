@@ -1,14 +1,16 @@
 import { FC, ReactNode } from 'react'
-import { Box, Flex } from '@chakra-ui/react'
+import { Box, BoxProps, Flex } from '@chakra-ui/react'
 import { Footer } from 'components'
 
-interface MainLayoutProps {
+interface MainLayoutProps extends BoxProps {
   children: ReactNode
 }
 
-const MainLayout: FC<MainLayoutProps> = ({ children }) => (
+const MainLayout: FC<MainLayoutProps> = ({ children, ...props }) => (
   <Flex as='main' minH='100vh' padding='4' direction='column'>
-    <Box flex={1}>{children}</Box>
+    <Box flex={1} {...props}>
+      {children}
+    </Box>
     <Footer />
   </Flex>
 )

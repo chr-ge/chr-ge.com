@@ -58,6 +58,8 @@ const theme = extendTheme({
         menu: {
           display: 'flex',
           flexDirection: 'column',
+          height: '28',
+          width: '28',
           bg: 'secondary.400',
           color: 'secondary.800',
           paddingY: '10',

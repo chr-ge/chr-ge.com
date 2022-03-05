@@ -1,5 +1,5 @@
 import { forwardRef } from 'react'
-import { useRouter } from 'next/router'
+import NextLink from 'next/link'
 import { useTranslation } from 'next-i18next'
 import {
   Box,
@@ -19,13 +19,7 @@ interface MenuProps {
 }
 
 const Menu = forwardRef<HTMLDivElement, MenuProps>(({ onClose }, ref) => {
-  const router = useRouter()
   const { t } = useTranslation('common')
-
-  const onClick = (route: string) => {
-    router.push(route)
-    onClose()
-  }
 
   return (
     <Portal>
@@ -50,43 +44,40 @@ const Menu = forwardRef<HTMLDivElement, MenuProps>(({ onClose }, ref) => {
           columns={2}
           gap='2'
         >
-          <Button
-            aria-label={t('home')}
-            onClick={() => onClick('/')}
-            variant='menu'
-            type='button'
-          >
-            <Icon as={IoHome} boxSize='6' mb='1' />
-            {t('home')}
-          </Button>
-          <Button
-            aria-label={t('projects')}
-            onClick={() => onClick('/#projects')}
-            variant='menu'
-            type='button'
-          >
-            <Icon as={FaCode} boxSize='6' mb='1' />
-            {t('projects')}
-          </Button>
-          <Button
-            aria-label='Blog'
-            onClick={() => onClick('/')}
-            variant='menu'
-            type='button'
-            isDisabled
-          >
-            <Icon as={CgWebsite} boxSize='6' mb='1' />
-            Blog
-          </Button>
-          <Button
-            aria-label={t('contact')}
-            onClick={() => onClick('/#contact-me')}
-            variant='menu'
-            type='button'
-          >
-            <Icon as={AiOutlineMessage} boxSize='6' mb='1' />
-            {t('contact')}
-          </Button>
+          <NextLink href='/' passHref>
+            <Button aria-label={t('home')} onClick={onClose} variant='menu'>
+              <Icon as={IoHome} boxSize='6' mb='1' />
+              {t('home')}
+            </Button>
+          </NextLink>
+          <NextLink href='/#projects' passHref>
+            <Button
+              as='a'
+              aria-label={t('projects')}
+              onClick={onClose}
+              variant='menu'
+            >
+              <Icon as={FaCode} boxSize='6' mb='1' />
+              {t('projects')}
+            </Button>
+          </NextLink>
+          <NextLink href='/bookmarks' passHref>
+            <Button as='a' aria-label='Blog' onClick={onClose} variant='menu'>
+              <Icon as={CgWebsite} boxSize='6' mb='1' />
+              Bookmarks
+            </Button>
+          </NextLink>
+          <NextLink href='/#contact-me' passHref>
+            <Button
+              as='a'
+              aria-label={t('contact')}
+              onClick={onClose}
+              variant='menu'
+            >
+              <Icon as={AiOutlineMessage} boxSize='6' mb='1' />
+              {t('contact')}
+            </Button>
+          </NextLink>
         </SimpleGrid>
       </Box>
     </Portal>

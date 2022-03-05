@@ -1,2 +1,10 @@
+# *
 User-agent: *
+Disallow: /api/
 Disallow: /locales/
+
+# Host
+Host: https://chr-ge.com
+
+# Sitemaps
+Sitemap: https://chr-ge.com/sitemap.xml

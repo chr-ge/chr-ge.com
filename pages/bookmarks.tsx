@@ -1,5 +1,7 @@
 import type { GetStaticProps, NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useMemo } from 'react'
+import { NextSeo } from 'next-seo'
 import { useTranslation } from 'next-i18next'
 import {
   Box,
@@ -17,7 +19,6 @@ import { siteConfig } from 'configs/site-config'
 import { fetchBookmarks } from 'data/bookmarks'
 import { Bookmark } from 'components/Bookmark'
 import type { Bookmark as BookmarkType } from 'types'
-import { useMemo } from 'react'
 
 interface BookmarksProps {
   bookmarks: BookmarkType[]
@@ -38,6 +39,7 @@ const Bookmarks: NextPage<BookmarksProps> = ({
 
   return (
     <MainLayout d='flex' flexDirection='column'>
+      <NextSeo title={t('bookmarks')} />
       <Box
         bgGradient={useColorModeValue(
           'linear(to-r, #C0DEFF, #AFEBF3)',
@@ -50,7 +52,7 @@ const Bookmarks: NextPage<BookmarksProps> = ({
         <Container maxW='container.lg'>
           <Header />
           <Heading as='h1' my='12' fontSize='5xl'>
-            {t('bookmarks-heading')}
+            {t('bookmarks')}.
           </Heading>
           <HStack mb='2'>
             {['all', ...tags].map((tag) => (

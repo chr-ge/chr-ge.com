@@ -64,7 +64,7 @@ const Menu = forwardRef<HTMLDivElement, MenuProps>(({ onClose }, ref) => {
           <NextLink href='/bookmarks' passHref>
             <Button as='a' aria-label='Blog' onClick={onClose} variant='menu'>
               <Icon as={CgWebsite} boxSize='6' mb='1' />
-              Bookmarks
+              {t('bookmarks')}
             </Button>
           </NextLink>
           <NextLink href='/#contact-me' passHref>

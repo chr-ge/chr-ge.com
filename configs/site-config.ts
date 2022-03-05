@@ -1,3 +1,5 @@
+import type { DefaultSeoProps } from 'next-seo'
+
 export const siteConfig: SiteConfig = {
   isProd: process.env.NODE_ENV === 'production',
   revalidateDelay: 30,
@@ -8,7 +10,6 @@ export const siteConfig: SiteConfig = {
     titleTemplate: '%s // chr-ge',
     description:
       'George Christeas // Full-Stack Software Developer. I build things with my mouse and keyboard.',
-    siteUrl: 'https://chr-ge.com',
     canonical: 'https://chr-ge.com',
     openGraph: {
       type: 'website',
@@ -80,4 +81,25 @@ export const siteConfig: SiteConfig = {
   },
 }
 
-type SiteConfig = Record<string, any>
+interface SiteConfig {
+  isProd: boolean
+  revalidateDelay: number
+  cloudflareToken: string
+  copyright: string
+  seo: DefaultSeoProps
+  email: string
+  email_link: string
+  github: string
+  npm: string
+  linkedin: string
+  splitbee: {
+    events: {
+      heroButton: string
+      externalLink: string
+    }
+  }
+  formspreeUrl: string
+  raindrop: {
+    token: string
+  }
+}

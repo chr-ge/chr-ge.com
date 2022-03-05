@@ -55,3 +55,11 @@ export type ContributionType = {
   topics: string[]
   language: LanguageType
 }
+
+export type Bookmark = {
+  _id: string
+  title: string
+  link: string
+  cover: string
+  tags: string[]
+}

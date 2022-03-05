@@ -10,16 +10,19 @@ import {
   LinkBox,
   LinkOverlay,
   Flex,
+  useColorModeValue,
 } from '@chakra-ui/react'
 import type { Bookmark as BookmarkProps } from 'types'
 
 export const Bookmark: FC<BookmarkProps> = ({ title, link, cover, tags }) => {
   const { t } = useTranslation('bookmarks')
+  const cardBgColor = useColorModeValue('gray.50', 'gray.800')
+  const tagColor = useColorModeValue('gray.600', 'gray.400')
 
   return (
     <LinkBox
       as='article'
-      bg='gray.50'
+      bgColor={cardBgColor}
       p='2'
       shadow='sm'
       rounded='md'
@@ -64,7 +67,7 @@ export const Bookmark: FC<BookmarkProps> = ({ title, link, cover, tags }) => {
               key={tag}
               textTransform='uppercase'
               fontSize='xs'
-              color='gray.600'
+              color={tagColor}
             >
               {tag}
             </Text>

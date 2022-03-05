@@ -41,7 +41,7 @@ const Bookmarks: NextPage<BookmarksProps> = ({
       <Box
         bgGradient={useColorModeValue(
           'linear(to-r, #C0DEFF, #AFEBF3)',
-          'linear(to-r, teal.900, #363795)'
+          'linear(to-r, #2213AC, #363795)'
         )}
         borderRadius='lg'
         marginBottom='4'
@@ -71,7 +71,7 @@ const Bookmarks: NextPage<BookmarksProps> = ({
         flex={1}
         bgGradient={useColorModeValue(
           'linear(to-r, #D6F3F7,#D0E7F5)',
-          'linear(to-r, teal.900, #363795)'
+          'linear(to-r, #312C90, #392CBA)'
         )}
         borderRadius='lg'
         paddingX={['0', '4']}

@@ -1,5 +1,6 @@
 export const siteConfig: SiteConfig = {
   isProd: process.env.NODE_ENV === 'production',
+  revalidateDelay: 30,
   cloudflareToken: process.env.NEXT_PUBLIC_CLOUDFLARE_TOKEN || '',
   copyright: `© ${new Date().getFullYear()} George Christeas`,
   seo: {
@@ -74,6 +75,9 @@ export const siteConfig: SiteConfig = {
     },
   },
   formspreeUrl: 'https://formspree.io/f/xvodzjor',
+  raindrop: {
+    token: process.env.RAINDROP_TOKEN || '',
+  },
 }
 
 type SiteConfig = Record<string, any>

@@ -56,7 +56,7 @@ const Footer: FC = () => {
           color={textColor}
           _focus={{ boxShadow: 'secondary' }}
           title='Github'
-          data-splitbee-event={siteConfig.splitbee.externalLink}
+          data-splitbee-event={siteConfig.splitbee.events.externalLink}
           data-splitbee-event-type='Github'
           isExternal
         >
@@ -76,7 +76,7 @@ const Footer: FC = () => {
           color={textColor}
           _focus={{ boxShadow: 'secondary' }}
           title='NPM'
-          data-splitbee-event={siteConfig.splitbee.externalLink}
+          data-splitbee-event={siteConfig.splitbee.events.externalLink}
           data-splitbee-event-type='NPM'
           isExternal
         >
@@ -113,7 +113,7 @@ const Footer: FC = () => {
           _focus={{ boxShadow: 'secondary' }}
           color={textColor}
           title='LinkedIn'
-          data-splitbee-event={siteConfig.splitbee.externalLink}
+          data-splitbee-event={siteConfig.splitbee.events.externalLink}
           data-splitbee-event-type='LinkedIn'
           isExternal
         >

@@ -13,11 +13,14 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import type { Bookmark as BookmarkProps } from 'types'
+import { siteConfig } from 'configs/site-config'
 
 export const Bookmark: FC<BookmarkProps> = ({ title, link, cover, tags }) => {
   const { t } = useTranslation('bookmarks')
   const cardBgColor = useColorModeValue('gray.50', 'gray.800')
   const tagColor = useColorModeValue('gray.600', 'gray.400')
+
+  const domain = new URL(link).hostname.replace('www.', '')
 
   return (
     <LinkBox
@@ -57,7 +60,11 @@ export const Bookmark: FC<BookmarkProps> = ({ title, link, cover, tags }) => {
           </Flex>
         </Box>
         <Text fontWeight='semibold' py='3'>
-          <LinkOverlay href={link} isExternal>
+          <LinkOverlay
+            href={link}
+            data-splitbee-event={`${siteConfig.splitbee.events.bookmark} [${domain}]`}
+            isExternal
+          >
             {title}
           </LinkOverlay>
         </Text>

@@ -62,7 +62,8 @@ export const Bookmark: FC<BookmarkProps> = ({ title, link, cover, tags }) => {
         <Text fontWeight='semibold' py='3'>
           <LinkOverlay
             href={link}
-            data-splitbee-event={`${siteConfig.splitbee.events.bookmark} [${domain}]`}
+            data-splitbee-event={siteConfig.splitbee.events.bookmark}
+            data-splitbee-event-type={domain}
             isExternal
           >
             {title}

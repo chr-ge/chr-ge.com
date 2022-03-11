@@ -3163,10 +3163,10 @@ next-seo@^4.29.0:
   resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.29.0.tgz#d281e95ba47914117cc99e9e468599f0547d9b9b"
   integrity sha512-xmwzcz4uHaYJ8glbuhs6FSBQ7z3irmdPYdJJ5saWm72Uy3o+mPKGaPCXQetTCE6/xxVnpoDV4yFtFlEjUcljSg==
 
-next-usequerystate@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/next-usequerystate/-/next-usequerystate-1.7.0.tgz#c51799142742431cb959ab9db33356b76497512b"
-  integrity sha512-OAR+4zgWCz1P5XnrbCrhTBf/UfJIoj17mXRDB5daUq5yYZyYETWQnJFuqEFB9qEd8KrpjBNF2aSmrQpqVXdLUA==
+next-usequerystate@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/next-usequerystate/-/next-usequerystate-1.7.1.tgz#58b1a84aa1706014d4892f8a34a4d43e5a7ee9a6"
+  integrity sha512-JtoMOPQx+xYNouC0ljzKa4SwmhCBgngJiG/NOpVlxjjVcTdgqMs/2FT86/elx0AgsDGGzZ1FMqD+YK8gt2GAxA==
 
 next@^12.1.0:
   version "12.1.0"

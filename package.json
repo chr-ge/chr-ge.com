@@ -29,7 +29,7 @@
     "next-i18next": "^8.10.0",
     "next-safe": "^3.2.1",
     "next-seo": "^4.29.0",
-    "next-usequerystate": "^1.7.0",
+    "next-usequerystate": "^1.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",

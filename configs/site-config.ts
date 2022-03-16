@@ -73,7 +73,7 @@ export const siteConfig: SiteConfig = {
     events: {
       heroButton: 'Hero Button',
       externalLink: 'External Link',
-      bookmark: 'Bookmark'
+      bookmark: 'Bookmark',
     },
   },
   formspreeUrl: 'https://formspree.io/f/xvodzjor',

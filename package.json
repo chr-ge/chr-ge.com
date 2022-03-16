@@ -8,8 +8,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext .ts,.tsx",
-    "lint:fix": "eslint . --ext .ts,.tsx --fix"
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "lint:fix": "yarn lint --fix"
   },
   "homepage": "https://chr-ge.com",
   "repository": {
@@ -42,8 +42,8 @@
     "@types/node": "^15.14.0",
     "@types/react": "^17.0.40",
     "@types/react-responsive": "^8.0.5",
-    "@typescript-eslint/eslint-plugin": "^4.33.0",
-    "@typescript-eslint/parser": "^4.33.0",
+    "@typescript-eslint/eslint-plugin": "^5.15.0",
+    "@typescript-eslint/parser": "^5.15.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^12.1.0",
     "eslint-config-prettier": "^8.5.0",

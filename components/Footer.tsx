@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import { useTranslation } from 'next-i18next'
 import {
+  Button,
   Flex,
   Link,
   Icon,
@@ -156,12 +157,14 @@ const Footer: FC = () => {
             </Text>
           </Center>
         </Link>
-        <Link
-          href='/#top'
+        <Button
+          aria-label='Go to top'
           title='Go to top'
+          variant='unstyled'
           color={textColor}
-          display='flex'
+          onClick={() => window.scrollTo(0, 0)}
           _focus={{ boxShadow: 'secondary' }}
+          data-splitbee-event={siteConfig.splitbee.events.backToTop}
         >
           <Icon
             as={FaChevronUp}
@@ -172,7 +175,7 @@ const Footer: FC = () => {
             padding='1.5'
             _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
           />
-        </Link>
+        </Button>
       </HStack>
     </Flex>
   )

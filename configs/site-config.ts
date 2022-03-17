@@ -75,6 +75,7 @@ export const siteConfig: SiteConfig = {
       externalLink: 'External Link',
       bookmark: 'Bookmark',
       backToTop: 'Back To Top',
+      toggledDarkMode: 'Toggled Dark Mode',
     },
   },
   formspreeUrl: 'https://formspree.io/f/xvodzjor',
@@ -100,6 +101,7 @@ interface SiteConfig {
       externalLink: string
       bookmark: string
       backToTop: string
+      toggledDarkMode: string
     }
   }
   formspreeUrl: string

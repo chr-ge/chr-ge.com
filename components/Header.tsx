@@ -14,7 +14,7 @@ import { VscColorMode } from 'react-icons/vsc'
 import { IoGrid } from 'react-icons/io5'
 import useOutsideClick from 'hooks/useClickOutside'
 import useLanguage from 'hooks/useLanguage'
-import { siteConfig } from 'configs/site-config'
+import { config } from 'configs/config'
 import Menu from './Menu'
 
 const Header: FC = () => {
@@ -66,7 +66,7 @@ const Header: FC = () => {
           title={`${isDark ? 'Light' : 'Dark'} Mode`}
           onClick={toggleColorMode}
           variant='icon-button'
-          data-splitbee-event={siteConfig.splitbee.events.toggledDarkMode}
+          data-splitbee-event={config.splitbee.events.toggledDarkMode}
         />
         <Button
           padding='0'

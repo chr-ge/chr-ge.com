@@ -13,7 +13,7 @@ import {
 import { FaNpm, FaGithub, FaChevronUp } from 'react-icons/fa'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { HiOutlineMail } from 'react-icons/hi'
-import { siteConfig } from 'configs/site-config'
+import { config } from 'configs/config'
 import useLanguage from 'hooks/useLanguage'
 
 const Footer: FC = () => {
@@ -42,7 +42,7 @@ const Footer: FC = () => {
         fontWeight='semibold'
         align={['center', 'left']}
       >
-        {siteConfig.copyright}. {t('proudly_made_in_mtl')}
+        {config.copyright}. {t('proudly_made_in_mtl')}
       </Text>
       <HStack
         flex={1}
@@ -52,12 +52,12 @@ const Footer: FC = () => {
         paddingTop={['10', '0']}
       >
         <Link
-          href={siteConfig.github}
+          href={config.github}
           display='flex'
           color={textColor}
           _focus={{ boxShadow: 'secondary' }}
           title='Github'
-          data-splitbee-event={siteConfig.splitbee.events.externalLink}
+          data-splitbee-event={config.splitbee.events.externalLink}
           data-splitbee-event-type='Github'
           isExternal
         >
@@ -72,12 +72,12 @@ const Footer: FC = () => {
           />
         </Link>
         <Link
-          href={siteConfig.npm}
+          href={config.npm}
           display='flex'
           color={textColor}
           _focus={{ boxShadow: 'secondary' }}
           title='NPM'
-          data-splitbee-event={siteConfig.splitbee.events.externalLink}
+          data-splitbee-event={config.splitbee.events.externalLink}
           data-splitbee-event-type='NPM'
           isExternal
         >
@@ -92,7 +92,7 @@ const Footer: FC = () => {
           />
         </Link>
         <Link
-          href={siteConfig.email_link}
+          href={config.email_link}
           display='flex'
           _focus={{ boxShadow: 'secondary' }}
           color={textColor}
@@ -109,12 +109,12 @@ const Footer: FC = () => {
           />
         </Link>
         <Link
-          href={siteConfig.linkedin}
+          href={config.linkedin}
           display='flex'
           _focus={{ boxShadow: 'secondary' }}
           color={textColor}
           title='LinkedIn'
-          data-splitbee-event={siteConfig.splitbee.events.externalLink}
+          data-splitbee-event={config.splitbee.events.externalLink}
           data-splitbee-event-type='LinkedIn'
           isExternal
         >
@@ -164,7 +164,7 @@ const Footer: FC = () => {
           color={textColor}
           onClick={() => window.scrollTo(0, 0)}
           _focus={{ boxShadow: 'secondary' }}
-          data-splitbee-event={siteConfig.splitbee.events.backToTop}
+          data-splitbee-event={config.splitbee.events.backToTop}
         >
           <Icon
             as={FaChevronUp}

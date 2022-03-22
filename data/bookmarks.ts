@@ -1,12 +1,12 @@
 import type { Bookmark } from 'types'
-import { siteConfig } from 'configs/site-config'
+import { config } from 'configs/config'
 
 export const fetchBookmarks = async (page = 0): Promise<Bookmark[]> => {
   const req = await fetch(
     `https://api.raindrop.io/rest/v1/raindrops/0?search=%23portfolio&perpage=50&page=${page}`,
     {
       headers: {
-        Authorization: `Bearer ${siteConfig.raindrop.token}`,
+        Authorization: `Bearer ${config.raindrop.token}`,
       },
     }
   )

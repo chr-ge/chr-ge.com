@@ -10,7 +10,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { useMediaQuery } from 'react-responsive'
-import { siteConfig } from 'configs/site-config'
+import { config } from 'configs/config'
 import Project from 'components/Project'
 import projects from 'data/projects'
 
@@ -100,7 +100,7 @@ const Projects: FC = () => {
           >
             <Text paddingY='4' paddingX='8' fontSize='lg'>
               {t('more-projects')}
-              <Link color='blue.500' href={siteConfig.github} isExternal>
+              <Link color='blue.500' href={config.github} isExternal>
                 Github
               </Link>
               .

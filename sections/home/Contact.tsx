@@ -20,7 +20,7 @@ import { FaCheck } from 'react-icons/fa'
 import { ImCross } from 'react-icons/im'
 import { GrSend } from 'react-icons/gr'
 import { isEmail } from 'utils/email'
-import { siteConfig } from 'configs/site-config'
+import { config } from 'configs/config'
 
 type Message = {
   email: string
@@ -43,7 +43,7 @@ export const Contact: FC = () => {
     e.preventDefault()
 
     setLoading(true)
-    await fetch(siteConfig.formspreeUrl, {
+    await fetch(config.formspreeUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

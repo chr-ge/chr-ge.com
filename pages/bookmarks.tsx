@@ -15,7 +15,7 @@ import {
 import { useQueryState } from 'next-usequerystate'
 import MainLayout from 'layouts/MainLayout'
 import { Header } from 'components'
-import { siteConfig } from 'configs/site-config'
+import { config } from 'configs/config'
 import { fetchBookmarks } from 'data/bookmarks'
 import { Bookmark } from 'components/Bookmark'
 import type { Bookmark as BookmarkType } from 'types'
@@ -103,7 +103,7 @@ export const getStaticProps: GetStaticProps<BookmarksProps> = async ({
       tags,
       ...(await serverSideTranslations(locale, ['common', 'bookmarks'])),
     },
-    revalidate: siteConfig.revalidateDelay,
+    revalidate: config.revalidateDelay,
   }
 }
 

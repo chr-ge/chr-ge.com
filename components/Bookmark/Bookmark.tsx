@@ -13,7 +13,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import type { Bookmark as BookmarkProps } from 'types'
-import { siteConfig } from 'configs/site-config'
+import { config } from 'configs/config'
 
 export const Bookmark: FC<BookmarkProps> = ({ title, link, cover, tags }) => {
   const { t } = useTranslation('bookmarks')
@@ -62,7 +62,7 @@ export const Bookmark: FC<BookmarkProps> = ({ title, link, cover, tags }) => {
         <Text fontWeight='semibold' py='3'>
           <LinkOverlay
             href={link}
-            data-splitbee-event={siteConfig.splitbee.events.bookmark}
+            data-splitbee-event={config.splitbee.events.bookmark}
             data-splitbee-event-type={domain}
             isExternal
           >

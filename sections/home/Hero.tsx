@@ -9,7 +9,7 @@ import {
   Link,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { siteConfig } from 'configs/site-config'
+import { config } from 'configs/config'
 import MotionBox from 'components/MotionBox'
 import { Header } from 'components'
 
@@ -62,7 +62,7 @@ export const Hero: FC = () => {
             transform: 'scale(1.03) translateX(6px)',
             textDecoration: 'none',
           }}
-          data-splitbee-event={siteConfig.splitbee.events.heroButton}
+          data-splitbee-event={config.splitbee.events.heroButton}
         >
           {t('headline-button')}
         </Button>

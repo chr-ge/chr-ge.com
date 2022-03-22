@@ -1,6 +1,6 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 import { ColorModeScript } from '@chakra-ui/react'
-import { siteConfig } from 'configs/site-config'
+import { config } from 'configs/config'
 
 class Document extends NextDocument {
   render() {
@@ -11,11 +11,11 @@ class Document extends NextDocument {
           <ColorModeScript />
           <Main />
           <NextScript />
-          {siteConfig.isProd && (
+          {config.isProd && (
             <script
               defer
               src='https://static.cloudflareinsights.com/beacon.min.js'
-              data-cf-beacon={`{"token": "${siteConfig.cloudflareToken}"}`}
+              data-cf-beacon={`{"token": "${config.cloudflareToken}"}`}
             />
           )}
         </body>

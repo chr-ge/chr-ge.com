@@ -5,7 +5,7 @@ import { DefaultSeo } from 'next-seo'
 import { ChakraProvider } from '@chakra-ui/react'
 import Fonts from 'components/Fonts'
 import { useSplitbee } from 'hooks/useSplitbee'
-import { siteConfig } from 'configs/site-config'
+import { config } from 'configs/config'
 import theme from 'styles/theme'
 import 'focus-visible/dist/focus-visible'
 import 'keen-slider/keen-slider.min.css'
@@ -21,7 +21,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <meta charSet='utf-8' />
         <meta content='width=device-width, initial-scale=1' name='viewport' />
       </Head>
-      <DefaultSeo {...siteConfig.seo} />
+      <DefaultSeo {...config.seo} />
       <ChakraProvider theme={theme}>
         <Fonts />
         <Component {...pageProps} />

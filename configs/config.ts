@@ -1,6 +1,6 @@
 import type { DefaultSeoProps } from 'next-seo'
 
-export const siteConfig: SiteConfig = {
+export const config: Config = {
   isProd: process.env.NODE_ENV === 'production',
   revalidateDelay: 30,
   cloudflareToken: process.env.NEXT_PUBLIC_CLOUDFLARE_TOKEN || '',
@@ -84,7 +84,7 @@ export const siteConfig: SiteConfig = {
   },
 }
 
-interface SiteConfig {
+interface Config {
   isProd: boolean
   revalidateDelay: number
   cloudflareToken: string

@@ -12,6 +12,7 @@ import {
 } from '@chakra-ui/react'
 import useLanguage from 'hooks/useLanguage'
 import type { ContributionType } from 'types'
+import { config } from 'configs/config'
 
 const Contribution: FC<ContributionType> = ({
   user,
@@ -41,7 +42,13 @@ const Contribution: FC<ContributionType> = ({
       _hover={{ shadow: '2xl' }}
     >
       <Flex marginBottom='2' align='center' justify='space-between'>
-        <LinkOverlay href={github} fontSize={['xl', '2xl']} isExternal>
+        <LinkOverlay
+          href={github}
+          fontSize={['xl', '2xl']}
+          data-splitbee-event={config.splitbee.events.osc}
+          data-splitbee-event-type={repository}
+          isExternal
+        >
           {user}/<chakra.span fontWeight='bold'>{repository}</chakra.span>
         </LinkOverlay>
         <Icon

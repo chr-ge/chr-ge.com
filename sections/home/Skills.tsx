@@ -18,24 +18,23 @@ export const Skills: FC = () => {
       as='section'
       bg={useColorModeValue('gray.50', 'black')}
       borderRadius='lg'
-      marginBottom='4'
-      padding={['0', '4']}
+      mb='4'
+      py='4'
+      px={['0', '4']}
     >
-      <Container maxW='container.xl'>
+      <Container maxW='container.xl' mt='8'>
         <Heading
           as='h2'
           id='projects'
           fontSize='5xl'
-          marginBottom='12'
-          marginTop='8'
+          mb='12'
           color='primary.800'
           sx={{ scrollMarginTop: '3rem' }}
-          paddingTop={['4', '0']}
           textAlign={['center', 'left']}
         >
           {t('skills-heading')}
         </Heading>
-        <SimpleGrid columns={[1, 1, 2, 3]} spacing={20} paddingBottom='12'>
+        <SimpleGrid columns={[1, null, 2, 3]} spacing='20' pb='12'>
           {skills.map((skill, i) => (
             <Category key={skill.category} index={i + 1} {...skill} />
           ))}

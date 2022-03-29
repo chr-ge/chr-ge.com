@@ -25,8 +25,8 @@ export const Hero: FC = () => {
       height='calc(100vh - 2rem)'
       bgGradient={gradient}
       borderRadius='lg'
-      padding='4'
-      marginBottom='4'
+      p='4'
+      mb='4'
     >
       <Container maxW='container.lg'>
         <Header />
@@ -40,7 +40,7 @@ export const Hero: FC = () => {
             width={['95%', '80%', '75%']}
             fontSize={['4xl', '5xl', '6xl']}
             fontWeight='bold'
-            marginTop='44'
+            mt='44'
           >
             {t('headline-1')}
             <chakra.span cursor='url(/img/mouse_cursor.png), text'>
@@ -56,7 +56,7 @@ export const Hero: FC = () => {
           as={Link}
           aria-label={t('headline-button')}
           href='#projects'
-          marginTop='8'
+          mt='8'
           type='button'
           _hover={{
             transform: 'scale(1.03) translateX(6px)',

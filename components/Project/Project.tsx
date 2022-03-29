@@ -108,14 +108,13 @@ const Project: FC<ProjectType> = ({
             <Flex
               direction='column'
               bgColor={cardBg}
-              padding='4'
-              width={['100%', '100%', '80']}
+              rounded='sm'
+              width={['100%', null, '80']}
+              p='4'
             >
               <Heading>{title}</Heading>
-              <Text marginTop='4'>
-                {isEnglish ? description_en : description_fr}
-              </Text>
-              <Flex marginTop='6'>
+              <Text mt='4'>{isEnglish ? description_en : description_fr}</Text>
+              <Flex mt='6'>
                 {tags.map((tag) => (
                   <Badge
                     key={tag.label}
@@ -127,7 +126,7 @@ const Project: FC<ProjectType> = ({
                   </Badge>
                 ))}
               </Flex>
-              <Box marginTop='6' marginBottom='6'>
+              <Box mt='6' mb='6'>
                 {homepage && (
                   <Tooltip
                     label={t('view-website')}

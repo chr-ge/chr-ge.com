@@ -27,8 +27,8 @@ const Footer: FC = () => {
     <Flex
       as='footer'
       bgColor={useColorModeValue('primary.700', 'primary.900')}
-      padding='8'
-      marginTop='4'
+      p='8'
+      mt='4'
       borderRadius='lg'
       minH={['64', 'unset']}
       align='center'
@@ -36,7 +36,7 @@ const Footer: FC = () => {
       direction={['column', 'row']}
     >
       <Text
-        flex={1}
+        flex='1'
         flexBasis={0}
         color={textColor}
         fontWeight='semibold'
@@ -45,7 +45,7 @@ const Footer: FC = () => {
         {config.copyright}. {t('proudly_made_in_mtl')}
       </Text>
       <HStack
-        flex={1}
+        flex='1'
         flexBasis={0}
         justify='center'
         spacing='3'
@@ -130,7 +130,7 @@ const Footer: FC = () => {
         </Link>
       </HStack>
       <HStack
-        flex={1}
+        flex='1'
         flexBasis={0}
         spacing='3'
         justify='flex-end'

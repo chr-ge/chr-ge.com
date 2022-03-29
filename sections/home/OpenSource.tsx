@@ -23,18 +23,17 @@ export const OpenSource: FC = () => {
         'linear(to-r, #4b6cb7, #182848)'
       )}
       borderRadius='lg'
-      marginBottom='4'
-      padding={['0', '4']}
+      mb='4'
+      py='4'
+      px={['0', '4']}
     >
-      <Container maxW='container.xl'>
+      <Container maxW='container.xl' mt='8'>
         <Heading
           as='h2'
           fontSize={['4xl', '5xl']}
-          marginBottom='12'
-          marginTop='8'
           color={useColorModeValue('gray.700', 'gray.300')}
-          paddingTop={['4', '0']}
           textAlign='center'
+          mb='12'
         >
           {t('open-source')}
         </Heading>
@@ -49,7 +48,7 @@ export const OpenSource: FC = () => {
                 ref={ref}
                 direction={['column', 'column', 'row']}
                 spacing={[12, 12, 20]}
-                paddingBottom='12'
+                pb='12'
                 align='center'
                 justify='center'
               >

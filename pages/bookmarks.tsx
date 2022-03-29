@@ -39,7 +39,7 @@ const Bookmarks: NextPage<BookmarksProps> = ({
 
   return (
     <MainLayout d='flex' flexDirection='column'>
-      <NextSeo title={t('bookmarks')} />
+      <NextSeo title={t('bookmarks-heading')} />
       <Box
         bgGradient={useColorModeValue(
           'linear(to-r, #C0DEFF, #AFEBF3)',
@@ -52,7 +52,7 @@ const Bookmarks: NextPage<BookmarksProps> = ({
         <Container maxW='container.lg'>
           <Header />
           <Heading as='h1' my='12' fontSize='5xl'>
-            {t('bookmarks')}.
+            {t('bookmarks-heading')}.
           </Heading>
           <HStack mb='2'>
             {['all', ...tags].map((tag) => (

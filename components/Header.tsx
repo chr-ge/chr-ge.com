@@ -12,8 +12,8 @@ import {
 } from '@chakra-ui/react'
 import { VscColorMode } from 'react-icons/vsc'
 import { IoGrid } from 'react-icons/io5'
-import useOutsideClick from 'hooks/useClickOutside'
-import useLanguage from 'hooks/useLanguage'
+import { useOutsideClick } from 'utils/hooks/useClickOutside'
+import { useLanguage } from 'utils/hooks/useLanguage'
 import { config } from 'configs/config'
 import Menu from './Menu'
 

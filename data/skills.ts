@@ -26,7 +26,7 @@ import { Javascript } from 'components/Icons'
 import type { SkillType } from 'types'
 import { IoLogoPwa } from 'react-icons/io5'
 
-const skills: SkillType[] = [
+export const skills: SkillType[] = [
   {
     category: 'languages',
     technologies: [
@@ -80,5 +80,3 @@ const skills: SkillType[] = [
     ],
   },
 ]
-
-export default skills

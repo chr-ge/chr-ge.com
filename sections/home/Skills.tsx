@@ -7,8 +7,8 @@ import {
   SimpleGrid,
   useColorModeValue,
 } from '@chakra-ui/react'
+import { skills } from 'data/skills'
 import { Category } from 'components/Skills'
-import skills from 'data/skills'
 
 export const Skills: FC = () => {
   const { t } = useTranslation('common')

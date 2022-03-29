@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react'
 import { InView } from 'react-intersection-observer'
 import { Contribution } from 'components/Contribution'
-import contributions from 'data/contributions'
+import { contributions } from 'data/contributions'
 import MotionBox from 'components/MotionBox'
 
 export const OpenSource: FC = () => {

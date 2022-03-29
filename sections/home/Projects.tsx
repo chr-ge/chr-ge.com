@@ -8,9 +8,9 @@ import {
   Text,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { config } from 'configs/config'
 import Project from 'components/Project'
-import projects from 'data/projects'
+import { projects } from 'data/projects'
+import { config } from 'configs/config'
 
 const Projects: FC = () => {
   const { t } = useTranslation('common')

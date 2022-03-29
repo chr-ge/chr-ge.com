@@ -21,11 +21,11 @@
   "cloud": "Cloud",
   "databases": "Databases",
   "contact-me": "Contact Me",
-  "email_placeholder": "yabba_dabba_doo@gmail.com",
-  "message_placeholder": "Let's work together.",
+  "email-placeholder": "yabba_dabba_doo@gmail.com",
+  "message-placeholder": "Let's work together.",
   "message-sent": "Message Sent.",
   "message-text": "I'll get back to you ASAP.",
   "send": "Send",
-  "proudly_made_in_mtl": "Made in Montreal. 🍁",
+  "proudly-made-in-mtl": "Made in Montreal. 🍁",
   "go-to-top": "Go to top"
 }

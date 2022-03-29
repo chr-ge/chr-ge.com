@@ -6,7 +6,7 @@ export interface UseOutsideClickProps {
   ref: RefObject<HTMLElement>
 }
 
-function useOutsideClick({ ref }: UseOutsideClickProps) {
+export const useOutsideClick = ({ ref }: UseOutsideClickProps) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const stateRef = useRef({
@@ -71,8 +71,6 @@ function useOutsideClick({ ref }: UseOutsideClickProps) {
     onToggle,
   }
 }
-
-export default useOutsideClick
 
 function isValidEvent(event: any, ref: RefObject<HTMLElement>) {
   const target = event.target as HTMLElement

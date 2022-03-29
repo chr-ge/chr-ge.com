@@ -10,7 +10,7 @@ import {
   Badge,
   useColorModeValue,
 } from '@chakra-ui/react'
-import useLanguage from 'hooks/useLanguage'
+import { useLanguage } from 'utils/hooks/useLanguage'
 import type { ContributionType } from 'types'
 import { config } from 'configs/config'
 
@@ -19,12 +19,11 @@ const Contribution: FC<ContributionType> = ({
   repository,
   role,
   github,
-  description_en,
-  description_fr,
+  description,
   topics,
   language,
 }) => {
-  const { isEnglish } = useLanguage()
+  const { locale, isEnglish } = useLanguage()
 
   return (
     <LinkBox
@@ -61,9 +60,7 @@ const Contribution: FC<ContributionType> = ({
       <Badge colorScheme={role.color} marginBottom='4'>
         {isEnglish ? role.label_en : role.label_fr}
       </Badge>
-      <Text noOfLines={2}>
-        {!isEnglish && description_fr ? description_fr : description_en}
-      </Text>
+      <Text noOfLines={2}>{description[locale]}</Text>
       <Flex marginTop='6'>
         {topics.map((topic) => (
           <Tag

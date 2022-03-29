@@ -120,7 +120,7 @@ export const Contact: FC = () => {
               name='email'
               marginBottom='6'
               bg='gray.50'
-              placeholder={t('email_placeholder')}
+              placeholder={t('email-placeholder')}
               background={useColorModeValue('gray.50', 'gray.700')}
               value={contact.email}
               onChange={handleOnChange}
@@ -152,7 +152,7 @@ export const Contact: FC = () => {
             id='message'
             name='message'
             bg='gray.50'
-            placeholder={t('message_placeholder')}
+            placeholder={t('message-placeholder')}
             background={useColorModeValue('gray.50', 'gray.700')}
             value={contact.message}
             onChange={handleOnChange}

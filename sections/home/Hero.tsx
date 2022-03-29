@@ -9,9 +9,9 @@ import {
   Link,
   useColorModeValue,
 } from '@chakra-ui/react'
-import { config } from 'configs/config'
 import MotionBox from 'components/MotionBox'
 import { Header } from 'components'
+import { config } from 'configs/config'
 
 export const Hero: FC = () => {
   const { t } = useTranslation('common')

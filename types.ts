@@ -20,8 +20,10 @@ type Tag = {
 export type ProjectType = {
   id: string
   title: string
-  description_en: string
-  description_fr: string
+  description: {
+    en: string
+    fr: string
+  }
   images: Image[]
   homepage?: string
   github?: string
@@ -50,8 +52,7 @@ export type ContributionType = {
   repository: string
   role: RoleType
   github: string
-  description_en: string
-  description_fr?: string
+  description: { en: string; fr: string }
   topics: string[]
   language: LanguageType
 }

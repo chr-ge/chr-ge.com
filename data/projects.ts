@@ -12,12 +12,14 @@ import {
 } from 'react-icons/si'
 import type { ProjectType } from 'types'
 
-const projects: ProjectType[] = [
+export const projects: ProjectType[] = [
   {
     id: '1',
     title: 'Hotel at Home',
-    description_en: 'Rent a cottage in Quebec.',
-    description_fr: 'Louez un chalet au Québec.',
+    description: {
+      en: 'Rent a cottage in Quebec.',
+      fr: 'Louez un chalet au Québec.',
+    },
     images: [
       { alt: 'Property Page', src: '/img/projects/halm-ipad.png' },
       { alt: 'Home Page', src: '/img/projects/halm-iphone.png' },
@@ -39,10 +41,10 @@ const projects: ProjectType[] = [
   {
     id: '2',
     title: 'Kalabam',
-    description_en:
-      'Create multiplayer quizzes for class activities or interactive presentations.',
-    description_fr:
-      'Créez des quiz multijoueurs pour les activités en classe ou des présentations interactives.',
+    description: {
+      en: 'Create multiplayer quizzes for class activities or interactive presentations.',
+      fr: 'Créez des quiz multijoueurs pour les activités en classe ou des présentations interactives.',
+    },
     images: [
       { src: '/img/projects/kalabam-ipad.png', alt: 'Dashboard' },
       { src: '/img/projects/kalabam-iphone.png', alt: 'Home Page' },
@@ -65,10 +67,10 @@ const projects: ProjectType[] = [
   {
     id: '3',
     title: 'Why Pigeons',
-    description_en:
-      'Quick food delivery right to your door. User, restaurant, driver, and admin dashboards are fully functional.',
-    description_fr:
-      'Livraison rapide de plats directement à votre porte. Les tableaux de bord des utilisateurs, des restaurants, des chauffeurs et des administrateurs sont entièrement fonctionnels.',
+    description: {
+      en: 'Quick food delivery right to your door. User, restaurant, driver, and admin dashboards are fully functional.',
+      fr: 'Livraison rapide de plats directement à votre porte. Les tableaux de bord des utilisateurs, des restaurants, des chauffeurs et des administrateurs sont entièrement fonctionnels.',
+    },
     images: [
       { src: '/img/projects/pigeons-ipad.png', alt: 'Restaurant Page' },
       {
@@ -90,5 +92,3 @@ const projects: ProjectType[] = [
     ],
   },
 ]
-
-export default projects

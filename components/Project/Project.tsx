@@ -17,15 +17,14 @@ import { InView } from 'react-intersection-observer'
 import { useMediaQuery } from 'react-responsive'
 import { ImLink } from 'react-icons/im'
 import { FaCode } from 'react-icons/fa'
-import useLanguage from 'hooks/useLanguage'
+import { useLanguage } from 'utils/hooks/useLanguage'
 import MotionBox from 'components/MotionBox'
 import Technology from './Technology'
 import type { ProjectType } from 'types'
 
 const Project: FC<ProjectType> = ({
   title,
-  description_en,
-  description_fr,
+  description,
   images,
   homepage,
   github,
@@ -33,7 +32,7 @@ const Project: FC<ProjectType> = ({
   tags,
 }) => {
   const { t } = useTranslation('common')
-  const { isEnglish } = useLanguage()
+  const { locale } = useLanguage()
   const [currentSlide, setCurrentSlide] = useState(0)
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
     initial: 0,
@@ -113,7 +112,7 @@ const Project: FC<ProjectType> = ({
               p='4'
             >
               <Heading>{title}</Heading>
-              <Text mt='4'>{isEnglish ? description_en : description_fr}</Text>
+              <Text mt='4'>{description[locale]}</Text>
               <Flex mt='6'>
                 {tags.map((tag) => (
                   <Badge

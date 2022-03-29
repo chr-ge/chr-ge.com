@@ -13,8 +13,8 @@ import {
 import { FaNpm, FaGithub, FaChevronUp } from 'react-icons/fa'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { HiOutlineMail } from 'react-icons/hi'
+import { useLanguage } from 'utils/hooks/useLanguage'
 import { config } from 'configs/config'
-import useLanguage from 'hooks/useLanguage'
 
 const Footer: FC = () => {
   const { t } = useTranslation('common')
@@ -42,14 +42,14 @@ const Footer: FC = () => {
         fontWeight='semibold'
         align={['center', 'left']}
       >
-        {config.copyright}. {t('proudly_made_in_mtl')}
+        {config.copyright}. {t('proudly-made-in-mtl')}
       </Text>
       <HStack
         flex='1'
         flexBasis={0}
         justify='center'
         spacing='3'
-        paddingTop={['10', '0']}
+        pt={['10', '0']}
       >
         <Link
           href={config.github}
@@ -67,7 +67,7 @@ const Footer: FC = () => {
             boxSize={12}
             bg={iconBg}
             borderRadius='full'
-            padding='1.5'
+            p='1.5'
             _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
           />
         </Link>
@@ -87,7 +87,7 @@ const Footer: FC = () => {
             boxSize={12}
             bg={iconBg}
             borderRadius='full'
-            padding='1.5'
+            p='1.5'
             _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
           />
         </Link>
@@ -104,7 +104,7 @@ const Footer: FC = () => {
             boxSize={12}
             bg={iconBg}
             borderRadius='full'
-            padding='1.5'
+            p='1.5'
             _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
           />
         </Link>
@@ -124,7 +124,7 @@ const Footer: FC = () => {
             boxSize={12}
             bg={iconBg}
             borderRadius='full'
-            padding='1.5'
+            p='1.5'
             _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
           />
         </Link>
@@ -135,7 +135,7 @@ const Footer: FC = () => {
         spacing='3'
         justify='flex-end'
         align='center'
-        paddingTop={['10', '0']}
+        pt={['10', '0']}
       >
         <Link
           href={isEnglish ? '/fr?ref=Footer' : '/?ref=Footer'}
@@ -149,7 +149,7 @@ const Footer: FC = () => {
             boxSize={10}
             bg={iconBg}
             borderRadius='full'
-            padding='1'
+            p='1'
             _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
           >
             <Text fontSize='xl' fontWeight='bold'>
@@ -172,7 +172,7 @@ const Footer: FC = () => {
             boxSize={10}
             bg={iconBg}
             borderRadius='full'
-            padding='1.5'
+            p='1.5'
             _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
           />
         </Button>

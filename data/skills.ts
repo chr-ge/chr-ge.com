@@ -42,7 +42,6 @@ export const skills: SkillType[] = [
     technologies: [
       { name: 'React', icon: SiReact, color: '#61DAFB' },
       { name: 'React Native', icon: SiReact, color: 'gray.500' },
-      { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
       { name: 'SCSS', icon: SiSass, color: '#CC6699' },
       { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#38B2AC' },
       { name: 'Progressive Web App', icon: IoLogoPwa, color: '#5a0fc8' },
@@ -51,8 +50,8 @@ export const skills: SkillType[] = [
   {
     category: 'back-end',
     technologies: [
-      { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
       { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+      { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
       { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
       { name: 'Express', icon: SiExpress, color: '#000000' },
       { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },

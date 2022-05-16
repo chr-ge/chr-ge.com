@@ -30,8 +30,8 @@ export const skills: SkillType[] = [
   {
     category: 'languages',
     technologies: [
-      { name: 'Javascript', icon: Javascript, color: '#F7DF1E' },
       { name: 'Typescript', icon: SiTypescript, color: '#3178C6' },
+      { name: 'Javascript', icon: Javascript, color: '#F7DF1E' },
       { name: 'PHP', icon: SiPhp, color: '#777BB4' },
       { name: 'Ruby', icon: SiRuby, color: '#CC342D' },
       { name: 'Java', icon: SiJava, color: '#007396' },

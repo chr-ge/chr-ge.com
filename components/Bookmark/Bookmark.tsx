@@ -42,7 +42,7 @@ export const Bookmark: FC<BookmarkProps> = ({ title, link, cover, tags }) => {
             />
           </AspectRatio>
           <Flex
-            d='none'
+            display='none'
             position='absolute'
             align='center'
             justify='center'

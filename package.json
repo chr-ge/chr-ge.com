@@ -17,7 +17,7 @@
     "url": "git+https://github.com/chr-ge/chr-ge.com.git"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.8.8",
+    "@chakra-ui/react": "^2.1.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@fontsource/mulish": "^4.5.10",
@@ -26,12 +26,12 @@
     "framer-motion": "^4.1.17",
     "keen-slider": "^5.5.1",
     "next": "^12.1.6",
-    "next-i18next": "^8.10.0",
+    "next-i18next": "^11.0.0",
     "next-safe": "^3.2.1",
     "next-seo": "^4.29.0",
     "next-usequerystate": "^1.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.34.0",
     "react-responsive": "^8.2.0"
@@ -39,8 +39,8 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
-    "@types/node": "^15.14.0",
-    "@types/react": "^17.0.43",
+    "@types/node": "^17.0.35",
+    "@types/react": "^18.0.9",
     "@types/react-responsive": "^8.0.5",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",

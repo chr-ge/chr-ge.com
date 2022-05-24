@@ -38,7 +38,7 @@ const Bookmarks: NextPage<BookmarksProps> = ({
   )
 
   return (
-    <MainLayout d='flex' flexDirection='column'>
+    <MainLayout display='flex' flexDirection='column'>
       <NextSeo title={t('bookmarks')} />
       <Box
         bgGradient={useColorModeValue(

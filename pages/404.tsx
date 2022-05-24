@@ -26,7 +26,7 @@ const NotFound: NextPage = () => {
         borderRadius='lg'
         padding='4'
       >
-        <Container h='100%' d='flex' flexDir='column' maxW='container.lg'>
+        <Container h='100%' display='flex' flexDir='column' maxW='container.lg'>
           <Header />
           <VStack flex='1' justify='center'>
             <Heading as='h1' fontSize='6xl'>

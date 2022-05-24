@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { useTranslation } from 'next-i18next'
+import type { TFuncKey } from 'react-i18next'
 import { Heading, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 import { InView } from 'react-intersection-observer'
 import Technology from 'components/Project/Technology'
@@ -29,7 +30,7 @@ const Category: FC<CategoryProps> = ({ index, category, technologies }) => {
           transition={{ duration: 0.25, delay: index / 4 }}
         >
           <Heading ref={ref} as='h3' color={headingColor}>
-            {t(category)}
+            {t(category as TFuncKey<'common'>)}
           </Heading>
           <SimpleGrid marginTop='6' columns={3} spacing={5} width='72.5%'>
             {technologies.map((t) => (

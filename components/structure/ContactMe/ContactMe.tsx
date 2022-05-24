@@ -1,17 +1,62 @@
 import { useTranslation } from 'next-i18next'
+import splitbee from '@splitbee/web'
 import {
   Button,
   FormControl,
+  FormErrorMessage,
   FormLabel,
   Heading,
   Input,
   Stack,
   Textarea,
+  useToast,
   VStack,
 } from '@chakra-ui/react'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { z } from 'zod'
+import { config } from 'configs/config'
+
+const ContactMeSchema = z
+  .object({
+    email: z.string().email(),
+    message: z.string().min(1),
+  })
+  .strict()
+
+type ContactMeData = z.infer<typeof ContactMeSchema>
 
 export const ContactMe: React.FC = () => {
   const { t } = useTranslation('common')
+  const toast = useToast()
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<ContactMeData>({
+    resolver: zodResolver(ContactMeSchema),
+  })
+
+  const onSubmit = handleSubmit(async (data) => {
+    await fetch(config.formspreeUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+
+    splitbee.user.set({ email: data.email })
+
+    toast({
+      title: t('message-sent'),
+      description: t('message-text'),
+      status: 'success',
+      duration: 7500,
+      isClosable: true,
+    })
+  })
 
   return (
     <Stack
@@ -25,16 +70,28 @@ export const ContactMe: React.FC = () => {
       <Heading as='h2' flex='1' variant='section'>
         {t('contact-me')}
       </Heading>
-      <VStack as='form' flex='1' spacing='6'>
-        <FormControl>
+      <VStack as='form' onSubmit={onSubmit} flex='1' spacing='6'>
+        <FormControl isInvalid={!!errors.email}>
           <FormLabel>{t('email')}</FormLabel>
-          <Input placeholder={t('email-placeholder')} />
+          <Input placeholder={t('email-placeholder')} {...register('email')} />
+          <FormErrorMessage>{errors.email?.message}</FormErrorMessage>
         </FormControl>
-        <FormControl>
+        <FormControl isInvalid={!!errors.message}>
           <FormLabel>{t('message')}</FormLabel>
-          <Textarea minH='40' placeholder={t('message-placeholder')} />
+          <Textarea
+            minH='40'
+            placeholder={t('message-placeholder')}
+            {...register('message')}
+          />
+          <FormErrorMessage>{errors.message?.message}</FormErrorMessage>
         </FormControl>
-        <Button aria-label={t('send')} alignSelf='flex-start' variant='block'>
+        <Button
+          aria-label={t('send')}
+          alignSelf='flex-start'
+          variant='block'
+          isLoading={isSubmitting}
+          type='submit'
+        >
           {t('send')}
         </Button>
       </VStack>

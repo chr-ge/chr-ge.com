@@ -6,7 +6,7 @@ export const SelectedProjects: React.FC = () => {
 
   return (
     <VStack
-      id='selected-projects'
+      id='projects'
       as='section'
       align='stretch'
       py='20'

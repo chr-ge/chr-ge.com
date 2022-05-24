@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
         <Heading as='h1' variant='hero'>
           I build things with my mouse and keyboard.
         </Heading>
-        <NextLink href='/#selected-projects' passHref>
+        <NextLink href='/#projects' passHref>
           <Button
             as='a'
             variant='secondary'

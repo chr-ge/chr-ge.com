@@ -1,4 +1,4 @@
-import type { Bookmark } from 'types'
+import type { Bookmark } from 'utils/types'
 import { config } from 'configs/config'
 
 export const fetchBookmarks = async (page = 0): Promise<Bookmark[]> => {

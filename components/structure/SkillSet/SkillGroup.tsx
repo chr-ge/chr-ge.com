@@ -20,7 +20,9 @@ export const SkillGroup: React.FC<SkillGroupProps> = ({ category, skills }) => {
       p='4'
       spacing='4'
     >
-      <Heading as='h4'>{t(category as TFuncKey<'common'>)}</Heading>
+      <Heading as='h4' variant='skillCategory'>
+        {t(category as TFuncKey<'common'>)}
+      </Heading>
       <SimpleGrid columns={3} spacing='6'>
         {skills.map((skill) => (
           <Skill key={skill.name} {...skill} />

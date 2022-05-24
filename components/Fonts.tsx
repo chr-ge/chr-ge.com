@@ -8,7 +8,7 @@ export const Fonts: React.FC = () => (
         font-style: normal;
         font-weight: 700;
         font-display: swap;
-        src: url('/fonts/Hanson-Bold.ttf') format('truetype');
+        src: url('/fonts/hanson-bold.ttf') format('truetype');
       }
     `}
   />

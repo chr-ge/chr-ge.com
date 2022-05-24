@@ -21,6 +21,13 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       <Head>
         <meta charSet='utf-8' />
         <meta content='width=device-width, initial-scale=1' name='viewport' />
+        <link
+          rel='preload'
+          href='/fonts/hanson-bold.ttf'
+          as='font'
+          type='font/ttf'
+          crossOrigin=''
+        />
       </Head>
       <DefaultSeo {...config.seo} />
       <ChakraProvider theme={theme}>

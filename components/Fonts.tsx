@@ -4,11 +4,11 @@ export const Fonts: React.FC = () => (
   <Global
     styles={`
       @font-face {
-        font-family: 'Gilroy';
+        font-family: 'Hanson';
         font-style: normal;
-        font-weight: 800;
+        font-weight: 700;
         font-display: swap;
-        src: url('/fonts/Gilroy-ExtraBold.otf') format('opentype');
+        src: url('/fonts/Hanson-Bold.ttf') format('truetype');
       }
     `}
   />

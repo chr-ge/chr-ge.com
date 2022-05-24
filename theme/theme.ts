@@ -34,7 +34,7 @@ export const theme = extendTheme({
     },
   },
   fonts: {
-    heading: 'Gilroy, sans-serif',
+    heading: 'Hanson, sans-serif',
     body: 'Mulish, sans-serif',
   },
   shadows: {

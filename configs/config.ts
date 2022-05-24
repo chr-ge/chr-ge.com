@@ -1,7 +1,9 @@
 import type { DefaultSeoProps } from 'next-seo'
+import { i18n } from '../next-i18next.config'
 
 export const config: Config = {
   isProd: process.env.NODE_ENV === 'production',
+  defaultLocale: i18n.defaultLocale,
   revalidateDelay: 30,
   cloudflareToken: process.env.NEXT_PUBLIC_CLOUDFLARE_TOKEN || '',
   copyright: `© ${new Date().getFullYear()} George Christeas`,
@@ -87,6 +89,7 @@ export const config: Config = {
 
 interface Config {
   isProd: boolean
+  defaultLocale: string
   revalidateDelay: number
   cloudflareToken: string
   copyright: string

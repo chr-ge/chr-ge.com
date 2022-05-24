@@ -92,7 +92,7 @@ const Bookmarks: NextPage<BookmarksProps> = ({
 }
 
 export const getStaticProps: GetStaticProps<BookmarksProps> = async ({
-  locale = 'en',
+  locale = config.defaultLocale,
 }) => {
   const bookmarks = await fetchBookmarks()
   const tags = Array.from(new Set(bookmarks.flatMap(({ tags }) => tags)))

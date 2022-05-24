@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 import { MainLayout } from 'components/Layouts/MainLayout'
 import { Header } from 'components'
+import { config } from 'configs/config'
 
 const NotFound: NextPage = () => {
   const { t } = useTranslation('error')
@@ -42,7 +43,9 @@ const NotFound: NextPage = () => {
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale = 'en' }) => ({
+export const getStaticProps: GetStaticProps = async ({
+  locale = config.defaultLocale,
+}) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common', 'error'])),
   },

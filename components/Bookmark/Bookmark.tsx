@@ -11,7 +11,7 @@ import {
   Flex,
   useColorModeValue,
 } from '@chakra-ui/react'
-import type { Bookmark as BookmarkProps } from 'types'
+import type { Bookmark as BookmarkProps } from 'utils/types'
 import { config } from 'configs/config'
 
 export const Bookmark: React.FC<BookmarkProps> = ({

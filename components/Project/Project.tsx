@@ -20,7 +20,7 @@ import { FaCode } from 'react-icons/fa'
 import { useLanguage } from 'utils/hooks/useLanguage'
 import MotionBox from 'components/MotionBox'
 import Technology from './Technology'
-import type { ProjectType } from 'types'
+import type { ProjectType } from 'utils/types'
 
 const Project: FC<ProjectType> = ({
   title,

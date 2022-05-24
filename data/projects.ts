@@ -10,7 +10,7 @@ import {
   SiPostgresql,
   SiStripe,
 } from 'react-icons/si'
-import type { ProjectType } from 'types'
+import type { ProjectType } from 'utils/types'
 
 export const projects: ProjectType[] = [
   {

@@ -17,7 +17,7 @@ import { MainLayout } from 'components/Layouts/MainLayout'
 import { config } from 'configs/config'
 import { fetchBookmarks } from 'data/bookmarks'
 import { Bookmark } from 'components/Bookmark'
-import type { Bookmark as BookmarkType } from 'types'
+import type { Bookmark as BookmarkType } from 'utils/types'
 
 interface BookmarksProps {
   bookmarks: BookmarkType[]

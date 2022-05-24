@@ -6,7 +6,7 @@ import {
   Icon,
   Text,
   HStack,
-  Center,
+  IconButton,
 } from '@chakra-ui/react'
 import { FaNpm, FaGithub, FaChevronUp } from 'react-icons/fa'
 import { AiFillLinkedin } from 'react-icons/ai'
@@ -132,45 +132,24 @@ export const Footer: React.FC = () => {
         align='center'
         pt={['10', '0']}
       >
-        <Link
-          href={isEnglish ? '/fr?ref=Footer' : '/?ref=Footer'}
-          display='flex'
-          color='black'
-          title={languageChange}
-          _hover={{ textDecoration: 'none' }}
-          _focus={{ boxShadow: 'secondary' }}
-        >
-          <Center
-            boxSize={10}
-            bg='gray'
-            borderRadius='full'
-            p='1'
-            _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
-          >
-            <Text fontSize='xl' fontWeight='bold'>
-              {isEnglish ? 'FR' : 'EN'}
-            </Text>
-          </Center>
-        </Link>
         <Button
-          aria-label='Go to top'
-          title='Go to top'
-          variant='unstyled'
-          color='black'
-          onClick={() => window.scrollTo(0, 0)}
-          _focus={{ boxShadow: 'secondary' }}
-          data-splitbee-event={config.splitbee.events.backToTop}
+          as='a'
+          title={languageChange}
+          href={isEnglish ? '/fr?ref=Footer' : '/?ref=Footer'}
+          variant='icon'
+          size='icon'
         >
-          <Icon
-            as={FaChevronUp}
-            aria-label={t('go-to-top')}
-            boxSize={10}
-            bg='gray'
-            borderRadius='full'
-            p='1.5'
-            _hover={{ transform: 'scale(1.05)', boxShadow: 'lg' }}
-          />
+          {isEnglish ? 'FR' : 'EN'}
         </Button>
+        <IconButton
+          aria-label={t('go-to-top')}
+          icon={<FaChevronUp />}
+          title='Go to top'
+          variant='icon'
+          size='icon'
+          onClick={() => window.scrollTo(0, 0)}
+          data-splitbee-event={config.splitbee.events.backToTop}
+        />
       </HStack>
     </Flex>
   )

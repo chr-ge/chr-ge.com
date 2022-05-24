@@ -23,7 +23,7 @@ import {
   SiVercel,
 } from 'react-icons/si'
 import { Javascript } from 'components/Icons'
-import type { SkillType } from 'types'
+import type { SkillType } from 'utils/types'
 import { IoLogoPwa } from 'react-icons/io5'
 
 export const skills: SkillType[] = [

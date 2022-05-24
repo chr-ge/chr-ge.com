@@ -7,7 +7,7 @@ import {
   TooltipProps,
   useColorModeValue,
 } from '@chakra-ui/react'
-import type { TechnologyType } from 'types'
+import type { TechnologyType } from 'utils/types'
 
 interface TechnologyProps extends TechnologyType {
   placement?: TooltipProps['placement']

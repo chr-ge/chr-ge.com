@@ -61,6 +61,7 @@ export const ContactMe: React.FC = () => {
   return (
     <Stack
       as='section'
+      id='contact'
       direction={{ base: 'column', md: 'row' }}
       py='20'
       px={{ base: '4', md: '8' }}

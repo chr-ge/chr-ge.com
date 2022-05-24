@@ -1,9 +1,9 @@
-import { forwardRef } from 'react'
 import NextLink from 'next/link'
 import { useTranslation } from 'next-i18next'
 import {
   Box,
   Button,
+  forwardRef,
   Icon,
   Portal,
   SimpleGrid,
@@ -18,7 +18,7 @@ interface MenuProps {
   onClose: () => void
 }
 
-const Menu = forwardRef<HTMLDivElement, MenuProps>(({ onClose }, ref) => {
+export const Menu = forwardRef<MenuProps, 'div'>(({ onClose }, ref) => {
   const { t } = useTranslation('common')
 
   return (
@@ -83,7 +83,3 @@ const Menu = forwardRef<HTMLDivElement, MenuProps>(({ onClose }, ref) => {
     </Portal>
   )
 })
-
-Menu.displayName = 'Menu'
-
-export default Menu

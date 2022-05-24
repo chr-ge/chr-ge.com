@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import { useTranslation } from 'next-i18next'
 import {
   AspectRatio,
@@ -15,7 +14,12 @@ import {
 import type { Bookmark as BookmarkProps } from 'types'
 import { config } from 'configs/config'
 
-export const Bookmark: FC<BookmarkProps> = ({ title, link, cover, tags }) => {
+export const Bookmark: React.FC<BookmarkProps> = ({
+  title,
+  link,
+  cover,
+  tags,
+}) => {
   const { t } = useTranslation('bookmarks')
   const cardBgColor = useColorModeValue('gray.50', 'gray.800')
   const tagColor = useColorModeValue('gray.600', 'gray.400')

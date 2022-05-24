@@ -14,7 +14,6 @@ import {
 } from '@chakra-ui/react'
 import { useQueryState } from 'next-usequerystate'
 import { MainLayout } from 'components/Layouts/MainLayout'
-import { Header } from 'components'
 import { config } from 'configs/config'
 import { fetchBookmarks } from 'data/bookmarks'
 import { Bookmark } from 'components/Bookmark'
@@ -50,7 +49,6 @@ const Bookmarks: NextPage<BookmarksProps> = ({
         padding={['0', '4']}
       >
         <Container maxW='container.lg'>
-          <Header />
           <Heading as='h1' my='12' fontSize='5xl'>
             {t('bookmarks')}.
           </Heading>

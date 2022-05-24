@@ -7,6 +7,7 @@ import {
   Hero,
   OpenSource,
   SelectedProjects,
+  SkillSet,
   SlashDivider,
 } from 'components/structure'
 import { config } from 'configs/config'
@@ -35,6 +36,7 @@ const Home: NextPage = () => {
       <SlashDivider />
       <SelectedProjects />
       <OpenSource />
+      <SkillSet />
       <ContactMe />
     </MainLayout>
   )

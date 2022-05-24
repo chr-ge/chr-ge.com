@@ -2,7 +2,7 @@ import type { GetStaticProps, NextPage } from 'next'
 import { useEffect } from 'react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import dynamic from 'next/dynamic'
-import MainLayout from 'layouts/MainLayout'
+import { MainLayout } from 'components/Layouts/MainLayout'
 import { Hero, Contact, Skills, OpenSource } from 'sections/home'
 
 const Projects = dynamic(() => import('sections/home/Projects'), {

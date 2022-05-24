@@ -13,7 +13,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { useQueryState } from 'next-usequerystate'
-import MainLayout from 'layouts/MainLayout'
+import { MainLayout } from 'components/Layouts/MainLayout'
 import { Header } from 'components'
 import { config } from 'configs/config'
 import { fetchBookmarks } from 'data/bookmarks'

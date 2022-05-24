@@ -7,12 +7,13 @@ import Fonts from 'components/Fonts'
 import { useSplitbee } from 'utils/hooks/useSplitbee'
 import { config } from 'configs/config'
 import theme from 'styles/theme'
+
 import 'focus-visible/dist/focus-visible'
 import 'keen-slider/keen-slider.min.css'
 import '@fontsource/mulish/400.css'
 import '@fontsource/mulish/700.css'
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   useSplitbee()
 
   return (

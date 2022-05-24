@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   VStack,
 } from '@chakra-ui/react'
-import MainLayout from 'layouts/MainLayout'
+import { MainLayout } from 'components/Layouts/MainLayout'
 import { Header } from 'components'
 
 const NotFound: NextPage = () => {
@@ -24,7 +24,7 @@ const NotFound: NextPage = () => {
         height='calc(100vh - 2rem)'
         bgGradient={gradient}
         borderRadius='lg'
-        padding='4'
+        p='4'
       >
         <Container h='100%' display='flex' flexDir='column' maxW='container.lg'>
           <Header />

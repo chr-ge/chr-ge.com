@@ -3,7 +3,7 @@ import { ColorModeScript } from '@chakra-ui/react'
 import { config } from 'configs/config'
 
 class Document extends NextDocument {
-  render() {
+  render(): JSX.Element {
     return (
       <Html>
         <Head />

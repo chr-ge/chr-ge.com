@@ -5,6 +5,7 @@
   "author": "chr-ge <george@chr-ge.com> (https://chr-ge.com/)",
   "license": "GPL-2.0-or-later",
   "scripts": {
+    "type-check": "tsc --pretty --noEmit",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

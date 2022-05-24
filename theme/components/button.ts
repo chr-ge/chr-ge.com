@@ -5,6 +5,12 @@ export const Button: ComponentSingleStyleConfig = {
     icon: {
       bg: 'transparent',
       color: 'inherit',
+      borderRadius: 0,
+      transition: 'border 0.1s ease-in',
+      _hover: {
+        borderColor: 'black',
+        border: '1px solid',
+      },
     },
     secondary: {
       bg: 'transparent',
@@ -22,6 +28,20 @@ export const Button: ComponentSingleStyleConfig = {
       px: '8',
       _hover: {
         bg: 'gray.100',
+      },
+    },
+    navItem: {
+      borderRadius: 0,
+      bg: 'white',
+      justifyContent: 'flex-end',
+      minW: '44',
+      h: '20',
+      borderColor: 'black',
+      border: '1px solid',
+      px: '8',
+      _hover: {
+        backgroundImage:
+          'repeating-linear-gradient(135deg, transparent, transparent 24px, rgba(0, 0, 0, 1) 24px, rgba(0, 0, 0, 1) 25px)',
       },
     },
   },

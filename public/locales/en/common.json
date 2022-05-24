@@ -22,6 +22,8 @@
   "cloud": "Cloud",
   "databases": "Databases",
   "contact-me": "Contact Me",
+  "email": "Email",
+  "message": "Message",
   "email-placeholder": "yabba_dabba_doo@gmail.com",
   "message-placeholder": "Let's work together.",
   "message-sent": "Message Sent.",

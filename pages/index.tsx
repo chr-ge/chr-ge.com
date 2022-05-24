@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { MainLayout } from 'components/Layouts/MainLayout'
 import {
+  ContactMe,
   Hero,
   OpenSource,
   SelectedProjects,
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
       <SlashDivider />
       <SelectedProjects />
       <OpenSource />
+      <ContactMe />
     </MainLayout>
   )
 }

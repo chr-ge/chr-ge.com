@@ -107,7 +107,7 @@ export const Contact: FC = () => {
         <Container marginY='20'>
           <Text
             as='label'
-            d='inline-block'
+            display='inline-block'
             htmlFor='email'
             marginBottom='1'
             fontWeight='bold'
@@ -141,7 +141,7 @@ export const Contact: FC = () => {
           </InputGroup>
           <Text
             as='label'
-            d='inline-block'
+            display='inline-block'
             htmlFor='message'
             marginBottom='1'
             fontWeight='bold'

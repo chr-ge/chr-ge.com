@@ -7,7 +7,6 @@ import {
   SiGraphql,
   SiHeroku,
   SiJava,
-  SiJavascript,
   SiLaravel,
   SiMongodb,
   SiMysql,
@@ -24,6 +23,7 @@ import {
   SiTypescript,
   SiVercel,
 } from 'react-icons/si'
+import { Javascript } from 'components/icons'
 import type { SkillGroupProps } from './SkillGroup'
 
 export const data: SkillGroupProps[] = [
@@ -32,7 +32,7 @@ export const data: SkillGroupProps[] = [
     category: 'languages',
     skills: [
       { name: 'Typescript', icon: SiTypescript, color: '#3178C6' },
-      { name: 'Javascript', icon: SiJavascript, color: '#F7DF1E' },
+      { name: 'Javascript', icon: Javascript, color: '#F7DF1E' },
       { name: 'PHP', icon: SiPhp, color: '#777BB4' },
       { name: 'Ruby', icon: SiRuby, color: '#CC342D' },
       { name: 'Java', icon: SiJava, color: '#007396' },

@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import { Box, type BoxProps, Flex, Container } from '@chakra-ui/react'
 import { Footer, Header } from 'components/structure'
 

@@ -2,7 +2,7 @@ import type { GetStaticProps, NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import { Box, Heading, VStack } from '@chakra-ui/react'
-import { MainLayout } from 'components/Layouts/MainLayout'
+import { MainLayout } from 'components/layouts/MainLayout'
 import { config } from 'configs/config'
 
 const NotFound: NextPage = () => {

@@ -17,7 +17,7 @@
     "url": "git+https://github.com/chr-ge/chr-ge.com.git"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.1.0",
+    "@chakra-ui/react": "^2.1.2",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@fontsource/mulish": "^4.5.10",

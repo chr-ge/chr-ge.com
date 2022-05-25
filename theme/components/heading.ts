@@ -3,14 +3,11 @@ import type { ComponentSingleStyleConfig } from '@chakra-ui/react'
 export const Heading: ComponentSingleStyleConfig = {
   variants: {
     hero: {
-      // fontSize: { base: '4xl', md: '4rem' },
-      fontSize: '4rem',
       color: '#383434',
       fontWeight: 'bold',
       textTransform: 'uppercase',
     },
     section: {
-      fontSize: '5xl',
       color: '#383434',
       fontWeight: 'bold',
       textTransform: 'uppercase',
@@ -19,6 +16,12 @@ export const Heading: ComponentSingleStyleConfig = {
       fontSize: '2rem',
       fontFamily: 'body',
       color: '#4A5568',
+    },
+  },
+  sizes: {
+    hero: {
+      fontSize: { base: '4xl', md: '4rem' },
+      lineHeight: 1,
     },
   },
 }

@@ -12,7 +12,7 @@ const NotFound: NextPage = () => {
     <MainLayout>
       <Box minH='calc(100vh - 105px)' px='8' pt='36'>
         <VStack align='center' spacing='4'>
-          <Heading as='h1' variant='hero'>
+          <Heading as='h1' variant='hero' size='hero'>
             {t('error-404')}
           </Heading>
           <Heading as='h2' fontSize='4xl'>

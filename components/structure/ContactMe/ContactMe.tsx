@@ -68,7 +68,7 @@ export const ContactMe: React.FC = () => {
       borderColor='black'
       borderTop='1px solid'
     >
-      <Heading as='h2' flex='1' variant='section'>
+      <Heading as='h2' flex='1' variant='section' size='2xl'>
         {t('contact-me')}
       </Heading>
       <VStack as='form' onSubmit={onSubmit} flex='1' spacing='6'>

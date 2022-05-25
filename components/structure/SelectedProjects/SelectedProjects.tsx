@@ -14,7 +14,7 @@ export const SelectedProjects: React.FC = () => {
       spacing='16'
       sx={{ scrollMarginTop: '105px' }}
     >
-      <Heading as='h2' variant='section'>
+      <Heading as='h2' variant='section' size='2xl'>
         {t('selected-projects')}
       </Heading>
       <VStack align='stretch' spacing='12'>

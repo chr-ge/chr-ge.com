@@ -10,11 +10,11 @@ export const Hero: React.FC = () => {
   return (
     <Flex
       h='calc(100vh - 105px)'
-      px='8'
+      px={{ base: '4', md: '8' }}
       style={{ background: 'linear-gradient(90deg, #E9DEFA 0%, #FBFCDB 100%)' }}
     >
       <VStack align='flex-start' mt='36' maxW='container.md' spacing='12'>
-        <Heading as='h1' variant='hero'>
+        <Heading as='h1' variant='hero' size='hero'>
           I build things with my mouse and keyboard.
         </Heading>
         <NextLink href='/#projects' passHref>

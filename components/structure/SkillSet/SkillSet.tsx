@@ -11,12 +11,12 @@ export const SkillSet: React.FC = () => {
       as='section'
       align='stretch'
       py='20'
-      px='8'
+      px={{ base: '4', md: '8' }}
       borderColor='black'
       borderTop='1px solid'
       spacing='16'
     >
-      <Heading as='h2' variant='section'>
+      <Heading as='h2' variant='section' size='2xl'>
         {t('skills-heading')}
       </Heading>
       <Wrap spacing='8'>

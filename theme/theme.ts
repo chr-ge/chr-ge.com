@@ -1,5 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
-import { Button, Heading, Input, Textarea } from './components'
+import { Button, Heading, Input, Link, Textarea } from './components'
 
 export const theme = extendTheme({
   colors: {
@@ -46,6 +46,7 @@ export const theme = extendTheme({
     Button,
     Heading,
     Input,
+    Link,
     Textarea,
   },
 })

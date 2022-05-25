@@ -22,7 +22,7 @@ import {
   SiTypescript,
   SiVercel,
 } from 'react-icons/si'
-import { Javascript } from 'components/Icons'
+import { Javascript } from 'components/icons'
 import type { SkillType } from 'utils/types'
 import { IoLogoPwa } from 'react-icons/io5'
 

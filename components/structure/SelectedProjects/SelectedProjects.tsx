@@ -1,5 +1,7 @@
-import { Box, Heading, VStack } from '@chakra-ui/react'
 import { useTranslation } from 'next-i18next'
+import { Heading, VStack } from '@chakra-ui/react'
+import { projects } from 'data/projects'
+import { Project } from './Project'
 
 export const SelectedProjects: React.FC = () => {
   const { t } = useTranslation('common')
@@ -18,8 +20,8 @@ export const SelectedProjects: React.FC = () => {
         {t('selected-projects')}
       </Heading>
       <VStack align='stretch' spacing='12'>
-        {[1, 2, 3].map((n) => (
-          <Box key={n} bg='gray' h='64' />
+        {projects.map((project) => (
+          <Project key={project.id} {...project} />
         ))}
       </VStack>
     </VStack>

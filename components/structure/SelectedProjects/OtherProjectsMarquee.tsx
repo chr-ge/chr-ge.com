@@ -1,5 +1,11 @@
 import { useTranslation } from 'next-i18next'
-import { Flex, HStack, Link, keyframes } from '@chakra-ui/react'
+import {
+  Flex,
+  HStack,
+  Link,
+  keyframes,
+  usePrefersReducedMotion,
+} from '@chakra-ui/react'
 import { config } from 'configs/config'
 
 const loop = keyframes({
@@ -13,6 +19,11 @@ const loop = keyframes({
 
 export const OtherProjectsMarquee: React.FC = () => {
   const { t } = useTranslation('common')
+  const prefersReducedMotion = usePrefersReducedMotion()
+
+  const animation = prefersReducedMotion
+    ? undefined
+    : `${loop} infinite 20s linear`
 
   return (
     <Flex
@@ -28,7 +39,7 @@ export const OtherProjectsMarquee: React.FC = () => {
         pos='relative'
         spacing='12'
         whiteSpace='nowrap'
-        animation={`${loop} 20s linear infinite`}
+        animation={animation}
         role='group'
         _hover={{
           animationPlayState: 'paused',

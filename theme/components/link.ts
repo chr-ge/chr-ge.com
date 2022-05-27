@@ -7,5 +7,16 @@ export const Link: ComponentSingleStyleConfig = {
       fontWeight: 'semibold',
       color: 'black',
     },
+    moreProjects: {
+      color: 'black',
+      fontWeight: 'medium',
+      transition: 'color 0.1s ease',
+      _groupHover: {
+        color: '#7e91bc',
+        textDecoration: 'underline',
+        textDecorationColor: '#7e91bc',
+        textUnderlineOffset: '2px',
+      },
+    },
   },
 }

@@ -19,7 +19,6 @@ export const OtherProjectsMarquee: React.FC = () => {
       pos='relative'
       w='100vw'
       maxWidth='100%'
-      py='3'
       borderColor='black'
       borderTop='1px solid'
       overflowX='hidden'
@@ -27,16 +26,17 @@ export const OtherProjectsMarquee: React.FC = () => {
       <HStack
         aria-hidden='true'
         pos='relative'
+        py='3'
         spacing='12'
         whiteSpace='nowrap'
         animation={`${loop} 20s linear infinite`}
+        role='group'
         _hover={{
           animationPlayState: 'paused',
-          color: 'blue.700',
         }}
       >
         {Array.from({ length: 10 }).map((_, i) => (
-          <Link key={i} href={config.github} fontWeight='medium' isExternal>
+          <Link key={i} href={config.github} variant='moreProjects' isExternal>
             {t('check-out-more-projects')}
           </Link>
         ))}

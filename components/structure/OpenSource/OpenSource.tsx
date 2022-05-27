@@ -10,7 +10,6 @@ export const OpenSource: React.FC = () => {
     <VStack
       as='section'
       align='stretch'
-      pt='16'
       pb='20'
       borderColor='black'
       borderTop='1px solid'
@@ -18,8 +17,8 @@ export const OpenSource: React.FC = () => {
     >
       <Box
         px={{ base: '4', md: '8' }}
+        pt='32'
         pb='3'
-        pt='16'
         style={{
           background: 'linear-gradient(90deg, #93A5CF 0%, #E4EFE9 100%)',
         }}

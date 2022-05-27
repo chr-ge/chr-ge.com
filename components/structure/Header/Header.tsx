@@ -16,7 +16,7 @@ import { Menu } from './Menu'
 
 export const Header: React.FC = () => {
   const { t } = useTranslation('common')
-  const { isOpen, onToggle } = useDisclosure()
+  const { isOpen, onToggle, onClose } = useDisclosure()
   const { isEnglish } = useLanguage()
 
   return (
@@ -56,7 +56,7 @@ export const Header: React.FC = () => {
           />
         </HStack>
       </Flex>
-      <Menu isOpen={isOpen} />
+      <Menu isOpen={isOpen} onClose={onClose} />
     </Box>
   )
 }

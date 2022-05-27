@@ -2,7 +2,7 @@ import { Stack } from '@chakra-ui/react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { NavItem, type NavItemProps } from './NavItem'
 
-const navItems: NavItemProps[] = [
+const navItems: Omit<NavItemProps, 'onClose'>[] = [
   { name: 'home', href: '/' },
   { name: 'projects', href: '/#projects' },
   { name: 'bookmarks', href: '/bookmarks' },
@@ -13,9 +13,10 @@ const MotionStack = motion(Stack)
 
 interface MenuProps {
   isOpen: boolean
+  onClose: () => void
 }
 
-export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
+export const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
   return (
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
@@ -39,9 +40,10 @@ export const Menu: React.FC<MenuProps> = ({ isOpen }) => {
           initial={{ opacity: 0, top: 0 }}
           animate={{ opacity: 1, top: 105 }}
           exit={{ opacity: 0, top: 0 }}
+          transition={{ ease: 'backOut' }}
         >
           {navItems.map((item) => (
-            <NavItem key={item.name} {...item} />
+            <NavItem key={item.name} onClose={onClose} {...item} />
           ))}
         </MotionStack>
       )}

@@ -26,7 +26,6 @@ export const OtherProjectsMarquee: React.FC = () => {
       <HStack
         aria-hidden='true'
         pos='relative'
-        py='3'
         spacing='12'
         whiteSpace='nowrap'
         animation={`${loop} 20s linear infinite`}
@@ -36,7 +35,13 @@ export const OtherProjectsMarquee: React.FC = () => {
         }}
       >
         {Array.from({ length: 10 }).map((_, i) => (
-          <Link key={i} href={config.github} variant='moreProjects' isExternal>
+          <Link
+            key={i}
+            href={config.github}
+            variant='moreProjects'
+            py='3'
+            isExternal
+          >
             {t('check-out-more-projects')}
           </Link>
         ))}

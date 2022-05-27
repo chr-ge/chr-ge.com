@@ -28,7 +28,7 @@ export const OpenSource: React.FC = () => {
         </Heading>
       </Box>
       <SimpleGrid
-        columns={{ base: 1, sm: 2, lg: 3 }}
+        columns={{ base: 1, md: 2, lg: 3 }}
         px={{ base: '4', md: '8' }}
         spacing='16'
       >

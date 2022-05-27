@@ -8,6 +8,7 @@ import {
   LinkOverlay,
   Tag,
   Text,
+  Wrap,
 } from '@chakra-ui/react'
 import type { RoleType } from 'utils/types'
 import { config } from 'configs/config'
@@ -45,8 +46,8 @@ export const Contribution: React.FC<ContributionProps> = ({
     >
       <Flex h='100%' flexDir='column'>
         <Flex align='center' justify='space-between'>
-          <HStack spacing='1' fontSize='xl'>
-            <Text>{user}</Text>
+          <Wrap spacing='1' fontSize='xl'>
+            <Text whiteSpace='nowrap'>{user}</Text>
             <Text as='span'>/</Text>
             <Text fontWeight='semibold'>
               <LinkOverlay
@@ -58,7 +59,7 @@ export const Contribution: React.FC<ContributionProps> = ({
                 {repository}
               </LinkOverlay>
             </Text>
-          </HStack>
+          </Wrap>
           <Icon as={language.icon} color={language.color} boxSize='6' />
         </Flex>
         <Flex mt='2' mb='4'>

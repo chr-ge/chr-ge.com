@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import NextLink from 'next/link'
+import { useRouter } from 'next/router'
 import {
   Box,
   Button,
@@ -11,13 +12,18 @@ import {
 } from '@chakra-ui/react'
 import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { VscChromeClose } from 'react-icons/vsc'
-import { useLanguage } from 'utils/hooks/useLanguage'
 import { Menu } from './Menu'
 
 export const Header: React.FC = () => {
   const { t } = useTranslation('common')
+  const { asPath, locale = 'en', query, pathname, push } = useRouter()
   const { isOpen, onToggle, onClose } = useDisclosure()
-  const { isEnglish } = useLanguage()
+
+  const toggleLocale = (): void => {
+    push({ pathname, query }, asPath, {
+      locale: locale === 'en' ? 'fr' : 'en',
+    })
+  }
 
   return (
     <Box as='header' pos='sticky' zIndex='sticky' top='0' left='0' right='0'>
@@ -44,8 +50,8 @@ export const Header: React.FC = () => {
           </Text>
         </NextLink>
         <HStack spacing='2'>
-          <Button variant='icon' size='icon'>
-            {isEnglish ? 'FR' : 'EN'}
+          <Button variant='icon' size='icon' onClick={toggleLocale}>
+            {locale === 'en' ? 'FR' : 'EN'}
           </Button>
           <IconButton
             aria-label={t(isOpen ? 'close-menu' : 'open-menu')}

@@ -14,7 +14,7 @@ export const SelectedProjects: React.FC = () => {
         as='section'
         align='stretch'
         py='20'
-        px='8'
+        px={{ base: '4', md: '8' }}
         spacing='16'
         sx={{ scrollMarginTop: '105px' }}
       >

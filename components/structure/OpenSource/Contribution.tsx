@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react'
 import type { RoleType } from 'utils/types'
 import { config } from 'configs/config'
-import type { SkillProps } from '../SkillSet/Skill'
+import type { Skill } from '../SkillSet/SkillBox'
 
 export interface ContributionProps {
   user: string
@@ -21,7 +21,7 @@ export interface ContributionProps {
   githubUrl: string
   description: { en: string; fr: string }
   topics: string[]
-  language: SkillProps
+  language: Skill
 }
 
 export const Contribution: React.FC<ContributionProps> = ({

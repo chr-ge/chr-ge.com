@@ -2,6 +2,19 @@ import { useTranslation } from 'next-i18next'
 import { Heading, SimpleGrid, VStack } from '@chakra-ui/react'
 import { SkillGroup } from './SkillGroup'
 import { data } from './data'
+import { motion } from 'framer-motion'
+
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.25,
+    },
+  },
+}
+
+const MotionSimpleGrid = motion(SimpleGrid)
 
 export const SkillSet: React.FC = () => {
   const { t } = useTranslation('common')
@@ -19,11 +32,18 @@ export const SkillSet: React.FC = () => {
       <Heading as='h2' variant='section' size='2xl'>
         {t('skills-heading')}
       </Heading>
-      <SimpleGrid spacing='12' columns={[1, null, 2, 3]}>
+      <MotionSimpleGrid
+        columns={[1, null, 2, 3]}
+        spacing='12'
+        variants={container}
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true }}
+      >
         {data.map((skill) => (
           <SkillGroup key={skill.id} {...skill} />
         ))}
-      </SimpleGrid>
+      </MotionSimpleGrid>
     </VStack>
   )
 }

@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
       style={{ background: 'linear-gradient(90deg, #E9DEFA 0%, #FBFCDB 100%)' }}
     >
       <VStack align='flex-start' mt='44' maxW='container.md' spacing='12'>
-        <Heading as='h1' variant='hero' size='hero'>
+        <Heading as='h1' variant='hero' size='hero' wordBreak='break-word'>
           {t('hero-title')}
         </Heading>
         <NextLink href='/#projects' passHref>

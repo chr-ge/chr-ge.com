@@ -31,6 +31,9 @@ export const theme = extendTheme({
       html: {
         scrollBehavior: 'smooth',
       },
+      '::selection': {
+        background: 'yellow.400',
+      },
     },
   },
   fonts: {

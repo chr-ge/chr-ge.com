@@ -15,15 +15,15 @@ export const SkillGroup: React.FC<SkillGroupProps> = ({ category, skills }) => {
   return (
     <VStack
       align='flex-start'
+      p='6'
       borderColor='black'
       border='1px solid'
-      p='4'
-      spacing='4'
+      spacing='6'
     >
       <Heading as='h4' variant='skillCategory'>
         {t(category as TFuncKey<'common'>)}
       </Heading>
-      <SimpleGrid columns={3} spacing='6'>
+      <SimpleGrid columns={3} spacing='5'>
         {skills.map((skill) => (
           <Skill key={skill.name} {...skill} />
         ))}

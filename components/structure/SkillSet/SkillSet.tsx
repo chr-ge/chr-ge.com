@@ -1,5 +1,5 @@
 import { useTranslation } from 'next-i18next'
-import { Heading, VStack, Wrap } from '@chakra-ui/react'
+import { Heading, SimpleGrid, VStack } from '@chakra-ui/react'
 import { SkillGroup } from './SkillGroup'
 import { data } from './data'
 
@@ -19,11 +19,11 @@ export const SkillSet: React.FC = () => {
       <Heading as='h2' variant='section' size='2xl'>
         {t('skills-heading')}
       </Heading>
-      <Wrap spacing='8'>
+      <SimpleGrid spacing='12' columns={[1, null, 2, 3]}>
         {data.map((skill) => (
           <SkillGroup key={skill.id} {...skill} />
         ))}
-      </Wrap>
+      </SimpleGrid>
     </VStack>
   )
 }

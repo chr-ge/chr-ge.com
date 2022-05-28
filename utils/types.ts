@@ -1,4 +1,5 @@
-import type { SkillProps } from 'components/structure/SkillSet/Skill'
+import type { IconProps } from '@chakra-ui/react'
+import type { IconType } from 'react-icons'
 
 export type Image = {
   src: string
@@ -8,11 +9,6 @@ export type Image = {
 export type Tag = {
   label: string
   colorScheme: string
-}
-
-export type SkillType = {
-  category: string
-  technologies: SkillProps[]
 }
 
 export type RoleType = {
@@ -26,4 +22,10 @@ export type Bookmark = {
   link: string
   cover: string
   tags: string[]
+}
+
+export type Skill = {
+  name: string
+  icon: IconType | ((props: IconProps) => JSX.Element)
+  color: string
 }

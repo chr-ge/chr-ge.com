@@ -1,11 +1,5 @@
-import { Center, Flex, Icon, type IconProps, Tooltip } from '@chakra-ui/react'
-import type { IconType } from 'react-icons'
-
-export interface Skill {
-  name: string
-  icon: IconType | ((props: IconProps) => JSX.Element)
-  color: string
-}
+import { Center, Flex, Icon, Tooltip } from '@chakra-ui/react'
+import { Skill } from 'utils/types'
 
 export interface SkillProps extends Skill {
   setBorderColor: (color: string) => void

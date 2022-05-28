@@ -1,7 +1,6 @@
 import { useTranslation } from 'next-i18next'
 import { Divider, Flex, Heading, Text, VStack } from '@chakra-ui/react'
-import type { Image, Tag } from 'utils/types'
-import type { SkillProps } from '../SkillSet/Skill'
+import type { Image, Skill, Tag } from 'utils/types'
 
 export interface ProjectProps {
   id: string
@@ -13,7 +12,7 @@ export interface ProjectProps {
   images: Image[]
   homepage?: string
   github?: string
-  technologies: SkillProps[]
+  technologies: Skill[]
   tags: Tag[]
 }
 

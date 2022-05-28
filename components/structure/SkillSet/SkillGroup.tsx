@@ -3,7 +3,8 @@ import { useTranslation } from 'next-i18next'
 import type { TFuncKey } from 'react-i18next'
 import { Heading, SimpleGrid, VStack } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import { SkillBox, type Skill } from './SkillBox'
+import type { Skill } from 'utils/types'
+import { SkillBox } from './SkillBox'
 
 const group = {
   hidden: { opacity: 0 },

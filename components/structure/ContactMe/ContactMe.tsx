@@ -15,6 +15,7 @@ import {
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
+import { ButtonArrow } from 'components/meta'
 import { config } from 'configs/config'
 
 const ContactMeSchema = z
@@ -92,8 +93,20 @@ export const ContactMe: React.FC = () => {
           variant='block'
           isLoading={isSubmitting}
           type='submit'
+          sx={{
+            '&:hover svg': {
+              transform: 'scaleX(1)',
+            },
+          }}
         >
-          {t('send')}
+          <span>{t('send')}</span>
+          <ButtonArrow
+            right='-7.5rem'
+            pos='absolute'
+            transform='scaleX(0)'
+            transformOrigin='left'
+            transition='transform 0.2s ease-in-out, fill 0.2s ease-in-out'
+          />
         </Button>
       </VStack>
     </Stack>

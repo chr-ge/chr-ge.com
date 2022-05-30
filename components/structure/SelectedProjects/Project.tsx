@@ -38,11 +38,11 @@ export const Project: React.FC<ProjectProps> = ({ title, description }) => {
       px='6'
       borderColor='black'
       border='1px solid'
-      spacing='24'
+      spacing={{ base: '0', md: '24' }}
       role='group'
       overflow='hidden'
     >
-      <VStack flex='2' align='flex-start' justify='center' spacing='4'>
+      <VStack flex='2' py='4' align='flex-start' justify='center' spacing='4'>
         <Heading as='h4'>{title}</Heading>
         <Divider />
         <Text>{description[i18n.language as keyof typeof description]}</Text>

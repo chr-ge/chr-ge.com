@@ -29,7 +29,8 @@ export const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
           zIndex='docked'
           left='0'
           right='0'
-          p='4'
+          py='4'
+          px={{ base: '4', md: '8' }}
           direction={{ base: 'column', md: 'row' }}
           spacing='4'
           borderColor='black'

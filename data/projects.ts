@@ -1,45 +1,17 @@
 import {
   SiChakraui,
   SiNextdotjs,
-  SiTypescript,
-  SiGraphql,
-  SiSass,
   SiReact,
   SiMongodb,
   SiLaravel,
   SiPostgresql,
   SiStripe,
 } from 'react-icons/si'
-import { ProjectProps } from 'components/structure/SelectedProjects/Project'
+import type { ProjectProps } from 'components/structure/SelectedProjects/Project'
 
 export const projects: ProjectProps[] = [
   {
     id: '1',
-    title: 'Hotel at Home',
-    description: {
-      en: 'Rent a cottage in Quebec.',
-      fr: 'Louez un chalet au Québec.',
-    },
-    images: [
-      { alt: 'Property Page', src: '/img/projects/halm-ipad.png' },
-      { alt: 'Home Page', src: '/img/projects/halm-iphone.png' },
-    ],
-    homepage: '',
-    github: '',
-    technologies: [
-      { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
-      { name: 'Typescript', icon: SiTypescript, color: '#3178C6' },
-      { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
-      { name: 'SCSS', icon: SiSass, color: '#CC6699' },
-    ],
-    tags: [
-      { label: 'front-end', colorScheme: 'blue' },
-      { label: 'e-commerce', colorScheme: 'purple' },
-      { label: 'website', colorScheme: 'cyan' },
-    ],
-  },
-  {
-    id: '2',
     title: 'Kalabam',
     description: {
       en: 'Create multiplayer quizzes for class activities or interactive presentations.',
@@ -65,7 +37,7 @@ export const projects: ProjectProps[] = [
     ],
   },
   {
-    id: '3',
+    id: '2',
     title: 'Why Pigeons',
     description: {
       en: 'Quick food delivery right to your door. User, restaurant, driver, and admin dashboards are fully functional.',

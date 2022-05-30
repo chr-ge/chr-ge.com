@@ -9,7 +9,10 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 import type { Image, Skill, Tag } from 'utils/types'
+
+const MotionB = motion(Box)
 
 export interface ProjectProps {
   id: string
@@ -44,27 +47,25 @@ export const Project: React.FC<ProjectProps> = ({ title, description }) => {
         <Divider />
         <Text>{description[i18n.language as keyof typeof description]}</Text>
       </VStack>
-      <Flex
-        flex='3'
-        align='flex-end'
-        pt='20'
-        _groupHover={{ pt: 12 }}
-        transition='padding 0.1s ease-in'
-      >
-        <Box
+      <Flex flex='3' align='flex-end' pos='relative'>
+        <MotionB
+          pos='absolute'
           pt='4'
           px='4'
           bg='#F9FBFD'
-          h='100%'
           w='100%'
+          left='0'
+          right='0'
           borderTop='1px solid black'
           borderLeft='1px solid black'
           borderRight='1px solid black'
           borderTopRadius='30px'
+          initial={{ top: '5rem' }}
+          whileHover={{ top: -1072 + 80 }}
+          transition={{ duration: 4 }}
         >
           <Box
             w='100%'
-            h='100%'
             pos='relative'
             borderTopRadius='15px'
             overflow='hidden'
@@ -73,18 +74,14 @@ export const Project: React.FC<ProjectProps> = ({ title, description }) => {
             borderRight='1px solid black'
           >
             <NextImage
-              src='/img/projects/kalabam.png'
-              // width={700}
-              // height={300}
-              // layout='fill'
-              layout='responsive'
-              height='100%'
-              width='100%'
+              src='/img/projects/kalabam-full.png'
+              width={1072}
+              height={2478}
               objectFit='contain'
               objectPosition='center top'
             />
           </Box>
-        </Box>
+        </MotionB>
       </Flex>
     </Stack>
   )

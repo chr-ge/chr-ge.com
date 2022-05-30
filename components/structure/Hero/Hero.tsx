@@ -1,17 +1,26 @@
 import NextLink from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { Button, chakra, Flex, Heading, VStack } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 import { ButtonArrow } from '../../meta'
 import { config } from 'configs/config'
+
+const MotionFlex = motion(Flex)
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation('common')
 
   return (
-    <Flex
+    <MotionFlex
       h='calc(100vh - 105px)'
       px={{ base: '4', md: '8' }}
-      style={{ background: 'linear-gradient(90deg, #E9DEFA 0%, #FBFCDB 100%)' }}
+      animate={{
+        background: [
+          'linear-gradient(90deg, #E9DEFA 0%, #FBFCDB 100%)',
+          'linear-gradient(90deg, #e4defa 0%, #fcf0db 100%)',
+        ],
+      }}
+      transition={{ repeat: Infinity, repeatType: 'reverse', duration: 2 }}
     >
       <VStack align='flex-start' mt='44' maxW='container.md' spacing='12'>
         <Heading as='h1' variant='hero' size='hero' wordBreak='break-word'>
@@ -36,6 +45,6 @@ export const Hero: React.FC = () => {
           </Button>
         </NextLink>
       </VStack>
-    </Flex>
+    </MotionFlex>
   )
 }

@@ -17,7 +17,7 @@ export const Hero: React.FC = () => {
       animate={{
         background: [
           'linear-gradient(90deg, #E9DEFA 0%, #FBFCDB 100%)',
-          'linear-gradient(90deg, #e4defa 0%, #fcf0db 100%)',
+          'linear-gradient(90deg, #dad4ec 0%, #f3e7e9 100%)',
         ],
       }}
       transition={{ repeat: Infinity, repeatType: 'reverse', duration: 2 }}

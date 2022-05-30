@@ -6,6 +6,8 @@ import { ButtonArrow } from '../../meta'
 import { config } from 'configs/config'
 
 const MotionFlex = motion(Flex)
+const MotionHeading = motion(Heading)
+const MotionButton = motion(Button)
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation('common')
@@ -23,11 +25,19 @@ export const Hero: React.FC = () => {
       transition={{ repeat: Infinity, repeatType: 'reverse', duration: 2 }}
     >
       <VStack align='flex-start' mt='44' maxW='container.md' spacing='12'>
-        <Heading as='h1' variant='hero' size='hero' wordBreak='break-word'>
+        <MotionHeading
+          as='h1'
+          variant='hero'
+          size='hero'
+          wordBreak='break-word'
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.2 }}
+        >
           {t('hero-title')}
-        </Heading>
+        </MotionHeading>
         <NextLink href='/#projects' passHref>
-          <Button
+          <MotionButton
             as='a'
             variant='secondary'
             sx={{
@@ -36,13 +46,16 @@ export const Hero: React.FC = () => {
               },
             }}
             data-splitbee-event={config.splitbee.events.heroButton}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.2 }}
           >
             <chakra.span mr='4'>{t('hero-cta')}</chakra.span>
             <ButtonArrow
               transformOrigin='left'
               transition='transform 0.2s ease-in-out, fill 0.2s ease-in-out'
             />
-          </Button>
+          </MotionButton>
         </NextLink>
       </VStack>
     </MotionFlex>

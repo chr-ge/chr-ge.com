@@ -9,7 +9,9 @@ const container = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.25,
+      delay: 0.5,
+      delayChildren: 0.5,
+      staggerChildren: 0.5,
     },
   },
 }

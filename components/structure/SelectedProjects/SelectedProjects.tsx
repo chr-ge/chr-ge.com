@@ -1,8 +1,28 @@
 import { useTranslation } from 'next-i18next'
 import { Heading, VStack } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 import { projects } from 'data/projects'
 import { OtherProjectsMarquee } from './OtherProjectsMarquee'
 import { Project } from './Project'
+
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.5,
+      delayChildren: 0.5,
+      staggerChildren: 0.25,
+    },
+  },
+}
+
+const item = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+}
+
+const MotionVStack = motion(VStack)
 
 export const SelectedProjects: React.FC = () => {
   const { t } = useTranslation('common')
@@ -21,11 +41,20 @@ export const SelectedProjects: React.FC = () => {
         <Heading as='h2' variant='section' size='2xl'>
           {t('selected-projects')}
         </Heading>
-        <VStack align='stretch' spacing='12'>
+        <MotionVStack
+          align='stretch'
+          spacing='12'
+          variants={container}
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true }}
+        >
           {projects.map((project) => (
-            <Project key={project.id} {...project} />
+            <motion.div key={project.id} variants={item}>
+              <Project {...project} />
+            </motion.div>
           ))}
-        </VStack>
+        </MotionVStack>
       </VStack>
       <OtherProjectsMarquee />
     </>

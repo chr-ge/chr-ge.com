@@ -19,6 +19,9 @@ export const Button: ComponentSingleStyleConfig = {
       fontSize: 'lg',
       fontWeight: 'bold',
       p: 0,
+      _hover: {
+        color: 'gray.700',
+      },
     },
     block: {
       bg: 'white',

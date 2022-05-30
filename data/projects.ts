@@ -8,6 +8,8 @@ import {
   SiStripe,
 } from 'react-icons/si'
 import type { ProjectProps } from 'components/structure/SelectedProjects/Project'
+import KalabamImage from 'public/img/projects/kalabam-full.png'
+import WhyPigeonsImage from 'public/img/projects/why-pigeons-full.png'
 
 export const projects: ProjectProps[] = [
   {
@@ -17,10 +19,7 @@ export const projects: ProjectProps[] = [
       en: 'Create multiplayer quizzes for class activities or interactive presentations.',
       fr: 'Créez des quiz multijoueurs pour les activités en classe ou des présentations interactives.',
     },
-    images: [
-      { src: '/img/projects/kalabam-ipad.png', alt: 'Dashboard' },
-      { src: '/img/projects/kalabam-iphone.png', alt: 'Home Page' },
-    ],
+    image: { src: KalabamImage, dimensions: { width: 1072, height: 2478 } },
     homepage: 'https://kalabam.com/?ref=chr-ge.com',
     github: 'https://github.com/chr-ge/kalabam',
     technologies: [
@@ -43,13 +42,7 @@ export const projects: ProjectProps[] = [
       en: 'Quick food delivery right to your door. User, restaurant, driver, and admin dashboards are fully functional.',
       fr: 'Livraison rapide de plats directement à votre porte. Les tableaux de bord des utilisateurs, des restaurants, des chauffeurs et des administrateurs sont entièrement fonctionnels.',
     },
-    images: [
-      { src: '/img/projects/pigeons-ipad.png', alt: 'Restaurant Page' },
-      {
-        src: '/img/projects/pigeons-ipad-2.png',
-        alt: 'Restaurant Page - Modal',
-      },
-    ],
+    image: { src: WhyPigeonsImage, dimensions: { width: 1072, height: 2653 } },
     github: 'https://github.com/chr-ge/why-pigeons',
     technologies: [
       { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },

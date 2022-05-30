@@ -1,9 +1,13 @@
+import type { StaticImageData } from 'next/image'
 import type { IconProps } from '@chakra-ui/react'
 import type { IconType } from 'react-icons'
 
 export type Image = {
-  src: string
-  alt: string
+  src: StaticImageData
+  dimensions: {
+    width: number
+    height: number
+  }
 }
 
 export type Tag = {

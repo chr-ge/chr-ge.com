@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import type { Image, Skill, Tag } from 'utils/types'
+import { useRef } from 'react'
 
 const MotionB = motion(Box)
 
@@ -21,15 +22,20 @@ export interface ProjectProps {
     en: string
     fr: string
   }
-  images: Image[]
+  image: Image
   homepage?: string
   github?: string
   technologies: Skill[]
   tags: Tag[]
 }
 
-export const Project: React.FC<ProjectProps> = ({ title, description }) => {
+export const Project: React.FC<ProjectProps> = ({
+  title,
+  description,
+  image,
+}) => {
   const { i18n } = useTranslation('common')
+  const ref = useRef<HTMLDivElement>(null)
 
   return (
     <Stack
@@ -61,10 +67,11 @@ export const Project: React.FC<ProjectProps> = ({ title, description }) => {
           borderRight='1px solid black'
           borderTopRadius='30px'
           initial={{ top: '5rem' }}
-          whileHover={{ top: -1072 + 80 }}
-          transition={{ duration: 4 }}
+          whileHover={{ top: -(ref.current?.clientHeight || 0) + 384 }} // 384px === 24rem (96)
+          transition={{ duration: 5, ease: 'linear' }}
         >
           <Box
+            ref={ref}
             w='100%'
             pos='relative'
             borderTopRadius='15px'
@@ -74,11 +81,11 @@ export const Project: React.FC<ProjectProps> = ({ title, description }) => {
             borderRight='1px solid black'
           >
             <NextImage
-              src='/img/projects/kalabam-full.png'
-              width={1072}
-              height={2478}
+              src={image.src}
+              {...image.dimensions}
               objectFit='contain'
               objectPosition='center top'
+              alt={title}
             />
           </Box>
         </MotionB>

@@ -32,7 +32,9 @@ export const Footer: React.FC = () => {
         mb={{ base: '16', md: 0 }}
       >
         <Text casing='uppercase'>{config.copyright}</Text>
-        <Text casing='uppercase'>{t('made-in-mtl')}</Text>
+        <Text casing='uppercase' cursor='url(/img/maple-leaf.png), text'>
+          {t('made-in-mtl')}
+        </Text>
       </Stack>
       <Stack
         direction={{ base: 'column', md: 'row' }}

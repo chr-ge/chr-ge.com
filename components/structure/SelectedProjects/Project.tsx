@@ -36,6 +36,9 @@ export const Project: React.FC<ProjectProps> = ({
 }) => {
   const { i18n } = useTranslation('common')
   const ref = useRef<HTMLDivElement>(null)
+  const hoverTop = ref.current?.clientHeight
+    ? -ref.current.clientHeight + 384
+    : 0
 
   return (
     <Stack
@@ -67,7 +70,7 @@ export const Project: React.FC<ProjectProps> = ({
           borderRight='1px solid black'
           borderTopRadius='30px'
           initial={{ top: '5rem' }}
-          whileHover={{ top: -(ref.current?.clientHeight || 0) + 384 }} // 384px === 24rem (96)
+          whileHover={{ top: hoverTop }} // 384px === 24rem (96)
           transition={{ duration: 5, ease: 'linear' }}
         >
           <Box

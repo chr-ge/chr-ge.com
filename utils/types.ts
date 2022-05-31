@@ -20,14 +20,6 @@ export type RoleType = {
   color: string
 }
 
-export type Bookmark = {
-  _id: string
-  title: string
-  link: string
-  cover: string
-  tags: string[]
-}
-
 export type Skill = {
   name: string
   icon: IconType | ((props: IconProps) => JSX.Element)

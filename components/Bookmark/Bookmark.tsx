@@ -10,8 +10,15 @@ import {
   LinkOverlay,
   Flex,
 } from '@chakra-ui/react'
-import type { Bookmark as BookmarkProps } from 'utils/types'
 import { config } from 'configs/config'
+
+export interface BookmarkProps {
+  _id: string
+  title: string
+  link: string
+  cover: string
+  tags: string[]
+}
 
 export const Bookmark: React.FC<BookmarkProps> = ({
   title,

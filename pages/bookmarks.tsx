@@ -1,6 +1,6 @@
 import type { GetStaticProps, NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { NextSeo } from 'next-seo'
 import { useTranslation } from 'next-i18next'
 import {
@@ -16,16 +16,14 @@ import { motion } from 'framer-motion'
 import { MainLayout } from 'components/layouts/MainLayout'
 import { config } from 'configs/config'
 import { fetchBookmarks } from 'data/bookmarks'
-import { Bookmark } from 'components/Bookmark'
-import type { Bookmark as BookmarkType } from 'utils/types'
+import { Bookmark, type BookmarkProps } from 'components/Bookmark'
 import { SlashDivider } from 'components/structure'
 
 const MotionBox = motion(Box)
 const MotionFlex = motion(Flex)
-const MotionHStack = motion(HStack)
 
 interface BookmarksProps {
-  bookmarks: BookmarkType[]
+  bookmarks: BookmarkProps[]
   tags: string[]
 }
 
@@ -34,17 +32,18 @@ const Bookmarks: NextPage<BookmarksProps> = ({
   tags,
 }) => {
   const { t } = useTranslation('bookmarks')
+  const [isSticky, setIsSticky] = useState(false)
   const [activeTag, setActiveTag] = useQueryState(
     'tag',
     queryTypes.string.withDefault('all')
   )
-  const [isSticky, setIsSticky] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const onScroll = () => {
       setIsSticky(ref.current?.getBoundingClientRect().top === 105)
     }
+
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
@@ -112,7 +111,6 @@ const Bookmarks: NextPage<BookmarksProps> = ({
           background: {
             repeat: isSticky ? Infinity : 0,
             repeatType: 'reverse',
-            // duration: 2,
             duration: isSticky ? 2 : 0.5,
           },
         }}

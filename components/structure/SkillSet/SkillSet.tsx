@@ -1,10 +1,10 @@
 import { useTranslation } from 'next-i18next'
 import { Heading, SimpleGrid, VStack } from '@chakra-ui/react'
+import { motion, type Variants } from 'framer-motion'
 import { SkillGroup } from './SkillGroup'
 import { data } from './data'
-import { motion } from 'framer-motion'
 
-const container = {
+const container: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,

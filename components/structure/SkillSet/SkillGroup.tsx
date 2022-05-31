@@ -2,11 +2,11 @@ import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import type { TFuncKey } from 'react-i18next'
 import { Heading, SimpleGrid, VStack } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 import type { Skill } from 'utils/types'
 import { SkillBox } from './SkillBox'
 
-const group = {
+const group: Variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
 }

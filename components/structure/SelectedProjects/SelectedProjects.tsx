@@ -1,11 +1,11 @@
 import { useTranslation } from 'next-i18next'
 import { Heading, VStack } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 import { projects } from 'data/projects'
 import { OtherProjectsMarquee } from './OtherProjectsMarquee'
 import { Project } from './Project'
 
-const container = {
+const container: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -17,7 +17,7 @@ const container = {
   },
 }
 
-const item = {
+const item: Variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
 }

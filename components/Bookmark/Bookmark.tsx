@@ -9,7 +9,6 @@ import {
   LinkBox,
   LinkOverlay,
   Flex,
-  useColorModeValue,
 } from '@chakra-ui/react'
 import type { Bookmark as BookmarkProps } from 'utils/types'
 import { config } from 'configs/config'
@@ -21,22 +20,18 @@ export const Bookmark: React.FC<BookmarkProps> = ({
   tags,
 }) => {
   const { t } = useTranslation('bookmarks')
-  const cardBgColor = useColorModeValue('gray.50', 'gray.800')
-  const tagColor = useColorModeValue('gray.600', 'gray.400')
-
   const domain = new URL(link).hostname.replace('www.', '')
 
   return (
     <LinkBox
       as='article'
-      bgColor={cardBgColor}
-      p='2'
-      shadow='sm'
-      rounded='md'
+      bgColor='gray.50'
+      borderColor='black'
+      border='1px solid'
       role='group'
     >
       <Flex height='100%' direction='column' align='stretch'>
-        <Box position='relative'>
+        <Box position='relative' borderColor='black' borderBottom='1px solid'>
           <AspectRatio w='full' ratio={16 / 9}>
             <Image
               src={cover}
@@ -54,16 +49,15 @@ export const Bookmark: React.FC<BookmarkProps> = ({
             right='0'
             top='0'
             bottom='0'
-            bg='rgba(0,0,0,0.4)'
-            rounded='sm'
-            _groupHover={{ d: 'flex' }}
+            bg='blackAlpha.600'
+            _groupHover={{ display: 'flex' }}
           >
             <Text fontWeight='bold' color='white' letterSpacing='wide'>
               {t('visit')}
             </Text>
           </Flex>
         </Box>
-        <Text fontWeight='semibold' py='3'>
+        <Text fontWeight='semibold' py='3' px='3'>
           <LinkOverlay
             href={link}
             data-splitbee-event={config.splitbee.events.bookmark}
@@ -73,14 +67,9 @@ export const Bookmark: React.FC<BookmarkProps> = ({
             {title}
           </LinkOverlay>
         </Text>
-        <HStack mt='auto'>
+        <HStack mt='auto' px='3' pb='3'>
           {tags.map((tag) => (
-            <Text
-              key={tag}
-              textTransform='uppercase'
-              fontSize='xs'
-              color={tagColor}
-            >
+            <Text key={tag} casing='uppercase' fontSize='xs' color='gray.600'>
               {tag}
             </Text>
           ))}

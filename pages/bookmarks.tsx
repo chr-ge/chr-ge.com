@@ -16,8 +16,11 @@ import { motion } from 'framer-motion'
 import { MainLayout } from 'components/layouts/MainLayout'
 import { config } from 'configs/config'
 import { fetchBookmarks } from 'data/bookmarks'
-import { Bookmark, type BookmarkProps } from 'components/Bookmark'
-import { SlashDivider } from 'components/structure'
+import {
+  Bookmark,
+  type BookmarkProps,
+  SlashDivider,
+} from 'components/structure'
 
 const MotionBox = motion(Box)
 const MotionFlex = motion(Flex)
@@ -37,11 +40,11 @@ const Bookmarks: NextPage<BookmarksProps> = ({
     'tag',
     queryTypes.string.withDefault('all')
   )
-  const ref = useRef<HTMLDivElement>(null)
+  const tagsRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const onScroll = () => {
-      setIsSticky(ref.current?.getBoundingClientRect().top === 105)
+      setIsSticky(tagsRef.current?.getBoundingClientRect().top === 105)
     }
 
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -82,7 +85,7 @@ const Bookmarks: NextPage<BookmarksProps> = ({
       </MotionFlex>
       <SlashDivider />
       <MotionBox
-        ref={ref}
+        ref={tagsRef}
         pos='sticky'
         top='105px'
         bg='white'
@@ -129,7 +132,7 @@ const Bookmarks: NextPage<BookmarksProps> = ({
         </HStack>
       </MotionBox>
       <Box px={{ base: '4', md: '8' }} py={['8', '16']}>
-        <SimpleGrid columns={[1, 2, 4]} spacing='8'>
+        <SimpleGrid columns={[1, 2, 3, 4]} spacing={{ base: '6', md: '8' }}>
           {bookmarks.map((bookmark) => (
             <Bookmark key={bookmark._id} {...bookmark} />
           ))}

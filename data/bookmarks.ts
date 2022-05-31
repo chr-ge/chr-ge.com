@@ -1,4 +1,4 @@
-import type { BookmarkProps } from 'components/Bookmark'
+import type { BookmarkProps } from 'components/structure'
 import { config } from 'configs/config'
 
 export const fetchBookmarks = async (page = 0): Promise<BookmarkProps[]> => {

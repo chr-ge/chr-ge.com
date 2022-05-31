@@ -90,7 +90,7 @@ const Bookmarks: NextPage<BookmarksProps> = ({
         zIndex='sticky'
         borderColor='black'
         borderBottom='1px solid'
-        initial={{ paddingTop: '4rem' }}
+        initial={{ paddingTop: '4rem', paddingBottom: '1.5rem' }}
         animate={
           isSticky
             ? {
@@ -114,7 +114,6 @@ const Bookmarks: NextPage<BookmarksProps> = ({
             duration: isSticky ? 2 : 0.5,
           },
         }}
-        layout
       >
         <HStack spacing='4' overflowX='auto'>
           {tags.map((tag) => (

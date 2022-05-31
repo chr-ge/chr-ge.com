@@ -9,7 +9,6 @@ import { config } from 'configs/config'
 import { theme } from 'theme/theme'
 
 import 'focus-visible/dist/focus-visible'
-import 'keen-slider/keen-slider.min.css'
 import '@fontsource/mulish/400.css'
 import '@fontsource/mulish/700.css'
 

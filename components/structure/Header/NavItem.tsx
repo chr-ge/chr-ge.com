@@ -1,7 +1,8 @@
 import { useTranslation } from 'next-i18next'
 import type { TFuncKey } from 'react-i18next'
 import NextLink from 'next/link'
-import { Button, Text } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
+import { Button } from '@chakra-ui/react'
 
 export interface NavItemProps {
   name: TFuncKey<'common'>
@@ -11,11 +12,17 @@ export interface NavItemProps {
 
 export const NavItem: React.FC<NavItemProps> = ({ name, href, onClose }) => {
   const { t } = useTranslation('common')
+  const { pathname } = useRouter()
 
   return (
     <NextLink href={href} passHref>
-      <Button as='a' variant='navItem' onClick={onClose}>
-        <Text>{t(name)}</Text>
+      <Button
+        as='a'
+        aria-current={pathname === href ? 'page' : 'false'}
+        variant='navItem'
+        onClick={onClose}
+      >
+        {t(name)}
       </Button>
     </NextLink>
   )

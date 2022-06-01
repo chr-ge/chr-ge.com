@@ -29,6 +29,8 @@ export const Bookmark: React.FC<BookmarkProps> = ({
   const { t } = useTranslation('bookmarks')
   const domain = new URL(link).hostname.replace('www.', '')
 
+  const bookmarkTags = tags.length ? tags : ['general']
+
   return (
     <LinkBox
       as='article'
@@ -75,7 +77,7 @@ export const Bookmark: React.FC<BookmarkProps> = ({
           </LinkOverlay>
         </Text>
         <HStack mt='auto' px='3' pb='3'>
-          {tags.map((tag) => (
+          {bookmarkTags.map((tag) => (
             <Text key={tag} casing='uppercase' fontSize='xs' color='gray.600'>
               {tag}
             </Text>

@@ -26,10 +26,10 @@ export const Header: React.FC = () => {
   }
 
   return (
-    <Box as='header' pos='sticky' zIndex='sticky' top='0' left='0' right='0'>
+    <Box as='header' pos='sticky' zIndex='banner' top='0' left='0' right='0'>
       <Flex
         pos='relative'
-        zIndex='sticky'
+        zIndex='banner'
         align='center'
         justify='space-between'
         bg='white'

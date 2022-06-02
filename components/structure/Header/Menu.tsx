@@ -26,7 +26,7 @@ export const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
           key='header-menu'
           as='nav'
           pos='absolute'
-          zIndex='docked'
+          zIndex='sticky'
           left='0'
           right='0'
           py='4'

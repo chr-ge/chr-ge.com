@@ -33,6 +33,20 @@ export const Button: ComponentSingleStyleConfig = {
         bg: 'gray.100',
       },
     },
+    filter: {
+      bg: 'white',
+      borderRadius: 0,
+      borderColor: 'black',
+      border: '1px solid',
+      px: '8',
+      _hover: {
+        bg: 'gray.100',
+      },
+      _active: {
+        bg: 'black',
+        color: 'white',
+      },
+    },
     navItem: {
       borderRadius: 0,
       bg: 'white',

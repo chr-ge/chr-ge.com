@@ -66,7 +66,7 @@ const Bookmarks: NextPage<BookmarksProps> = ({
         </Heading>
       </MotionFlex>
       <SlashDivider />
-      <TagsBar tags={tags} onTagClick={onTagClick} />
+      <TagsBar tags={tags} activeTag={activeTag} onTagClick={onTagClick} />
       <Box px={{ base: '4', md: '8' }} py={['8', '16']}>
         <SimpleGrid columns={[1, 2, 3, 4]} spacing={{ base: '6', md: '8' }}>
           {bookmarks.map((bookmark) => (

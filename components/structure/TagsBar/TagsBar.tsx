@@ -4,18 +4,25 @@ import { motion } from 'framer-motion'
 
 const MotionBox = motion(Box)
 
+const HEADER_HEIGHT = 105
+
 interface TagsBarProps {
   tags: string[]
+  activeTag: string
   onTagClick: (tag: string) => void
 }
 
-export const TagsBar: React.FC<TagsBarProps> = ({ tags, onTagClick }) => {
+export const TagsBar: React.FC<TagsBarProps> = ({
+  tags,
+  activeTag,
+  onTagClick,
+}) => {
   const [isSticky, setIsSticky] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const onScroll = (): void => {
-      setIsSticky(ref.current?.getBoundingClientRect().top === 105)
+      setIsSticky(ref.current?.getBoundingClientRect().top === HEADER_HEIGHT)
     }
 
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -26,7 +33,7 @@ export const TagsBar: React.FC<TagsBarProps> = ({ tags, onTagClick }) => {
     <MotionBox
       ref={ref}
       pos='sticky'
-      top='105px'
+      top={`${HEADER_HEIGHT}px`}
       bg='white'
       px={{ base: '4', md: '8' }}
       zIndex='sticky'
@@ -63,8 +70,9 @@ export const TagsBar: React.FC<TagsBarProps> = ({ tags, onTagClick }) => {
           <Button
             key={tag}
             aria-label={tag}
-            variant='block'
+            variant='filter'
             onClick={() => onTagClick(tag)}
+            isActive={tag === activeTag}
           >
             {tag}
           </Button>

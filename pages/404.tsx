@@ -9,7 +9,7 @@ const NotFound: NextPage = () => {
   const { t } = useTranslation('error')
 
   return (
-    <MainLayout>
+    <MainLayout title={t('page-not-found')}>
       <Box minH='calc(100vh - 105px)' px='8' pt='36'>
         <VStack align='center' spacing='4'>
           <Heading as='h1' variant='hero' size='hero'>

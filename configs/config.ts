@@ -8,18 +8,18 @@ export const config: Config = {
   cloudflareToken: process.env.NEXT_PUBLIC_CLOUDFLARE_TOKEN || '',
   copyright: `© ${new Date().getFullYear()} George Christeas`,
   seo: {
-    title: 'Full-Stack Software Developer',
-    titleTemplate: '%s // chr-ge',
+    title: 'George Christeas // Full-Stack Software Developer',
     description:
-      'George Christeas // Full-Stack Software Developer. I build things with my mouse and keyboard.',
+      'I build things with my mouse and keyboard. Welcome to my software developer portfolio.',
     canonical: 'https://chr-ge.com',
     openGraph: {
       type: 'website',
       locale: 'en_US',
       url: 'https://chr-ge.com',
       title: 'George Christeas // Full-Stack Software Developer',
-      description: 'I build things with my mouse and keyboard.',
-      site_name: 'CHR-GE // Full-Stack Software Developer',
+      description:
+        'I build things with my mouse and keyboard. Welcome to my software developer portfolio.',
+      site_name: 'George Christeas // Full-Stack Software Developer',
       images: [
         {
           url: 'https://chr-ge.com/img/banner.png',

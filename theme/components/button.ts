@@ -44,6 +44,7 @@ export const Button: ComponentSingleStyleConfig = {
       },
       _active: {
         bg: 'black',
+        borderColor: 'black',
         color: 'white',
       },
     },

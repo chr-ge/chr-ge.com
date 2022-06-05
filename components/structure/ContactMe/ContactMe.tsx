@@ -69,6 +69,7 @@ export const ContactMe: React.FC = () => {
       borderColor='black'
       borderTop='1px solid'
       spacing={{ base: '16', md: '4', xl: '2' }}
+      scrollMarginTop='calc(var(--chakra-sizes-header-height) - 1px)'
     >
       <Heading as='h2' flex='1' variant='section' size='2xl'>
         {t('contact-me')}

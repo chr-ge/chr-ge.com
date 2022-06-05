@@ -11,6 +11,7 @@
     "start": "next start",
     "lint": "eslint . --ext .js,.ts,.tsx",
     "lint:fix": "yarn lint --fix",
+    "gen:theme-typings": "chakra-cli tokens theme/theme.ts",
     "postinstall": "husky install"
   },
   "homepage": "https://chr-ge.com",
@@ -40,6 +41,7 @@
     "zod": "^3.17.3"
   },
   "devDependencies": {
+    "@chakra-ui/cli": "^2.0.0",
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "@types/node": "^17.0.38",

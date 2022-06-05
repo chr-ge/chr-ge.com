@@ -41,8 +41,6 @@ export const theme = extendTheme({
     body: 'Mulish, sans-serif',
   },
   shadows: {
-    secondary:
-      '0 0 1px 2px rgba(253, 196, 73, .75), 0 1px 1px rgba(0, 0, 0, .15)',
     gray: '0 0 1px 2px rgba(75, 85, 99, .75)',
   },
   components: {

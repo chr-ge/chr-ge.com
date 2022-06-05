@@ -3,7 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useCallback, useMemo } from 'react'
 import { NextSeo } from 'next-seo'
 import { useTranslation } from 'next-i18next'
-import { Box, Flex, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Box, Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import { queryTypes, useQueryState } from 'next-usequerystate'
 import { motion } from 'framer-motion'
 import { MainLayout } from 'components/layouts/MainLayout'
@@ -47,12 +47,14 @@ const Bookmarks: NextPage<BookmarksProps> = ({
 
   return (
     <MainLayout>
-      <NextSeo title={t('bookmarks')} />
+      <NextSeo title={t('bookmarks')} description={t('bookmarks-subtitle')} />
       <MotionFlex
-        h='22rem'
-        align='center'
+        h='96'
+        flexDir='column'
+        justify='center'
         py={['0', '4']}
         px={{ base: '4', md: '8' }}
+        rowGap='6'
         animate={{
           background: [
             'linear-gradient(90deg, #fad0c4 0%, #ffd1ff 100%)',
@@ -62,8 +64,9 @@ const Bookmarks: NextPage<BookmarksProps> = ({
         transition={{ repeat: Infinity, repeatType: 'reverse', duration: 2 }}
       >
         <Heading as='h1' variant='hero' size='hero'>
-          {t('bookmarks')}.
+          {t('bookmarks')}
         </Heading>
+        <Text>{t('bookmarks-subtitle')}</Text>
       </MotionFlex>
       <SlashDivider />
       <TagsBar tags={tags} activeTag={activeTag} onTagClick={onTagClick} />

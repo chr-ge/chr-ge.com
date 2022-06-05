@@ -4,7 +4,7 @@ import { appWithTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Fonts } from 'components/meta'
-import { useSplitbee } from 'utils/hooks/useSplitbee'
+import { useSplitbee } from 'utils/hooks/use-splitbee'
 import { config } from 'configs/config'
 import { theme } from 'theme/theme'
 

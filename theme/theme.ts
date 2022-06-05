@@ -29,7 +29,7 @@ export const theme = extendTheme({
   styles: {
     global: {
       html: {
-        scrollBehavior: 'smooth',
+        // scrollBehavior: 'smooth',
       },
       '::selection': {
         background: 'yellow.400',

@@ -59,8 +59,8 @@ export const Project: React.FC<ProjectProps> = ({
       <Flex flex='3' align='flex-end' pos='relative'>
         <MotionB
           pos='absolute'
-          pt='4'
-          px='4'
+          pt={{ base: '2', md: '4' }}
+          px={{ base: '2', md: '4' }}
           bg='#F9FBFD'
           w='100%'
           left='0'
@@ -75,13 +75,14 @@ export const Project: React.FC<ProjectProps> = ({
         >
           <Box
             ref={ref}
-            w='100%'
             pos='relative'
-            borderTopRadius='15px'
+            w='100%'
+            borderTopRadius={{ base: '1.25rem', md: '0.9375rem' }}
             overflow='hidden'
-            borderTop='1px solid black'
-            borderLeft='1px solid black'
-            borderRight='1px solid black'
+            borderColor='black'
+            borderTop='1px solid'
+            borderLeft='1px solid'
+            borderRight='1px solid'
           >
             <NextImage
               src={image.src}
@@ -89,6 +90,7 @@ export const Project: React.FC<ProjectProps> = ({
               objectFit='contain'
               objectPosition='center top'
               alt={title}
+              draggable='false'
             />
           </Box>
         </MotionB>

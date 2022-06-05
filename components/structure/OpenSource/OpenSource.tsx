@@ -23,7 +23,13 @@ export const OpenSource: React.FC = () => {
           background: 'linear-gradient(90deg, #93A5CF 0%, #E4EFE9 100%)',
         }}
       >
-        <Heading as='h2' variant='section' color='white' size='2xl'>
+        <Heading
+          as='h2'
+          variant='section'
+          color='white'
+          size='2xl'
+          wordBreak={{ base: 'break-all', sm: 'break-word' }}
+        >
           {t('open-source')}
         </Heading>
       </Box>

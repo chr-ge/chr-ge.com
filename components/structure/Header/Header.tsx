@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
         align='center'
         justify='space-between'
         bg='white'
-        pt={{ base: '8', md: '12' }}
+        pt='12'
         pb='4'
         px={{ base: '4', md: '8' }}
         borderColor='black'

@@ -41,7 +41,11 @@ export const Footer: React.FC = () => {
         align={{ base: 'flex-start', md: 'center' }}
         spacing='16'
       >
-        <HStack spacing='8'>
+        <HStack
+          spacing='8'
+          w='full'
+          justify={{ base: 'space-between', sm: 'flex-start' }}
+        >
           {socialLinks.map(({ name, href }) => (
             <Link
               key={name}

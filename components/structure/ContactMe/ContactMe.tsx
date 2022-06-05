@@ -68,6 +68,7 @@ export const ContactMe: React.FC = () => {
       px={{ base: '4', md: '8' }}
       borderColor='black'
       borderTop='1px solid'
+      spacing={{ base: '16', md: '4', xl: '2' }}
     >
       <Heading as='h2' flex='1' variant='section' size='2xl'>
         {t('contact-me')}

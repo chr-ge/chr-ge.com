@@ -33,12 +33,13 @@ export const TagsBar: React.FC<TagsBarProps> = ({
     <MotionBox
       ref={ref}
       pos='sticky'
-      top={`${HEADER_HEIGHT}px`}
+      top='var(--chakra-sizes-header-height)'
       bg='white'
       px={{ base: '4', md: '8' }}
       zIndex='dropdown'
       borderColor='black'
       borderBottom='1px solid'
+      overflowX='auto'
       initial={{ paddingTop: '4rem', paddingBottom: '1.5rem' }}
       animate={
         isSticky
@@ -63,7 +64,6 @@ export const TagsBar: React.FC<TagsBarProps> = ({
           duration: isSticky ? 2 : 0.5,
         },
       }}
-      overflowX='auto'
     >
       <HStack spacing='4' w='min-content'>
         {tags.map((tag) => (

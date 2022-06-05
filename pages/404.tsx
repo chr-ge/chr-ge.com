@@ -10,7 +10,11 @@ const NotFound: NextPage = () => {
 
   return (
     <MainLayout title={t('page-not-found')}>
-      <Box minH='calc(100vh - 105px)' px='8' pt='36'>
+      <Box
+        minH='calc(100vh - var(--chakra-sizes-header-height))'
+        px='8'
+        pt='36'
+      >
         <VStack align='center' spacing='4'>
           <Heading as='h1' variant='hero' size='hero'>
             {t('error-404')}

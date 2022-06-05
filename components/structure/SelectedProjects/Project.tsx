@@ -62,7 +62,7 @@ export const Project: React.FC<ProjectProps> = ({
           pt={{ base: '2', md: '4' }}
           px={{ base: '2', md: '4' }}
           bg='#F9FBFD'
-          w='100%'
+          w='full'
           left='0'
           right='0'
           borderTop='1px solid black'
@@ -76,7 +76,7 @@ export const Project: React.FC<ProjectProps> = ({
           <Box
             ref={ref}
             pos='relative'
-            w='100%'
+            w='full'
             borderTopRadius={{ base: '1.25rem', md: '0.9375rem' }}
             overflow='hidden'
             borderColor='black'

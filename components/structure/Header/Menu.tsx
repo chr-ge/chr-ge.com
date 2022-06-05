@@ -18,8 +18,6 @@ interface MenuProps {
 
 export const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
   return (
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-ignore
     <AnimatePresence initial={false}>
       {isOpen && (
         <MotionStack
@@ -35,12 +33,10 @@ export const Menu: React.FC<MenuProps> = ({ isOpen, onClose }) => {
           spacing='4'
           borderColor='black'
           borderBottom='1px solid'
-          style={{
-            background: 'linear-gradient(90deg, #DFE9F3 0%, #FFFFFF 100%)',
-          }}
-          initial={{ opacity: 0, top: 0 }}
-          animate={{ opacity: 1, top: 105 }}
-          exit={{ opacity: 0, top: 0 }}
+          bgGradient='linear(to-r, #DFE9F3, white)'
+          initial={{ opacity: 0, top: '0rem' }}
+          animate={{ opacity: 1, top: 'var(--chakra-sizes-header-height)' }}
+          exit={{ opacity: 0, top: '0rem' }}
           transition={{ ease: 'backOut' }}
         >
           {navItems.map((item) => (

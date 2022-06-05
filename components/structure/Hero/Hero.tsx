@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
 
   return (
     <MotionFlex
-      h='calc(100vh - 105px)'
+      h='calc(100vh - var(--chakra-sizes-header-height))'
       px={{ base: '4', md: '8' }}
       animate={{
         background: [

@@ -39,7 +39,7 @@ export const Bookmark: React.FC<BookmarkProps> = ({
       border='1px solid'
       role='group'
     >
-      <Flex height='100%' direction='column' align='stretch'>
+      <Flex h='full' flexDir='column' align='stretch'>
         <Box position='relative' borderColor='black' borderBottom='1px solid'>
           <AspectRatio w='full' ratio={16 / 9}>
             <Image

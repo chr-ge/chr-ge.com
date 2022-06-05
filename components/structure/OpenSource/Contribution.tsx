@@ -43,7 +43,7 @@ export const Contribution: React.FC<ContributionProps> = ({
       transition='all 0.1s ease-in-out'
       _hover={{ shadow: 'none', transform: 'translate(8px, 8px)' }}
     >
-      <Flex h='100%' flexDir='column'>
+      <Flex h='full' flexDir='column'>
         <Flex align='center' justify='space-between'>
           <Wrap spacing='1' fontSize='xl'>
             <Text whiteSpace='nowrap'>{user}</Text>

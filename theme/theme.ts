@@ -43,6 +43,11 @@ export const theme = extendTheme({
   shadows: {
     gray: '0 0 1px 2px rgba(75, 85, 99, .75)',
   },
+  sizes: {
+    header: {
+      height: '6.5625rem',
+    },
+  },
   components: {
     Button,
     Heading,

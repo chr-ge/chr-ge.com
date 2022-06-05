@@ -35,7 +35,7 @@ export const SelectedProjects: React.FC = () => {
         py='20'
         px={{ base: '4', md: '8' }}
         spacing='16'
-        sx={{ scrollMarginTop: '105px' }}
+        scrollMarginTop='var(--chakra-sizes-header-height)'
       >
         <Heading as='h2' variant='section' size='2xl'>
           {t('selected-projects')}

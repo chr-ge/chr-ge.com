@@ -21,18 +21,9 @@ export const TagsBar: React.FC<TagsBarProps> = ({
   const ref = useRef<HTMLDivElement>(null)
   const dimensions = useDimensions(ref, true)
 
-  // useEffect(() => {
-  //   const onScroll = (): void => {
-  //     setIsSticky(ref.current.getBoundingClientRect().top === HEADER_HEIGHT)
-  //   }
-
-  //   window.addEventListener('scroll', onScroll, { passive: true })
-  //   return () => window.removeEventListener('scroll', onScroll)
-  // }, [])
-
   useEffect(() => {
     if (!dimensions) return
-    setIsSticky(dimensions?.borderBox.top === HEADER_HEIGHT)
+    setIsSticky(dimensions.borderBox.top <= HEADER_HEIGHT)
   }, [dimensions])
 
   return (

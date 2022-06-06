@@ -23,7 +23,7 @@
     "@chakra-ui/react": "^2.1.2",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
-    "@fontsource/mulish": "^4.5.10",
+    "@fontsource/mulish": "^4.5.11",
     "@hookform/resolvers": "^2.8.10",
     "@splitbee/web": "^0.3.0",
     "focus-visible": "^5.2.0",

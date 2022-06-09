@@ -2696,7 +2696,7 @@ __metadata:
     eslint-plugin-prettier: ^4.0.0
     eslint-plugin-react: ^7.30.0
     focus-visible: ^5.2.0
-    framer-motion: ^6.3.6
+    framer-motion: ^6.3.11
     husky: ^8.0.0
     lint-staged: ^12.5.0
     next: ^12.1.6
@@ -3995,9 +3995,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^6.3.6":
-  version: 6.3.6
-  resolution: "framer-motion@npm:6.3.6"
+"framer-motion@npm:^6.3.11":
+  version: 6.3.11
+  resolution: "framer-motion@npm:6.3.11"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     framesync: 6.0.1
@@ -4011,7 +4011,7 @@ __metadata:
   dependenciesMeta:
     "@emotion/is-prop-valid":
       optional: true
-  checksum: 2d82ff7ce3fdac97a2e52aa6d92907f3ff4ba37389202e0b5efd2b0e9842ca5b3913ed325783e29edea8ccf7ba16077a0b48ec5ae548283f96b6e81ac6ae6cc5
+  checksum: 2333b296a109ec0ef86421453f66a92b63e07930a491102f1007bbe48f40594d8c51a96ca937f8f3f013ba658147049bf1fa9feebc44487b8e7617bb674fb254
   languageName: node
   linkType: hard
 

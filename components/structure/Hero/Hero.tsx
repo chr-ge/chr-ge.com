@@ -16,6 +16,7 @@ export const Hero: React.FC = () => {
     <MotionFlex
       h='calc(100vh - var(--chakra-sizes-header-height))'
       px={{ base: '4', md: '8' }}
+      align='center'
       animate={{
         background: [
           'linear-gradient(90deg, #E9DEFA 0%, #FBFCDB 100%)',
@@ -24,7 +25,7 @@ export const Hero: React.FC = () => {
       }}
       transition={{ repeat: Infinity, repeatType: 'reverse', duration: 2 }}
     >
-      <VStack align='flex-start' mt='44' maxW='container.md' spacing='12'>
+      <VStack align='flex-start' pb='32' maxW='container.md' spacing='12'>
         <MotionHeading
           as='h1'
           variant='hero'

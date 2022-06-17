@@ -17,8 +17,8 @@ const container: Variants = {
 }
 
 const item: Variants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1 },
+  hidden: { opacity: 0, y: 25 },
+  visible: { opacity: 1, y: 0 },
 }
 
 const MotionVStack = motion(VStack)

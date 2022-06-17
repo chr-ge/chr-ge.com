@@ -51,7 +51,7 @@ export const Button: ComponentSingleStyleConfig = {
     navItem: {
       borderRadius: 0,
       bg: 'white',
-      justifyContent: 'flex-end',
+      justifyContent: 'flex-start',
       minW: '44',
       h: '20',
       borderColor: 'black',

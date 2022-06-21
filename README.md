@@ -5,6 +5,8 @@
 
 > My portfolio website showcasing my projects, skills and more!
 
+![Banner](/public/img/banner.png)
+
 Running Locally:
 
 ```bash

@@ -24,7 +24,7 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@fontsource/mulish": "^4.5.11",
-    "@hookform/resolvers": "^2.9.2",
+    "@hookform/resolvers": "^2.9.3",
     "@splitbee/web": "^0.3.0",
     "focus-visible": "^5.2.0",
     "framer-motion": "^6.3.15",

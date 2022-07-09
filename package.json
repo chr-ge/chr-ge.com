@@ -27,7 +27,7 @@
     "@hookform/resolvers": "^2.9.5",
     "@splitbee/web": "^0.3.0",
     "focus-visible": "^5.2.0",
-    "framer-motion": "^6.4.2",
+    "framer-motion": "^6.4.3",
     "next": "^12.2.1",
     "next-i18next": "^11.0.0",
     "next-safe": "^3.2.1",

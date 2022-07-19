@@ -29,7 +29,7 @@
     "focus-visible": "^5.2.0",
     "framer-motion": "^6.5.1",
     "next": "^12.2.2",
-    "next-i18next": "^11.1.1",
+    "next-i18next": "^11.2.2",
     "next-safe": "^3.2.1",
     "next-seo": "^5.4.0",
     "next-usequerystate": "^1.7.2",

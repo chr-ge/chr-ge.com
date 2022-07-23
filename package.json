@@ -38,7 +38,7 @@
     "react-hook-form": "^7.33.1",
     "react-icons": "^4.3.1",
     "react-intersection-observer": "^8.34.0",
-    "zod": "^3.17.9"
+    "zod": "^3.17.10"
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.1.2",

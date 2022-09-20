@@ -249,11 +249,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/cli@npm:^2.1.7":
-  version: 2.1.7
-  resolution: "@chakra-ui/cli@npm:2.1.7"
+"@chakra-ui/cli@npm:^2.1.8":
+  version: 2.1.8
+  resolution: "@chakra-ui/cli@npm:2.1.8"
   dependencies:
-    "@chakra-ui/utils": 2.0.9
+    "@chakra-ui/utils": 2.0.10
     "@swc/core": ^1.2.177
     chokidar: ^3.5.3
     cli-check-node: ^1.3.4
@@ -270,7 +270,7 @@ __metadata:
     update-notifier: ^5.0.1
   bin:
     chakra-cli: bin/index.js
-  checksum: a5543c74b8e34a9551f349ab4d17971632dab39fb9a0802ed04b9e98626c75206356cc15de66943c91448143c0c92ec9bcf223d25b93c3f1341f296adaa520aa
+  checksum: 171ae0ad2d4dd53da8dd612e598b5fb52742f017f048c6b8af4a82accf9bcfe7833d84abcf35d9999b0bba053346bcd695f6cfbd9cf9f99d119ff6dd43d9fc14
   languageName: node
   linkType: hard
 
@@ -1220,6 +1220,18 @@ __metadata:
     framer-motion: ">=4.0.0"
     react: ">=18"
   checksum: b9d31d717bd01f037db24b0b8b3b0ac6410e39bea9c1e16214c828993246ce72b63a2550a48f5d87ae9d60d7bcaf44fa2257a4c5c66b4601ce4b1f2f716f60ad
+  languageName: node
+  linkType: hard
+
+"@chakra-ui/utils@npm:2.0.10":
+  version: 2.0.10
+  resolution: "@chakra-ui/utils@npm:2.0.10"
+  dependencies:
+    "@types/lodash.mergewith": 4.6.6
+    css-box-model: 1.2.1
+    framesync: 5.3.0
+    lodash.mergewith: 4.6.2
+  checksum: ef816dee8071cbd79cce028f3de7fc199bb292229f046d066cff2bc6d0f2af48611c7ab85be7950910e5f2981ed22eab194a0599eea970dff6769d1fc0e79387
   languageName: node
   linkType: hard
 
@@ -3073,7 +3085,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "chr-ge.com@workspace:."
   dependencies:
-    "@chakra-ui/cli": ^2.1.7
+    "@chakra-ui/cli": ^2.1.8
     "@chakra-ui/react": ^2.3.2
     "@commitlint/cli": ^17.1.2
     "@commitlint/config-conventional": ^17.0.3

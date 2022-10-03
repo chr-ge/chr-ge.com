@@ -1643,10 +1643,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/mulish@npm:^4.5.12":
-  version: 4.5.12
-  resolution: "@fontsource/mulish@npm:4.5.12"
-  checksum: 29982e2a79bd4b0d9d39a14ca5e8a9333084150976a747c0862d56f4ac2eefe8166a64715dbd63c3bd9f9f6987a35e0305c4b24c6efe2739cf534ca13316e5d7
+"@fontsource/mulish@npm:^4.5.13":
+  version: 4.5.13
+  resolution: "@fontsource/mulish@npm:4.5.13"
+  checksum: 175acd4a83fc5c620fce2cee71ebadd5c7d28d95637d71ecd52c50eff76c5db5e1c2d5a3a94b749120ee1353ac3fc0218b5d9c07db12f41c64222eb754ac60f7
   languageName: node
   linkType: hard
 
@@ -3081,7 +3081,7 @@ __metadata:
     "@commitlint/config-conventional": ^17.0.3
     "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.10.4
-    "@fontsource/mulish": ^4.5.12
+    "@fontsource/mulish": ^4.5.13
     "@hookform/resolvers": ^2.9.8
     "@splitbee/web": ^0.3.0
     "@types/node": ^17.0.38

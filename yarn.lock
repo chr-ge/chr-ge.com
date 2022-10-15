@@ -1682,12 +1682,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hookform/resolvers@npm:^2.9.8":
-  version: 2.9.8
-  resolution: "@hookform/resolvers@npm:2.9.8"
+"@hookform/resolvers@npm:^2.9.9":
+  version: 2.9.9
+  resolution: "@hookform/resolvers@npm:2.9.9"
   peerDependencies:
     react-hook-form: ^7.0.0
-  checksum: 3b8389a32baa784916d75565db3a13979cf776cc5552055f851c99283070f76e9b70d760a3222031b79610cde033d8417d63408a3e02577651f899b228d544ef
+  checksum: 113e7e2b6e4b505c48d45f134f54c6155e53b19ddd5ab32d1b88e6ca945588467e44196c645343a6932bd70dbea733838b9bca50253a9f48c2448c7361f25b7e
   languageName: node
   linkType: hard
 
@@ -3101,7 +3101,7 @@ __metadata:
     "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.10.4
     "@fontsource/mulish": ^4.5.13
-    "@hookform/resolvers": ^2.9.8
+    "@hookform/resolvers": ^2.9.9
     "@splitbee/web": ^0.3.0
     "@types/node": ^17.0.38
     "@types/react": ^18.0.21

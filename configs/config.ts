@@ -32,7 +32,10 @@ export const config: Config = {
     twitter: {
       cardType: 'summary',
     },
-    languageAlternates: [{ hrefLang: 'fr', href: 'https://chr-ge.com/fr' }],
+    languageAlternates: [
+      { hrefLang: 'en', href: 'https://chr-ge.com' },
+      { hrefLang: 'fr', href: 'https://chr-ge.com/fr' }
+    ],
     additionalMetaTags: [
       { httpEquiv: 'x-ua-compatible', content: 'IE=edge; chrome=1' },
       { property: 'msapplication-TileColor', content: '#ffc40d' },

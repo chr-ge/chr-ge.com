@@ -3154,7 +3154,7 @@ __metadata:
     next: ^12.2.5
     next-i18next: ^11.3.0
     next-safe: ^3.2.1
-    next-seo: ^5.8.0
+    next-seo: ^5.11.1
     next-usequerystate: ^1.7.2
     prettier: ^2.6.2
     react: ^18.2.0
@@ -6149,14 +6149,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-seo@npm:^5.8.0":
-  version: 5.8.0
-  resolution: "next-seo@npm:5.8.0"
+"next-seo@npm:^5.11.1":
+  version: 5.11.1
+  resolution: "next-seo@npm:5.11.1"
   peerDependencies:
     next: ^8.1.1-canary.54 || >=9.0.0
     react: ">=16.0.0"
     react-dom: ">=16.0.0"
-  checksum: 203288a44beba6dbc8218fc638675c48e4b3e807cc867f3274cc2af90fbfce9955f3b0c1a87a4f91bff7a287ed8184af8a33b52f0314d12ff940a882eb81d7aa
+  checksum: 92c2f5e64063f8bdf40c9437443c67e45784b58e101dcb65e1b3acc6b16627a72aaf5afedbd5881361390442a1b84d8deb74c7283be1d386967eb03d8025cf22
   languageName: node
   linkType: hard
 

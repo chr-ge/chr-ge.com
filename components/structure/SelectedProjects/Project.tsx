@@ -52,7 +52,7 @@ export const Project: React.FC<ProjectProps> = ({
       overflow='hidden'
     >
       <VStack flex='2' py='4' align='flex-start' justify='center' spacing='4'>
-        <Heading as='h4'>{title}</Heading>
+        <Heading as='h3'>{title}</Heading>
         <Divider />
         <Text>{description[i18n.language as keyof typeof description]}</Text>
       </VStack>

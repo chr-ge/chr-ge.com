@@ -31,7 +31,7 @@
     "next": "^12.2.5",
     "next-i18next": "^11.3.0",
     "next-safe": "^3.2.1",
-    "next-seo": "^5.14.0",
+    "next-seo": "^5.14.1",
     "next-usequerystate": "^1.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

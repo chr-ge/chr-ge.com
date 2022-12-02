@@ -1,5 +1,4 @@
 import type { GetStaticProps, NextPage } from 'next'
-import { useEffect } from 'react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { MainLayout } from 'components/layouts/MainLayout'
 import {

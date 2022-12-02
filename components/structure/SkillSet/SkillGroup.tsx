@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import type { TFuncKey } from 'react-i18next'
+import type { TFuncKey } from 'i18next'
 import { Heading, SimpleGrid, VStack } from '@chakra-ui/react'
 import { motion, type Variants } from 'framer-motion'
 import type { Skill } from 'utils/types'

@@ -1,5 +1,5 @@
 import { useTranslation } from 'next-i18next'
-import type { TFuncKey } from 'react-i18next'
+import type { TFuncKey } from 'i18next'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { Button } from '@chakra-ui/react'

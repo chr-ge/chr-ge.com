@@ -30,7 +30,7 @@
     "framer-motion": "^6.5.1",
     "i18next": "^22.0.8",
     "next": "^12.3.1",
-    "next-i18next": "^13.0.0",
+    "next-i18next": "^13.0.1",
     "next-safe": "^3.3.0",
     "next-seo": "^5.15.0",
     "next-usequerystate": "^1.7.2",

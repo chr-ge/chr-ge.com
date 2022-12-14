@@ -40,7 +40,7 @@
     "react-i18next": "^12.1.1",
     "react-icons": "^4.7.1",
     "react-intersection-observer": "^8.34.0",
-    "zod": "^3.19.1"
+    "zod": "^3.20.2"
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.2.0",

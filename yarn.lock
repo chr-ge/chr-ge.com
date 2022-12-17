@@ -258,9 +258,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/cli@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@chakra-ui/cli@npm:2.2.0"
+"@chakra-ui/cli@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "@chakra-ui/cli@npm:2.2.1"
   dependencies:
     "@swc/core": ^1.2.177
     chokidar: ^3.5.3
@@ -269,7 +269,6 @@ __metadata:
     cli-welcome: ^2.2.2
     commander: ^9.3.0
     lodash.throttle: ^4.1.1
-    module-alias: ^2.2.2
     ora: ^5.3.0
     prettier: ^2.7.1
     regenerator-runtime: ^0.13.7
@@ -278,7 +277,7 @@ __metadata:
     update-notifier: ^5.0.1
   bin:
     chakra-cli: bin/index.js
-  checksum: 6d72c79785b159a98c6380eb1d5821d7ab6fd89bfd61aa1c3867a6281c581160f453ede8893ddcb2fd955f5d42e0e595d0b046518900050fe247ad44125751cf
+  checksum: 5eae41c8ae32a3c1ebe6274404fd141dd23c436c1b9fc699ea49c87e41cf7feec45392e5ba5e56ef25f03d4144e2f21bad75e4465f4fa0e84ae54ce5ddb8ec04
   languageName: node
   linkType: hard
 
@@ -3180,7 +3179,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "chr-ge.com@workspace:."
   dependencies:
-    "@chakra-ui/cli": ^2.2.0
+    "@chakra-ui/cli": ^2.2.1
     "@chakra-ui/react": ^2.4.4
     "@commitlint/cli": ^17.3.0
     "@commitlint/config-conventional": ^17.3.0
@@ -6261,13 +6260,6 @@ __metadata:
   bin:
     mkdirp: bin/cmd.js
   checksum: a96865108c6c3b1b8e1d5e9f11843de1e077e57737602de1b82030815f311be11f96f09cce59bd5b903d0b29834733e5313f9301e3ed6d6f6fba2eae0df4298f
-  languageName: node
-  linkType: hard
-
-"module-alias@npm:^2.2.2":
-  version: 2.2.2
-  resolution: "module-alias@npm:2.2.2"
-  checksum: 4b5543f834b484033e5bd184096ca8276b9195e32e88883ee6ea8d3a4789d97c470d26f5fa7271bd7a26588bf67e4d27dbdb594ee327aef1c9619d855dc78342
   languageName: node
   linkType: hard
 

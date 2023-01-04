@@ -3243,7 +3243,7 @@ __metadata:
     i18next: ^22.4.8
     lint-staged: ^12.5.0
     next: ^12.3.1
-    next-i18next: ^13.0.2
+    next-i18next: ^13.0.3
     next-safe: ^3.3.0
     next-seo: ^5.15.0
     next-usequerystate: ^1.7.2
@@ -6352,9 +6352,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-i18next@npm:^13.0.2":
-  version: 13.0.2
-  resolution: "next-i18next@npm:13.0.2"
+"next-i18next@npm:^13.0.3":
+  version: 13.0.3
+  resolution: "next-i18next@npm:13.0.3"
   dependencies:
     "@babel/runtime": ^7.20.6
     "@types/hoist-non-react-statics": ^3.3.1
@@ -6366,7 +6366,7 @@ __metadata:
     next: ">= 12.0.0"
     react: ">= 17.0.2"
     react-i18next: ^12.1.1
-  checksum: 7f3f786d147c940aa958e5d07f8ef383337f80217bca4262ffdbfdae6b763fb0567521758b57f0b20cd25dcf92dc39794cb4ef66af1b823f9ca0ce4e83753358
+  checksum: 2b2cd8b4f1d04dd39af751a4fd5ed7bb0d56bc9a4fd934f0219d936d1c8d8b18cb38aa3cca185d579a5f6202e606a76424f57811ce26deb053cc533a1814d2d1
   languageName: node
   linkType: hard
 

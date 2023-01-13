@@ -3270,7 +3270,7 @@ __metadata:
     lint-staged: ^12.5.0
     next: ^12.3.1
     next-i18next: ^13.0.3
-    next-safe: ^3.3.0
+    next-safe: ^3.4.1
     next-seo: ^5.15.0
     next-usequerystate: ^1.7.2
     prettier: ^2.6.2
@@ -6609,12 +6609,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-safe@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "next-safe@npm:3.3.0"
+"next-safe@npm:^3.4.1":
+  version: 3.4.1
+  resolution: "next-safe@npm:3.4.1"
   peerDependencies:
-    next: ^9.5.0 || ^10.2.1 || ^11.1.0 || ^12.1.0
-  checksum: 2ae63d5c0635ed12a5c019448da50061e065c046cb547730322c9556c313207879e08ff6ca6531f25426c109648ebad1b6ac25a7e21f22c8cb7347ee70e5efc1
+    next: ^9.5.0 || ^10.2.1 || ^11.1.0 || ^12.1.0 || ^13.0.0
+  checksum: 33565314d29bef61545058789b4f1ce69e5f39c084ba9c7f6824e35a542ce846cf5ad2f62e430f2bea9a2dee0e044c3eea53e8ccfe8662c7c8516f87ab5a9121
   languageName: node
   linkType: hard
 

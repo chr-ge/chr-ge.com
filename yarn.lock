@@ -112,6 +112,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.20.13":
+  version: 7.20.13
+  resolution: "@babel/runtime@npm:7.20.13"
+  dependencies:
+    regenerator-runtime: ^0.13.11
+  checksum: 09b7a97a05c80540db6c9e4ddf8c5d2ebb06cae5caf3a87e33c33f27f8c4d49d9c67a2d72f1570e796045288fad569f98a26ceba0c4f5fad2af84b6ad855c4fb
+  languageName: node
+  linkType: hard
+
 "@babel/runtime@npm:^7.20.6":
   version: 7.20.6
   resolution: "@babel/runtime@npm:7.20.6"
@@ -3272,7 +3281,7 @@ __metadata:
     i18next: ^22.4.9
     lint-staged: ^12.5.0
     next: ^12.3.1
-    next-i18next: ^13.1.4
+    next-i18next: ^13.1.5
     next-safe: ^3.4.1
     next-seo: ^5.15.0
     next-usequerystate: ^1.7.2
@@ -5304,10 +5313,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next-fs-backend@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "i18next-fs-backend@npm:2.1.0"
-  checksum: 314fab11c843d865483fc5ece6f89495cea40df46e56d55ccfe6bde97b1703c9601a45950738c18413bfa2c45819b8db6733fc367d9cae89e524c7fb9199d955
+"i18next-fs-backend@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "i18next-fs-backend@npm:2.1.1"
+  checksum: fe606df2639b3ea49501b5bc947553e4bfbce67290c91ab22a8b9ecee4d11b8ae78179980720998881f117f0321d3ba0f739fb93a0ab95613cd79b85ffb014f5
   languageName: node
   linkType: hard
 
@@ -6594,21 +6603,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-i18next@npm:^13.1.4":
-  version: 13.1.4
-  resolution: "next-i18next@npm:13.1.4"
+"next-i18next@npm:^13.1.5":
+  version: 13.1.5
+  resolution: "next-i18next@npm:13.1.5"
   dependencies:
-    "@babel/runtime": ^7.20.6
+    "@babel/runtime": ^7.20.13
     "@types/hoist-non-react-statics": ^3.3.1
     core-js: ^3
     hoist-non-react-statics: ^3.3.2
-    i18next-fs-backend: ^2.1.0
+    i18next-fs-backend: ^2.1.1
   peerDependencies:
     i18next: ^22.0.6
     next: ">= 12.0.0"
     react: ">= 17.0.2"
-    react-i18next: ^12.1.1
-  checksum: 182049c5d4b0126178750e02df3b74fc4577e77025874a8d379ab111a96b21701cf80c3ab4d5aa8acaa2de55f322dfebd5ee95750ca6c5f89800456b9d4edac7
+    react-i18next: ^12.1.5
+  checksum: 4f938fea7e9be3e75a1d8fd9bc230697bd0cd002b494b86bd5a8cbe3a5e94d387ee46d2c25401692e3278f69d878123722f57e7d2e264ee11e47e89dc840ede9
   languageName: node
   linkType: hard
 

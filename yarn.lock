@@ -23,13 +23,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/helper-plugin-utils@npm:^7.18.6":
-  version: 7.18.9
-  resolution: "@babel/helper-plugin-utils@npm:7.18.9"
-  checksum: ebae876cd60f1fe238c7210986093845fa5c4cad5feeda843ea4d780bf068256717650376d3af2a5e760f2ed6a35c065ae144f99c47da3e54aa6cba99d8804e0
-  languageName: node
-  linkType: hard
-
 "@babel/helper-validator-identifier@npm:^7.12.11":
   version: 7.12.11
   resolution: "@babel/helper-validator-identifier@npm:7.12.11"
@@ -52,17 +45,6 @@ __metadata:
     chalk: ^2.0.0
     js-tokens: ^4.0.0
   checksum: 2f33624c8e0947101fd72ca8d2af291cd9560bcb3ed63299e5f95a70e64c2a435922d915ede6760f30ff23942589fe42b962b6b8138f868abaa6f7abd4d4f5e9
-  languageName: node
-  linkType: hard
-
-"@babel/plugin-syntax-jsx@npm:^7.17.12":
-  version: 7.18.6
-  resolution: "@babel/plugin-syntax-jsx@npm:7.18.6"
-  dependencies:
-    "@babel/helper-plugin-utils": ^7.18.6
-  peerDependencies:
-    "@babel/core": ^7.0.0-0
-  checksum: 6d37ea972970195f1ffe1a54745ce2ae456e0ac6145fae9aa1480f297248b262ea6ebb93010eddb86ebfacb94f57c05a1fc5d232b9a67325b09060299d515c67
   languageName: node
   linkType: hard
 
@@ -1543,28 +1525,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/babel-plugin@npm:^11.10.5":
-  version: 11.10.5
-  resolution: "@emotion/babel-plugin@npm:11.10.5"
-  dependencies:
-    "@babel/helper-module-imports": ^7.16.7
-    "@babel/plugin-syntax-jsx": ^7.17.12
-    "@babel/runtime": ^7.18.3
-    "@emotion/hash": ^0.9.0
-    "@emotion/memoize": ^0.8.0
-    "@emotion/serialize": ^1.1.1
-    babel-plugin-macros: ^3.1.0
-    convert-source-map: ^1.5.0
-    escape-string-regexp: ^4.0.0
-    find-root: ^1.1.0
-    source-map: ^0.5.7
-    stylis: 4.1.3
-  peerDependencies:
-    "@babel/core": ^7.0.0
-  checksum: e3353499c76c4422d6e900c0dfab73607056d9da86161a3f27c3459c193c4908050c5d252c68fcde231e13f02a9d8e0dc07d260317ae0e5206841e331cc4caae
-  languageName: node
-  linkType: hard
-
 "@emotion/babel-plugin@npm:^11.10.6":
   version: 11.10.6
   resolution: "@emotion/babel-plugin@npm:11.10.6"
@@ -1677,26 +1637,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@emotion/styled@npm:^11.10.5":
-  version: 11.10.5
-  resolution: "@emotion/styled@npm:11.10.5"
+"@emotion/styled@npm:^11.10.6":
+  version: 11.10.6
+  resolution: "@emotion/styled@npm:11.10.6"
   dependencies:
     "@babel/runtime": ^7.18.3
-    "@emotion/babel-plugin": ^11.10.5
+    "@emotion/babel-plugin": ^11.10.6
     "@emotion/is-prop-valid": ^1.2.0
     "@emotion/serialize": ^1.1.1
     "@emotion/use-insertion-effect-with-fallbacks": ^1.0.0
     "@emotion/utils": ^1.2.0
   peerDependencies:
-    "@babel/core": ^7.0.0
     "@emotion/react": ^11.0.0-rc.0
     react: ">=16.8.0"
   peerDependenciesMeta:
-    "@babel/core":
-      optional: true
     "@types/react":
       optional: true
-  checksum: 1cec5f6aeb227a7255141031e8594f38ad83902413472aae0a46c27e5f9769c01e23c1ad39adee408d8a2168a697464314d1a0c4f50b31a5d25ea506b2d7bbc8
+  checksum: ed0ee4bec3b63ee9c5eb8216b22646313ff1ada06c5183f128d25b73252126e9fde625e81c868be7ccd666b686a73076f923ce188dac25e93d5062ddffdad46f
   languageName: node
   linkType: hard
 
@@ -3277,7 +3234,7 @@ __metadata:
     "@commitlint/cli": ^17.4.3
     "@commitlint/config-conventional": ^17.4.3
     "@emotion/react": ^11.10.6
-    "@emotion/styled": ^11.10.5
+    "@emotion/styled": ^11.10.6
     "@fontsource/mulish": ^4.5.14
     "@hookform/resolvers": ^2.9.11
     "@splitbee/web": ^0.3.0

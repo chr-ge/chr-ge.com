@@ -28,7 +28,7 @@
     "@splitbee/web": "^0.3.0",
     "focus-visible": "^5.2.0",
     "framer-motion": "^6.5.1",
-    "i18next": "^22.4.12",
+    "i18next": "^22.4.13",
     "next": "^12.3.1",
     "next-i18next": "^13.2.2",
     "next-safe": "^3.4.1",

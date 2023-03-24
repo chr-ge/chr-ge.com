@@ -2,7 +2,7 @@ import { chakra, type StyleProps } from '@chakra-ui/react'
 
 export const ButtonArrow: React.FC<StyleProps> = (props) => (
   <chakra.svg
-    width='36'
+    width={{ base: '24', sm: '36' }}
     height='4'
     viewBox='0 0 144 16'
     fill='none'

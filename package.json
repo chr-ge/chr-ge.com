@@ -29,7 +29,7 @@
     "focus-visible": "^5.2.0",
     "framer-motion": "^6.5.1",
     "i18next": "^22.4.13",
-    "next": "^12.3.1",
+    "next": "^13.2.4",
     "next-i18next": "^13.2.2",
     "next-safe": "^3.4.1",
     "next-seo": "^5.15.0",
@@ -40,6 +40,7 @@
     "react-i18next": "^12.2.0",
     "react-icons": "^4.7.1",
     "react-intersection-observer": "^8.34.0",
+    "sharp": "^0.31.3",
     "zod": "^3.21.4"
   },
   "devDependencies": {
@@ -51,7 +52,7 @@
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "eslint": "^8.36.0",
-    "eslint-config-next": "^12.3.1",
+    "eslint-config-next": "^13.2.4",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",

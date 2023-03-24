@@ -1,4 +1,5 @@
 import { IoLogoPwa } from 'react-icons/io5'
+import { FaJava } from 'react-icons/fa'
 import {
   SiAmazonaws,
   SiAmazondynamodb,
@@ -6,7 +7,6 @@ import {
   SiGooglecloud,
   SiGraphql,
   SiHeroku,
-  SiJava,
   SiLaravel,
   SiMongodb,
   SiMysql,
@@ -35,7 +35,7 @@ export const data: SkillGroupProps[] = [
       { name: 'Javascript', icon: Javascript, color: '#F7DF1E' },
       { name: 'PHP', icon: SiPhp, color: '#777BB4' },
       { name: 'Ruby', icon: SiRuby, color: '#CC342D' },
-      { name: 'Java', icon: SiJava, color: '#007396' },
+      { name: 'Java', icon: FaJava, color: '#007396' },
     ],
   },
   {

@@ -51,6 +51,8 @@ export const OtherProjectsMarquee: React.FC = () => {
             href={config.github}
             variant='moreProjects'
             py='3'
+            data-splitbee-event={config.splitbee.events.externalLink}
+            data-splitbee-event-type='Github'
             isExternal
           >
             {t('check-out-more-projects')}

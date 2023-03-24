@@ -34,7 +34,7 @@ export const config: Config = {
     },
     languageAlternates: [
       { hrefLang: 'en', href: 'https://chr-ge.com' },
-      { hrefLang: 'fr', href: 'https://chr-ge.com/fr' }
+      { hrefLang: 'fr', href: 'https://chr-ge.com/fr' },
     ],
     additionalMetaTags: [
       { httpEquiv: 'x-ua-compatible', content: 'IE=edge; chrome=1' },

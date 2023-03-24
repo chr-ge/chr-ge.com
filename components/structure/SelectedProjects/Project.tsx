@@ -1,5 +1,5 @@
 import { useTranslation } from 'next-i18next'
-import NextImage from 'next/image'
+import NextImage from 'next/legacy/image'
 import {
   Box,
   Divider,

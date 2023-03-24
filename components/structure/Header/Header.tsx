@@ -39,7 +39,7 @@ export const Header: React.FC = () => {
         borderColor='black'
         borderBottom='1px solid'
       >
-        <NextLink href='/' passHref>
+        <NextLink href='/' passHref legacyBehavior>
           <Text
             as='a'
             fontWeight='bold'

@@ -37,7 +37,7 @@ export const Hero: React.FC = () => {
         >
           {t('hero-title')}
         </MotionHeading>
-        <NextLink href='/#projects' passHref>
+        <NextLink href='/#projects' passHref legacyBehavior>
           <MotionButton
             as='a'
             variant='secondary'

@@ -15,7 +15,7 @@ export const NavItem: React.FC<NavItemProps> = ({ name, href, onClose }) => {
   const { pathname } = useRouter()
 
   return (
-    <NextLink href={href} passHref>
+    <NextLink href={href} passHref legacyBehavior>
       <Button
         as='a'
         aria-current={pathname === href ? 'page' : 'false'}

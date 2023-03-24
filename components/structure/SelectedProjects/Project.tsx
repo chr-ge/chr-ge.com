@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import { useTranslation } from 'next-i18next'
 import NextImage from 'next/legacy/image'
 import {
@@ -5,13 +6,15 @@ import {
   Divider,
   Flex,
   Heading,
+  HStack,
+  Link,
   Stack,
   Text,
   VStack,
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import type { Image, Skill, Tag } from 'utils/types'
-import { useRef } from 'react'
+import { config } from 'configs/config'
 
 const MotionB = motion(Box)
 
@@ -33,8 +36,10 @@ export const Project: React.FC<ProjectProps> = ({
   title,
   description,
   image,
+  homepage,
+  github,
 }) => {
-  const { i18n } = useTranslation('common')
+  const { t, i18n } = useTranslation('common')
   const ref = useRef<HTMLDivElement>(null)
   const hoverTop = ref.current?.clientHeight
     ? -ref.current.clientHeight + 384
@@ -55,6 +60,32 @@ export const Project: React.FC<ProjectProps> = ({
         <Heading as='h3'>{title}</Heading>
         <Divider />
         <Text>{description[i18n.language as keyof typeof description]}</Text>
+        <HStack spacing='4'>
+          {homepage && (
+            <Link
+              href={homepage}
+              variant='projectLink'
+              data-splitbee-event={config.splitbee.events.projectLink}
+              data-splitbee-event-type='Website'
+              data-splitbee-event-project={title}
+              isExternal
+            >
+              {t('website')}
+            </Link>
+          )}
+          {github && (
+            <Link
+              href={github}
+              variant='projectLink'
+              data-splitbee-event={config.splitbee.events.projectLink}
+              data-splitbee-event-type='Github'
+              data-splitbee-event-project={title}
+              isExternal
+            >
+              Github
+            </Link>
+          )}
+        </HStack>
       </VStack>
       <Flex flex='3' align='flex-end' pos='relative'>
         <MotionB

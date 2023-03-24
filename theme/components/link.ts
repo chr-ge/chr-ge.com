@@ -2,6 +2,13 @@ import type { ComponentSingleStyleConfig } from '@chakra-ui/react'
 
 export const Link: ComponentSingleStyleConfig = {
   variants: {
+    projectLink: {
+      textDecoration: 'underline dashed 2px',
+      textUnderlineOffset: '1px',
+      _hover: {
+        textDecoration: 'underline 2px',
+      },
+    },
     social: {
       textTransform: 'uppercase',
       fontWeight: 'semibold',

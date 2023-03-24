@@ -78,6 +78,7 @@ export const config: Config = {
     events: {
       heroButton: 'Hero Button',
       externalLink: 'External Link',
+      projectLink: 'Project Link',
       bookmark: 'Bookmark',
       backToTop: 'Back To Top',
       toggledDarkMode: 'Toggled Dark Mode',
@@ -106,6 +107,7 @@ interface Config {
     events: {
       heroButton: string
       externalLink: string
+      projectLink: string
       bookmark: string
       backToTop: string
       toggledDarkMode: string

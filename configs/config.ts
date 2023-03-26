@@ -83,6 +83,7 @@ export const config: Config = {
       backToTop: 'Back To Top',
       toggledDarkMode: 'Toggled Dark Mode',
       osc: 'Open Source Contribution',
+      toggledMenu: 'Toggled Menu',
     },
   },
   formspreeUrl: 'https://formspree.io/f/xvodzjor',
@@ -112,6 +113,7 @@ interface Config {
       backToTop: string
       toggledDarkMode: string
       osc: string
+      toggledMenu: string
     }
   }
   formspreeUrl: string

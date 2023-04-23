@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/react'
 import { appWithTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
 import { ChakraProvider } from '@chakra-ui/react'
@@ -28,6 +29,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
           crossOrigin=''
         />
       </Head>
+      <Analytics />
       <DefaultSeo {...config.seo} />
       <ChakraProvider theme={theme}>
         <Fonts />

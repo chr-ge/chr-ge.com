@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.6.0",
-    "@emotion/react": "^11.10.6",
+    "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.6",
     "@fontsource/mulish": "^4.5.14",
     "@hookform/resolvers": "^2.9.11",

@@ -45,7 +45,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
-    "@chakra-ui/cli": "^2.4.0",
+    "@chakra-ui/cli": "^2.4.1",
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
     "@types/node": "^18.16.3",

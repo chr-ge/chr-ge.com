@@ -39,7 +39,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.44.1",
     "react-i18next": "^12.3.1",
-    "react-icons": "^4.8.0",
+    "react-icons": "^4.9.0",
     "react-intersection-observer": "^8.34.0",
     "sharp": "^0.31.3",
     "zod": "^3.21.4"

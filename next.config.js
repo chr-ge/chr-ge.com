@@ -40,5 +40,12 @@ module.exports = {
       destination: 'https://hive.splitbee.io/:slug',
     },
   ],
+  redirects: async () => [
+    {
+      source: '/github',
+      destination: 'https://github.com/chr-ge',
+      permanent: true,
+    },
+  ],
   i18n,
 }

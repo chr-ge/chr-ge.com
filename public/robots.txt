@@ -3,6 +3,10 @@ User-agent: *
 Disallow: /api/
 Disallow: /locales/
 
+# https://platform.openai.com/docs/gptbot
+User-agent: GPTBot
+Disallow: /
+
 # Host
 Host: https://chr-ge.com
 

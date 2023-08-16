@@ -72,7 +72,6 @@ export const config: Config = {
   email: 'george@chr-ge.com',
   email_link: 'mailto:george@chr-ge.com',
   github: 'https://github.com/chr-ge',
-  npm: 'https://www.npmjs.com/~chr-ge',
   linkedin: 'https://www.linkedin.com/in/chr-ge/',
   splitbee: {
     events: {
@@ -102,7 +101,6 @@ interface Config {
   email: string
   email_link: string
   github: string
-  npm: string
   linkedin: string
   splitbee: {
     events: {

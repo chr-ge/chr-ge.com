@@ -7,7 +7,7 @@ const socialLinks: { name: string; href: string }[] = [
   { name: 'Github', href: config.github },
   { name: 'Email', href: config.email_link },
   { name: 'LinkedIn', href: config.linkedin },
-  { name: 'NPM', href: config.npm },
+  { name: 'PGP/GPG Key', href: '/gpg.txt' },
 ]
 
 export const Footer: React.FC = () => {

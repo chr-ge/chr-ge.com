@@ -4,8 +4,8 @@ import { VscArrowUp } from 'react-icons/vsc'
 import { config } from 'configs/config'
 
 const socialLinks: { name: string; href: string }[] = [
-  { name: 'Github', href: config.github },
   { name: 'Email', href: config.email_link },
+  { name: 'Github', href: config.github },
   { name: 'LinkedIn', href: config.linkedin },
   { name: 'PGP/GPG Key', href: '/gpg.txt' },
 ]

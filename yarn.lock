@@ -3356,7 +3356,7 @@ __metadata:
     next-i18next: ^13.3.0
     next-safe: ^3.4.1
     next-seo: ^5.15.0
-    next-usequerystate: ^1.7.3
+    next-usequerystate: ^1.8.0
     prettier: ^2.6.2
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -6842,6 +6842,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mitt@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "mitt@npm:3.0.1"
+  checksum: b55a489ac9c2949ab166b7f060601d3b6d893a852515ae9eca4e11df01c013876df777ea109317622b5c1c60e8aae252558e33c8c94e14124db38f64a39614b1
+  languageName: node
+  linkType: hard
+
 "mkdirp-classic@npm:^0.5.2, mkdirp-classic@npm:^0.5.3":
   version: 0.5.3
   resolution: "mkdirp-classic@npm:0.5.3"
@@ -6954,14 +6961,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-usequerystate@npm:^1.7.3":
-  version: 1.7.3
-  resolution: "next-usequerystate@npm:1.7.3"
+"next-usequerystate@npm:^1.8.0":
+  version: 1.8.0
+  resolution: "next-usequerystate@npm:1.8.0"
+  dependencies:
+    mitt: ^3.0.1
   peerDependencies:
-    next: "*"
+    next: ^13.4
     react: "*"
     react-dom: "*"
-  checksum: 68e49392b9ab2589510daa30718db239dee30b241ac4452d10408397cd3118db7eb00adba5d2edc09eb2fd90999f0065f85ed5fabb0f73ce22d4b76189c41541
+  checksum: ba7996f9fc86f69250141157576746e70832dd6deeb56999141a5439e2a68317d9d065e613f197269c86afb81a3ba98145f398d07c7d718b64572a782bb43b1f
   languageName: node
   linkType: hard
 

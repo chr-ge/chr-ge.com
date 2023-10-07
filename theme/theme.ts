@@ -38,7 +38,7 @@ export const theme = extendTheme({
   },
   fonts: {
     heading: 'Hanson, sans-serif',
-    body: 'Mulish, sans-serif',
+    body: 'Manrope Variable, sans-serif',
   },
   shadows: {
     gray: '0 0 1px 2px rgba(75, 85, 99, .75)',

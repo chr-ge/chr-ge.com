@@ -3,7 +3,7 @@ import { Flex, Link, Text, HStack, IconButton, Stack } from '@chakra-ui/react'
 import { VscArrowUp } from 'react-icons/vsc'
 import { config } from 'configs/config'
 
-const socialLinks: { name: string; href: string }[] = [
+const links: { name: string; href: string }[] = [
   { name: 'Email', href: config.email_link },
   { name: 'Github', href: config.github },
   { name: 'LinkedIn', href: config.linkedin },
@@ -42,11 +42,11 @@ export const Footer: React.FC = () => {
         spacing='16'
       >
         <HStack
-          spacing='8'
           w='full'
+          spacing={{ base: '6', md: '8' }}
           justify={{ base: 'space-between', sm: 'flex-start' }}
         >
-          {socialLinks.map(({ name, href }) => (
+          {links.map(({ name, href }) => (
             <Link
               key={name}
               title={name}

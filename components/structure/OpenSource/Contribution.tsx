@@ -8,7 +8,6 @@ import {
   LinkOverlay,
   Tag,
   Text,
-  Wrap,
 } from '@chakra-ui/react'
 import type { RoleType, Skill } from 'utils/types'
 import { config } from 'configs/config'
@@ -44,41 +43,41 @@ export const Contribution: React.FC<ContributionProps> = ({
       _hover={{ shadow: 'none', transform: 'translate(8px, 8px)' }}
     >
       <Flex h='full' flexDir='column'>
-        <Flex align='center' justify='space-between'>
-          <Wrap spacing='1' fontSize='xl'>
-            <Text whiteSpace='nowrap'>{user}</Text>
-            <Text as='span'>/</Text>
-            <Text fontWeight='semibold'>
-              <LinkOverlay
-                href={githubUrl}
-                isExternal
-                data-splitbee-event={config.splitbee.events.osc}
-                data-splitbee-event-type={repository}
-              >
-                {repository}
-              </LinkOverlay>
-            </Text>
-          </Wrap>
-          <Icon as={language.icon} color={language.color} boxSize='6' />
-        </Flex>
+        <HStack spacing='1' fontSize='xl'>
+          <Text whiteSpace='nowrap'>{user}</Text>
+          <Text as='span'>/</Text>
+          <Text fontWeight='semibold'>
+            <LinkOverlay
+              href={githubUrl}
+              isExternal
+              data-splitbee-event={config.splitbee.events.osc}
+              data-splitbee-event-type={repository}
+            >
+              {repository}
+            </LinkOverlay>
+          </Text>
+        </HStack>
         <Flex mt='2' mb='4'>
           <Badge colorScheme={role.color}>{t(role.label)}</Badge>
         </Flex>
         <Text flex='1' mb='4'>
           {description[i18n.language as keyof typeof description]}
         </Text>
-        <HStack>
-          {topics.map((topic) => (
-            <Tag
-              key={topic}
-              variant='subtle'
-              colorScheme='blue'
-              borderRadius='full'
-            >
-              {topic}
-            </Tag>
-          ))}
-        </HStack>
+        <Flex justify='space-between'>
+          <HStack>
+            {topics.map((topic) => (
+              <Tag
+                key={topic}
+                variant='subtle'
+                colorScheme='blue'
+                borderRadius='full'
+              >
+                {topic}
+              </Tag>
+            ))}
+          </HStack>
+          <Icon as={language.icon} color={language.color} boxSize='6' />
+        </Flex>
       </Flex>
     </LinkBox>
   )

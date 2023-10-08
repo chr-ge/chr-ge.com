@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react'
 import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { VscChromeClose } from 'react-icons/vsc'
-import { config } from 'configs/config'
+import { NAME, config } from 'configs/config'
 import { Menu } from './Menu'
 
 export const Header: React.FC = () => {
@@ -47,7 +47,7 @@ export const Header: React.FC = () => {
             fontSize={{ base: 'lg', md: '2xl' }}
             casing='uppercase'
           >
-            George Christeas
+            {NAME}
           </Text>
         </NextLink>
         <HStack spacing='2'>

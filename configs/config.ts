@@ -1,14 +1,16 @@
 import type { DefaultSeoProps } from 'next-seo'
 import { i18n } from '../next-i18next.config'
 
+export const NAME = 'George Christeas'
+
 export const config: Config = {
   isProd: process.env.NODE_ENV === 'production',
   defaultLocale: i18n.defaultLocale,
   revalidateDelay: 30,
   cloudflareToken: process.env.NEXT_PUBLIC_CLOUDFLARE_TOKEN || '',
-  copyright: `© ${new Date().getFullYear()} George Christeas`,
+  copyright: `© ${new Date().getFullYear()} ${NAME}`,
   seo: {
-    title: 'George Christeas // Full-Stack Software Developer',
+    title: `${NAME} // Full-Stack Software Developer`,
     description:
       'I build things with my mouse and keyboard. Welcome to my software developer portfolio.',
     canonical: 'https://chr-ge.com',
@@ -16,10 +18,10 @@ export const config: Config = {
       type: 'website',
       locale: 'en_US',
       url: 'https://chr-ge.com',
-      title: 'George Christeas // Full-Stack Software Developer',
+      title: `${NAME} // Full-Stack Software Developer`,
       description:
         'I build things with my mouse and keyboard. Welcome to my software developer portfolio.',
-      site_name: 'George Christeas // Full-Stack Software Developer',
+      site_name: `${NAME} // Full-Stack Software Developer`,
       images: [
         {
           url: 'https://chr-ge.com/img/banner.png',

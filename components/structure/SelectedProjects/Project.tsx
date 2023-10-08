@@ -1,4 +1,3 @@
-import { useRef } from 'react'
 import { useTranslation } from 'next-i18next'
 import NextImage from 'next/legacy/image'
 import {
@@ -16,7 +15,7 @@ import { motion } from 'framer-motion'
 import type { Image, Skill, Tag } from 'utils/types'
 import { config } from 'configs/config'
 
-const MotionB = motion(Box)
+const MotionBox = motion(Box)
 
 export interface ProjectProps {
   id: string
@@ -40,10 +39,6 @@ export const Project: React.FC<ProjectProps> = ({
   github,
 }) => {
   const { t, i18n } = useTranslation('common')
-  const ref = useRef<HTMLDivElement>(null)
-  const hoverTop = ref.current?.clientHeight
-    ? -ref.current.clientHeight + 384
-    : 0
 
   return (
     <Stack
@@ -88,24 +83,21 @@ export const Project: React.FC<ProjectProps> = ({
         </HStack>
       </VStack>
       <Flex flex='3' align='flex-end' pos='relative'>
-        <MotionB
+        <MotionBox
           pos='absolute'
           pt={{ base: '2', md: '4' }}
           px={{ base: '2', md: '4' }}
           bg='#F9FBFD'
           w='full'
+          top='0'
           left='0'
           right='0'
-          borderTop='1px solid black'
-          borderLeft='1px solid black'
-          borderRight='1px solid black'
+          border='1px solid black'
           borderTopRadius='30px'
-          initial={{ top: '5rem' }}
-          whileHover={{ top: hoverTop }} // 384px === 24rem (96)
-          transition={{ duration: 5, ease: 'linear' }}
+          initial={{ y: '5rem' }}
+          whileHover={{ y: '2.5rem' }}
         >
           <Box
-            ref={ref}
             pos='relative'
             w='full'
             borderTopRadius={{ base: '1.25rem', md: '0.9375rem' }}
@@ -124,7 +116,7 @@ export const Project: React.FC<ProjectProps> = ({
               draggable='false'
             />
           </Box>
-        </MotionB>
+        </MotionBox>
       </Flex>
     </Stack>
   )

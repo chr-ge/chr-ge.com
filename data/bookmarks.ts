@@ -1,7 +1,14 @@
-import type { BookmarkProps } from 'components/structure'
 import { config } from 'configs/config'
 
-export const fetchBookmarks = async (page = 0): Promise<BookmarkProps[]> => {
+export interface Raindrop {
+  _id: string
+  title: string
+  link: string
+  cover: string
+  tags: string[]
+}
+
+export const fetchBookmarks = async (page = 0): Promise<Raindrop[]> => {
   const req = await fetch(
     `https://api.raindrop.io/rest/v1/raindrops/0?search=%23portfolio&perpage=50&page=${page}`,
     {
@@ -13,7 +20,7 @@ export const fetchBookmarks = async (page = 0): Promise<BookmarkProps[]> => {
 
   const data = await req.json()
 
-  return data?.items.map((item: BookmarkProps) => ({
+  return data?.items.map((item: Raindrop) => ({
     _id: item._id,
     title: item.title,
     link: item.link,

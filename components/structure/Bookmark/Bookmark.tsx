@@ -10,25 +10,12 @@ import {
   LinkOverlay,
   Flex,
 } from '@chakra-ui/react'
+import type { Raindrop } from '../../../data/bookmarks'
 import { config } from 'configs/config'
 
-export interface BookmarkProps {
-  _id: string
-  title: string
-  link: string
-  cover: string
-  tags: string[]
-}
-
-export const Bookmark: React.FC<BookmarkProps> = ({
-  title,
-  link,
-  cover,
-  tags,
-}) => {
+export const Bookmark: React.FC<Raindrop> = ({ title, link, cover, tags }) => {
   const { t } = useTranslation('bookmarks')
   const domain = new URL(link).hostname.replace('www.', '')
-
   const bookmarkTags = tags.length ? tags : ['general']
 
   return (

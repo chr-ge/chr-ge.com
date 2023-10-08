@@ -1,25 +1,20 @@
 import type { GetStaticProps, NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useCallback, useMemo } from 'react'
+import { useMemo } from 'react'
 import { NextSeo } from 'next-seo'
 import { useTranslation } from 'next-i18next'
 import { Box, Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react'
-import { queryTypes, useQueryState } from 'next-usequerystate'
+import { parseAsString, useQueryState } from 'next-usequerystate'
 import { motion } from 'framer-motion'
 import { MainLayout } from 'components/layouts/MainLayout'
-import { fetchBookmarks } from 'data/bookmarks'
-import {
-  Bookmark,
-  type BookmarkProps,
-  SlashDivider,
-  TagsBar,
-} from 'components/structure'
+import { type Raindrop, fetchBookmarks } from 'data/bookmarks'
+import { Bookmark, SlashDivider, TagsBar } from 'components/structure'
 import { config } from 'configs/config'
 
 const MotionFlex = motion(Flex)
 
 interface BookmarksProps {
-  bookmarks: BookmarkProps[]
+  bookmarks: Raindrop[]
   tags: string[]
 }
 
@@ -30,20 +25,16 @@ const Bookmarks: NextPage<BookmarksProps> = ({
   const { t } = useTranslation('bookmarks')
   const [activeTag, setActiveTag] = useQueryState(
     'tag',
-    queryTypes.string.withDefault('all')
+    parseAsString.withDefault('all')
   )
 
   const bookmarks = useMemo(
     () =>
-      bookmarksData.filter(({ tags }) =>
-        activeTag !== 'all' ? tags.includes(activeTag) : true
+      bookmarksData.filter(
+        ({ tags }) => activeTag === 'all' || tags.includes(activeTag)
       ),
     [activeTag]
   )
-
-  const onTagClick = useCallback((tag: string): void => {
-    setActiveTag(tag, { scroll: false, shallow: true })
-  }, [])
 
   return (
     <MainLayout>
@@ -69,7 +60,13 @@ const Bookmarks: NextPage<BookmarksProps> = ({
         <Text>{t('bookmarks-subtitle')}</Text>
       </MotionFlex>
       <SlashDivider />
-      <TagsBar tags={tags} activeTag={activeTag} onTagClick={onTagClick} />
+      <TagsBar
+        tags={tags}
+        activeTag={activeTag}
+        onTagClick={(tag) =>
+          setActiveTag(tag, { scroll: false, shallow: true })
+        }
+      />
       <Box px={{ base: '4', md: '8' }} py={['8', '16']}>
         <SimpleGrid columns={[1, 2, 3, 4]} spacing={{ base: '6', md: '8' }}>
           {bookmarks.map((bookmark) => (

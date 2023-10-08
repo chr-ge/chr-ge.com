@@ -4,10 +4,6 @@ import type { IconType } from 'react-icons'
 
 export type Image = {
   src: StaticImageData
-  dimensions: {
-    width: number
-    height: number
-  }
 }
 
 export type Tag = {
@@ -24,4 +20,19 @@ export type Skill = {
   name: string
   icon: IconType | ((props: IconProps) => JSX.Element)
   color: string
+}
+
+export interface Project {
+  id: string
+  title: string
+  description: {
+    en: string
+    fr: string
+  }
+  image: Image
+  homepage?: string
+  github?: string
+  technologies: Skill[]
+  tags: Tag[]
+  isShowcased: boolean
 }

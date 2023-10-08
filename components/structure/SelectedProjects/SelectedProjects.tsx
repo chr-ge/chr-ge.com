@@ -3,7 +3,7 @@ import { Heading, VStack } from '@chakra-ui/react'
 import { motion, type Variants } from 'framer-motion'
 import { projects } from 'data/projects'
 import { OtherProjectsMarquee } from './OtherProjectsMarquee'
-import { Project } from './Project'
+import { ProjectShowcase } from './ProjectShowcase'
 
 const container: Variants = {
   hidden: { opacity: 0 },
@@ -48,11 +48,13 @@ export const SelectedProjects: React.FC = () => {
           whileInView='visible'
           viewport={{ once: true }}
         >
-          {projects.map((project) => (
-            <motion.div key={project.id} variants={item}>
-              <Project {...project} />
-            </motion.div>
-          ))}
+          {projects
+            .filter((project) => project.isShowcased)
+            .map((project) => (
+              <motion.div key={project.id} variants={item}>
+                <ProjectShowcase {...project} />
+              </motion.div>
+            ))}
         </MotionVStack>
       </VStack>
       <OtherProjectsMarquee />

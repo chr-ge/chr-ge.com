@@ -15,6 +15,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
       minH='100vh'
       direction='column'
       borderColor='black'
+      borderTop='-1px solid'
       borderLeft='1px solid'
       borderRight='1px solid'
     >

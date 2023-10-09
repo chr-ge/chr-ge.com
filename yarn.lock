@@ -1890,10 +1890,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource-variable/manrope@npm:^5.0.14":
-  version: 5.0.14
-  resolution: "@fontsource-variable/manrope@npm:5.0.14"
-  checksum: 3fe1f7d46442b8609b7f4734b091067ec3613cfe6b6ff7d902cd86284a18c88fcc1348993df129d6a81428269940bb0800a687ee75ab48c874ac23ca35540fab
+"@fontsource-variable/manrope@npm:^5.0.15":
+  version: 5.0.15
+  resolution: "@fontsource-variable/manrope@npm:5.0.15"
+  checksum: 1a45147cb9aa95a161661ca63446a4f13ab5183a0934eebaf7be7dd4fb9d7a79c641882676f0a5580f80b9ab7f39fc3b19aae734c9e359bc5874eb3ca57df415
   languageName: node
   linkType: hard
 
@@ -3257,7 +3257,7 @@ __metadata:
     "@commitlint/config-conventional": ^17.6.7
     "@emotion/react": ^11.11.1
     "@emotion/styled": ^11.11.0
-    "@fontsource-variable/manrope": ^5.0.14
+    "@fontsource-variable/manrope": ^5.0.15
     "@hookform/resolvers": ^2.9.11
     "@splitbee/web": ^0.3.0
     "@types/node": ^18.16.3

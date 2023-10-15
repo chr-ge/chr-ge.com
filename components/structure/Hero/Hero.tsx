@@ -19,11 +19,11 @@ export const Hero: React.FC = () => {
       align='center'
       animate={{
         background: [
-          'linear-gradient(90deg, #E9DEFA 0%, #FBFCDB 100%)',
-          'linear-gradient(90deg, #dad4ec 0%, #f3e7e9 100%)',
+          'linear-gradient(80deg, #ddcbf8 0%, #eaed9e 100%)',
+          'linear-gradient(120deg, #ddfffc 0%, #C79DEE 100%)',
         ],
       }}
-      transition={{ repeat: Infinity, repeatType: 'reverse', duration: 2 }}
+      transition={{ repeat: Infinity, repeatType: 'reverse', duration: 1.75 }}
     >
       <VStack align='flex-start' pb='32' maxW='container.md' spacing='12'>
         <MotionHeading

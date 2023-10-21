@@ -87,7 +87,7 @@ export const config: Config = {
       toggledMenu: 'Toggled Menu',
     },
   },
-  formspreeUrl: 'https://formspree.io/f/xvodzjor',
+  formspreeUrl: process.env.FORMSPREE_URL || '',
   raindrop: {
     token: process.env.RAINDROP_TOKEN || '',
   },

@@ -10,7 +10,7 @@ import {
   LinkOverlay,
   Flex,
 } from '@chakra-ui/react'
-import type { Raindrop } from '../../../data/bookmarks'
+import type { Raindrop } from 'data/bookmarks'
 import { config } from 'configs/config'
 
 export const Bookmark: React.FC<Raindrop> = ({ title, link, cover, tags }) => {

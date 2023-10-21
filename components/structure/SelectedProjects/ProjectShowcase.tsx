@@ -1,5 +1,5 @@
 import { useTranslation } from 'next-i18next'
-import NextImage from 'next/legacy/image'
+import NextImage from 'next/image'
 import {
   Box,
   Divider,
@@ -117,12 +117,6 @@ const ImageWithBorder: React.FC<Pick<Project, 'title' | 'image'>> = ({
     borderLeft='1px solid'
     borderRight='1px solid'
   >
-    <NextImage
-      src={image.src}
-      objectFit='contain'
-      objectPosition='center top'
-      alt={title}
-      draggable='false'
-    />
+    <NextImage src={image.src} alt={title} draggable='false' />
   </Box>
 )

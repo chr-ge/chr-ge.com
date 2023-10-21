@@ -1,4 +1,4 @@
-import type { StaticImageData } from 'next/legacy/image'
+import type { StaticImageData } from 'next/image'
 import type { IconProps } from '@chakra-ui/react'
 import type { IconType } from 'react-icons'
 

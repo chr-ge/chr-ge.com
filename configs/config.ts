@@ -7,7 +7,6 @@ export const config: Config = {
   isProd: process.env.NODE_ENV === 'production',
   defaultLocale: i18n.defaultLocale,
   revalidateDelay: 30,
-  cloudflareToken: process.env.NEXT_PUBLIC_CLOUDFLARE_TOKEN || '',
   copyright: `© ${new Date().getFullYear()} ${NAME}`,
   seo: {
     title: `${NAME} // Full-Stack Software Developer`,
@@ -87,17 +86,12 @@ export const config: Config = {
       toggledMenu: 'Toggled Menu',
     },
   },
-  formspreeUrl: process.env.FORMSPREE_URL || '',
-  raindrop: {
-    token: process.env.RAINDROP_TOKEN || '',
-  },
 }
 
 interface Config {
   isProd: boolean
   defaultLocale: string
   revalidateDelay: number
-  cloudflareToken: string
   copyright: string
   seo: DefaultSeoProps
   email: string
@@ -115,9 +109,5 @@ interface Config {
       osc: string
       toggledMenu: string
     }
-  }
-  formspreeUrl: string
-  raindrop: {
-    token: string
   }
 }

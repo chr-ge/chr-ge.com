@@ -16,7 +16,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { ButtonArrow } from 'components/meta'
-import { config } from 'configs/config'
+import { env } from 'configs/env'
 
 const ContactMeSchema = z
   .object({
@@ -40,7 +40,7 @@ export const ContactMe: React.FC = () => {
   })
 
   const onSubmit = handleSubmit(async (data) => {
-    await fetch(config.formspreeUrl, {
+    await fetch(env.FORMSPREE_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

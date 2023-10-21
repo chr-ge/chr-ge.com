@@ -28,6 +28,7 @@
     "@hookform/resolvers": "^2.9.11",
     "@splitbee/web": "^0.3.0",
     "@vercel/analytics": "^1.1.1",
+    "envsafe": "^2.0.3",
     "focus-visible": "^5.2.0",
     "framer-motion": "^6.5.1",
     "i18next": "^22.5.1",

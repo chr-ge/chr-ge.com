@@ -12,6 +12,7 @@
     "lint": "eslint . --ext .js,.ts,.tsx",
     "lint:fix": "yarn lint --fix",
     "gen:theme-typings": "chakra-cli tokens theme/theme.ts",
+    "analyze": "ANALYZE=true yarn build",
     "postinstall": "husky install"
   },
   "homepage": "https://chr-ge.com",
@@ -48,6 +49,7 @@
     "@chakra-ui/cli": "^2.4.1",
     "@commitlint/cli": "^17.8.0",
     "@commitlint/config-conventional": "^17.8.0",
+    "@next/bundle-analyzer": "^13.5.6",
     "@types/node": "^18.16.3",
     "@types/react": "^18.2.29",
     "@typescript-eslint/eslint-plugin": "^5.61.0",

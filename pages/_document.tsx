@@ -1,7 +1,7 @@
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 import { ColorModeScript } from '@chakra-ui/react'
 import { config } from 'configs/config'
-import { env } from 'configs/env'
+import { env } from 'configs/browser.env'
 
 class Document extends NextDocument {
   render(): JSX.Element {

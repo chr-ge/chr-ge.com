@@ -1,4 +1,4 @@
-import { env } from 'configs/env'
+import { serverEnv } from 'configs/server.env'
 
 export interface Raindrop {
   _id: string
@@ -13,7 +13,7 @@ export const fetchBookmarks = async (page = 0): Promise<Raindrop[]> => {
     `https://api.raindrop.io/rest/v1/raindrops/0?search=%23portfolio&perpage=50&page=${page}`,
     {
       headers: {
-        Authorization: `Bearer ${env.RAINDROP_TOKEN}`,
+        Authorization: `Bearer ${serverEnv.RAINDROP_TOKEN}`,
       },
     }
   )

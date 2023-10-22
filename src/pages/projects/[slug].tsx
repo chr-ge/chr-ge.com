@@ -3,8 +3,8 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import NextLink from 'next/link'
 import { Button, Center, Heading, VStack } from '@chakra-ui/react'
-import { MainLayout } from 'src/components/layouts/MainLayout'
-import { config } from 'config/config'
+import { MainLayout } from '@components/layouts/MainLayout'
+import { config } from '@config/config'
 
 const Project: NextPage = () => {
   const { t } = useTranslation('common')

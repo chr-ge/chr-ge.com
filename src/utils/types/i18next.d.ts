@@ -1,8 +1,8 @@
 import 'i18next'
 
-import bookmarks from 'public/locales/en/bookmarks.json'
-import common from 'public/locales/en/common.json'
-import error from 'public/locales/en/error.json'
+import bookmarks from '@public/locales/en/bookmarks.json'
+import common from '@public/locales/en/common.json'
+import error from '@public/locales/en/error.json'
 
 interface I18nNamespaces {
   bookmarks: typeof bookmarks

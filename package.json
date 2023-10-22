@@ -2,7 +2,7 @@
   "name": "chr-ge.com",
   "version": "0.1.2",
   "private": true,
-  "author": "chr-ge <george@chr-ge.com> (https://chr-ge.com/)",
+  "author": "George Christeas <george@chr-ge.com> (https://chr-ge.com/)",
   "license": "GPL-2.0-or-later",
   "scripts": {
     "type-check": "tsc --pretty --noEmit",
@@ -21,6 +21,7 @@
     "url": "git+https://github.com/chr-ge/chr-ge.com.git"
   },
   "dependencies": {
+    "@chakra-ui/next-js": "^2.1.5",
     "@chakra-ui/react": "^2.8.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",

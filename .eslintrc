@@ -1,10 +1,7 @@
 {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 10,
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    "project": "./tsconfig.json"
   },
   "env": {
     "browser": true,
@@ -30,13 +27,11 @@
     "react": {
       "version": "detect"
     },
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
-    },
+    // "import/parsers": {
+    //   "@typescript-eslint/parser": [".ts", ".tsx"]
+    // },
     "import/resolver": {
-      "typescript": {
-        "alwaysTryTypes": true
-      }
+      "typescript": {}
     }
   }
 }

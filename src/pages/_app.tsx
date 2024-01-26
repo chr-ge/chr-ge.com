@@ -1,11 +1,11 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import Script from 'next/script'
 import { Analytics } from '@vercel/analytics/react'
 import { appWithTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Fonts } from '@components/meta'
-import { useSplitbee } from '@utils/hooks/use-splitbee'
 import { config } from '@config/config'
 import { theme } from '../theme/theme'
 
@@ -13,8 +13,6 @@ import 'focus-visible/dist/focus-visible'
 import '@fontsource-variable/manrope'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  useSplitbee()
-
   return (
     <>
       <Head>

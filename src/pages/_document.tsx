@@ -7,7 +7,15 @@ class Document extends NextDocument {
   render(): JSX.Element {
     return (
       <Html>
-        <Head />
+        <Head>
+          {config.isProd && (
+            <script
+              defer
+              src='https://eu.umami.is/script.js'
+              data-website-id='4a4ce757-0376-42ea-b0e6-25a5286fcb44'
+            />
+          )}
+        </Head>
         <body>
           <ColorModeScript />
           <Main />

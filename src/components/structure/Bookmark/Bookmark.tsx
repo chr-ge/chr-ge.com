@@ -56,8 +56,8 @@ export const Bookmark: React.FC<Raindrop> = ({ title, link, cover, tags }) => {
         <Text fontWeight='semibold' py='3' px='3'>
           <LinkOverlay
             href={link}
-            data-splitbee-event={config.splitbee.events.bookmark}
-            data-splitbee-event-type={domain}
+            data-umami-event={config.umami.events.bookmark}
+            data-umami-event-type={domain}
             isExternal
           >
             {title}

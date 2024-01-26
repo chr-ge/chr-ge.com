@@ -2221,13 +2221,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@splitbee/web@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@splitbee/web@npm:0.3.0"
-  checksum: 2714124ced793af98cd869f46e51f1ddeb140ec2e081fb6d97a512f48797a3a8a219fd7cba1efa436aa0eba76e2d59aad254064d885743eccc5188fd3f143a78
-  languageName: node
-  linkType: hard
-
 "@swc/helpers@npm:0.5.2":
   version: 0.5.2
   resolution: "@swc/helpers@npm:0.5.2"
@@ -3300,7 +3293,6 @@ __metadata:
     "@fontsource-variable/manrope": ^5.0.16
     "@hookform/resolvers": ^2.9.11
     "@next/bundle-analyzer": ^13.5.6
-    "@splitbee/web": ^0.3.0
     "@types/node": ^18.16.3
     "@types/react": ^18.2.29
     "@typescript-eslint/eslint-plugin": ^5.61.0

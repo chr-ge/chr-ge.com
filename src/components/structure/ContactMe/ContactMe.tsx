@@ -1,5 +1,4 @@
 import { useTranslation } from 'next-i18next'
-import splitbee from '@splitbee/web'
 import {
   Button,
   FormControl,
@@ -16,6 +15,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { ButtonArrow } from '@components/meta'
+import { trackEvent } from '@utils/umami'
 import { env } from '@config/browser.env'
 
 const ContactMeSchema = z
@@ -40,23 +40,34 @@ export const ContactMe: React.FC = () => {
   })
 
   const onSubmit = handleSubmit(async (data) => {
-    await fetch(env.NEXT_PUBLIC_FORMSPREE_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
+    try {
+      await fetch(env.NEXT_PUBLIC_FORMSPREE_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
 
-    splitbee.user.set({ email: data.email })
+      trackEvent('Contact Form Submitted Successfully', {
+        email: data.email,
+      })
 
-    toast({
-      title: t('message-sent'),
-      description: t('message-text'),
-      status: 'success',
-      duration: 7500,
-      isClosable: true,
-    })
+      toast({
+        title: t('message-sent'),
+        description: t('message-text'),
+        status: 'success',
+        duration: 7500,
+        isClosable: true,
+      })
+    } catch (error) {
+      toast({
+        title: t('message-error'),
+        status: 'error',
+        duration: 5000,
+        isClosable: true,
+      })
+    }
   })
 
   return (

@@ -50,8 +50,8 @@ export const Contribution: React.FC<ContributionProps> = ({
             <LinkOverlay
               href={githubUrl}
               isExternal
-              data-splitbee-event={config.splitbee.events.osc}
-              data-splitbee-event-type={repository}
+              data-umami-event={config.umami.events.osc}
+              data-umami-event-type={repository}
             >
               {repository}
             </LinkOverlay>

@@ -46,9 +46,9 @@ export const ProjectShowcase: React.FC<Project> = ({
             <Link
               href={homepage}
               variant='projectLink'
-              data-splitbee-event={config.splitbee.events.projectLink}
-              data-splitbee-event-type='Website'
-              data-splitbee-event-project={title}
+              data-umami-event={config.umami.events.projectLink}
+              data-umami-event-type='Website'
+              data-umami-event-project={title}
               isExternal
             >
               {t('website')}
@@ -58,9 +58,9 @@ export const ProjectShowcase: React.FC<Project> = ({
             <Link
               href={github}
               variant='projectLink'
-              data-splitbee-event={config.splitbee.events.projectLink}
-              data-splitbee-event-type='Github'
-              data-splitbee-event-project={title}
+              data-umami-event={config.umami.events.projectLink}
+              data-umami-event-type='Github'
+              data-umami-event-project={title}
               isExternal
             >
               Github

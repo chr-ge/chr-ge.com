@@ -60,7 +60,7 @@ export const Header: React.FC = () => {
             variant='icon'
             size='icon'
             onClick={onToggle}
-            data-splitbee-event={config.splitbee.events.toggledMenu}
+            data-umami-event={config.umami.events.toggledMenu}
           />
         </HStack>
       </Flex>

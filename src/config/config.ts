@@ -74,15 +74,15 @@ export const config: Config = {
   email_link: 'mailto:george@chr-ge.com',
   github: 'https://github.com/chr-ge',
   linkedin: 'https://www.linkedin.com/in/chr-ge/',
-  splitbee: {
+  umami: {
     events: {
-      heroButton: 'Hero Button',
-      externalLink: 'External Link',
-      projectLink: 'Project Link',
-      bookmark: 'Bookmark',
-      backToTop: 'Back To Top',
+      heroButton: 'Hero Button Clicked',
+      externalLink: 'External Link Clicked',
+      projectLink: 'Project Link Clicked',
+      bookmark: 'Bookmark Clicked',
+      backToTop: 'Back To Top Clicked',
       toggledDarkMode: 'Toggled Dark Mode',
-      osc: 'Open Source Contribution',
+      osc: 'OSC Clicked',
       toggledMenu: 'Toggled Menu',
     },
   },
@@ -98,7 +98,7 @@ interface Config {
   email_link: string
   github: string
   linkedin: string
-  splitbee: {
+  umami: {
     events: {
       heroButton: string
       externalLink: string

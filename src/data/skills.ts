@@ -10,7 +10,6 @@ import {
   SiLaravel,
   SiMongodb,
   SiMysql,
-  SiNetlify,
   SiNextdotjs,
   SiNodedotjs,
   SiPhp,
@@ -20,13 +19,14 @@ import {
   SiRuby,
   SiSass,
   SiTailwindcss,
+  SiTerraform,
   SiTypescript,
   SiVercel,
 } from 'react-icons/si'
 import { Javascript } from '@components/icons'
-import type { SkillGroupProps } from './SkillGroup'
+import type { SkillGroup } from '@utils/types'
 
-export const data: SkillGroupProps[] = [
+export const skills: SkillGroup[] = [
   {
     id: '1',
     category: 'languages',
@@ -69,7 +69,7 @@ export const data: SkillGroupProps[] = [
       { name: 'Google Cloud Platform', icon: SiGooglecloud, color: '#4285F4' },
       { name: 'Vercel', icon: SiVercel, color: '#000000' },
       { name: 'Heroku', icon: SiHeroku, color: '#430098' },
-      { name: 'Netlify', icon: SiNetlify, color: '#00C7B7' },
+      { name: 'Terraform', icon: SiTerraform, color: '#844FBA' },
     ],
   },
   {

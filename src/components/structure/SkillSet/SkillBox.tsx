@@ -1,5 +1,5 @@
 import { Center, Icon, Tooltip, useDisclosure } from '@chakra-ui/react'
-import { Skill } from '@utils/types'
+import type { Skill } from '@utils/types'
 
 export interface SkillProps extends Skill {
   setBorderColor: (color: string) => void

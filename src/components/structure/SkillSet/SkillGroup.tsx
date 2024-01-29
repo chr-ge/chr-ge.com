@@ -3,7 +3,7 @@ import { useTranslation } from 'next-i18next'
 import type { TFuncKey } from 'i18next'
 import { Heading, SimpleGrid, VStack } from '@chakra-ui/react'
 import { motion, type Variants } from 'framer-motion'
-import type { Skill } from '@utils/types'
+import type { SkillGroup as ISkillGroup } from '@utils/types'
 import { SkillBox } from './SkillBox'
 
 const group: Variants = {
@@ -11,11 +11,8 @@ const group: Variants = {
   visible: { opacity: 1 },
 }
 
-export interface SkillGroupProps {
-  id: string
-  category: string
-  skills: Skill[]
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface SkillGroupProps extends ISkillGroup {}
 
 export const SkillGroup: React.FC<SkillGroupProps> = ({ category, skills }) => {
   const { t } = useTranslation('common')

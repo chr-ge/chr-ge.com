@@ -2,7 +2,7 @@ import { useTranslation } from 'next-i18next'
 import { Heading, SimpleGrid, VStack } from '@chakra-ui/react'
 import { motion, type Variants } from 'framer-motion'
 import { SkillGroup } from './SkillGroup'
-import { data } from './data'
+import { skills } from '@data/skills'
 
 const container: Variants = {
   hidden: { opacity: 0 },
@@ -42,7 +42,7 @@ export const SkillSet: React.FC = () => {
         whileInView='visible'
         viewport={{ once: true }}
       >
-        {data.map((skill) => (
+        {skills.map((skill) => (
           <SkillGroup key={skill.id} {...skill} />
         ))}
       </MotionSimpleGrid>

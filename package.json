@@ -27,7 +27,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource-variable/manrope": "^5.0.16",
     "@hookform/resolvers": "^2.9.11",
-    "@vercel/analytics": "^1.1.1",
+    "@vercel/analytics": "^1.1.2",
     "envsafe": "^2.0.3",
     "focus-visible": "^5.2.0",
     "framer-motion": "^6.5.1",

@@ -1917,10 +1917,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource-variable/manrope@npm:^5.0.16":
-  version: 5.0.16
-  resolution: "@fontsource-variable/manrope@npm:5.0.16"
-  checksum: 32a4de0db6f9811828aa4ec551dad8f0d393a80e4d920650e35783b7494029ea10e57933a1b77b0f5fe1d48be75495ff43327716408dbc05e51b9bdc30d3df7c
+"@fontsource-variable/manrope@npm:^5.0.19":
+  version: 5.0.19
+  resolution: "@fontsource-variable/manrope@npm:5.0.19"
+  checksum: b99f63473682218c926bf7c92df10a6ce3af5413a6f417983128d351b32ba6bb137b498c9de94bd551e03779239ca4a12163e48f95dc9b8490e8e44a6cb6f1f5
   languageName: node
   linkType: hard
 
@@ -3318,7 +3318,7 @@ __metadata:
     "@commitlint/config-conventional": ^17.8.0
     "@emotion/react": ^11.11.3
     "@emotion/styled": ^11.11.0
-    "@fontsource-variable/manrope": ^5.0.16
+    "@fontsource-variable/manrope": ^5.0.19
     "@hookform/resolvers": ^2.9.11
     "@next/bundle-analyzer": ^13.5.6
     "@types/node": ^18.16.3

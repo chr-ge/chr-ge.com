@@ -25,7 +25,7 @@
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
-    "@fontsource-variable/manrope": "^5.0.16",
+    "@fontsource-variable/manrope": "^5.0.19",
     "@hookform/resolvers": "^2.9.11",
     "@vercel/analytics": "^1.2.2",
     "envsafe": "^2.0.3",

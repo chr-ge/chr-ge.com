@@ -4,7 +4,7 @@ import { i18n } from '../../next-i18next.config'
 export const NAME = 'George Christeas'
 
 export const config: Config = {
-  isProd: process.env.NODE_ENV === 'production',
+  isDev: process.env.NODE_ENV === 'development',
   defaultLocale: i18n.defaultLocale,
   revalidateDelay: 30,
   copyright: `© ${new Date().getFullYear()} ${NAME}`,
@@ -74,7 +74,7 @@ export const config: Config = {
   email_link: 'mailto:george@chr-ge.com',
   github: 'https://github.com/chr-ge',
   linkedin: 'https://www.linkedin.com/in/chr-ge/',
-  umami: {
+  posthog: {
     events: {
       heroButton: 'Hero Button Clicked',
       externalLink: 'External Link Clicked',
@@ -89,7 +89,7 @@ export const config: Config = {
 }
 
 interface Config {
-  isProd: boolean
+  isDev: boolean
   defaultLocale: string
   revalidateDelay: number
   copyright: string
@@ -98,7 +98,7 @@ interface Config {
   email_link: string
   github: string
   linkedin: string
-  umami: {
+  posthog: {
     events: {
       heroButton: string
       externalLink: string

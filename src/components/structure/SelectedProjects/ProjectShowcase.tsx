@@ -43,26 +43,12 @@ export const ProjectShowcase: React.FC<Project> = ({
         <Text>{description[i18n.language as keyof typeof description]}</Text>
         <HStack spacing='4'>
           {homepage && (
-            <Link
-              href={homepage}
-              variant='projectLink'
-              data-umami-event={config.umami.events.projectLink}
-              data-umami-event-type='Website'
-              data-umami-event-project={title}
-              isExternal
-            >
+            <Link href={homepage} variant='projectLink' isExternal>
               {t('website')}
             </Link>
           )}
           {github && (
-            <Link
-              href={github}
-              variant='projectLink'
-              data-umami-event={config.umami.events.projectLink}
-              data-umami-event-type='Github'
-              data-umami-event-project={title}
-              isExternal
-            >
+            <Link href={github} variant='projectLink' isExternal>
               Github
             </Link>
           )}

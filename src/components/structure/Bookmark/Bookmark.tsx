@@ -10,11 +10,13 @@ import {
   LinkOverlay,
   Flex,
 } from '@chakra-ui/react'
+import { usePostHog } from 'posthog-js/react'
 import type { Raindrop } from '@data/bookmarks'
 import { config } from '@config/config'
 
 export const Bookmark: React.FC<Raindrop> = ({ title, link, cover, tags }) => {
   const { t } = useTranslation('bookmarks')
+  const posthog = usePostHog()
   const domain = new URL(link).hostname.replace('www.', '')
   const bookmarkTags = tags.length ? tags : ['general']
 
@@ -54,12 +56,7 @@ export const Bookmark: React.FC<Raindrop> = ({ title, link, cover, tags }) => {
           </Flex>
         </Box>
         <Text fontWeight='semibold' py='3' px='3'>
-          <LinkOverlay
-            href={link}
-            data-umami-event={config.umami.events.bookmark}
-            data-umami-event-type={domain}
-            isExternal
-          >
+          <LinkOverlay href={link} isExternal>
             {title}
           </LinkOverlay>
         </Text>

@@ -51,8 +51,6 @@ export const OtherProjectsMarquee: React.FC = () => {
             href={config.github}
             variant='moreProjects'
             py='3'
-            data-umami-event={config.umami.events.externalLink}
-            data-umami-event-type='Github'
             isExternal
           >
             {t('check-out-more-projects')}

@@ -52,8 +52,6 @@ export const Footer: React.FC = () => {
               title={name}
               href={href}
               variant='social'
-              data-umami-event={config.umami.events.externalLink}
-              data-umami-event-type={name}
               isExternal
             >
               {name}
@@ -67,7 +65,6 @@ export const Footer: React.FC = () => {
           variant='icon'
           size='icon'
           onClick={() => window.scrollTo(0, 0)}
-          data-umami-event={config.umami.events.backToTop}
         />
       </Stack>
     </Flex>

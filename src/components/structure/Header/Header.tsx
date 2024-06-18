@@ -60,7 +60,6 @@ export const Header: React.FC = () => {
             variant='icon'
             size='icon'
             onClick={onToggle}
-            data-umami-event={config.umami.events.toggledMenu}
           />
         </HStack>
       </Flex>

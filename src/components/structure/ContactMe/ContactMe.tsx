@@ -11,11 +11,11 @@ import {
   useToast,
   VStack,
 } from '@chakra-ui/react'
+import { usePostHog } from 'posthog-js/react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { ButtonArrow } from '@components/meta'
-import { trackEvent } from '@utils/umami'
 import { env } from '@config/browser.env'
 
 const ContactMeSchema = z
@@ -29,6 +29,7 @@ type ContactMeData = z.infer<typeof ContactMeSchema>
 
 export const ContactMe: React.FC = () => {
   const { t } = useTranslation('common')
+  const posthog = usePostHog()
   const toast = useToast()
 
   const {
@@ -49,9 +50,11 @@ export const ContactMe: React.FC = () => {
         body: JSON.stringify(data),
       })
 
-      trackEvent('Contact Form Submitted Successfully', {
+      posthog.capture('Contact Form Submitted Successfully', {
         email: data.email,
       })
+
+      posthog.identify(data.email)
 
       toast({
         title: t('message-sent'),

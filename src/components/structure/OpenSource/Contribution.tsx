@@ -47,12 +47,7 @@ export const Contribution: React.FC<ContributionProps> = ({
           <Text whiteSpace='nowrap'>{user}</Text>
           <Text as='span'>/</Text>
           <Text fontWeight='semibold'>
-            <LinkOverlay
-              href={githubUrl}
-              isExternal
-              data-umami-event={config.umami.events.osc}
-              data-umami-event-type={repository}
-            >
+            <LinkOverlay href={githubUrl} isExternal>
               {repository}
             </LinkOverlay>
           </Text>

@@ -10,13 +10,14 @@ import { PostHogProvider } from 'posthog-js/react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Fonts } from '@components/meta'
 import { config } from '@config/config'
+import { env } from '@config/browser.env'
 import { theme } from '../theme/theme'
 
 import 'focus-visible/dist/focus-visible'
 import '@fontsource-variable/manrope'
 
 if (typeof window !== 'undefined') {
-  posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY || '', {
+  posthog.init(env.NEXT_PUBLIC_POSTHOG_KEY, {
     api_host: '/ingest',
     person_profiles: 'identified_only',
     loaded: (posthog) => {

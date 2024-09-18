@@ -2,6 +2,7 @@
 User-agent: *
 Disallow: /api/
 Disallow: /locales/
+Disallow: /gpg.txt
 
 # https://platform.openai.com/docs/gptbot
 User-agent: GPTBot

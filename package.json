@@ -36,7 +36,7 @@
     "next-i18next": "^13.3.0",
     "next-safe": "^3.5.0",
     "next-seo": "^5.15.0",
-    "next-usequerystate": "^1.17.0",
+    "next-usequerystate": "^1.19.1",
     "posthog-js": "^1.161.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

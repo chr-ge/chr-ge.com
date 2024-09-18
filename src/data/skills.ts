@@ -1,6 +1,6 @@
 import { IoLogoPwa } from 'react-icons/io5'
 import {
-  SiAmazonaws,
+  SiAmazonwebservices,
   SiAmazondynamodb,
   SiExpress,
   SiGooglecloud,
@@ -66,7 +66,11 @@ export const skills: SkillGroup[] = [
     id: '4',
     category: 'cloud',
     skills: [
-      { name: 'Amazon Web Services', icon: SiAmazonaws, color: '#232F3E' },
+      {
+        name: 'Amazon Web Services',
+        icon: SiAmazonwebservices,
+        color: '#232F3E',
+      },
       { name: 'Google Cloud Platform', icon: SiGooglecloud, color: '#4285F4' },
       { name: 'Vercel', icon: SiVercel, color: '#000000' },
       { name: 'Heroku', icon: SiHeroku, color: '#430098' },

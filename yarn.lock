@@ -3534,7 +3534,7 @@ __metadata:
     next-safe: ^3.5.0
     next-seo: ^5.15.0
     next-usequerystate: ^1.19.1
-    posthog-js: ^1.163.0
+    posthog-js: ^1.164.1
     prettier: ^2.6.2
     react: ^18.3.1
     react-dom: ^18.3.1
@@ -8090,14 +8090,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthog-js@npm:^1.163.0":
-  version: 1.163.0
-  resolution: "posthog-js@npm:1.163.0"
+"posthog-js@npm:^1.164.1":
+  version: 1.164.1
+  resolution: "posthog-js@npm:1.164.1"
   dependencies:
     fflate: ^0.4.8
     preact: ^10.19.3
     web-vitals: ^4.0.1
-  checksum: 80d730e77047bdd8130bf34754554b9fc15c464c8b45a0e955981c561ed0feabc87f6f824e1f569bd5aeaeaa6cbc6382e6ced68aa535b943693b46a203e3d880
+  checksum: 5031a71e1fc4cae6bd0edb756116678a2116cf820ec64e00144b71bf48d54938873ce766a0319f82bf0bec369e2c4039b635d905d1954ed236211c1ee3c16c9c
   languageName: node
   linkType: hard
 

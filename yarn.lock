@@ -3533,7 +3533,7 @@ __metadata:
     next-i18next: ^13.3.0
     next-safe: ^3.5.0
     next-seo: ^5.15.0
-    next-usequerystate: ^1.19.2
+    next-usequerystate: ^1.19.3
     posthog-js: ^1.165.0
     prettier: ^2.6.2
     react: ^18.3.1
@@ -7501,14 +7501,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-usequerystate@npm:^1.19.2":
-  version: 1.19.2
-  resolution: "next-usequerystate@npm:1.19.2"
+"next-usequerystate@npm:^1.19.3":
+  version: 1.19.3
+  resolution: "next-usequerystate@npm:1.19.3"
   dependencies:
     mitt: ^3.0.1
   peerDependencies:
     next: ">=13.4 <14.0.2 || ^14.0.3"
-  checksum: 5e41b6b4b9a97354c33696ecca5f794c46b2e8f5b7af9dc4745a049de34190f255c7f70c856e6b41b24a7df72adb61a55178d3ebfa6aed5df00a7034aacf0518
+  checksum: b19c5983748615a71ab00ad43029bd13d82340ca7826c5a8ab013a7114aece8c3f5fd971543379321ab932faee1e4db98cd01c4e31989fd0b90f97c5619071d9
   languageName: node
   linkType: hard
 

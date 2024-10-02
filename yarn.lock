@@ -549,9 +549,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/next-js@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@chakra-ui/next-js@npm:2.2.0"
+"@chakra-ui/next-js@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "@chakra-ui/next-js@npm:2.3.1"
   dependencies:
     "@emotion/cache": ^11.11.0
   peerDependencies:
@@ -559,7 +559,7 @@ __metadata:
     "@emotion/react": ">=11"
     next: ">=13"
     react: ">=18"
-  checksum: cad9e0ca7decfd301794161d95cc889ea9ada350129c7d8ad11f4015e9b88be3e831fc265e0593feae422318875685519aaca4376583b56dadedc8e1af9e0a3e
+  checksum: cce2f87bfe5e3a83c6198abd755457f66c96f28b0642123a7958e288a6e9dbfb72b298ed9a5c8f25e1b7619e89e967f9c565ece4694adc9e8beea1f5f2393a61
   languageName: node
   linkType: hard
 
@@ -3647,7 +3647,7 @@ __metadata:
   resolution: "chr-ge.com@workspace:."
   dependencies:
     "@chakra-ui/cli": ^2.5.1
-    "@chakra-ui/next-js": ^2.2.0
+    "@chakra-ui/next-js": ^2.3.1
     "@chakra-ui/react": ^2.8.2
     "@commitlint/cli": ^17.8.0
     "@commitlint/config-conventional": ^17.8.0

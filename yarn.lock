@@ -238,9 +238,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@chakra-ui/cli@npm:^2.5.1":
-  version: 2.5.1
-  resolution: "@chakra-ui/cli@npm:2.5.1"
+"@chakra-ui/cli@npm:^2.5.3":
+  version: 2.5.3
+  resolution: "@chakra-ui/cli@npm:2.5.3"
   dependencies:
     bundle-n-require: ^1.0.1
     chokidar: ^3.5.3
@@ -251,7 +251,7 @@ __metadata:
     update-notifier: ^6.0.2
   bin:
     chakra-cli: bin/index.js
-  checksum: d9e5db8d2a44094c8bed2863c38b4fe453eef0c54a1a581f3773334341538daae384056a48401886480794e868896e3fc8dad85f58df6e8d5593ca4f6e8a64c7
+  checksum: 8f89ae0f1e2b0e57d9e43de38017da9550036adb0dd88115bc76dd2faf9026fcca97f20fbeafe53291d75653d21819c908eef7eee97744d9f5af7ae0364a0317
   languageName: node
   linkType: hard
 
@@ -3646,7 +3646,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "chr-ge.com@workspace:."
   dependencies:
-    "@chakra-ui/cli": ^2.5.1
+    "@chakra-ui/cli": ^2.5.3
     "@chakra-ui/next-js": ^2.3.1
     "@chakra-ui/react": ^2.8.2
     "@commitlint/cli": ^17.8.0

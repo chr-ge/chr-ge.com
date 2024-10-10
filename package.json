@@ -48,7 +48,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@chakra-ui/cli": "^2.5.4",
+    "@chakra-ui/cli": "^2.5.5",
     "@commitlint/cli": "^17.8.0",
     "@commitlint/config-conventional": "^17.8.0",
     "@next/bundle-analyzer": "^14.2.15",

@@ -24,7 +24,7 @@
     "@chakra-ui/next-js": "^2.4.2",
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.13.5",
-    "@emotion/styled": "^11.13.0",
+    "@emotion/styled": "^11.13.5",
     "@fontsource-variable/manrope": "^5.1.0",
     "@hookform/resolvers": "^2.9.11",
     "@vercel/analytics": "^1.4.1",

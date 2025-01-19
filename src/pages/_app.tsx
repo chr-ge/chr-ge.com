@@ -1,7 +1,5 @@
-import { useEffect } from 'react'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 import { Analytics } from '@vercel/analytics/react'
 import { appWithTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
@@ -10,34 +8,14 @@ import { PostHogProvider } from 'posthog-js/react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Fonts } from '@components/meta'
 import { config } from '@config/config'
-import { env } from '@config/browser.env'
+import { useSetupPostHog } from '@utils/hooks/use-setup-posthog'
 import { theme } from '../theme/theme'
 
 import 'focus-visible/dist/focus-visible'
 import '@fontsource-variable/manrope'
 
-if (typeof window !== 'undefined') {
-  posthog.init(env.NEXT_PUBLIC_POSTHOG_KEY, {
-    api_host: '/ingest',
-    person_profiles: 'identified_only',
-    loaded: (posthog) => {
-      if (config.isDev) posthog.debug() // debug mode in development
-    },
-  })
-}
-
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  const router = useRouter()
-
-  useEffect(() => {
-    // Track page views
-    const handleRouteChange = () => posthog?.capture('$pageview')
-    router.events.on('routeChangeComplete', handleRouteChange)
-
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-    }
-  }, [])
+  useSetupPostHog()
 
   return (
     <>

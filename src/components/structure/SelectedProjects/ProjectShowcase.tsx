@@ -12,8 +12,8 @@ import {
   VStack,
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import { usePostHog } from 'posthog-js/react'
 import type { Project } from '@utils/types'
-import { config } from '@config/config'
 
 const MotionBox = motion(Box)
 
@@ -25,6 +25,7 @@ export const ProjectShowcase: React.FC<Project> = ({
   github,
 }) => {
   const { t, i18n } = useTranslation('common')
+  const posthog = usePostHog()
 
   return (
     <Stack
@@ -43,12 +44,32 @@ export const ProjectShowcase: React.FC<Project> = ({
         <Text>{description[i18n.language as keyof typeof description]}</Text>
         <HStack spacing='4'>
           {homepage && (
-            <Link href={homepage} variant='projectLink' isExternal>
+            <Link
+              href={homepage}
+              variant='projectLink'
+              onClick={() =>
+                posthog.capture('project_link_clicked', {
+                  type: 'website',
+                  title,
+                })
+              }
+              isExternal
+            >
               {t('website')}
             </Link>
           )}
           {github && (
-            <Link href={github} variant='projectLink' isExternal>
+            <Link
+              href={github}
+              variant='projectLink'
+              onClick={() =>
+                posthog.capture('project_link_clicked', {
+                  type: 'github',
+                  title,
+                })
+              }
+              isExternal
+            >
               Github
             </Link>
           )}

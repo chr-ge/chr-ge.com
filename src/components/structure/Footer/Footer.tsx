@@ -1,6 +1,7 @@
 import { useTranslation } from 'next-i18next'
 import { Flex, Link, Text, HStack, IconButton, Stack } from '@chakra-ui/react'
 import { VscArrowUp } from 'react-icons/vsc'
+import { usePostHog } from 'posthog-js/react'
 import { config } from '@config/config'
 
 const links: { name: string; href: string }[] = [
@@ -12,6 +13,7 @@ const links: { name: string; href: string }[] = [
 
 export const Footer: React.FC = () => {
   const { t } = useTranslation('common')
+  const posthog = usePostHog()
 
   return (
     <Flex
@@ -52,6 +54,9 @@ export const Footer: React.FC = () => {
               title={name}
               href={href}
               variant='social'
+              onClick={() =>
+                posthog.capture('footer_link_clicked', { name, link: href })
+              }
               isExternal
             >
               {name}

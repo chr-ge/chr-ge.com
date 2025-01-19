@@ -12,15 +12,18 @@ import {
 } from '@chakra-ui/react'
 import { HiOutlineMenuAlt4 } from 'react-icons/hi'
 import { VscChromeClose } from 'react-icons/vsc'
-import { NAME, config } from '@config/config'
+import { usePostHog } from 'posthog-js/react'
+import { NAME } from '@config/config'
 import { Menu } from './Menu'
 
 export const Header: React.FC = () => {
   const { t } = useTranslation('common')
   const { asPath, locale = 'en', query, pathname, push } = useRouter()
   const { isOpen, onToggle, onClose } = useDisclosure()
+  const posthog = usePostHog()
 
   const toggleLocale = (): void => {
+    posthog.capture('locale_toggled')
     push({ pathname, query }, asPath, {
       locale: locale === 'en' ? 'fr' : 'en',
     })

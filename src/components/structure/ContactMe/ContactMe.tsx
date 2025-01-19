@@ -50,7 +50,7 @@ export const ContactMe: React.FC = () => {
         body: JSON.stringify(data),
       })
 
-      posthog.capture('Contact Form Submitted Successfully', {
+      posthog.capture('contact_form_submitted_successfully', {
         email: data.email,
       })
 

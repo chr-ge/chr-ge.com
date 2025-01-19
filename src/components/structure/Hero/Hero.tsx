@@ -2,6 +2,7 @@ import NextLink from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { Button, chakra, Flex, Heading, VStack } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import { usePostHog } from 'posthog-js/react'
 import { config } from '@config/config'
 import { ButtonArrow } from '../../meta'
 
@@ -11,6 +12,7 @@ const MotionButton = motion(Button)
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation('common')
+  const posthog = usePostHog()
 
   return (
     <MotionFlex
@@ -49,6 +51,7 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.2 }}
+            onClick={() => posthog.capture('hero_button_clicked')}
           >
             <chakra.span mr='4'>{t('hero-cta')}</chakra.span>
             <ButtonArrow

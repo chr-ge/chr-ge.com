@@ -3912,7 +3912,7 @@ __metadata:
     eslint: ^8.57.0
     eslint-config-next: ^14.2.16
     eslint-config-prettier: ^8.10.0
-    eslint-import-resolver-typescript: ^3.8.0
+    eslint-import-resolver-typescript: ^3.8.2
     eslint-plugin-import: ^2.31.0
     eslint-plugin-jsx-a11y: ^6.10.2
     eslint-plugin-prettier: ^4.2.1
@@ -5427,9 +5427,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-typescript@npm:^3.8.0":
-  version: 3.8.0
-  resolution: "eslint-import-resolver-typescript@npm:3.8.0"
+"eslint-import-resolver-typescript@npm:^3.8.2":
+  version: 3.8.2
+  resolution: "eslint-import-resolver-typescript@npm:3.8.2"
   dependencies:
     "@nolyfill/is-core-module": 1.0.39
     debug: ^4.3.7
@@ -5437,7 +5437,7 @@ __metadata:
     get-tsconfig: ^4.10.0
     is-bun-module: ^1.0.2
     stable-hash: ^0.0.4
-    tinyglobby: ^0.2.10
+    tinyglobby: ^0.2.11
   peerDependencies:
     eslint: "*"
     eslint-plugin-import: "*"
@@ -5447,7 +5447,7 @@ __metadata:
       optional: true
     eslint-plugin-import-x:
       optional: true
-  checksum: 866f7eba778ca7ddbd99a468c7ad94b132d25b5c0426123da242159f4e9a07de0963fb8d68f71d4ddab9a595005acd36b79453efb91370ddf0449f12a551f62b
+  checksum: 6eb80fd01c952b54256f262ee3c2c2dbd47bed62d1f8a1a1e909bdd14e020d21910837826dbe3ae0b9852eaeb34745a33ef4bdc5ce53576be7f4420b005fd52b
   languageName: node
   linkType: hard
 
@@ -5924,7 +5924,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fdir@npm:^6.4.2":
+"fdir@npm:^6.4.3":
   version: 6.4.3
   resolution: "fdir@npm:6.4.3"
   peerDependencies:
@@ -11156,13 +11156,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyglobby@npm:^0.2.10":
-  version: 0.2.10
-  resolution: "tinyglobby@npm:0.2.10"
+"tinyglobby@npm:^0.2.11":
+  version: 0.2.11
+  resolution: "tinyglobby@npm:0.2.11"
   dependencies:
-    fdir: ^6.4.2
+    fdir: ^6.4.3
     picomatch: ^4.0.2
-  checksum: 7e2ffe262ebc149036bdef37c56b32d02d52cf09efa7d43dbdab2ea3c12844a4da881058835ce4c74d1891190e5ad5ec5133560a11ec8314849b68ad0d99d3f4
+  checksum: 223a8b356eb14376cc5779fd6aafc3e3ca3b3cfcd0e1a13e5fd6e9724e44657f1d90d6d8d0fe4d3c73da03f8dd376d4529964562834c82035c7800ede78cba55
   languageName: node
   linkType: hard
 

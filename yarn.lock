@@ -3933,7 +3933,7 @@ __metadata:
     react-dom: ^18.3.1
     react-hook-form: ^7.54.2
     react-i18next: ^12.3.1
-    react-icons: ^5.4.0
+    react-icons: ^5.5.0
     react-intersection-observer: ^8.34.0
     sharp: ^0.32.6
     typescript: ^4.9.5
@@ -9572,12 +9572,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons@npm:^5.4.0":
-  version: 5.4.0
-  resolution: "react-icons@npm:5.4.0"
+"react-icons@npm:^5.5.0":
+  version: 5.5.0
+  resolution: "react-icons@npm:5.5.0"
   peerDependencies:
     react: "*"
-  checksum: 6ee5fcda49d9628e33d97e955ed6ec9f30b26226a13b14d0f3f9a698d0d5dd2e3878af7de295e0241bdd8f46af96f16bfea1fd0647beddc447c1de98bdb2178e
+  checksum: cbd74f4b7982e6e18d59798a6b578268c8eb0909d78d87bcf9b25f99b3e544fd189a76551cb5e770d17f154a60b668551aee108aaf8471309b23f7af3b2c5b07
   languageName: node
   linkType: hard
 

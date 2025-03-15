@@ -3912,7 +3912,7 @@ __metadata:
     eslint: ^8.57.0
     eslint-config-next: ^14.2.16
     eslint-config-prettier: ^8.10.0
-    eslint-import-resolver-typescript: ^3.8.4
+    eslint-import-resolver-typescript: ^3.8.7
     eslint-plugin-import: ^2.31.0
     eslint-plugin-jsx-a11y: ^6.10.2
     eslint-plugin-prettier: ^4.2.1
@@ -5427,9 +5427,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-typescript@npm:^3.8.4":
-  version: 3.8.4
-  resolution: "eslint-import-resolver-typescript@npm:3.8.4"
+"eslint-import-resolver-typescript@npm:^3.8.7":
+  version: 3.8.7
+  resolution: "eslint-import-resolver-typescript@npm:3.8.7"
   dependencies:
     "@nolyfill/is-core-module": 1.0.39
     debug: ^4.3.7
@@ -5447,7 +5447,7 @@ __metadata:
       optional: true
     eslint-plugin-import-x:
       optional: true
-  checksum: 6f3f1d7def31495ab9e8f98f365a3a0eafd077cf50825b90b716be40eb2127809c419dc14ad5dd6aa067f8b9cb53401292f87868e05665a342717a3df2d8a84e
+  checksum: 24bbd43983d55bb3048e894366c709e707fe3b985722f964730f946084314440b92c720a9b215cb823277c55f6523a3c0c11e01bb50ad29b2aaa48949ef9ff68
   languageName: node
   linkType: hard
 

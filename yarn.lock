@@ -4084,7 +4084,7 @@ __metadata:
     react-intersection-observer: ^8.34.0
     sharp: ^0.32.6
     typescript: ^4.9.5
-    zod: ^3.25.56
+    zod: ^3.25.67
   languageName: unknown
   linkType: soft
 
@@ -12318,9 +12318,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zod@npm:^3.25.56":
-  version: 3.25.56
-  resolution: "zod@npm:3.25.56"
-  checksum: a208366c375744a1c8a56adb534b263113986d6f4f634d0d84415ff6856950b17ec26cb74dfc3ce70e30a0df2e507d7c94e2c62d9f3aec6c41d723f129b2489a
+"zod@npm:^3.25.67":
+  version: 3.25.67
+  resolution: "zod@npm:3.25.67"
+  checksum: 56ab904d33b1cd00041ce64ae05b0628fcbfeb7e707fa31cd498a97b540135e4dfe685200c9c62aea307695ee132870b4bc34f035228ea728aa75cc96a4954cb
   languageName: node
   linkType: hard

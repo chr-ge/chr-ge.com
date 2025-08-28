@@ -2381,6 +2381,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@posthog/core@npm:1.0.2":
+  version: 1.0.2
+  resolution: "@posthog/core@npm:1.0.2"
+  checksum: dc7687c05e3210b3ea02cfc1cb52ca2473a807e544d786c876266f98195b029ab505cd61f889a1c93194c3be74d409992ad54d8b996b2861ef8c2b39308cbba6
+  languageName: node
+  linkType: hard
+
 "@rtsao/scc@npm:^1.1.0":
   version: 1.1.0
   resolution: "@rtsao/scc@npm:1.1.0"
@@ -4091,7 +4098,7 @@ __metadata:
     next-safe: ^3.5.0
     next-seo: ^5.15.0
     next-usequerystate: ^1.20.0
-    posthog-js: ^1.260.2
+    posthog-js: ^1.261.0
     prettier: ^2.6.2
     react: ^18.3.1
     react-dom: ^18.3.1
@@ -9606,10 +9613,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthog-js@npm:^1.260.2":
-  version: 1.260.2
-  resolution: "posthog-js@npm:1.260.2"
+"posthog-js@npm:^1.261.0":
+  version: 1.261.0
+  resolution: "posthog-js@npm:1.261.0"
   dependencies:
+    "@posthog/core": 1.0.2
     core-js: ^3.38.1
     fflate: ^0.4.8
     preact: ^10.19.3
@@ -9622,7 +9630,7 @@ __metadata:
       optional: true
     rrweb-snapshot:
       optional: true
-  checksum: d46f42d096d821c4baa1a91e392dd2b895719aba88caf5c4a852cff2dd3ec569120a09074b3a5389b9326f36031706be1a0da3a21d77989860b68cf322e483a6
+  checksum: 9501657ac1471e16ff81da60d345a2c1b93da022157d826b73af5175a5bc5001a2917a1985f29aaee4cdaf107c0a98d24b3ed06ac73f3276eacdc4c37850b034
   languageName: node
   linkType: hard
 

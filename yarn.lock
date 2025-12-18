@@ -2381,12 +2381,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@posthog/core@npm:1.7.1":
-  version: 1.7.1
-  resolution: "@posthog/core@npm:1.7.1"
+"@posthog/core@npm:1.8.1":
+  version: 1.8.1
+  resolution: "@posthog/core@npm:1.8.1"
   dependencies:
     cross-spawn: ^7.0.6
-  checksum: 1d0f4ea99a8db76c5e5dd570825545f5d200c2776666bf9ccd7922a9f52fc5444c4dbb331bcb5d167665a9d0179a5728cdc35b655cdfe08643940eaa5b5e20cb
+  checksum: 57e2beeb03f0f369c2fb3e414e9e50b3d711cba27b2d2c7831e01bfafe89c7aa7e971f6d5efbc8ffd6e348a46f99661a4110fb167b15f09019cccf387c18f6e7
   languageName: node
   linkType: hard
 
@@ -4100,7 +4100,7 @@ __metadata:
     next-safe: ^3.5.0
     next-seo: ^5.15.0
     next-usequerystate: ^1.20.0
-    posthog-js: ^1.306.1
+    posthog-js: ^1.309.1
     prettier: ^2.6.2
     react: ^18.3.1
     react-dom: ^18.3.1
@@ -9626,16 +9626,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthog-js@npm:^1.306.1":
-  version: 1.306.1
-  resolution: "posthog-js@npm:1.306.1"
+"posthog-js@npm:^1.309.1":
+  version: 1.309.1
+  resolution: "posthog-js@npm:1.309.1"
   dependencies:
-    "@posthog/core": 1.7.1
+    "@posthog/core": 1.8.1
     core-js: ^3.38.1
     fflate: ^0.4.8
     preact: ^10.19.3
     web-vitals: ^4.2.4
-  checksum: 23caa7092eed852d06c9ae748dd7638980d483414fb21118aef0f036fa46ba26132fd1bba4a8a4710a7a5dc509c9c5675ef7afdb4c76522d6dba8a5571395ce3
+  checksum: 326976bcac9ac3431c6baa1a4030054171c80d940f6bd2627d320e3341520a5aa8f81fbbde37d0f80ab0567a1230177b8101d3b36ace2da971dc4db18295f2db
   languageName: node
   linkType: hard
 

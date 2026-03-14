@@ -2532,19 +2532,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@posthog/core@npm:1.23.3":
-  version: 1.23.3
-  resolution: "@posthog/core@npm:1.23.3"
+"@posthog/core@npm:1.23.4":
+  version: 1.23.4
+  resolution: "@posthog/core@npm:1.23.4"
   dependencies:
     cross-spawn: ^7.0.6
-  checksum: 5a012220c8e24e009ae965242182673e615612df370cffa7c06db83bea4a620e8a661f67723cdc27b8d2d876c472e369017ffe8f398487bb03afec09169fec22
+  checksum: be2cceb29c8a8e2523dab5fa7768bfedd709e0c9ade9bd5fcb1be0a2306df3b21f0110f50666da8c0630f99bf7bab1b77c7e64afe91563bee0446b7bd0d09a50
   languageName: node
   linkType: hard
 
-"@posthog/types@npm:1.360.1":
-  version: 1.360.1
-  resolution: "@posthog/types@npm:1.360.1"
-  checksum: ee63fbb6a8045da864f15690a78ffdce51234674037142bb682d211520ef932e991ab6e5f1307875be2056faf72cb30edcb1469dc0f29b3b970f1760c5be04a7
+"@posthog/types@npm:1.360.2":
+  version: 1.360.2
+  resolution: "@posthog/types@npm:1.360.2"
+  checksum: 933c95ac577a0fccad56bfc7b09fd6a49c30df143930d66afacd2d7b67c1d4125f161d86b04590d192b3adc1cd08ac63bdf48f6fb88dc2a1dbd22fbd5c4cce6d
   languageName: node
   linkType: hard
 
@@ -4347,7 +4347,7 @@ __metadata:
     next-safe: ^3.5.0
     next-seo: ^5.15.0
     next-usequerystate: ^1.20.0
-    posthog-js: ^1.360.1
+    posthog-js: ^1.360.2
     prettier: ^2.6.2
     react: ^18.3.1
     react-dom: ^18.3.1
@@ -9892,24 +9892,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthog-js@npm:^1.360.1":
-  version: 1.360.1
-  resolution: "posthog-js@npm:1.360.1"
+"posthog-js@npm:^1.360.2":
+  version: 1.360.2
+  resolution: "posthog-js@npm:1.360.2"
   dependencies:
     "@opentelemetry/api": ^1.9.0
     "@opentelemetry/api-logs": ^0.208.0
     "@opentelemetry/exporter-logs-otlp-http": ^0.208.0
     "@opentelemetry/resources": ^2.2.0
     "@opentelemetry/sdk-logs": ^0.208.0
-    "@posthog/core": 1.23.3
-    "@posthog/types": 1.360.1
+    "@posthog/core": 1.23.4
+    "@posthog/types": 1.360.2
     core-js: ^3.38.1
     dompurify: ^3.3.2
     fflate: ^0.4.8
     preact: ^10.28.2
     query-selector-shadow-dom: ^1.0.1
     web-vitals: ^5.1.0
-  checksum: c622317446af6a02a2b58d82c7d8a6730aa59c7c84cd276fedcbec4359e0583eecd57d0807ce47c2ab3468cd431713328142fad0ec185f9d9cbdbd6300cb2034
+  checksum: 921fb5914885b2422b050836ba055def2747f58e31e9fa8bc87487ac6056ce114b682c9c567d175b37e4716eedce56abb99229b351ab61b975df3943db41a2fd
   languageName: node
   linkType: hard
 

@@ -4,14 +4,14 @@ import { useMemo } from 'react'
 import { NextSeo } from 'next-seo'
 import { useTranslation } from 'next-i18next'
 import { Box, Flex, Heading, SimpleGrid, Text } from '@chakra-ui/react'
-import { parseAsString, useQueryState } from 'next-usequerystate'
+import { parseAsString, useQueryState } from 'nuqs'
 import { motion } from 'framer-motion'
 import { type Raindrop, fetchBookmarks } from '@data/bookmarks'
 import { MainLayout } from '@components/layouts/MainLayout'
 import { Bookmark, SlashDivider, TagsBar } from '@components/structure'
 import { config } from 'config/config'
 
-const MotionFlex = motion(Flex)
+const MotionFlex = motion.create(Flex)
 
 interface BookmarksProps {
   bookmarks: Raindrop[]

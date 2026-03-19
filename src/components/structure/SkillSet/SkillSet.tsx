@@ -16,7 +16,7 @@ const container: Variants = {
   },
 }
 
-const MotionSimpleGrid = motion(SimpleGrid)
+const MotionSimpleGrid = motion.create(SimpleGrid)
 
 export const SkillSet: React.FC = () => {
   const { t } = useTranslation('common')

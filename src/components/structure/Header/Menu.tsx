@@ -9,7 +9,7 @@ const navItems: Omit<NavItemProps, 'onClose'>[] = [
   { name: 'contact', href: '/#contact' },
 ]
 
-const MotionStack = motion(Stack)
+const MotionStack = motion.create(Stack)
 
 interface MenuProps {
   isOpen: boolean

@@ -21,7 +21,7 @@ const item: Variants = {
   visible: { opacity: 1, y: 0 },
 }
 
-const MotionVStack = motion(VStack)
+const MotionVStack = motion.create(VStack)
 
 export const SelectedProjects: React.FC = () => {
   const { t } = useTranslation('common')

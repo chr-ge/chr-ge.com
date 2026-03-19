@@ -18,7 +18,7 @@ export interface RoleType {
 
 export interface Skill {
   name: string
-  icon: IconType | ((props: IconProps) => JSX.Element)
+  icon: IconType | ((props: IconProps) => React.JSX.Element)
   color: string
 }
 

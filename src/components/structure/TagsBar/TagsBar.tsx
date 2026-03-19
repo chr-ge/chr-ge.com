@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Box, Button, HStack, useDimensions } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 
-const MotionBox = motion(Box)
+const MotionBox = motion.create(Box)
 
 const HEADER_HEIGHT = 105
 
@@ -19,7 +19,7 @@ export const TagsBar: React.FC<TagsBarProps> = ({
 }) => {
   const [isSticky, setIsSticky] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
-  const dimensions = useDimensions(ref, true)
+  const dimensions = useDimensions(ref as React.RefObject<HTMLElement>, true)
 
   useEffect(() => {
     if (!dimensions) return

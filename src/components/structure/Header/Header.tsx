@@ -43,16 +43,15 @@ export const Header: React.FC = () => {
         borderColor='black'
         borderBottom='1px solid'
       >
-        <NextLink href='/' passHref legacyBehavior>
-          <Text
-            as='a'
-            fontWeight='bold'
-            fontSize={{ base: 'lg', md: '2xl' }}
-            casing='uppercase'
-          >
-            {NAME}
-          </Text>
-        </NextLink>
+        <Text
+          as={NextLink}
+          href='/'
+          fontWeight='bold'
+          fontSize={{ base: 'lg', md: '2xl' }}
+          casing='uppercase'
+        >
+          {NAME}
+        </Text>
         <HStack spacing='2'>
           <Button variant='icon' size='icon' onClick={toggleLocale}>
             {locale === 'en' ? 'FR' : 'EN'}

@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Analytics } from '@vercel/analytics/react'
 import { appWithTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
+import { NuqsAdapter } from 'nuqs/adapters/next/pages'
 import posthog from 'posthog-js'
 import { PostHogProvider } from 'posthog-js/react'
 import { ChakraProvider } from '@chakra-ui/react'
@@ -32,12 +33,14 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       </Head>
       <Analytics />
       <DefaultSeo {...config.seo} />
-      <PostHogProvider client={posthog}>
-        <ChakraProvider theme={theme}>
-          <Fonts />
-          <Component {...pageProps} />
-        </ChakraProvider>
-      </PostHogProvider>
+      <NuqsAdapter>
+        <PostHogProvider client={posthog}>
+          <ChakraProvider theme={theme}>
+            <Fonts />
+            <Component {...pageProps} />
+          </ChakraProvider>
+        </PostHogProvider>
+      </NuqsAdapter>
     </>
   )
 }

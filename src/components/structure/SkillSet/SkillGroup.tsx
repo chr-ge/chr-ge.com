@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import type { TFuncKey } from 'i18next'
+import type common from '@public/locales/en/common.json'
 import { Heading, SimpleGrid, VStack } from '@chakra-ui/react'
 import { motion, type Variants } from 'framer-motion'
 import type { SkillGroup as ISkillGroup } from '@utils/types'
@@ -30,7 +30,7 @@ export const SkillGroup: React.FC<SkillGroupProps> = ({ category, skills }) => {
         transition='border-color 0.1s ease-in-out'
       >
         <Heading as='h3' variant='skillCategory'>
-          {t(category as TFuncKey<'common'>)}
+          {t(category as keyof typeof common)}
         </Heading>
         <SimpleGrid columns={3} spacing='5'>
           {skills.map((skill) => (

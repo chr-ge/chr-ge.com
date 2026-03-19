@@ -6,9 +6,8 @@ import { usePostHog } from 'posthog-js/react'
 import { config } from '@config/config'
 import { ButtonArrow } from '../../meta'
 
-const MotionFlex = motion(Flex)
-const MotionHeading = motion(Heading)
-const MotionButton = motion(Button)
+const MotionFlex = motion.create(Flex)
+const MotionHeading = motion.create(Heading)
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation('common')
@@ -39,18 +38,20 @@ export const Hero: React.FC = () => {
         >
           {t('hero-title')}
         </MotionHeading>
-        <NextLink href='/#projects' passHref legacyBehavior>
-          <MotionButton
-            as='a'
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.2 }}
+        >
+          <Button
+            as={NextLink}
+            href='/#projects'
             variant='secondary'
             sx={{
               '&:hover svg': {
                 transform: 'scaleX(1.1)',
               },
             }}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.2 }}
             onClick={() => posthog.capture('hero_button_clicked')}
           >
             <chakra.span mr='4'>{t('hero-cta')}</chakra.span>
@@ -58,8 +59,8 @@ export const Hero: React.FC = () => {
               transformOrigin='left'
               transition='transform 0.2s ease-in-out, fill 0.2s ease-in-out'
             />
-          </MotionButton>
-        </NextLink>
+          </Button>
+        </motion.div>
       </VStack>
     </MotionFlex>
   )

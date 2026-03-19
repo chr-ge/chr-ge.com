@@ -15,7 +15,7 @@ import { motion } from 'framer-motion'
 import { usePostHog } from 'posthog-js/react'
 import type { Project } from '@utils/types'
 
-const MotionBox = motion(Box)
+const MotionBox = motion.create(Box)
 
 export const ProjectShowcase: React.FC<Project> = ({
   title,

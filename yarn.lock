@@ -212,7 +212,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.28.4, @babel/runtime@npm:^7.29.2":
+"@babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.29.2":
   version: 7.29.2
   resolution: "@babel/runtime@npm:7.29.2"
   checksum: d5548d1165de8995f8afc93a5694b8625409be16cd1f2250ac13e331335858ddac3cb9fd278e6c43956a130101a2203f09417938a1a96f9fb70f02b4b4172e1d
@@ -4200,7 +4200,7 @@ __metadata:
     react: ^19.2.4
     react-dom: ^19.2.4
     react-hook-form: ^7.72.0
-    react-i18next: ^16.5.8
+    react-i18next: ^16.6.2
     react-icons: ^5.4.0
     react-intersection-observer: ^8.34.0
     sharp: ^0.34.5
@@ -9361,11 +9361,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:^16.5.8":
-  version: 16.5.8
-  resolution: "react-i18next@npm:16.5.8"
+"react-i18next@npm:^16.6.2":
+  version: 16.6.2
+  resolution: "react-i18next@npm:16.6.2"
   dependencies:
-    "@babel/runtime": ^7.28.4
+    "@babel/runtime": ^7.29.2
     html-parse-stringify: ^3.0.1
     use-sync-external-store: ^1.6.0
   peerDependencies:
@@ -9379,7 +9379,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 5f675f467e432a41afb39965240f4c142367e173d39a25d723d06dbd5894ae78e3f809b8a3e58b6e57702c83e5252c6046ce3722b9e8fba068a8dc41f39824b8
+  checksum: d0e9993774166e06c0eb1b7f5765e91eb5c98e931b16a770972bbc4311f101ed586c4c2572a11bdda2475da5b2b5dbed6560bb98a76fc3ecfc31affe7ccbcd12
   languageName: node
   linkType: hard
 

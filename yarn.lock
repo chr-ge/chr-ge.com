@@ -212,7 +212,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.28.4, @babel/runtime@npm:^7.28.6":
+"@babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.28.4, @babel/runtime@npm:^7.29.2":
   version: 7.29.2
   resolution: "@babel/runtime@npm:7.29.2"
   checksum: d5548d1165de8995f8afc93a5694b8625409be16cd1f2250ac13e331335858ddac3cb9fd278e6c43956a130101a2203f09417938a1a96f9fb70f02b4b4172e1d
@@ -4188,7 +4188,7 @@ __metadata:
     focus-visible: ^5.2.1
     framer-motion: ^12.38.0
     husky: ^8.0.3
-    i18next: ^25.8.20
+    i18next: ^25.10.5
     lint-staged: ^12.5.0
     next: ^16.2.1
     next-i18next: ^15.4.3
@@ -6894,17 +6894,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^25.8.20":
-  version: 25.8.20
-  resolution: "i18next@npm:25.8.20"
+"i18next@npm:^25.10.5":
+  version: 25.10.5
+  resolution: "i18next@npm:25.10.5"
   dependencies:
-    "@babel/runtime": ^7.28.6
+    "@babel/runtime": ^7.29.2
   peerDependencies:
     typescript: ^5
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: a96e77cbf3823769d9011539323bd7704d672ea884c9dbbfce97f2df3f2e73503477019977434fa56a7ac479e9cd8f300ab6cc2422f22eb2eb0a07f2f535dd5b
+  checksum: 0832b27761106ea4a7ba86bddbf54fed2d4d377d5d7611ceac43bdf781cc946952fe49029aafe3e50291ef1448f4c3f07d13362d337311034c34f90f925482c6
   languageName: node
   linkType: hard
 

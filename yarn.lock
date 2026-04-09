@@ -4195,8 +4195,8 @@ __metadata:
     nuqs: ^2.8.9
     posthog-js: ^1.364.7
     prettier: ^2.6.2
-    react: ^19.2.4
-    react-dom: ^19.2.4
+    react: ^19.2.5
+    react-dom: ^19.2.5
     react-hook-form: ^7.72.1
     react-i18next: ^16.6.6
     react-icons: ^5.4.0
@@ -9312,14 +9312,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.2.4":
-  version: 19.2.4
-  resolution: "react-dom@npm:19.2.4"
+"react-dom@npm:^19.2.5":
+  version: 19.2.5
+  resolution: "react-dom@npm:19.2.5"
   dependencies:
     scheduler: ^0.27.0
   peerDependencies:
-    react: ^19.2.4
-  checksum: 2650391005468c228616d54431682e190068bfc2e68b9bf33582df637c4b60bfd9925bb6b4bfada2679a6a974d0e756c1db4a656c502e654d77b8a6b6ad162ea
+    react: ^19.2.5
+  checksum: a63e892755d14524a2cb76f750ca8d75b8c91473d806f0441035b3ae74ecaa3ab4cecf820cf40e5aa33631de9aecdeeb2e00a302d447f42794d32969070fabec
   languageName: node
   linkType: hard
 
@@ -9458,10 +9458,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^19.2.4":
-  version: 19.2.4
-  resolution: "react@npm:19.2.4"
-  checksum: edf2b96619fab3a8b11714f16a0994a92c6b473aecf3269b63e4fa317d3073d40513c1f19cf4415ebbad94d35b48ff76ad768480db663037e2d929e8d60596b8
+"react@npm:^19.2.5":
+  version: 19.2.5
+  resolution: "react@npm:19.2.5"
+  checksum: 95563d3ceba2b6bf18bc4bb1e515a4fd49645630f8a017eb139fa37425f673ded545a9b6d1039021cc8a545b2a697ccfa03ac37b20c3dfa60c079f67bdabbedb
   languageName: node
   linkType: hard
 

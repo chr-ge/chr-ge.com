@@ -2836,10 +2836,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@posthog/types@npm:1.367.0":
-  version: 1.367.0
-  resolution: "@posthog/types@npm:1.367.0"
-  checksum: 06d4a86f68adae7250221cecc883ffd6143d2aa4239919f71437e59ef3ad2ce009055da648243525a50927791e5b93ceb1efc96524fd320509afbf1b6165574e
+"@posthog/types@npm:1.369.0":
+  version: 1.369.0
+  resolution: "@posthog/types@npm:1.369.0"
+  checksum: cc6a3e2bf1a54b2720b81635f5a2817b66cb9b041834112ab161c81b9863706baa80cc156d4805e7df9f9aa4921cdaab396f79f03e73a816b0cf74c17acf2578
   languageName: node
   linkType: hard
 
@@ -4193,7 +4193,7 @@ __metadata:
     next-safe: ^3.5.0
     next-seo: ^6.1.0
     nuqs: ^2.8.9
-    posthog-js: ^1.367.0
+    posthog-js: ^1.369.0
     prettier: ^2.6.2
     react: ^19.2.5
     react-dom: ^19.2.5
@@ -9124,9 +9124,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthog-js@npm:^1.367.0":
-  version: 1.367.0
-  resolution: "posthog-js@npm:1.367.0"
+"posthog-js@npm:^1.369.0":
+  version: 1.369.0
+  resolution: "posthog-js@npm:1.369.0"
   dependencies:
     "@opentelemetry/api": ^1.9.0
     "@opentelemetry/api-logs": ^0.208.0
@@ -9134,14 +9134,14 @@ __metadata:
     "@opentelemetry/resources": ^2.2.0
     "@opentelemetry/sdk-logs": ^0.208.0
     "@posthog/core": 1.25.2
-    "@posthog/types": 1.367.0
+    "@posthog/types": 1.369.0
     core-js: ^3.38.1
     dompurify: ^3.3.2
     fflate: ^0.4.8
     preact: ^10.28.2
     query-selector-shadow-dom: ^1.0.1
     web-vitals: ^5.1.0
-  checksum: eb81d3368c9e24040fadc7477431d9740d1dc51110d30886e58f93f213d14e4716c9b19ea0bc9456c47bc2a305997ccc5c6a86653a5f52b4e0b6373944ce7ad7
+  checksum: 7793d7d55653ebbcf81d5036a9989aadbdb10e26aa1ad04e93b901495b67f10f5986451d3baba8f23cd8fcbcd9731aa65313bcba4b08aaffbd40caf13921e60e
   languageName: node
   linkType: hard
 

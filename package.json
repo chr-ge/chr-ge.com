@@ -30,7 +30,7 @@
     "@vercel/analytics": "^1.6.1",
     "envsafe": "^2.0.3",
     "focus-visible": "^5.2.1",
-    "framer-motion": "^12.39.0",
+    "framer-motion": "^12.40.0",
     "i18next": "^25.10.10",
     "next": "^16.2.1",
     "next-i18next": "^15.4.3",

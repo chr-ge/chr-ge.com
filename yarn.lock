@@ -4199,7 +4199,7 @@ __metadata:
     prettier: ^2.6.2
     react: ^19.2.6
     react-dom: ^19.2.6
-    react-hook-form: ^7.76.0
+    react-hook-form: ^7.76.1
     react-i18next: ^16.6.6
     react-icons: ^5.4.0
     react-intersection-observer: ^8.34.0
@@ -9352,12 +9352,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-hook-form@npm:^7.76.0":
-  version: 7.76.0
-  resolution: "react-hook-form@npm:7.76.0"
+"react-hook-form@npm:^7.76.1":
+  version: 7.76.1
+  resolution: "react-hook-form@npm:7.76.1"
   peerDependencies:
     react: ^16.8.0 || ^17 || ^18 || ^19
-  checksum: b0a2eeb6bfd0152700b9a810c43e13d1f7bc2139c5c856c190e179d28ab4630c2ec748d661f2537c3a9731fddbcd386e6a8bbe622d4b7713e54844c5cc054408
+  checksum: 946110fdb476aa76e582d94f794c633b483237284a4aec75179ee28ecdd19de407f788fafbcd0ac1e653826cdc2bb9f60bd016b51143aec41e33ccddcdd6fbb0
   languageName: node
   linkType: hard
 

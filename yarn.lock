@@ -2678,19 +2678,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@posthog/core@npm:^1.32.4":
-  version: 1.32.5
-  resolution: "@posthog/core@npm:1.32.5"
+"@posthog/core@npm:^1.35.1":
+  version: 1.35.2
+  resolution: "@posthog/core@npm:1.35.2"
   dependencies:
-    "@posthog/types": ^1.386.4
-  checksum: 5c15e916ba72833575de3bda31210d70cb0e5a15a112b5d20352b42fdb7cca9c09b410309717a543554b53222f9ee2450a4639d58d76a0ed67d66f20200463fa
+    "@posthog/types": ^1.390.0
+  checksum: e6521a86a799b319659cf07f6d7be8a20f7066e96da60e86a6f1b7669db0f396e61cb18a1e9ff785cbdc77ef484b72da8c1f905e0f03871d75cf81df646fe3be
   languageName: node
   linkType: hard
 
-"@posthog/types@npm:^1.386.4":
-  version: 1.386.4
-  resolution: "@posthog/types@npm:1.386.4"
-  checksum: 4008a101bf40ef75695f44f2a1ae83a4b3ff143e0a4019dde7e57eded074ad19634dc7015a53237b8a66c1e21d7a3897eedda7fb8310745f5c8acc07bcb36b14
+"@posthog/types@npm:^1.390.0":
+  version: 1.390.0
+  resolution: "@posthog/types@npm:1.390.0"
+  checksum: 6614160deac9113228cd6b729deb4d5b7777ee1f4b4cf71d8de8d6bd69d73c8b1d295848cbf752be8051ae6f35ef8c82665a0306413262666431fea74af2c083
   languageName: node
   linkType: hard
 
@@ -3962,7 +3962,7 @@ __metadata:
     next-safe: ^3.5.0
     next-seo: ^6.1.0
     nuqs: ^2.8.9
-    posthog-js: ^1.386.8
+    posthog-js: ^1.390.2
     prettier: ^2.6.2
     react: ^19.2.7
     react-dom: ^19.2.7
@@ -8886,19 +8886,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthog-js@npm:^1.386.8":
-  version: 1.386.8
-  resolution: "posthog-js@npm:1.386.8"
+"posthog-js@npm:^1.390.2":
+  version: 1.390.2
+  resolution: "posthog-js@npm:1.390.2"
   dependencies:
-    "@posthog/core": ^1.32.4
-    "@posthog/types": ^1.386.4
+    "@posthog/core": ^1.35.1
+    "@posthog/types": ^1.390.0
     core-js: ^3.38.1
     dompurify: ^3.3.2
     fflate: ^0.4.8
     preact: ^10.28.2
     query-selector-shadow-dom: ^1.0.1
     web-vitals: ^5.1.0
-  checksum: 22ba4b37314c368a75ac9ec93d7944e7b6d819a02aa47ff07f6d8a7143ce35dc0cbcbf20bad2ac3a5ad83224307c1d428c0a6613dee672bfd1884b483a72a84c
+  checksum: 38c7a97a3847658644f22168fbe3eb85d0f4c666860f74122b07bd04545aebe0405ec34f7bb0d6bb8ba02a63317e2072094bf6dc3a5b22cc55c0036af5198180
   languageName: node
   linkType: hard
 

@@ -3961,7 +3961,7 @@ __metadata:
     next-i18next: ^15.4.3
     next-safe: ^3.5.0
     next-seo: ^6.1.0
-    nuqs: ^2.8.9
+    nuqs: ^2.9.0
     posthog-js: ^1.396.2
     prettier: ^2.6.2
     react: ^19.2.7
@@ -8419,9 +8419,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuqs@npm:^2.8.9":
-  version: 2.8.9
-  resolution: "nuqs@npm:2.8.9"
+"nuqs@npm:^2.9.0":
+  version: 2.9.0
+  resolution: "nuqs@npm:2.9.0"
   dependencies:
     "@standard-schema/spec": 1.0.0
   peerDependencies:
@@ -8429,7 +8429,7 @@ __metadata:
     "@tanstack/react-router": ^1
     next: ">=14.2.0"
     react: ">=18.2.0 || ^19.0.0-0"
-    react-router: ^5 || ^6 || ^7
+    react-router: ^5 || ^6 || ^7 || ^8
     react-router-dom: ^5 || ^6 || ^7
   peerDependenciesMeta:
     "@remix-run/react":
@@ -8442,7 +8442,7 @@ __metadata:
       optional: true
     react-router-dom:
       optional: true
-  checksum: 71ff80a05dd9b0939f7e8ec00985e010372ecde3515e79420683b1ce817d8f82ba6fea30d0fbb64404ac760eaf2e2dafdc2374787a6c54678ae0bb0e795615c5
+  checksum: dd67ce04e339d555de58587654d6a57532995b32ece36c57a226777e2797684301e1a3539b7b9a61233ebc31f7a17a6d2aaf1b808d0cd82f149d75ef9412204f
   languageName: node
   linkType: hard
 

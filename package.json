@@ -51,7 +51,7 @@
     "@chakra-ui/cli": "^2.5.5",
     "@commitlint/cli": "^17.8.0",
     "@commitlint/config-conventional": "^17.8.0",
-    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/eslintrc": "^3.3.6",
     "@next/bundle-analyzer": "^16.2.1",
     "@types/node": "^24.12.0",
     "@types/react": "^19.2.17",

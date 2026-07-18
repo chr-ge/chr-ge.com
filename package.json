@@ -37,7 +37,7 @@
     "next-safe": "^3.5.0",
     "next-seo": "^6.1.0",
     "nuqs": "^2.9.0",
-    "posthog-js": "^1.399.2",
+    "posthog-js": "^1.404.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-hook-form": "^7.81.0",

@@ -2725,10 +2725,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@standard-schema/spec@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@standard-schema/spec@npm:1.0.0"
-  checksum: 2d7d73a1c9706622750ab06fc40ef7c1d320b52d5e795f8a1c7a77d0d6a9f978705092bc4149327b3cff4c9a14e5b3800d3b00dc945489175a2d3031ded8332a
+"@standard-schema/spec@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@standard-schema/spec@npm:1.1.0"
+  checksum: 6245ebef5e698bb04752a22e996a7cc40406a404d9f68a9d4e1a7a10f2422da287247508e7b495a2f32bb38f3d57b4daf2c9ab4bf22d9bca13e20a3dc5ec575e
   languageName: node
   linkType: hard
 
@@ -3978,7 +3978,7 @@ __metadata:
     next-i18next: ^15.4.3
     next-safe: ^3.5.0
     next-seo: ^6.1.0
-    nuqs: ^2.9.0
+    nuqs: ^2.9.1
     posthog-js: ^1.404.1
     prettier: ^2.6.2
     react: ^19.2.7
@@ -8447,11 +8447,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuqs@npm:^2.9.0":
-  version: 2.9.0
-  resolution: "nuqs@npm:2.9.0"
+"nuqs@npm:^2.9.1":
+  version: 2.9.1
+  resolution: "nuqs@npm:2.9.1"
   dependencies:
-    "@standard-schema/spec": 1.0.0
+    "@standard-schema/spec": 1.1.0
   peerDependencies:
     "@remix-run/react": ">=2"
     "@tanstack/react-router": ^1
@@ -8470,7 +8470,7 @@ __metadata:
       optional: true
     react-router-dom:
       optional: true
-  checksum: dd67ce04e339d555de58587654d6a57532995b32ece36c57a226777e2797684301e1a3539b7b9a61233ebc31f7a17a6d2aaf1b808d0cd82f149d75ef9412204f
+  checksum: 2ac55a8543ce290c42af3acedcfcfc54e37489ae4b4fe33c46b7b42a64d00eda9f12d01e70cbd76290d657a81ec3f38c2ad5147c242a5de0526a8c0edddd2eb5
   languageName: node
   linkType: hard
 

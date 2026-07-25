@@ -3988,7 +3988,7 @@ __metadata:
     next-i18next: ^15.4.3
     next-safe: ^3.5.0
     next-seo: ^6.1.0
-    nuqs: ^2.9.1
+    nuqs: ^2.9.2
     posthog-js: ^1.407.2
     prettier: ^2.6.2
     react: ^19.2.8
@@ -8457,9 +8457,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuqs@npm:^2.9.1":
-  version: 2.9.1
-  resolution: "nuqs@npm:2.9.1"
+"nuqs@npm:^2.9.2":
+  version: 2.9.2
+  resolution: "nuqs@npm:2.9.2"
   dependencies:
     "@standard-schema/spec": 1.1.0
   peerDependencies:
@@ -8480,7 +8480,7 @@ __metadata:
       optional: true
     react-router-dom:
       optional: true
-  checksum: 2ac55a8543ce290c42af3acedcfcfc54e37489ae4b4fe33c46b7b42a64d00eda9f12d01e70cbd76290d657a81ec3f38c2ad5147c242a5de0526a8c0edddd2eb5
+  checksum: 88281112b70c39840b34f14e2baa222f41b777ced72c94d7c6d3272be08b00ebc804366aad812f26bbc21c5f3530696ef3c5bd688ba642a24da873174b9305d1
   languageName: node
   linkType: hard
 

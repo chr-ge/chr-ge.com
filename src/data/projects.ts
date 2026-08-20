@@ -15,28 +15,6 @@ import type { Project } from '@utils/types'
 
 export const projects: Project[] = [
   {
-    id: '1',
-    title: 'Hypzz',
-    description: {
-      en: 'Connecting influencers and brands to collaborate on product advertisements and more.',
-      fr: 'Nous connectons des influenceurs et des marques pour collaborer sur des publicités de produits et plus encore.',
-    },
-    image: { src: HypzzImage },
-    homepage: 'https://hypzz.chr-ge.com/?ref=chr-ge.com',
-    technologies: [
-      { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
-      { name: 'React', icon: SiReact, color: '#61DAFB' },
-      { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
-      { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
-    ],
-    tags: [
-      { label: 'full-stack', colorScheme: 'pink' },
-      { label: 'aws', colorScheme: 'orange' },
-      { label: 'website', colorScheme: 'cyan' },
-    ],
-    isShowcased: true,
-  },
-  {
     id: '2',
     title: 'Kalabam',
     description: {
@@ -55,6 +33,28 @@ export const projects: Project[] = [
     tags: [
       { label: 'full-stack', colorScheme: 'pink' },
       { label: 'websockets', colorScheme: 'green' },
+      { label: 'aws', colorScheme: 'orange' },
+      { label: 'website', colorScheme: 'cyan' },
+    ],
+    isShowcased: true,
+  },
+  {
+    id: '1',
+    title: 'Hypzz',
+    description: {
+      en: 'Connecting influencers and brands to collaborate on product advertisements and more.',
+      fr: 'Nous connectons des influenceurs et des marques pour collaborer sur des publicités de produits et plus encore.',
+    },
+    image: { src: HypzzImage },
+    homepage: 'https://hypzz.chr-ge.com/?ref=chr-ge.com',
+    technologies: [
+      { name: 'Next.js', icon: SiNextdotjs, color: '#000000' },
+      { name: 'React', icon: SiReact, color: '#61DAFB' },
+      { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
+      { name: 'Tailwind CSS', icon: SiTailwindcss, color: '#06B6D4' },
+    ],
+    tags: [
+      { label: 'full-stack', colorScheme: 'pink' },
       { label: 'aws', colorScheme: 'orange' },
       { label: 'website', colorScheme: 'cyan' },
     ],

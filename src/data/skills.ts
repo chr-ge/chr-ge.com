@@ -34,9 +34,9 @@ export const skills: SkillGroup[] = [
     skills: [
       { name: 'Typescript', icon: SiTypescript, color: '#3178C6' },
       { name: 'Javascript', icon: Javascript, color: '#F7DF1E' },
-      { name: 'PHP', icon: SiPhp, color: '#777BB4' },
       { name: 'Python', icon: SiPython, color: '#3776AB' },
       { name: 'Ruby', icon: SiRuby, color: '#CC342D' },
+      { name: 'PHP', icon: SiPhp, color: '#777BB4' },
     ],
   },
   {
@@ -58,8 +58,8 @@ export const skills: SkillGroup[] = [
       { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
       { name: 'GraphQL', icon: SiGraphql, color: '#E10098' },
       { name: 'Express', icon: SiExpress, color: '#000000' },
-      { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
       { name: 'Ruby on Rails', icon: SiRubyonrails, color: '#D30001' },
+      { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
     ],
   },
   {

@@ -44,7 +44,7 @@
     "react-i18next": "^16.6.6",
     "react-icons": "^5.4.0",
     "react-intersection-observer": "^8.34.0",
-    "sharp": "^0.35.4",
+    "sharp": "^0.35.5",
     "zod": "^3.25.76"
   },
   "devDependencies": {

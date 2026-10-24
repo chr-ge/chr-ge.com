@@ -2942,22 +2942,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@posthog/browser-common@npm:^0.9.5":
-  version: 0.9.5
-  resolution: "@posthog/browser-common@npm:0.9.5"
+"@posthog/browser-common@npm:^0.9.11":
+  version: 0.9.11
+  resolution: "@posthog/browser-common@npm:0.9.11"
   dependencies:
-    "@posthog/core": ^1.59.1
+    "@posthog/core": ^1.60.1
     "@posthog/types": ^1.416.0
-  checksum: c1837182932eeaaa2a2a41648b6f1b4d6c767acecfdc1afb1d6428eff34c58ee660dfbf8c8797fa3f5b4efb6abd18cc122c6c48c33008fa558b2da01ae4ed806
+    preact: ^10.29.3
+  checksum: ea5853ca6cd2066659ce2e23213b7e4d0fb4e9c7c8238ceb2312398a6e6b0f7bbba160eaaf5ad7976c44d46256f71720c8414da82d71408c38b957c5c9c4df58
   languageName: node
   linkType: hard
 
-"@posthog/core@npm:^1.59.1":
-  version: 1.59.1
-  resolution: "@posthog/core@npm:1.59.1"
+"@posthog/core@npm:^1.60.1":
+  version: 1.60.1
+  resolution: "@posthog/core@npm:1.60.1"
   dependencies:
     "@posthog/types": ^1.416.0
-  checksum: a8ba6bb90489a18252e9390585d642756825cc7dccf680bf7f409a824beb63f2e8b8009e04e9606029ea77a78e143911e7574c8d5034fc72730135d7d575cf2d
+  checksum: d9326365dd6083b8f8692fac47856a912b2acb15860f034b3f128ac170e6cad12b45a89af65ffd3bce5ab000e4292d9c3325aebaf8206807604907a156e67ce0
   languageName: node
   linkType: hard
 
@@ -4236,7 +4237,7 @@ __metadata:
     next-safe: ^3.5.0
     next-seo: ^6.1.0
     nuqs: ^2.10.2
-    posthog-js: ^1.438.13
+    posthog-js: ^1.438.21
     prettier: ^2.6.2
     react: ^19.3.1
     react-dom: ^19.3.1
@@ -9171,12 +9172,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"posthog-js@npm:^1.438.13":
-  version: 1.438.13
-  resolution: "posthog-js@npm:1.438.13"
+"posthog-js@npm:^1.438.21":
+  version: 1.438.21
+  resolution: "posthog-js@npm:1.438.21"
   dependencies:
-    "@posthog/browser-common": ^0.9.5
-    "@posthog/core": ^1.59.1
+    "@posthog/browser-common": ^0.9.11
+    "@posthog/core": ^1.60.1
     "@posthog/types": ^1.416.0
     core-js: ^3.49.0
     dompurify: ^3.4.13
@@ -9193,7 +9194,7 @@ __metadata:
       optional: true
     react:
       optional: true
-  checksum: 070e07937c56504df006b243208f3550c2dba22c9815820d97844aea010a58e7976fbfd4f0b4873f11a4382db4f5ebfe7994240d4c95319738af783ad91385fd
+  checksum: f2814082dfafbce39841e017aca69a253148ccf6f503bf8a026701891aa2cb59f30398d2e83782f07207988831e3b036a6bb679d6e143feaf8015a4dfb899e41
   languageName: node
   linkType: hard
 

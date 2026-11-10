@@ -1,3 +1,5 @@
+
+
 # chr-ge.com
 
 ![License](https://badgen.net/github/license/chr-ge/chr-ge.com?color=cyan)
@@ -13,6 +15,8 @@ Running Locally:
 yarn install
 yarn dev
 ```
+
+Set the required environment variables (see `src/config/browser.env.ts` and `src/config/server.env.ts`) before running `yarn dev`.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the website.
 

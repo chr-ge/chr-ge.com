@@ -3136,12 +3136,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.3.0":
-  version: 19.3.0
-  resolution: "@types/react@npm:19.3.0"
+"@types/react@npm:^19.3.3":
+  version: 19.3.3
+  resolution: "@types/react@npm:19.3.3"
   dependencies:
     csstype: ^3.2.2
-  checksum: 1cc51d4b76e5855da231e8b5afbde76db000eb3fffa5a8087a93eef1c168e86f90d10b7dae08dabf7a6ac327a254604406e6ede45c952d39d24dd0da6f856790
+  checksum: 9be36f93a7334a6a3e0efec5aa600ea3ef85a553687eae7b7f644f80dc90ff376c5483ea1d4474bfce55873ceb07171348bce52178c6c7a7cea70d9549ec93c7
   languageName: node
   linkType: hard
 
@@ -4221,7 +4221,7 @@ __metadata:
     "@hookform/resolvers": ^2.9.11
     "@next/bundle-analyzer": ^16.2.1
     "@types/node": ^24.12.0
-    "@types/react": ^19.3.0
+    "@types/react": ^19.3.3
     "@vercel/analytics": ^1.6.1
     envsafe: ^2.0.3
     eslint: ^9.0.0

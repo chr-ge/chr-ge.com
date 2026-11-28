@@ -4238,7 +4238,7 @@ __metadata:
     focus-visible: ^5.2.1
     framer-motion: ^12.43.0
     husky: ^8.0.3
-    i18next: ^25.10.10
+    i18next: ^27.2.6
     lint-staged: ^12.5.0
     next: ^16.2.1
     next-i18next: ^15.4.3
@@ -6944,17 +6944,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^25.10.10":
-  version: 25.10.10
-  resolution: "i18next@npm:25.10.10"
-  dependencies:
-    "@babel/runtime": ^7.29.2
+"i18next@npm:^27.2.6":
+  version: 27.2.6
+  resolution: "i18next@npm:27.2.6"
   peerDependencies:
-    typescript: ^5 || ^6
+    typescript: ^5 || ^6 || ^7
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: d1d1d2501eda0e57cfa3e7416781955e769fc1b1f0fe93298e0a6638e0f20e6ab3db96cb3efcabc89e1d1c1f75c1ddcd4673d28b5d4a2f865febbc7faba54a5d
+  checksum: ab6bf304934c1b3483fcc4dea400b900773997a6fc6186bd4a6d6f6a88aa3767c14446b693605b4fec61833a41e1f19c3ac2cb5e75b9a9e53e61ed06bd46ab8f
   languageName: node
   linkType: hard
 

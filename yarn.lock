@@ -4233,7 +4233,7 @@ __metadata:
     envsafe: ^2.0.3
     eslint: ^9.0.0
     eslint-config-next: ^16.2.1
-    eslint-config-prettier: ^10.1.8
+    eslint-config-prettier: ^10.1.9
     eslint-plugin-jsx-a11y: ^6.10.2
     focus-visible: ^5.2.1
     framer-motion: ^12.43.0
@@ -5650,14 +5650,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^10.1.8":
-  version: 10.1.8
-  resolution: "eslint-config-prettier@npm:10.1.8"
+"eslint-config-prettier@npm:^10.1.9":
+  version: 10.1.9
+  resolution: "eslint-config-prettier@npm:10.1.9"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: 9140e19f78f0dbc888b160bb72b85f8043bada7b12a548faa56cea0ba74f8ef16653250ffd014d85d9a376a88c4941c96a3cdc9d39a07eb3def6967166635bd8
+  checksum: 44b7dc82d4575e1375eabd8f2d3cda963ab65cff09492f7fc46a782f4a379729c2d98c3dfef0be68fddffd76e0e04b673cf96bf2ea3d749124fe74063cce7bb0
   languageName: node
   linkType: hard
 
